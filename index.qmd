@@ -1,0 +1,7 @@
+---
+title: "chris-a-talbot.github.io"
+format:
+  html:
+    toc: true
+---
+

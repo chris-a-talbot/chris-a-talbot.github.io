@@ -1,0 +1,186 @@
+---
+title: "Chris Talbot | Curriculum Vitae"
+subtitle: "Lab Manager at the University of Michigan, Weber Lab"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    toc-expand: 2
+  pdf:
+    author: Chris Talbot
+css: cv.css
+format-links: [pdf]
+---
+
+# Summary
+
+I'm a first-generation academic
+
+# Academic Background
+
+## Education
+
+**B.S.** -- Ecology, Evolution, and Biodiversity [2024]{.cvdate} <br> 
+*University of Michigan* [GPA: 3.7]{.cvgpa}
+
+- Honors Thesis: [Patterns of floral color in communities of common Northeast American wildflowers](files/honors_thesis.pdf)
+- Honors Thesis Advisor: Marjorie Weber
+
+**A.G.S.** -- Computer Science & Mathematics [2020]{.cvdate} <br> 
+*Grand Rapids Community College* [GPA: 3.9]{.cvgpa}
+
+## Research
+
+**Lab Manager** -- Weber Lab [2023-Present]{.cvdate} <br>
+*University of Michigan, Ecology & Evolutionary Biology* <br>
+
+- Project:
+
+**Undergraduate Researcher** -- Weber Lab [2022-2023]{.cvdate} <br>
+*University of Michigan, Ecology & Evolutionary Biology* <br>
+
+- Project:
+
+**Undergraduate Researcher** -- Márquez Lab [2021-2022]{.cvdate} <br>
+*University of Michigan, Ecology & Evolutionary Biology* <br>
+
+- Project:
+
+## Teaching and Mentoring
+
+**Docent (Volunteer Educator)** [2023-Present]{.cvdate} <br>
+*Matthaei Botanical Gardens and Nichols Arboretum, Ann Arbor, MI* <br>
+
+**Forestry Event Supervisor (Volunteer Test Writer/ Proctor)** [2023-Present]{.cvdate} <br>
+*University of Michigan Science Olympiad* <br>
+
+**Director and Composer of Percussion** [2022-2023]{.cvdate} <br>
+*Lake Orion Community Schools, Lake Orion, MI* <br>
+
+**Transfer Student Peer Mentor** [2022-2023]{.cvdate} <br>
+*University of Michigan-LSA Transfer Bridges to the Humanities Program* <br>
+
+**Director and Composer of Percussion** [2019-2022]{.cvdate} <br>
+*Spring Lake Public Schools, Spring Lake, MI* <br>
+
+**Freelance Percussion Instructor and Composer** [2018-2022]{.cvdate} <br>
+*Various local high schools, Michigan* <br>
+
+**Professional Peer Tutor** -- Mathematics and Language Arts Tutoring Labs [2019-2020]{.cvdate} <br>
+*Grand Rapids Community College* <br>
+
+## Presentations
+
+**Poster**: TBD [*2024*]{.cvdate} <br>
+[Botanical Society of America -- 2024 Conference]{.small} 
+
+**Poster**: Patterns of floral color in communities of common Northeast American wildflowers 
+ [*2024*]{.cvdate} <br>
+[University of Michigan -- Program in Biology -- Undergraduate Research Poster Session]{.small}
+
+**Talk**: Do flowers of a color bloom together? [*2024*]{.cvdate} <br>
+[University of Michigan -- Department of Ecology and Evolutionary Biology]{.small}
+
+**Poster**: [Optimizing CRISPR-Cas9 genetic modification in *Phyllobates* poison-dart frogs](files/pres/poster_22apr22.pdf) [*2022*]{.cvdate} <br>
+[University of Michigan -- Undergraduate Research Opportunity Program -- Spring Symposium]{.small}
+    
+## Fellowships and Grants
+
+**Biological Station Student Fellow** [2023]{.cvdate} <br>
+*University of Michigan Biological Station* <br>
+
+**Student Research Grant** [2022, 2023]{.cvdate} <br>
+*University of Michigan Undergraduate Research Opportunity Program* <br>
+
+**Biomedical and Life Sciences Summer Fellow** [2022]{.cvdate} <br>
+*University of Michigan Undergraduate Research Opportunity Program* <br>
+
+**Community College Summer Institute Fellow** [2019]{.cvdate} <br>
+*University of Michigan-School of Information* <br>
+
+## Coursework
+
+## Honors and Awards
+
+**Phi Theta Kappa Honors Society** [2019]{.cvdate} <br>
+*Grand Rapids Community College* <br>
+
+**President's List** [2019]{.cvdate} <br>
+*Grand Rapids Community College* <br>
+
+# Professional Background
+
+## Skills
+
+### Computational
+
+| Skill | Proficiency | Skill | Proficiency|
+| ------- | --- | ------- | --- |
+| R | 4/5 | Git | 2/5 |
+| Python | 3/5 | Latex | 2/5 |
+| C++ | 3/5 | SQL | 2/5 |
+| Javascript | 2/5 | QGIS | 1/5 |
+
+### Laboratory & Field
+
+| Lab Skills | Field Skills |
+| ---- | ---- |
+| CRISPR-Cas9 microinjections | Plant identification |
+| PCR | Soil sampling |
+| Amphibian breeding and rearing | Plant propagation and care |
+
+### Research
+
+- Statistics and probability
+- Data analysis and visualization
+- Science communication
+
+### Professional
+
+- Education and lesson planning
+- Organizational administration
+- Volunteer coordination
+- Event organization
+
+## Languages
+
+**English** -- Native <br>
+**German** -- Intermediate (B2) *Reading, Writing, Speaking, and Listening* <br>
+**Spanish** -- Basic (A2) *Reading and Writing* <br>
+**Nishnaabemwin** -- Beginner (A1) *Reading and Listening* <br>
+
+## Work
+
+**Shift Leader** -- Biggby Coffee [2021-2022]{.cvdate} <br>
+*Grand Rapids, MI* <br>
+
+**Seasonal Retail Lead** -- John Ball Zoo [2019]{.cvdate} <br>
+*Grand Rapids, MI* <br>
+
+## Volunteering
+
+**Founder, President, and Volunteer** [2023-Present]{.cvdate} <br>
+*Students for Public Power @UM* <br>
+
+## Certifications
+
+**Certified Michigan Naturalist** [2024]{.cvdate} <br>
+*Michigan State University-College of Agriculture and Natural Resources Extension* <br>
+
+## Extracurriculars
+
+**Founding Member** [2023-Present]{.cvdate} <br>
+*University of Michigan Ecological Restoration Club* <br>
+
+**Member** [2020-2021]{.cvdate} <br>
+*University of Michigan Math Club* <br>
+
+**Vice President** [2019-2020]{.cvdate} <br>
+*Grand Rapids Community College Programmers* <br>
+
+**Ensemble Leader, Section Leader, and Snare Drummer** [2014-2020]{.cvdate} <br>
+*Genesis Percussion Ensemble* <br>
+    
+# References
+
+Available upon request -- contact me at chtalbot@umich.edu

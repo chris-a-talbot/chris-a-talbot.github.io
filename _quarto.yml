@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "chris-a-talbot.github.io"
+  navbar:
+    search: true
+    tools:
+      - icon: github
+        href: https://www.github.com/chris-a-talbot
+      - icon: twitter 
+        href: https://twitter.com/ 
+      - icon: linkedin
+        href: https://www.linkedin.com/in/chris-talbot
+    left:
+      - href: index.qmd
+        text: Home
+      - href: CV.qmd
+        text: CV
+  back-to-top-navigation: true
+  page-footer: 
+    left: "Copyright 2024, Chris Talbot" 
+    right: 
+      - icon: github
+        href: https://github.com/chris-a-talbot
+      - icon: twitter 
+        href: https://twitter.com/ 
+      - icon: linkedin
+        href: https://www.linkedin.com/in/chris-talbot
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+
+editor: visual
+
