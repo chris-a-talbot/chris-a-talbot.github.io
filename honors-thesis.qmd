@@ -1,1 +1,5 @@
+---
+title: Honors Thesis
+---
 
+[PDF](files/honors_thesis.pdf)
