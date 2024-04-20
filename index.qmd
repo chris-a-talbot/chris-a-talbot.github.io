@@ -12,7 +12,7 @@ about:
         href: https://github.com/chris-a-talbot
       - icon: twitter 
         text: Twitter (X)
-        href: https://twitter.com/ 
+        href: https://twitter.com/chris__talbot
       - icon: linkedin
         text: LinkedIn
         href: https://www.linkedin.com/in/chris-talbot
