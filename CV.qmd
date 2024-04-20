@@ -8,7 +8,7 @@ format:
     toc-expand: 2
     other-links:
       - text: "PDF"
-        href: "files/cv.pdf"
+        href: "files/CV.pdf"
 css: cv.css
 format-links: [pdf]
 ---
@@ -103,21 +103,25 @@ First-gen academic interested in patterns of ecological organization across spat
 **Founder, President, and Volunteer** [2023-Present]{.cvdate} <br> 
 *Students for Public Power @UM* <br>
 
-**Shift Leader** -- Biggby Coffee [2021-2022]{.cvdate} <br> 
-*Grand Rapids, MI* <br>
+**Shift Leader** [2021-2022]{.cvdate} <br> 
+*Biggby Coffee, Grand Rapids, MI* <br>
 
-**Seasonal Retail Lead** -- John Ball Zoo [2019]{.cvdate} <br> 
-*Grand Rapids, MI* <br>
+**Seasonal Retail Lead** [2019]{.cvdate} <br> 
+*John Ball Zoo, Grand Rapids, MI* <br>
 
 ## Presentations
 
-**Poster**: TBD [*2024*]{.cvdate} <br> [Botanical Society of America -- 2024 Conference]{.small}
+**Poster**: TBD [2024]{.cvdate} <br> 
+[Botanical Society of America -- 2024 Conference]{.small}
 
-**Poster**: Patterns of floral color in communities of common Northeast American wildflowers [*2024*]{.cvdate} <br> [UMich -- Program in Biology -- Undergraduate Research Poster Session]{.small}
+**Poster**: Patterns of floral color in communities of common Northeast American wildflowers [2024]{.cvdate} <br> 
+[UMich -- Program in Biology -- Undergraduate Research Poster Session]{.small}
 
-**Talk**: Do flowers of a color bloom together? [*2024*]{.cvdate} <br> [UMich -- Department of Ecology and Evolutionary Biology]{.small}
+**Talk**: Do flowers of a color bloom together? [2024]{.cvdate} <br> 
+[UMich -- Department of Ecology and Evolutionary Biology]{.small}
 
-**Poster**: [Optimizing CRISPR-Cas9 genetic modification in *Phyllobates* poison-dart frogs](files/pres/poster_22apr22.pdf) [*2022*]{.cvdate} <br> [UMich -- UROP -- Spring Symposium]{.small}
+**Poster**: [Optimizing CRISPR-Cas9 genetic modification in *Phyllobates* poison-dart frogs](files/pres/poster_22apr22.pdf) [2022]{.cvdate} <br> [
+UMich -- UROP -- Spring Symposium]{.small}
 
 ## Languages
 
