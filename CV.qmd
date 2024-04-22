@@ -10,7 +10,6 @@ format:
       - text: "PDF"
         href: "files/CV.pdf"
 css: cv.css
-format-links: [pdf]
 ---
 
 **Status**: Lab Technician at the University of Michigan, Weber Lab <br>
@@ -24,7 +23,7 @@ First-gen academic interested in patterns of ecological organization across spat
 
 ## Education
 
-**B.S.** -- Ecology, Evolution, and Biodiversity [2024]{.cvdate} <br> *University of Michigan (UMich)* [GPA: 3.7]{.cvgpa}
+**B.S.** -- Ecology, Evolution, and Biodiversity [2024]{.cvdate} <br> *University of Michigan (UMich)* [GPA: 3.74]{.cvgpa}
 
 -   Honors Thesis: [Patterns of floral color in communities of common Northeast American wildflowers](files/honors_thesis.pdf)
 -   Honors Thesis Advisor: Marjorie Weber
