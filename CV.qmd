@@ -35,9 +35,7 @@ First-gen academic interested in patterns of ecological organization across spat
 
 ## Research
 
-**Lab Technician** -- Bradburd Lab [2024-Present]{.cvdate} <br> *UMich-Ecology & Evolutionary Biology (EEB)* <br>
-
--   Project: TBD
+**Lab Technician** -- Bradburd Lab [Starting 2024]{.cvdate} <br> *UMich-Ecology & Evolutionary Biology (EEB)* <br>
 
 **Lab Technician** -- Weber Lab [2023-Present]{.cvdate} <br> *UMich-EEB* <br>
 
@@ -109,12 +107,6 @@ First-gen academic interested in patterns of ecological organization across spat
 *John Ball Zoo, Grand Rapids, MI* <br>
 
 ## Presentations
-
-**Poster**: TBD [2024]{.cvdate} <br> 
-[Botanical Society of America -- 2024 Conference]{.small}
-
-**Poster**: Patterns of floral color in communities of common Northeast American wildflowers [2024]{.cvdate} <br> 
-[UMich -- Program in Biology -- Undergraduate Research Poster Session]{.small}
 
 **Talk**: Do flowers of a color bloom together? [2024]{.cvdate} <br> 
 [UMich -- Department of Ecology and Evolutionary Biology]{.small}

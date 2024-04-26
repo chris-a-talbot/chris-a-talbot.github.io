@@ -10,6 +10,8 @@ format:
         href: "files/honors_thesis.pdf"
 ---
 
+\*\*This honors thesis was submit to the University of Michigan for honors recognition, but has not been peer-reviewed and is not considered publication-ready.
+
 [**Patterns of floral color in communities of common Northeast American wildflowers**]{.big}
 
 **Chris Talbot^1^, Marjorie Weber^1^**
@@ -84,7 +86,7 @@ We calculated evenness using Simpson’s Evenness (SE) via the function simpson_
 
 ![](images/dist1.png)
 
-![](images/dist 2.png)
+![](images/dist%202.png)
 
 [*Figure 3*]{.underline}*: a) In a community with lower evenness – more uneven with respect to floral color – distribution of species across color categories is dominated by a few key colors. This is consistent with patterns of convergent floral color, where species in a community tend towards particular colors. b) In a community with higher evenness – more even with respect to floral color – distribution of species across color categories is relatively even. This is consistent with patterns of divergent floral color, where flowers within a community tend to be distinct from those they co-occur with.*
 
