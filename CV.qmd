@@ -8,7 +8,8 @@ format:
     toc-expand: 2
     other-links:
       - text: "PDF"
-        href: "files/CV.pdf"
+        href: "https://chris-a-talbot.github.io/files/CV.pdf
+"
 css: cv.css
 ---
 
