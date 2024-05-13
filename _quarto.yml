@@ -18,8 +18,6 @@ website:
         text: Home
       - href: CV.qmd
         text: CV
-      - href: honors-thesis.qmd
-        text: Thesis
   back-to-top-navigation: true
   page-footer: 
     left: "Copyright 2024, Chris Talbot" 

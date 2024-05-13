@@ -14,7 +14,7 @@ css: cv.css
 
 **Status**: Lab Technician at the University of Michigan, Weber Lab <br>
 **Field**: Ecology & Evolutionary Biology <br>
-**Interests**: Macroecology, macroevolution, population genetics, machine learning <br>
+**Interests**: Evolutionary ecology, global change, genetics, machine learning <br>
 **Techs**: R, Python, C++, Git, LaTeX, SLiM
 
 ## Summary
@@ -25,8 +25,8 @@ First-gen academic interested in patterns of ecological organization across spat
 
 **B.S.** -- Ecology, Evolution, and Biodiversity [2024]{.cvdate} <br> *University of Michigan (UMich)* [GPA: 3.74]{.cvgpa}
 
+- Graduated with **Highest Honors** under the supervision of Marjorie Weber
 -   Honors Thesis: [Patterns of floral color in communities of common Northeast American wildflowers](files/honors_thesis.pdf)
--   Honors Thesis Advisor: Marjorie Weber
 -   Coursework: Statistics & probability, programming & data structures, genetics, macroevolution, ethnobotany
 
 **A.G.S.** -- Computer Science & Mathematics [2020]{.cvdate} <br> *Grand Rapids Community College (GRCC)* [GPA: 3.9]{.cvgpa}
@@ -37,11 +37,7 @@ First-gen academic interested in patterns of ecological organization across spat
 
 **Lab Technician** -- Bradburd Lab [Starting 2024]{.cvdate} <br> *UMich-Ecology & Evolutionary Biology (EEB)* <br>
 
-**Lab Technician** -- Weber Lab [2023-Present]{.cvdate} <br> *UMich-EEB* <br>
-
--   Project: "Investigating patterns of floral color across Northeast American wildflowers using citizen science data"
-
-**Undergraduate Researcher** -- Weber Lab [2022-2023]{.cvdate} <br> *UMich-EEB* <br>
+**Lab Technician** -- Weber Lab [2022-Present]{.cvdate} <br> *UMich-EEB* <br>
 
 -   Project: "Patterns of floral color in communities of common Northeast American wildflowers"
 
@@ -60,7 +56,7 @@ First-gen academic interested in patterns of ecological organization across spat
 **Biological Station Student Fellow** [2023]{.cvdate} <br> 
 *UMich Biological Station* [$1,680]{.cvgpa} <br>
 
-**Student Research Grant** [2022, 2023]{.cvdate} <br> 
+**Student Research Grant** [2022-2023]{.cvdate} <br> 
 *UMich Undergraduate Research Opportunity Program (UROP)* [$5,000]{.cvgpa} <br>
 
 **Biomedical and Life Sciences Summer Fellow** [2022]{.cvdate} <br> 
@@ -89,11 +85,8 @@ First-gen academic interested in patterns of ecological organization across spat
 **Freelance Percussion Instructor and Composer** [2018-2022]{.cvdate} <br> 
 *8 local high schools, Michigan* <br>
 
-**Professional Peer Tutor** -- GRCC Drop-In Tutoring Labs [2019-2020]{.cvdate} <br> 
+**Professional Peer Tutor** -- GRCC Drop-in Tutoring Labs - Mathematics, Language Arts  [2019-2020]{.cvdate} <br> 
 *GRCC* <br>
-
-- Mathematics Tutorial Lab -- arithmetic, algebra, pre-calculus, statistics, and calculus
-- Language Arts Tutorial Lab -- creative writing, academic writing, college admissions essays, resumes & CVs
 
 ## Professional & Service
 
@@ -108,11 +101,17 @@ First-gen academic interested in patterns of ecological organization across spat
 
 ## Presentations
 
-**Talk**: Do flowers of a color bloom together? [2024]{.cvdate} <br> 
-[UMich -- Department of Ecology and Evolutionary Biology]{.small}
+**Talk** [\@ Evolution 2024, Montreal, QC]{.small}
+[Upcoming 2024]{.cvdate} <br>
 
-**Poster**: [Optimizing CRISPR-Cas9 genetic modification in *Phyllobates* poison-dart frogs](files/pres/poster_22apr22.pdf) [2022]{.cvdate} <br> [
-UMich -- UROP -- Spring Symposium]{.small}
+**Poster** [\@ Botany 2024, Grand Rapids, MI]{.small}
+[Upcoming 2024]{.cvdate} <br>
+
+**Talk** [\@ UMich -- Department of Ecology and Evolutionary Biology]{.small} <br>
+"Do flowers of a color bloom together?" [2024]{.cvdate} <br> 
+
+**Poster** [\@ UMich -- UROP -- Spring Symposium]{.small} <br>
+[Optimizing CRISPR-Cas9 genetic modification in *Phyllobates* poison-dart frogs](files/pres/poster_22apr22.pdf) [2022]{.cvdate} <br>
 
 ## Languages
 
@@ -121,7 +120,6 @@ UMich -- UROP -- Spring Symposium]{.small}
 **German** -- Intermediate (B2) <br> 
 **C++** -- Intermediate (B2) <br>
 **Python** -- Intermediate (B1) <br>
-**Spanish** -- Basic (A2) <br>
 **Nishnaabemwin** -- Beginner (A1) <br>
 
 ## Certifications
@@ -129,13 +127,14 @@ UMich -- UROP -- Spring Symposium]{.small}
 **Certified Michigan Naturalist** [2024]{.cvdate} <br> *Michigan State University-College of Agriculture and Natural Resources Extension* <br>
 
 ## Professional Memberships
-**Society for the Study of Evolution** [2022-Present]{.cvdate}
+
+**Botanical Society of America** -- *Student Member* [2024-Present]{.cvdate}
+
+**Society for the Study of Evolution** -- *Student Member* [2022-Present]{.cvdate}
 
 ## Extracurriculars
 
 **Founding Member** [2023-Present]{.cvdate} <br> *UMich Ecological Restoration Club* <br>
-
-**Member** [2020-2022]{.cvdate} <br> *UMich Math Club* <br>
 
 **Vice President** [2019-2020]{.cvdate} <br> *GRCC Programmers* <br>
 
