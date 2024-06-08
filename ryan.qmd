@@ -1,0 +1,84 @@
+---
+title: "The Chronicles of Ryan's Inabilities"
+format: html
+---
+
+---
+title: "The Chronicles of Ryan's Inabilities"
+format: html
+---
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    header {
+        background-color: #444;
+        color: #fff;
+        padding: 1em 0;
+        text-align: center;
+    }
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2em;
+        background-color: #fff;
+    }
+    h1, h2, h3 {
+        text-align: center;
+    }
+    .section {
+        margin-bottom: 2em;
+    }
+    footer {
+        text-align: center;
+        padding: 1em 0;
+        background-color: #444;
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+</style>
+
+# The Chronicles of Ryan's Inabilities
+
+## Welcome to Ryan's Reality Check
+
+Meet Ryan Steinke - the man who could have it all but chooses to do nothing. Dive into the chronicles of missed opportunities and wasted potential.
+
+## Who is Ryan Steinke?
+
+Ryan Steinke, a talented individual from Fishers, Indiana, graduated from Rockford High School and attended Testicle Tech University. Known for his skills in the marching band and rock climbing, Ryan has all the potential to succeed but chooses to remain stagnant.
+
+## The Wasted Talents
+
+### Snare Drum Prodigy
+
+Ryan's time in the marching band at Testicle Tech University was his peak. Sadly, his musical talents have done nothing to propel him into a successful career.
+
+### Rock Climbing Enthusiast
+
+While Ryan enjoys climbing rocks, this hobby does little to help him climb the ladder of success. His energy would be better spent finding a job.
+
+### Professional Couch Potato
+
+Ryan spends most of his time lounging around, reminiscing about his past achievements instead of making new ones. His lack of ambition is truly disappointing.
+
+## Messages from Concerned Friends
+
+### From a Concerned Friend
+
+Ryan, you’ve always been one of the most talented and capable people around. But seriously, when are you going to stop being a couch potato and get a job? It’s pretty sad that your crowning achievement seems to be playing snare drum in the marching band at Testicle Tech University. If only employers were looking for professional band nerds, right?
+
+### Another Voice of Reason
+
+Remember when you used to proudly wear that marching band uniform and thought you were the coolest thing ever? Well, newsflash: it’s time to trade in your drumsticks for something a little more practical. Watching you waste your potential is almost as painful as being downwind from you after one of your climbing sessions. Soap and water are your friends, Ryan.
+
+<footer>
+    <p>&copy; 2024 The Chronicles of Ryan's Inabilities. All rights reserved.</p>
+</footer>
