@@ -1,0 +1,37 @@
+---
+title: "Chris Talbot | Botany 2024"
+subtitle: "Do flowers of a color bloom together?"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    toc-expand: 2
+css: cv.css
+---
+
+*Get in touch!* Contact information is at the bottom of this page. I'm currently seeking potential PhD advisors in the realm of evolutionary ecology, global change biology, and/or spatial population genetics.
+
+# Presentation schedule
+
+I'll be presenting my work at the following times:
+
+- **???, June ??th**
+  - ??-??: Poster session (View the poster here!)
+
+- **???, June ??th**
+  - ??-??: Lightning talk (View the slides here!)
+
+# Supplemental information
+
+
+
+# Contact info
+
+View my CV [here!](CV.html)
+
+- **Email**: [chtalbot@umich.edu](chtalbot@umich.edu)
+- **Phone**: 1 (269) 751-9444
+- **Twitter**: [@chris__talbot](https://twitter.com/chris__talbot)
+- **LinkedIn**: [@chris-talbot](https://www.linkedin.com/in/chris-talbot/)
+- **GitHub**: [@chris-a-talbot](https://github.com/chris-a-talbot)
+- **BlueSky**: [@chtalbot](https://bsky.app/profile/chtalbot.bsky.social)
