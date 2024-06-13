@@ -182,12 +182,20 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul class="collapse">
+  <ul>
   <li><a href="#presentations" id="toc-presentations" class="nav-link active" data-scroll-target="#presentations">Presentations</a></li>
-  <li><a href="#supplemental-information" id="toc-supplemental-information" class="nav-link" data-scroll-target="#supplemental-information">Supplemental information</a></li>
+  <li><a href="#supplemental-information" id="toc-supplemental-information" class="nav-link" data-scroll-target="#supplemental-information">Supplemental information</a>
+  <ul>
+  <li><a href="#q1-how-was-the-floral-color-data-collected" id="toc-q1-how-was-the-floral-color-data-collected" class="nav-link" data-scroll-target="#q1-how-was-the-floral-color-data-collected"><strong>Q1</strong>: How was the <strong>floral color</strong> data collected?</a></li>
+  <li><a href="#q2-how-was-the-range-data-collected" id="toc-q2-how-was-the-range-data-collected" class="nav-link" data-scroll-target="#q2-how-was-the-range-data-collected"><strong>Q2</strong>: How was the <strong>range</strong> data collected?</a></li>
+  <li><a href="#q3-where-is-the-phylogeny-from" id="toc-q3-where-is-the-phylogeny-from" class="nav-link" data-scroll-target="#q3-where-is-the-phylogeny-from"><strong>Q3</strong>: Where is the <strong>phylogeny</strong> from?</a></li>
+  <li><a href="#q4-how-was-co-occurrence-calculated" id="toc-q4-how-was-co-occurrence-calculated" class="nav-link" data-scroll-target="#q4-how-was-co-occurrence-calculated"><strong>Q4</strong>: How was <strong>co-occurrence</strong> calculated?</a></li>
+  <li><a href="#q5-how-was-floral-color-dissimilarity-calculated" id="toc-q5-how-was-floral-color-dissimilarity-calculated" class="nav-link" data-scroll-target="#q5-how-was-floral-color-dissimilarity-calculated"><strong>Q5</strong>: How was floral <strong>color (dis)similarity</strong> calculated?</a></li>
+  <li><a href="#q6-what-about-pollinator-vision-the-uv-spectrum" id="toc-q6-what-about-pollinator-vision-the-uv-spectrum" class="nav-link" data-scroll-target="#q6-what-about-pollinator-vision-the-uv-spectrum"><strong>Q6</strong>: What about <strong>pollinator vision</strong>? The UV spectrum?</a></li>
+  </ul></li>
   <li><a href="#fun-figures" id="toc-fun-figures" class="nav-link" data-scroll-target="#fun-figures">Fun figures</a></li>
   <li><a href="#contact-info" id="toc-contact-info" class="nav-link" data-scroll-target="#contact-info">Contact info</a></li>
   </ul>
@@ -243,28 +251,40 @@ window.Quarto = {
 </section>
 <section id="supplemental-information" class="level1">
 <h1>Supplemental information</h1>
-<p><strong>Q1: How was the floral color data collected?</strong></p>
+<section id="q1-how-was-the-floral-color-data-collected" class="level4">
+<h4 class="anchored" data-anchor-id="q1-how-was-the-floral-color-data-collected"><strong>Q1</strong>: How was the <strong>floral color</strong> data collected?</h4>
 <p><strong>A</strong>: A <strong>k-means clustering</strong> algorithm, hand-trained for each species using a custom GUI, ran on up to 100 research-grade images from iNaturalist. Coded in Python, and adapted from <a href="https://doi.org/10.1002/aps3.11505">Perez-Udell et al., 2019</a>. Find the GUI and algorithm on my GitHub <a href="https://github.com/chris-a-talbot/pyflocolor">here</a>. Floral color data is initially calculated as the average color value in HSV space for the most common floral color of a given species.</p>
-<p><strong>Q2: How was the range data collected?</strong></p>
+</section>
+<section id="q2-how-was-the-range-data-collected" class="level4">
+<h4 class="anchored" data-anchor-id="q2-how-was-the-range-data-collected"><strong>Q2</strong>: How was the <strong>range</strong> data collected?</h4>
 <p><strong>A</strong>: <strong>GBIF</strong> occurrences, 1960 and later, isolated to North America, and filtered to exclude erroneous occurrences of various sorts. Representing North America as a raster of 10km<sup>2</sup> cells, cells were populated with presence data based on the existence of an occurrence within that cell. This range format exhibits similar accuracy to convex hulls and buffered points, while offering higher computational speeds.</p>
-<p><strong>Q3: Where is the phylogeny from?</strong></p>
+</section>
+<section id="q3-where-is-the-phylogeny-from" class="level4">
+<h4 class="anchored" data-anchor-id="q3-where-is-the-phylogeny-from"><strong>Q3</strong>: Where is the <strong>phylogeny</strong> from?</h4>
 <p><strong>A</strong>: <a href="https://doi.org/10.1002/ajb2.1019">Smith &amp; Brown, 2018</a></p>
-<p><strong>Q4: How was co-occurrence calculated?</strong></p>
+</section>
+<section id="q4-how-was-co-occurrence-calculated" class="level4">
+<h4 class="anchored" data-anchor-id="q4-how-was-co-occurrence-calculated"><strong>Q4</strong>: How was <strong>co-occurrence</strong> calculated?</h4>
 <p><strong>A</strong>: Frequency of co-occurrence between two species was calculated using the <strong>overlap</strong> (Szymkiewicz–Simpson) <strong>coefficient</strong>, calculated from our cell-based presence data as follows, where <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are the set of cells occupied by species <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> respectively:</p>
 <p><span class="math display">\[
 overlap_{a,b} = \frac{|A \cap B|}{min(|A|, |B|)}
 \]</span></p>
-<p><strong>Q5: How was floral color (dis)similarity calculated?</strong></p>
+</section>
+<section id="q5-how-was-floral-color-dissimilarity-calculated" class="level4">
+<h4 class="anchored" data-anchor-id="q5-how-was-floral-color-dissimilarity-calculated"><strong>Q5</strong>: How was floral <strong>color (dis)similarity</strong> calculated?</h4>
 <p><strong>A</strong>: Floral color for each species was transformed into HSL space. Floral color dissimilarity was calculated as the Euclidean distance between colors in HSL space:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>color_dis <span class="ot">&lt;-</span> <span class="fu">dist</span>(hsl_data, <span class="at">method =</span> <span class="st">"euclidean"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Floral color similarity was calculated for each pair of species <span class="math inline">\(a,b\)</span> as <span class="math inline">\(max(color\_dis) - color\_dis_{a,b}\)</span>.</p>
-<p><strong>Q6: What about pollinator vision? The UV spectrum?</strong></p>
+</section>
+<section id="q6-what-about-pollinator-vision-the-uv-spectrum" class="level4">
+<h4 class="anchored" data-anchor-id="q6-what-about-pollinator-vision-the-uv-spectrum"><strong>Q6</strong>: What about <strong>pollinator vision</strong>? The UV spectrum?</h4>
 <p><strong>A</strong>: Floral color data is restricted to camera color vision due to the number of species for which color data was required. Exploring this pattern at such large scales using spectral data would be an exciting avenue for future research.</p>
 <p><em>[Coming soon: figures on relatedness~overlap, and any other relationships that may be of interest from the current data]</em></p>
 </section>
+</section>
 <section id="fun-figures" class="level1">
 <h1>Fun figures</h1>
-<p><em>[Coming soon: GIF of floral color across range through time here]</em></p>
+<p><em>[Coming soon: GIF of floral color across range through time ]</em></p>
 </section>
 <section id="contact-info" class="level1">
 <h1>Contact info</h1>
