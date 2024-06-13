@@ -69,7 +69,6 @@ Floral color similarity was calculated for each pair of species $a,b$ as $max(co
 View my CV [here!](CV.html)
 
 -   **Email**: [chtalbot\@umich.edu](chtalbot@umich.edu)
--   **Phone**: 1 (269) 751-9444
 -   **GitHub**: [\@chris-a-talbot](https://github.com/chris-a-talbot)
 
 Social media:
