@@ -16,7 +16,7 @@ css: cv.css
     -   [View the poster here!](botany2024poster.html)
 -   **Lightning Talk: Wednesday, June 19th**
     -   1:40pm-1:42pm, Gallery Overlook A – Germinating Ideas
-    -   View the slides here! *\[Coming soon\]*
+    -   [View the slides here!]("files/botany_talk.pdf")
 
 Be sure to catch the rest of the Weber Lab at Botany, too! Thanks to Rosy for this awesome flyer.
 
