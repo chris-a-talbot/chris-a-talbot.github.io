@@ -274,7 +274,10 @@ overlap_{a,b} = \frac{|A \cap B|}{min(|A|, |B|)}
 <h4 class="anchored" data-anchor-id="q5-how-was-floral-color-dissimilarity-calculated"><strong>Q5</strong>: How was floral <strong>color (dis)similarity</strong> calculated?</h4>
 <p><strong>A</strong>: Floral color for each species was transformed into HSL space. Floral color dissimilarity was calculated as the <strong>Euclidean distance</strong> between colors in <strong>HSL</strong> space:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>color_dis <span class="ot">&lt;-</span> <span class="fu">dist</span>(hsl_data, <span class="at">method =</span> <span class="st">"euclidean"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Floral color similarity was calculated for each pair of species <span class="math inline">\((a,b)\)</span> as <span class="math inline">\(max(color\_dis) - color\_dis_{a,b}\)</span>.</p>
+<p>Floral color similarity was calculated for each pair of species <span class="math inline">\((a,b)\)</span> as:</p>
+<p><span class="math display">\[
+similarity_{a,b} = max(color\_dis) - color\_dis_{a,b}
+\]</span></p>
 </section>
 <section id="q6-what-about-pollinator-vision-the-uv-spectrum" class="level4">
 <h4 class="anchored" data-anchor-id="q6-what-about-pollinator-vision-the-uv-spectrum"><strong>Q6</strong>: What about <strong>pollinator vision</strong>? The UV spectrum?</h4>
@@ -284,7 +287,7 @@ overlap_{a,b} = \frac{|A \cap B|}{min(|A|, |B|)}
 </section>
 <section id="fun-figures" class="level1">
 <h1>Fun figures</h1>
-<p><em>[Coming soon: GIF of floral color across range through time ]</em></p>
+<p><em>[Coming soon: GIF of floral color across range through time]</em></p>
 </section>
 <section id="contact-info" class="level1">
 <h1>Contact info</h1>

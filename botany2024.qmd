@@ -52,7 +52,11 @@ $$
 color_dis <- dist(hsl_data, method = "euclidean")
 ```
 
-Floral color similarity was calculated for each pair of species $(a,b)$ as $max(color\_dis) - color\_dis_{a,b}$.
+Floral color similarity was calculated for each pair of species $(a,b)$ as:
+
+$$
+similarity_{a,b} = max(color\_dis) - color\_dis_{a,b}
+$$
 
 #### **Q6**: What about **pollinator vision**? The UV spectrum?
 
@@ -62,7 +66,7 @@ Floral color similarity was calculated for each pair of species $(a,b)$ as $max(
 
 # Fun figures
 
-*\[Coming soon: GIF of floral color across range through time \]*
+*\[Coming soon: GIF of floral color across range through time\]*
 
 # Contact info
 
