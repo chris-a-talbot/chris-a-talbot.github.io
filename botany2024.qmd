@@ -18,7 +18,7 @@ css: cv.css
     -   1:40pm-1:42pm, Gallery Overlook A – Germinating Ideas
     -   View the slides here! *\[Coming soon\]*
 
-Be sure to catch the rest of the Weber Lab at Botany, too!
+Be sure to catch the rest of the Weber Lab at Botany, too! Thanks to Rosy for this awesome flyer.
 
 ![](images/weberlabatbotany.png){fig-align="center"}
 
