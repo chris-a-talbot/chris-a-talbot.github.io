@@ -1,6 +1,5 @@
 ---
-title: "Chris Talbot | Botany 2024"
-subtitle: "Do flowers of a color bloom together?"
+title: "Chris @ Botany 2024"
 format:
   html:
     toc: true
@@ -9,29 +8,33 @@ format:
 css: cv.css
 ---
 
-*Get in touch!* Contact information is at the bottom of this page. I'm currently seeking potential PhD advisors in the realm of evolutionary ecology, global change biology, and/or spatial population genetics.
+![](images/botany2024.png){fig-align="center"}
 
-# Presentation schedule
+# Presentations
 
-I'll be presenting my work at the following times:
+-   **Poster: Monday, June 17th**
+    -   6:15pm-7:00pm, Exhibit Hall – All Society Poster Session
+    -   [View the poster here!](botany2024poster.html)
+-   **Lightning Talk: Wednesday, June 19th**
+    -   1:40pm-1:42pm, Gallery Overlook A – Germinating Ideas
+    -   View the slides here! \[Coming soon\]
 
-- **???, June ??th**
-  - ??-??: Poster session (View the poster here!)
+Be sure to catch the rest of the Weber Lab at Botany, too!
 
-- **???, June ??th**
-  - ??-??: Lightning talk (View the slides here!)
+![](images/weberlabatbotany.png){fig-align="center"}
 
 # Supplemental information
-
-
 
 # Contact info
 
 View my CV [here!](CV.html)
 
-- **Email**: [chtalbot@umich.edu](chtalbot@umich.edu)
-- **Phone**: 1 (269) 751-9444
-- **Twitter**: [@chris__talbot](https://twitter.com/chris__talbot)
-- **LinkedIn**: [@chris-talbot](https://www.linkedin.com/in/chris-talbot/)
-- **GitHub**: [@chris-a-talbot](https://github.com/chris-a-talbot)
-- **BlueSky**: [@chtalbot](https://bsky.app/profile/chtalbot.bsky.social)
+-   **Email**: [chtalbot\@umich.edu](chtalbot@umich.edu)
+-   **Phone**: 1 (269) 751-9444
+-   **GitHub**: [\@chris-a-talbot](https://github.com/chris-a-talbot)
+
+Social media:
+
+-   **Twitter**: [\@chris\_\_talbot](https://twitter.com/chris__talbot)
+-   **LinkedIn**: [\@chris-talbot](https://www.linkedin.com/in/chris-talbot/)
+-   **BlueSky**: [\@chtalbot](https://bsky.app/profile/chtalbot.bsky.social)

@@ -25,3 +25,18 @@
 .small {
   font-size: 0.9em;
 }
+
+details {
+  color: black
+}
+
+
+details > summary {
+  width: 15em;
+  border: none;
+  cursor: pointer;
+}
+
+h1.title {
+    text-align: center;
+}
