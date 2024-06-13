@@ -46,17 +46,17 @@ $$
 
 #### **Q5**: How was floral **color (dis)similarity** calculated?
 
-**A**: Floral color for each species was transformed into HSL space. Floral color dissimilarity was calculated as the Euclidean distance between colors in HSL space:
+**A**: Floral color for each species was transformed into HSL space. Floral color dissimilarity was calculated as the **Euclidean distance** between colors in **HSL** space:
 
 ``` R
 color_dis <- dist(hsl_data, method = "euclidean")
 ```
 
-Floral color similarity was calculated for each pair of species $a,b$ as $max(color\_dis) - color\_dis_{a,b}$.
+Floral color similarity was calculated for each pair of species $(a,b)$ as $max(color\_dis) - color\_dis_{a,b}$.
 
 #### **Q6**: What about **pollinator vision**? The UV spectrum?
 
-**A**: Floral color data is restricted to camera color vision due to the number of species for which color data was required. Exploring this pattern at such large scales using spectral data would be an exciting avenue for future research.
+**A**: Floral color data is restricted to **camera color vision** due to the number of species for which color data was required. Exploring this pattern at such large scales using spectral data would be an exciting avenue for future research.
 
 *\[Coming soon: figures on relatedness\~overlap, and any other relationships that may be of interest from the current data\]*
 
