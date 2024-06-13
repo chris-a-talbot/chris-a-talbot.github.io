@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -69,6 +103,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="cv.css">
@@ -125,6 +188,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#presentations" id="toc-presentations" class="nav-link active" data-scroll-target="#presentations">Presentations</a></li>
   <li><a href="#supplemental-information" id="toc-supplemental-information" class="nav-link" data-scroll-target="#supplemental-information">Supplemental information</a></li>
+  <li><a href="#fun-figures" id="toc-fun-figures" class="nav-link" data-scroll-target="#fun-figures">Fun figures</a></li>
   <li><a href="#contact-info" id="toc-contact-info" class="nav-link" data-scroll-target="#contact-info">Contact info</a></li>
   </ul>
 </nav>
@@ -167,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Lightning Talk: Wednesday, June 19th</strong>
 <ul>
 <li>1:40pm-1:42pm, Gallery Overlook A – Germinating Ideas</li>
-<li>View the slides here! [Coming soon]</li>
+<li>View the slides here! <em>[Coming soon]</em></li>
 </ul></li>
 </ul>
 <p>Be sure to catch the rest of the Weber Lab at Botany, too!</p>
@@ -179,6 +243,28 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="supplemental-information" class="level1">
 <h1>Supplemental information</h1>
+<p><strong>Q1: How was the floral color data collected?</strong></p>
+<p><strong>A</strong>: A <strong>k-means clustering</strong> algorithm, hand-trained for each species using a custom GUI, ran on up to 100 research-grade images from iNaturalist. Coded in Python, and adapted from <a href="https://doi.org/10.1002/aps3.11505">Perez-Udell et al., 2019</a>. Find the GUI and algorithm on my GitHub <a href="https://github.com/chris-a-talbot/pyflocolor">here</a>. Floral color data is initially calculated as the average color value in HSV space for the most common floral color of a given species.</p>
+<p><strong>Q2: How was the range data collected?</strong></p>
+<p><strong>A</strong>: <strong>GBIF</strong> occurrences, 1960 and later, isolated to North America, and filtered to exclude erroneous occurrences of various sorts. Representing North America as a raster of 10km<sup>2</sup> cells, cells were populated with presence data based on the existence of an occurrence within that cell. This range format exhibits similar accuracy to convex hulls and buffered points, while offering higher computational speeds.</p>
+<p><strong>Q3: Where is the phylogeny from?</strong></p>
+<p><strong>A</strong>: <a href="https://doi.org/10.1002/ajb2.1019">Smith &amp; Brown, 2018</a></p>
+<p><strong>Q4: How was co-occurrence calculated?</strong></p>
+<p><strong>A</strong>: Frequency of co-occurrence between two species was calculated using the <strong>overlap</strong> (Szymkiewicz–Simpson) <strong>coefficient</strong>, calculated from our cell-based presence data as follows, where <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are the set of cells occupied by species <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> respectively:</p>
+<p><span class="math display">\[
+overlap_{a,b} = \frac{|A \cap B|}{min(|A|, |B|)}
+\]</span></p>
+<p><strong>Q5: How was floral color (dis)similarity calculated?</strong></p>
+<p><strong>A</strong>: Floral color for each species was transformed into HSL space. Floral color dissimilarity was calculated as the Euclidean distance between colors in HSL space:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>color_dis <span class="ot">&lt;-</span> <span class="fu">dist</span>(hsl_data, <span class="at">method =</span> <span class="st">"euclidean"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Floral color similarity was calculated for each pair of species <span class="math inline">\(a,b\)</span> as <span class="math inline">\(max(color\_dis) - color\_dis_{a,b}\)</span>.</p>
+<p><strong>Q6: What about pollinator vision? The UV spectrum?</strong></p>
+<p><strong>A</strong>: Floral color data is restricted to camera color vision due to the number of species for which color data was required. Exploring this pattern at such large scales using spectral data would be an exciting avenue for future research.</p>
+<p><em>[Coming soon: figures on relatedness~overlap, and any other relationships that may be of interest from the current data]</em></p>
+</section>
+<section id="fun-figures" class="level1">
+<h1>Fun figures</h1>
+<p><em>[Coming soon: GIF of floral color across range through time here]</em></p>
 </section>
 <section id="contact-info" class="level1">
 <h1>Contact info</h1>
