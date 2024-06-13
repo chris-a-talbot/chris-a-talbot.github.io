@@ -13,7 +13,7 @@ css: cv.css
 # Presentations
 
 -   **Poster: Monday, June 17th**
-    -   6:15pm-7:00pm, Exhibit Hall – All Society Poster Session
+    -   6:15pm-7:00pm, Exhibit Hall, #102 – All Society Poster Session
     -   [View the poster here!](botany2024poster.html)
 -   **Lightning Talk: Wednesday, June 19th**
     -   1:40pm-1:42pm, Gallery Overlook A – Germinating Ideas
