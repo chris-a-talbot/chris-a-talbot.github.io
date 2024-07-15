@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "chris-a-talbot.github.io",
     "section": "",
-    "text": "First-gen academic interested in patterns of ecological organization across spatiotemporal scales, the evolutionary drivers of those patterns, and how those patterns respond to global change. Fascinated with modern methods for evaluating ecological & evolutionary processes, particularly using community science and machine learning."
+    "text": "First-gen academic with years of experience in the lab, field, and behind a screen. Interested in patterns of ecological organization across spatiotemporal scales, the evolutionary drivers of those patterns, and how those patterns respond to global change. Fascinated with emerging methods for evaluating complex systems, including community science and machine learning."
   },
   {
     "objectID": "CV.html",
@@ -39,7 +39,7 @@
     "href": "CV.html#presentations",
     "title": "Chris Talbot | CV",
     "section": "Presentations",
-    "text": "Presentations\nTalk @ Evolution 2024, Montreal, QC Upcoming 2024 \nPoster @ Botany 2024, Grand Rapids, MI Upcoming 2024 \nTalk @ UMich – Department of Ecology and Evolutionary Biology  “Do flowers of a color bloom together?” 2024 \nPoster @ UMich – UROP – Spring Symposium  Optimizing CRISPR-Cas9 genetic modification in Phyllobates poison-dart frogs 2022"
+    "text": "Presentations\nTalk @ Evolution 2024, Montreal, QC Upcoming 2024 \nPoster @ Evolution 2024, Montreal, QC Upcoming 2024 \nLightning Talk @ Botany 2024, Grand Rapids, MI  Do flowers of a color bloom together? (Lightning Talk) 2024 \nPoster @ Botany 2024, Grand Rapids, MI  Do flowers of a color bloom together? (Poster V.1) 2024 \nTalk @ UMich – Department of Ecology and Evolutionary Biology  Do flowers of a color bloom together? (Talk V.1) 2024 \nPoster @ UMich – UROP – Spring Symposium  Optimizing CRISPR-Cas9 genetic modification in Phyllobates poison-dart frogs 2022"
   },
   {
     "objectID": "CV.html#fellowships-and-grants",
@@ -123,7 +123,7 @@
     "href": "CV.html#summary",
     "title": "Chris Talbot | CV",
     "section": "Summary",
-    "text": "Summary\nFirst-gen academic interested in patterns of ecological organization across spatiotemporal scales, the evolutionary drivers of those patterns, and how those patterns respond to global change. Fascinated with modern methods for evaluating ecological & evolutionary processes, particularly using citizen science and machine learning."
+    "text": "Summary\nFirst-gen academic with years of experience in the lab, field, and behind a screen. Interested in patterns of ecological organization across spatiotemporal scales, the evolutionary drivers of those patterns, and how those patterns respond to global change. Fascinated with emerging methods for evaluating complex systems, including community science and machine learning."
   },
   {
     "objectID": "CV.html#publications",
@@ -137,7 +137,7 @@
     "href": "CV.html#professional-service",
     "title": "Chris Talbot | CV",
     "section": "Professional & Service",
-    "text": "Professional & Service\nFounder, President, and Volunteer 2023-Present  Students for Public Power @UM \nShift Leader 2021-2022  Biggby Coffee, Grand Rapids, MI \nSeasonal Retail Lead 2019  John Ball Zoo, Grand Rapids, MI"
+    "text": "Professional & Service\nPercussionist [2024-Present]  Straits of Mackinac Concert Band, Mackinaw City, MI \nFounder, President, and Volunteer 2023-Present  Students for Public Power @UM \nShift Leader 2021-2022  Biggby Coffee, Grand Rapids, MI \nSeasonal Retail Lead 2019  John Ball Zoo, Grand Rapids, MI"
   },
   {
     "objectID": "contact.html",
@@ -299,5 +299,12 @@
     "title": "Chris @ Botany 2024 | Poster",
     "section": "",
     "text": "PDF version here!\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "evolution2024.html",
+    "href": "evolution2024.html",
+    "title": "Chris @ Evolution 2024",
+    "section": "",
+    "text": "Presentations\n\nPoster: Saturday, July 27th\n\n5:45pm-8:15pm, 220de, Poster Board F20 – Poster Session 1\nView the poster here!\n\nTalk: Wednesday, June 19th\n\n3:00pm-3:15pm, 523AB – Ecology III\nView the slides here!\n\n\n\n\nSupplemental information\n\nQ1: How was the floral color data collected?\nA: A k-means clustering algorithm, hand-trained for each species using a custom GUI, ran on up to 100 research-grade images from iNaturalist. Coded in Python, and adapted from Perez-Udell et al., 2019. Find the GUI and algorithm on my GitHub here. Floral color data is initially calculated as the average color value in HSV space for the most common floral color of a given species.\n\n\nQ2: How was the range data collected?\nA: GBIF occurrences, 1960 and later, isolated to North America, and filtered to exclude erroneous occurrences of various sorts. Representing North America as a raster of 10km2 cells, cells were populated with presence data based on the existence of an occurrence within that cell. This range format exhibits similar accuracy to convex hulls and buffered points, while offering higher computational speeds.\n\n\nQ3: Where is the phylogeny from?\nA: Smith & Brown, 2018\n\n\nQ4: How was floral color (dis)similarity calculated?\nA: Floral color for each species was transformed into HSL space. Floral color dissimilarity was calculated as the Euclidean distance between colors in HSL space:\ncolor_dis &lt;- dist(hsl_data, method = \"euclidean\")\nFloral color similarity was calculated for each pair of species \\((a,b)\\) as:\n\\[\nsimilarity_{a,b} = max(color\\_dis) - color\\_dis_{a,b}\n\\]\n\n\nQ5: What about pollinator vision? The UV spectrum?\nA: Floral color data is restricted to camera color vision due to the number of species for which color data was required. Exploring this pattern at such large scales using spectral data would be an exciting avenue for future research.\n[Coming soon: figures on relatedness~overlap, and any other relationships that may be of interest from the current data]\n\n\n\nFun figures\n[Coming soon: GIF of floral color across range through time]\n\n\nContact info\nView my CV here!\n\nEmail: chtalbot@umich.edu\nGitHub: @chris-a-talbot\n\nSocial media:\n\nTwitter: @chris__talbot\nLinkedIn: @chris-talbot\nBlueSky: @chtalbot\n\n\n\n\n\n Back to top"
   }
 ]

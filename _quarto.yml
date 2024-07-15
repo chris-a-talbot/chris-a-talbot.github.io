@@ -20,6 +20,8 @@ website:
         text: CV
       - href: botany2024.qmd
         text: Botany 2024
+      - href: evolution2024.qmd
+        text: Evolution 2024
   back-to-top-navigation: true
   page-footer: 
     left: "Copyright 2024, Chris Talbot" 

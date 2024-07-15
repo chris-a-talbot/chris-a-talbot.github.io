@@ -16,7 +16,7 @@ css: cv.css
 
 ## Summary
 
-First-gen academic interested in patterns of ecological organization across spatiotemporal scales, the evolutionary drivers of those patterns, and how those patterns respond to global change. Fascinated with modern methods for evaluating ecological & evolutionary processes, particularly using citizen science and machine learning.
+First-gen academic with years of experience in the lab, field, and behind a screen. Interested in patterns of ecological organization across spatiotemporal scales, the evolutionary drivers of those patterns, and how those patterns respond to global change. Fascinated with emerging methods for evaluating complex systems, including community science and machine learning.
 
 ## Education
 
@@ -76,6 +76,8 @@ First-gen academic interested in patterns of ecological organization across spat
 
 ## Professional & Service
 
+**Percussionist** [2024-Present] <br> *Straits of Mackinac Concert Band, Mackinaw City, MI* <br>
+
 **Founder, President, and Volunteer** [2023-Present]{.cvdate} <br> *Students for Public Power @UM* <br>
 
 **Shift Leader** [2021-2022]{.cvdate} <br> *Biggby Coffee, Grand Rapids, MI* <br>
@@ -86,11 +88,19 @@ First-gen academic interested in patterns of ecological organization across spat
 
 **Talk** [\@ Evolution 2024, Montreal, QC]{.small} [Upcoming 2024]{.cvdate} <br>
 
-**Poster** [\@ Botany 2024, Grand Rapids, MI]{.small} [Upcoming 2024]{.cvdate} <br>
+**Poster** [\@ Evolution 2024, Montreal, QC]{.small} [Upcoming 2024]{.cvdate} <br>
 
-**Talk** [\@ UMich -- Department of Ecology and Evolutionary Biology]{.small} <br> "Do flowers of a color bloom together?" [2024]{.cvdate} <br>
+**Lightning Talk** [\@ Botany 2024, Grand Rapids, MI]{.small} <br>
+[Do flowers of a color bloom together? (Lightning Talk)]() [2024]{.cvdate} <br>
 
-**Poster** [\@ UMich -- UROP -- Spring Symposium]{.small} <br> [Optimizing CRISPR-Cas9 genetic modification in *Phyllobates* poison-dart frogs](files/pres/poster_22apr22.pdf) [2022]{.cvdate} <br>
+**Poster** [\@ Botany 2024, Grand Rapids, MI]{.small} <br>
+[Do flowers of a color bloom together? (Poster V.1)]() [2024]{.cvdate} <br>
+
+**Talk** [\@ UMich -- Department of Ecology and Evolutionary Biology]{.small} <br> 
+Do flowers of a color bloom together? (Talk V.1) [2024]{.cvdate} <br>
+
+**Poster** [\@ UMich -- UROP -- Spring Symposium]{.small} <br> 
+[Optimizing CRISPR-Cas9 genetic modification in *Phyllobates* poison-dart frogs](files/pres/poster_22apr22.pdf) [2022]{.cvdate} <br>
 
 ## Languages
 
