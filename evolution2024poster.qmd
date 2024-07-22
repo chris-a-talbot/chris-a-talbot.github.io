@@ -1,5 +1,5 @@
 ---
-title: "Chris @ Botany 2024 | Poster"
+title: "Chris @ Evolution 2024 | Poster"
 format:
   html:
     toc: true
@@ -10,4 +10,4 @@ css: cv.css
 
 [PDF version here!](files/Evolution_2024_Poster.pdf)
 
-![](images/Artboard 1.png)
+![](images/Artboard%201.png)

@@ -76,7 +76,7 @@ First-gen academic with years of experience in the lab, field, and behind a scre
 
 ## Professional & Service
 
-**Percussionist** [2024-Present] <br> *Straits of Mackinac Concert Band, Mackinaw City, MI* <br>
+**Percussionist** [2024-Present]{.cvdate} <br> *Straits of Mackinac Concert Band, Mackinaw City, MI* <br>
 
 **Founder, President, and Volunteer** [2023-Present]{.cvdate} <br> *Students for Public Power @UM* <br>
 
@@ -88,13 +88,14 @@ First-gen academic with years of experience in the lab, field, and behind a scre
 
 **Talk** [\@ Evolution 2024, Montreal, QC]{.small} [Upcoming 2024]{.cvdate} <br>
 
-**Poster** [\@ Evolution 2024, Montreal, QC]{.small} [Upcoming 2024]{.cvdate} <br>
+**Poster** [\@ Evolution 2024, Montreal, QC]{.small} <br>
+[Do flowers of a color bloom together? (Poster V.2)](evolution2024poster.html) [Upcoming 2024]{.cvdate} <br>
 
 **Lightning Talk** [\@ Botany 2024, Grand Rapids, MI]{.small} <br>
-[Do flowers of a color bloom together? (Lightning Talk)]() [2024]{.cvdate} <br>
+[Do flowers of a color bloom together? (Lightning Talk)](files/botany_talk.pdf) [2024]{.cvdate} <br>
 
 **Poster** [\@ Botany 2024, Grand Rapids, MI]{.small} <br>
-[Do flowers of a color bloom together? (Poster V.1)]() [2024]{.cvdate} <br>
+[Do flowers of a color bloom together? (Poster V.1)](botany2024poster.html) [2024]{.cvdate} <br>
 
 **Talk** [\@ UMich -- Department of Ecology and Evolutionary Biology]{.small} <br> 
 Do flowers of a color bloom together? (Talk V.1) [2024]{.cvdate} <br>
