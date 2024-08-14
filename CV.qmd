@@ -86,10 +86,11 @@ First-gen academic with years of experience in the lab, field, and behind a scre
 
 ## Presentations
 
-**Talk** [\@ Evolution 2024, Montreal, QC]{.small} [Upcoming 2024]{.cvdate} <br>
+**Talk** [\@ Evolution 2024, Montreal, QC]{.small} <br>
+[Do flowers of a color bloom together? (Talk V.2)](files/evolution_talk.pdf) [2024]{.cvdate} <br>
 
 **Poster** [\@ Evolution 2024, Montreal, QC]{.small} <br>
-[Do flowers of a color bloom together? (Poster V.2)](evolution2024poster.html) [Upcoming 2024]{.cvdate} <br>
+[Do flowers of a color bloom together? (Poster V.2)](evolution2024poster.html) [2024]{.cvdate} <br>
 
 **Lightning Talk** [\@ Botany 2024, Grand Rapids, MI]{.small} <br>
 [Do flowers of a color bloom together? (Lightning Talk)](files/botany_talk.pdf) [2024]{.cvdate} <br>
@@ -105,13 +106,15 @@ Do flowers of a color bloom together? (Talk V.1) [2024]{.cvdate} <br>
 
 ## Languages
 
-**English** -- Native <br> **R** -- Advanced (C1) <br> **German** -- Intermediate (B2) <br> **C++** -- Intermediate (B2) <br> **Python** -- Intermediate (B1) <br> **Nishnaabemwin** -- Beginner (A1) <br>
+**R** -- Advanced (C1) <br> **German** -- Intermediate (B2) <br> **C++** -- Intermediate (B2) <br> **Python** -- Intermediate (B1) <br> **Nishnaabemwin** -- Beginner (A1) <br>
 
 ## Certifications
 
 **Certified Michigan Naturalist** [2024]{.cvdate} <br> *Michigan State University-College of Agriculture and Natural Resources Extension* <br>
 
 ## Professional Memberships
+
+**American Society of Naturalists** -- *Student Member* [2024-Present]{.cvdate}
 
 **Botanical Society of America** -- *Student Member* [2024-Present]{.cvdate}
 
