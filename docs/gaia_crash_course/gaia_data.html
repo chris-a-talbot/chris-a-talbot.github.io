@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chris Talbot - chris-a-talbot.github.io</title>
+<title>Chris Talbot</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,18 +69,47 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Chris Talbot</span>
     </a>
   </div>
@@ -90,23 +120,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./CV.html"> 
+    <a class="nav-link" href="../CV.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./botany2024.html"> 
+    <a class="nav-link" href="../botany2024.html"> 
 <span class="menu-text">Botany 2024</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./evolution2024.html"> 
+    <a class="nav-link" href="../evolution2024.html"> 
 <span class="menu-text">Evolution 2024</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./gaia.html"> 
+    <a class="nav-link" href="../gaia_crash_course/index.html"> 
 <span class="menu-text">Gaia Crash Course</span></a>
   </li>  
 </ul>
@@ -124,56 +154,158 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#prepare-your-data" id="toc-prepare-your-data" class="nav-link active" data-scroll-target="#prepare-your-data">Prepare your data</a>
+  <ul class="collapse">
+  <li><a href="#a-tree-sequence" id="toc-a-tree-sequence" class="nav-link" data-scroll-target="#a-tree-sequence">A tree sequence</a></li>
+  <li><a href="#georeferences" id="toc-georeferences" class="nav-link" data-scroll-target="#georeferences">Georeferences</a>
+  <ul class="collapse">
+  <li><a href="#continuous-space" id="toc-continuous-space" class="nav-link" data-scroll-target="#continuous-space">Continuous space</a></li>
+  <li><a href="#discrete-space" id="toc-discrete-space" class="nav-link" data-scroll-target="#discrete-space">Discrete space</a></li>
+  </ul></li>
+  <li><a href="#a-cost-matrix" id="toc-a-cost-matrix" class="nav-link" data-scroll-target="#a-cost-matrix">A cost matrix</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-trestles content">
-  <div class="about-entity">
-    <img src="files/profile.jpg" class="about-image
-  rounded " style="width: 20em;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">chris-a-talbot.github.io</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="https://github.com/chris-a-talbot" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="https://twitter.com/chris__talbot" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">Twitter (X)</span>
-  </a>
-  <a href="https://www.linkedin.com/in/chris-talbot" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>First-gen academic with years of experience in the lab, field, and behind a screen. Interested in patterns of ecological organization across spatiotemporal scales, the evolutionary drivers of those patterns, and how those patterns respond to global change. Fascinated with emerging methods for evaluating complex systems, including community science and machine learning.</p>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p><strong>University of Michigan</strong> | Ann Arbor, MI <br> B.S. Ecology, Evolution, and Biodiversity | 2024 <br></p>
-<p><strong>Grand Rapids Community College</strong> | Grand Rapids, MI <br> A.G.S. Computer Science and Mathematics | 2020 <br></p>
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="prepare-your-data" class="level1 numbered">
+<h1 class="numbered">Prepare your data</h1>
+<p>To begin a new analysis in <em>gaia</em>, you will need:</p>
+<section id="a-tree-sequence" class="level2">
+<h2 class="anchored" data-anchor-id="a-tree-sequence">A tree sequence</h2>
+<p>The base of your <em>gaia</em> analysis is an Ancestral Recombination Graph (ARG) inferred from your samples, stored as a tree sequence with <em>.trees</em> filetype using the tskit library [cite]. In your tree sequence, each sample is represented by a node with a unique node ID. Additionally, inferred ancestors are represented as additional nodes across the trees of the tree sequence.</p>
+<p>The tree sequence can be inferred using <em>tsinfer [cite]</em>, <em>relate [cite]</em>, or a host of other ARG-inference methods - see Lewanski et al.’s review of ARGs (2024) <a href="https://doi.org/10.1371/journal.pgen.1011110">here</a> for more information. For testing purposes, tree sequences can also be generated from spatially explicit simulations run in SLiM [cite] - see the <a href="../gaia_crash_course/args.html">Tree Sequences chapter</a> in the appendix for more information.</p>
+<p>Gaia includes multiple functions to help you load and modify your tree sequence in R. These include …</p>
 </section>
-<section id="experience" class="level2">
-<h2 data-anchor-id="experience">Experience</h2>
-<p><strong>Bradburd Lab</strong>, UMich-EEB | Lab Technician | Starting Sep.&nbsp;2024</p>
-<p><strong>Weber Lab</strong>, UMich-EEB | Lab Technician | 2022 - present</p>
-<p><strong>Márquez Lab</strong>, UMich-EEB | Undergraduate Researcher | 2021-2022</p>
+<section id="georeferences" class="level2">
+<h2 class="anchored" data-anchor-id="georeferences">Georeferences</h2>
+<p>To infer geographic history, <em>gaia</em> uses known information about the geographic origin of contemporary genomic samples. Georeference information is stored differently depending on your choice of continuous or discrete space models:</p>
+<section id="continuous-space" class="level3">
+<h3 class="anchored" data-anchor-id="continuous-space">Continuous space</h3>
+<p>In continuous space, georeferences are stored in a <span class="math inline">\(SxD\)</span> matrix, where <span class="math inline">\(S\)</span> is the number of samples in your tree sequence and <span class="math inline">\(D\)</span> is the number of spatial dimensions in your continuous space. For example, in a 2-dimensional continuous space, the georeference matrix for <span class="math inline">\(S\)</span> samples may look like:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Latitude</th>
+<th>Longitude</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x_0\)</span></td>
+<td><span class="math inline">\(y_0\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(x_1\)</span></td>
+<td><span class="math inline">\(y_1\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(...\)</span></td>
+<td><span class="math inline">\(...\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(x_S\)</span></td>
+<td><span class="math inline">\(y_S\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Gaia can also function in other spatial dimensions, including 3-dimensional space, introducing an altitude component.</p>
 </section>
-<section id="contact" class="level2">
-<h2 data-anchor-id="contact">Contact</h2>
-<p><strong>Email</strong>: chtalbot@umich.edu</p>
+<section id="discrete-space" class="level3">
+<h3 class="anchored" data-anchor-id="discrete-space">Discrete space</h3>
+<p>In discrete space, georeferences are stored in a <span class="math inline">\(Sx2\)</span> matrix, where <span class="math inline">\(S\)</span> is the number of samples in your tree sequence. The matrix should contain two columns: ‘node_id’ and ‘state_id’. Each discrete geographic location is represented by a state with a unique state ID. For example, a georeference matrix for <span class="math inline">\(S\)</span> samples in a discrete space may look like:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>node_id</th>
+<th>state_id</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(state_0\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(1\)</span></td>
+<td><span class="math inline">\(state_1\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(...\)</span></td>
+<td><span class="math inline">\(...\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(S\)</span></td>
+<td><span class="math inline">\(state_S\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="a-cost-matrix" class="level2">
+<h2 class="anchored" data-anchor-id="a-cost-matrix">A cost matrix</h2>
+<p>In continuous space, gaia uses Euclidean (quadratic) or Manhttan (linear) distance between points as a direct migration cost between locations. In discrete space, users must define a cost matrix representing the cost of migration between any two discrete locations. The cost matrix is a <span class="math inline">\(DxD\)</span> matrix, where <span class="math inline">\(D\)</span> is the number of discrete locations (states) in your model. The diagonal of the matrix represents the migration cost of staying in place - values besides 0 on the diagonal will be ignored. The cost matrix may not contain negative values. The matrix does not need to be symmetrical - that is, the cost of migrating from A to B need not equal the cost of migrating from B to A. For <span class="math inline">\(D\)</span> discrete locations, the cost matrix may look like:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th>State 1</th>
+<th>State 2</th>
+<th>…</th>
+<th>State D</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>State 1</strong></td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(3\)</span></td>
+<td><span class="math inline">\(...\)</span></td>
+<td><span class="math inline">\(2\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>State 2</strong></td>
+<td><span class="math inline">\(1\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(...\)</span></td>
+<td><span class="math inline">\(3\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>…</strong></td>
+<td><span class="math inline">\(...\)</span></td>
+<td><span class="math inline">\(...\)</span></td>
+<td><span class="math inline">\(...\)</span></td>
+<td><span class="math inline">\(...\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>State D</strong></td>
+<td><span class="math inline">\(2\)</span></td>
+<td><span class="math inline">\(2\)</span></td>
+<td><span class="math inline">\(...\)</span></td>
+<td><span class="math inline">\(0\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 
 
 </section>
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main></div>
-</div>
- <!-- /main -->
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -338,6 +470,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

@@ -1,0 +1,168 @@
+---
+title: "Gaia: Crash Course"
+author: "Chris Talbot"
+date: "9/11/2024"
+bibliography: references.bib
+execute:
+  eval: false
+---
+
+# What is *gaia*?
+
+*Gaia* is a method and R package for efficiently inferring the geographic locations of the shared ancestors of a modern, georeferenced sample of genomes.^1^
+
+## What can I do with it?
+
+In uninterrupted continuous space models, *gaia* can be used to infer the most likely geographic coordinates of ancestors of contemporary samples, reconstructing spatial demographic history. In discrete space models, *gaia* can be used to infer the most likely discrete locations of ancestors of contemporary samples as well as various new spatial demographic parameters, such as ancestry coefficients and ancestry flux, detailed in later sections.
+
+## What data do I need?
+
+*Gaia* works by inferring ancestral geographic locations of ancestors of contemporary samples using the information encoded in a **georeferenced Ancestral Recombination Graph (ARG)** as implemented by tskit as a *tree sequence*.^2^ In addition to the georeferenced ARG, when using discrete models of space, *gaia* requires a **migration cost matrix** representing the cost of migration from one discrete location to any other.
+
+# Gaia Overview
+
+# Using *gaia*
+
+## Installation
+
+### In an R session:
+
+Using *remotes*:
+
+```{r}
+# Install remotes if not already installed
+if (!requireNamespace("remotes", quietly = TRUE)) {
+  install.packages("remotes")
+}
+
+library(remotes)
+install_github("blueraleigh/gaia")
+```
+
+Using *pak*:
+
+```{r}
+# Install pak if not already installed
+if (!requireNamespace("pak", quietly = TRUE)) {
+  install.packages("pak")
+}
+
+library(pak)
+pkg_install("blueraleigh/gaia")
+```
+
+Gaia can then be loaded using:
+
+```{r}
+library(gaia) 
+```
+
+### On the command line:
+
+```{bash}
+git clone https://github.com/blueraleigh/gaia
+cd gaia
+R CMD BUILD .
+R CMD INSTALL <name of tarball>
+```
+
+Gaia can then be loaded in an R session using:
+
+```{r}
+library(gaia) 
+```
+
+## Choose a spatial scenario
+
+## Prepare your data {#prepare-your-data}
+
+To begin a new analysis in *gaia*, you will need:
+
+### A tree sequence
+
+The base of your *gaia* analysis is an Ancestral Recombination Graph (ARG) inferred from your samples, stored as a tree sequence with *.trees* filetype using the tskit library \[cite\]. In your tree sequence, each sample is represented by a node with a unique node ID. Additionally, inferred ancestors are represented as additional nodes across the trees of the tree sequence.
+
+The tree sequence can be inferred using *tsinfer \[cite\]*, *relate \[cite\]*, or a host of other ARG-inference methods - see Lewanski et al.'s review of ARGs (2024) [here](https://doi.org/10.1371/journal.pgen.1011110) for more information. For testing purposes, tree sequences can also be generated from spatially explicit simulations run in SLiM \[cite\] - see the [Tree Sequences chapter](#tree-sequences) in the appendix for more information.
+
+Gaia includes multiple functions to help you load and modify your tree sequence in R. These include ...
+
+### Georeferences
+
+To infer geographic history, *gaia* uses known information about the geographic origin of contemporary genomic samples. Georeference information is stored differently depending on your choice of continuous or discrete space models:
+
+#### Continuous space
+
+In continuous space, georeferences are stored in a $SxD$ matrix, where $S$ is the number of samples in your tree sequence and $D$ is the number of spatial dimensions in your continuous space. For example, in a 2-dimensional continuous space, the georeference matrix for $S$ samples may look like:
+
+| Latitude | Longitude |
+|----------|-----------|
+| $x_0$    | $y_0$     |
+| $x_1$    | $y_1$     |
+| $...$    | $...$     |
+| $x_S$    | $y_S$     |
+
+Gaia can also function in other spatial dimensions, including 3-dimensional space, introducing an altitude component.
+
+#### Discrete space
+
+In discrete space, georeferences are stored in a $Sx2$ matrix, where $S$ is the number of samples in your tree sequence. The matrix should contain two columns: 'node_id' and 'state_id'. Each discrete geographic location is represented by a state with a unique state ID. For example, a georeference matrix for $S$ samples in a discrete space may look like:
+
+| node_id | state_id  |
+|---------|-----------|
+| $0$     | $state_0$ |
+| $1$     | $state_1$ |
+| $...$   | $...$     |
+| $S$     | $state_S$ |
+
+### A cost matrix
+
+In continuous space, gaia uses Euclidean (quadratic) or Manhattan (linear) distance between points as a direct migration cost between locations. In discrete space, users must define a cost matrix representing the cost of migration between any two discrete locations. The cost matrix is a $DxD$ matrix, where $D$ is the number of discrete locations (states) in your model. The diagonal of the matrix represents the migration cost of staying in place - values besides 0 on the diagonal will be ignored. The cost matrix may not contain negative values. The matrix does not need to be symmetrical - that is, the cost of migrating from A to B need not equal the cost of migrating from B to A. For $D$ discrete locations, the cost matrix may look like:
+
+|             | State 1 | State 2 | ...   | State D |
+|-------------|---------|---------|-------|---------|
+| **State 1** | $0$     | $3$     | $...$ | $2$     |
+| **State 2** | $1$     | $0$     | $...$ | $3$     |
+| **...**     | $...$   | $...$   | $...$ | $...$   |
+| **State D** | $2$     | $2$     | $...$ | $0$     |
+
+## Most parsimonious reconstruction
+
+Once your data is ready, you can calculate the most parsimonious reconstruction (MPR) of the geographic history of your samples.
+
+### In discrete space
+
+In discrete space, the MPR of your samples is inferred using `treeseq_discrete_mpr()`. This function takes four arguments:
+
+-   A `treeseq` object
+-   A matrix of georeference locations for samples in the `treeseq`
+-   A cost matrix giving the cost of migration from each discrete location (state) to any other
+-   A true/false value indicating whether to use the inverse branch length to weight migration costs
+
+For more details on the first three arguments, see the [Prepare your data](#prepare-your-data) section.
+
+### In continuous space
+
+## Ancestry Coefficient
+
+## Ancestry Flux
+
+## Migration History
+
+# Visualizing *gaia*
+
+## Discrete Visualizations
+
+## Continuous Visualizations
+
+# Appendix
+
+## Tree Sequences {#tree-sequences}
+
+## Gaia Algorithm
+
+# References
+
+1.  Grundler et al., preprint
+2.  Kelleher et al., 2019
+
+\[Rest of the references would go here\]

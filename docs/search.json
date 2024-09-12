@@ -320,5 +320,285 @@
     "title": "Chris @ Botany 2024 | Poster",
     "section": "",
     "text": "PDF version here!\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "gaia_crash_course/references.html",
+    "href": "gaia_crash_course/references.html",
+    "title": "References",
+    "section": "",
+    "text": "References\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_overview.html",
+    "href": "gaia_crash_course/gaia_overview.html",
+    "title": "How does gaia work?",
+    "section": "",
+    "text": "How does gaia work?\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_migration_history.html",
+    "href": "gaia_crash_course/gaia_migration_history.html",
+    "title": "Migration history",
+    "section": "",
+    "text": "Migration history\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_discrete_visualizations.html",
+    "href": "gaia_crash_course/gaia_discrete_visualizations.html",
+    "title": "Visualizing discrete space",
+    "section": "",
+    "text": "Visualizing discrete space\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_cost_function.html",
+    "href": "gaia_crash_course/gaia_cost_function.html",
+    "title": "Choose a spatial scenario",
+    "section": "",
+    "text": "Choose a spatial scenario\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_ancestry_flux.html",
+    "href": "gaia_crash_course/gaia_ancestry_flux.html",
+    "title": "Ancestry flux",
+    "section": "",
+    "text": "Ancestry flux\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_algorithm.html",
+    "href": "gaia_crash_course/gaia_algorithm.html",
+    "title": "Under the hood: Algorithm P",
+    "section": "",
+    "text": "Under the hood: Algorithm P\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "gaia_crash_course/acknowledgements.html",
+    "href": "gaia_crash_course/acknowledgements.html",
+    "title": "Acknowledgements",
+    "section": "",
+    "text": "Acknowledgements\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "gaia_crash_course/args.html",
+    "href": "gaia_crash_course/args.html",
+    "title": "Tree Sequences",
+    "section": "",
+    "text": "Tree Sequences\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_ancestry_coefficient.html",
+    "href": "gaia_crash_course/gaia_ancestry_coefficient.html",
+    "title": "Ancestry coefficients",
+    "section": "",
+    "text": "Ancestry coefficients\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_continuous_visualizations.html",
+    "href": "gaia_crash_course/gaia_continuous_visualizations.html",
+    "title": "Visualizing continuous space",
+    "section": "",
+    "text": "Visualizing continuous space\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_data.html",
+    "href": "gaia_crash_course/gaia_data.html",
+    "title": "Prepare your data",
+    "section": "",
+    "text": "To begin a new analysis in gaia, you will need:\n\n\nThe base of your gaia analysis is an Ancestral Recombination Graph (ARG) inferred from your samples, stored as a tree sequence with .trees filetype using the tskit library [cite]. In your tree sequence, each sample is represented by a node with a unique node ID. Additionally, inferred ancestors are represented as additional nodes across the trees of the tree sequence.\nThe tree sequence can be inferred using tsinfer [cite], relate [cite], or a host of other ARG-inference methods - see Lewanski et al.’s review of ARGs (2024) here for more information. For testing purposes, tree sequences can also be generated from spatially explicit simulations run in SLiM [cite] - see the Tree Sequences chapter in the appendix for more information.\nGaia includes multiple functions to help you load and modify your tree sequence in R. These include …\n\n\n\nTo infer geographic history, gaia uses known information about the geographic origin of contemporary genomic samples. Georeference information is stored differently depending on your choice of continuous or discrete space models:\n\n\nIn continuous space, georeferences are stored in a \\(SxD\\) matrix, where \\(S\\) is the number of samples in your tree sequence and \\(D\\) is the number of spatial dimensions in your continuous space. For example, in a 2-dimensional continuous space, the georeference matrix for \\(S\\) samples may look like:\n\n\n\nLatitude\nLongitude\n\n\n\n\n\\(x_0\\)\n\\(y_0\\)\n\n\n\\(x_1\\)\n\\(y_1\\)\n\n\n\\(...\\)\n\\(...\\)\n\n\n\\(x_S\\)\n\\(y_S\\)\n\n\n\nGaia can also function in other spatial dimensions, including 3-dimensional space, introducing an altitude component.\n\n\n\nIn discrete space, georeferences are stored in a \\(Sx2\\) matrix, where \\(S\\) is the number of samples in your tree sequence. The matrix should contain two columns: ‘node_id’ and ‘state_id’. Each discrete geographic location is represented by a state with a unique state ID. For example, a georeference matrix for \\(S\\) samples in a discrete space may look like:\n\n\n\nnode_id\nstate_id\n\n\n\n\n\\(0\\)\n\\(state_0\\)\n\n\n\\(1\\)\n\\(state_1\\)\n\n\n\\(...\\)\n\\(...\\)\n\n\n\\(S\\)\n\\(state_S\\)\n\n\n\n\n\n\n\nIn continuous space, gaia uses Euclidean (quadratic) or Manhttan (linear) distance between points as a direct migration cost between locations. In discrete space, users must define a cost matrix representing the cost of migration between any two discrete locations. The cost matrix is a \\(DxD\\) matrix, where \\(D\\) is the number of discrete locations (states) in your model. The diagonal of the matrix represents the migration cost of staying in place - values besides 0 on the diagonal will be ignored. The cost matrix may not contain negative values. The matrix does not need to be symmetrical - that is, the cost of migrating from A to B need not equal the cost of migrating from B to A. For \\(D\\) discrete locations, the cost matrix may look like:\n\n\n\n\nState 1\nState 2\n…\nState D\n\n\n\n\nState 1\n\\(0\\)\n\\(3\\)\n\\(...\\)\n\\(2\\)\n\n\nState 2\n\\(1\\)\n\\(0\\)\n\\(...\\)\n\\(3\\)\n\n\n…\n\\(...\\)\n\\(...\\)\n\\(...\\)\n\\(...\\)\n\n\nState D\n\\(2\\)\n\\(2\\)\n\\(...\\)\n\\(0\\)"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_data.html#a-tree-sequence",
+    "href": "gaia_crash_course/gaia_data.html#a-tree-sequence",
+    "title": "Prepare your data",
+    "section": "",
+    "text": "The base of your gaia analysis is an Ancestral Recombination Graph (ARG) inferred from your samples, stored as a tree sequence with .trees filetype using the tskit library [cite]. In your tree sequence, each sample is represented by a node with a unique node ID. Additionally, inferred ancestors are represented as additional nodes across the trees of the tree sequence.\nThe tree sequence can be inferred using tsinfer [cite], relate [cite], or a host of other ARG-inference methods - see Lewanski et al.’s review of ARGs (2024) here for more information. For testing purposes, tree sequences can also be generated from spatially explicit simulations run in SLiM [cite] - see the Tree Sequences chapter in the appendix for more information.\nGaia includes multiple functions to help you load and modify your tree sequence in R. These include …"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_data.html#georeferences",
+    "href": "gaia_crash_course/gaia_data.html#georeferences",
+    "title": "Prepare your data",
+    "section": "",
+    "text": "To infer geographic history, gaia uses known information about the geographic origin of contemporary genomic samples. Georeference information is stored differently depending on your choice of continuous or discrete space models:\n\n\nIn continuous space, georeferences are stored in a \\(SxD\\) matrix, where \\(S\\) is the number of samples in your tree sequence and \\(D\\) is the number of spatial dimensions in your continuous space. For example, in a 2-dimensional continuous space, the georeference matrix for \\(S\\) samples may look like:\n\n\n\nLatitude\nLongitude\n\n\n\n\n\\(x_0\\)\n\\(y_0\\)\n\n\n\\(x_1\\)\n\\(y_1\\)\n\n\n\\(...\\)\n\\(...\\)\n\n\n\\(x_S\\)\n\\(y_S\\)\n\n\n\nGaia can also function in other spatial dimensions, including 3-dimensional space, introducing an altitude component.\n\n\n\nIn discrete space, georeferences are stored in a \\(Sx2\\) matrix, where \\(S\\) is the number of samples in your tree sequence. The matrix should contain two columns: ‘node_id’ and ‘state_id’. Each discrete geographic location is represented by a state with a unique state ID. For example, a georeference matrix for \\(S\\) samples in a discrete space may look like:\n\n\n\nnode_id\nstate_id\n\n\n\n\n\\(0\\)\n\\(state_0\\)\n\n\n\\(1\\)\n\\(state_1\\)\n\n\n\\(...\\)\n\\(...\\)\n\n\n\\(S\\)\n\\(state_S\\)"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_data.html#a-cost-matrix",
+    "href": "gaia_crash_course/gaia_data.html#a-cost-matrix",
+    "title": "Prepare your data",
+    "section": "",
+    "text": "In continuous space, gaia uses Euclidean (quadratic) or Manhttan (linear) distance between points as a direct migration cost between locations. In discrete space, users must define a cost matrix representing the cost of migration between any two discrete locations. The cost matrix is a \\(DxD\\) matrix, where \\(D\\) is the number of discrete locations (states) in your model. The diagonal of the matrix represents the migration cost of staying in place - values besides 0 on the diagonal will be ignored. The cost matrix may not contain negative values. The matrix does not need to be symmetrical - that is, the cost of migrating from A to B need not equal the cost of migrating from B to A. For \\(D\\) discrete locations, the cost matrix may look like:\n\n\n\n\nState 1\nState 2\n…\nState D\n\n\n\n\nState 1\n\\(0\\)\n\\(3\\)\n\\(...\\)\n\\(2\\)\n\n\nState 2\n\\(1\\)\n\\(0\\)\n\\(...\\)\n\\(3\\)\n\n\n…\n\\(...\\)\n\\(...\\)\n\\(...\\)\n\\(...\\)\n\n\nState D\n\\(2\\)\n\\(2\\)\n\\(...\\)\n\\(0\\)"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_install.html",
+    "href": "gaia_crash_course/gaia_install.html",
+    "title": "Installation",
+    "section": "",
+    "text": "Using remotes:\n\n# Install remotes if not already installed\nif (!requireNamespace(\"remotes\", quietly = TRUE)) {\n  install.packages(\"remotes\")\n}\n\nlibrary(remotes)\ninstall_github(\"blueraleigh/gaia\")\n\nUsing pak:\n\n# Install pak if not already installed\nif (!requireNamespace(\"pak\", quietly = TRUE)) {\n  install.packages(\"pak\")\n}\n\nlibrary(pak)\npkg_install(\"blueraleigh/gaia\")\n\nGaia can then be loaded using:\n\nlibrary(gaia) \n\n\n\n\n\ngit clone https://github.com/blueraleigh/gaia\ncd gaia\nR CMD BUILD .\nR CMD INSTALL &lt;name of tarball&gt;\n\nGaia can then be loaded in an R session using:\n\nlibrary(gaia)"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_install.html#in-an-r-session",
+    "href": "gaia_crash_course/gaia_install.html#in-an-r-session",
+    "title": "Installation",
+    "section": "",
+    "text": "Using remotes:\n\n# Install remotes if not already installed\nif (!requireNamespace(\"remotes\", quietly = TRUE)) {\n  install.packages(\"remotes\")\n}\n\nlibrary(remotes)\ninstall_github(\"blueraleigh/gaia\")\n\nUsing pak:\n\n# Install pak if not already installed\nif (!requireNamespace(\"pak\", quietly = TRUE)) {\n  install.packages(\"pak\")\n}\n\nlibrary(pak)\npkg_install(\"blueraleigh/gaia\")\n\nGaia can then be loaded using:\n\nlibrary(gaia)"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_install.html#on-the-command-line",
+    "href": "gaia_crash_course/gaia_install.html#on-the-command-line",
+    "title": "Installation",
+    "section": "",
+    "text": "git clone https://github.com/blueraleigh/gaia\ncd gaia\nR CMD BUILD .\nR CMD INSTALL &lt;name of tarball&gt;\n\nGaia can then be loaded in an R session using:\n\nlibrary(gaia)"
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_mpr.html",
+    "href": "gaia_crash_course/gaia_mpr.html",
+    "title": "Most parsimonious reconstruction",
+    "section": "",
+    "text": "Once your data is ready, you can calculate the most parsimonious reconstruction (MPR) of the geographic history of your samples.\n\n\nIn discrete space, the MPR of your samples is inferred using treeseq_discrete_mpr(). This function takes four arguments:\n\nA treeseq object\nA matrix of georeference locations for samples in the treeseq\nA cost matrix giving the cost of migration from each discrete location (state) to any other\nA true/false value indicating whether to use the inverse branch length to weight migration costs\n\nFor more details on the first three arguments, see Chapter 5."
+  },
+  {
+    "objectID": "gaia_crash_course/gaia_mpr.html#in-discrete-space",
+    "href": "gaia_crash_course/gaia_mpr.html#in-discrete-space",
+    "title": "Most parsimonious reconstruction",
+    "section": "",
+    "text": "In discrete space, the MPR of your samples is inferred using treeseq_discrete_mpr(). This function takes four arguments:\n\nA treeseq object\nA matrix of georeference locations for samples in the treeseq\nA cost matrix giving the cost of migration from each discrete location (state) to any other\nA true/false value indicating whether to use the inverse branch length to weight migration costs\n\nFor more details on the first three arguments, see Chapter 5."
+  },
+  {
+    "objectID": "gaia_crash_course/index.html",
+    "href": "gaia_crash_course/index.html",
+    "title": "What is gaia?",
+    "section": "",
+    "text": "Gaia is a method and R package for efficiently inferring the geographic locations of the shared ancestors of a modern, georeferenced sample of genomes.1\n\n\nIn uninterrupted continuous space models, gaia can be used to infer the most likely geographic coordinates of ancestors of contemporary samples, reconstructing spatial demographic history. In discrete space models, gaia can be used to infer the most likely discrete locations of ancestors of contemporary samples as well as various new spatial demographic parameters, such as ancestry coefficients and ancestry flux, detailed in Chapter 7 and Chapter 8.\n\n\n\nGaia works by inferring ancestral geographic locations of ancestors of contemporary samples using the information encoded in a georeferenced Ancestral Recombination Graph (ARG) as implemented by tskit as a tree sequence.2 In addition to the georeferenced ARG, when using discrete models of space, gaia requires a migration cost matrix representing the cost of migration from one discrete location to any other.\n\n\n\n\nGrundler et al., preprint\nKelleher et al., 2019"
+  },
+  {
+    "objectID": "gaia_crash_course/index.html#what-can-i-do-with-it",
+    "href": "gaia_crash_course/index.html#what-can-i-do-with-it",
+    "title": "What is gaia?",
+    "section": "",
+    "text": "In uninterrupted continuous space models, gaia can be used to infer the most likely geographic coordinates of ancestors of contemporary samples, reconstructing spatial demographic history. In discrete space models, gaia can be used to infer the most likely discrete locations of ancestors of contemporary samples as well as various new spatial demographic parameters, such as ancestry coefficients and ancestry flux, detailed in Chapter 7 and Chapter 8."
+  },
+  {
+    "objectID": "gaia_crash_course/index.html#what-data-do-i-need",
+    "href": "gaia_crash_course/index.html#what-data-do-i-need",
+    "title": "What is gaia?",
+    "section": "",
+    "text": "Gaia works by inferring ancestral geographic locations of ancestors of contemporary samples using the information encoded in a georeferenced Ancestral Recombination Graph (ARG) as implemented by tskit as a tree sequence.2 In addition to the georeferenced ARG, when using discrete models of space, gaia requires a migration cost matrix representing the cost of migration from one discrete location to any other."
+  },
+  {
+    "objectID": "gaia_crash_course/index.html#references",
+    "href": "gaia_crash_course/index.html#references",
+    "title": "What is gaia?",
+    "section": "",
+    "text": "Grundler et al., preprint\nKelleher et al., 2019"
+  },
+  {
+    "objectID": "gaia.html",
+    "href": "gaia.html",
+    "title": "Gaia: Crash Course",
+    "section": "",
+    "text": "Gaia is a method and R package for efficiently inferring the geographic locations of the shared ancestors of a modern, georeferenced sample of genomes.1\n\n\nIn uninterrupted continuous space models, gaia can be used to infer the most likely geographic coordinates of ancestors of contemporary samples, reconstructing spatial demographic history. In discrete space models, gaia can be used to infer the most likely discrete locations of ancestors of contemporary samples as well as various new spatial demographic parameters, such as ancestry coefficients and ancestry flux, detailed in later sections.\n\n\n\nGaia works by inferring ancestral geographic locations of ancestors of contemporary samples using the information encoded in a georeferenced Ancestral Recombination Graph (ARG) as implemented by tskit as a tree sequence.2 In addition to the georeferenced ARG, when using discrete models of space, gaia requires a migration cost matrix representing the cost of migration from one discrete location to any other."
+  },
+  {
+    "objectID": "gaia.html#what-can-i-do-with-it",
+    "href": "gaia.html#what-can-i-do-with-it",
+    "title": "Gaia: Crash Course",
+    "section": "",
+    "text": "In uninterrupted continuous space models, gaia can be used to infer the most likely geographic coordinates of ancestors of contemporary samples, reconstructing spatial demographic history. In discrete space models, gaia can be used to infer the most likely discrete locations of ancestors of contemporary samples as well as various new spatial demographic parameters, such as ancestry coefficients and ancestry flux, detailed in later sections."
+  },
+  {
+    "objectID": "gaia.html#what-data-do-i-need",
+    "href": "gaia.html#what-data-do-i-need",
+    "title": "Gaia: Crash Course",
+    "section": "",
+    "text": "Gaia works by inferring ancestral geographic locations of ancestors of contemporary samples using the information encoded in a georeferenced Ancestral Recombination Graph (ARG) as implemented by tskit as a tree sequence.2 In addition to the georeferenced ARG, when using discrete models of space, gaia requires a migration cost matrix representing the cost of migration from one discrete location to any other."
+  },
+  {
+    "objectID": "gaia.html#installation",
+    "href": "gaia.html#installation",
+    "title": "Gaia: Crash Course",
+    "section": "Installation",
+    "text": "Installation\n\nIn an R session:\nUsing remotes:\n\n# Install remotes if not already installed\nif (!requireNamespace(\"remotes\", quietly = TRUE)) {\n  install.packages(\"remotes\")\n}\n\nlibrary(remotes)\ninstall_github(\"blueraleigh/gaia\")\n\nUsing pak:\n\n# Install pak if not already installed\nif (!requireNamespace(\"pak\", quietly = TRUE)) {\n  install.packages(\"pak\")\n}\n\nlibrary(pak)\npkg_install(\"blueraleigh/gaia\")\n\nGaia can then be loaded using:\n\nlibrary(gaia) \n\n\n\nOn the command line:\n\ngit clone https://github.com/blueraleigh/gaia\ncd gaia\nR CMD BUILD .\nR CMD INSTALL &lt;name of tarball&gt;\n\nGaia can then be loaded in an R session using:\n\nlibrary(gaia)"
+  },
+  {
+    "objectID": "gaia.html#cost-function",
+    "href": "gaia.html#cost-function",
+    "title": "Gaia: Crash Course",
+    "section": "Cost Function",
+    "text": "Cost Function\n[Content for Cost Function would go here]"
+  },
+  {
+    "objectID": "gaia.html#prepare-your-data",
+    "href": "gaia.html#prepare-your-data",
+    "title": "Gaia: Crash Course",
+    "section": "Prepare your data",
+    "text": "Prepare your data\nTo begin a new analysis in gaia, you will need:\n\nA tree sequence\nThe base of your gaia analysis is an Ancestral Recombination Graph (ARG) inferred from your samples, stored as a tree sequence with .trees filetype using the tskit library [cite]. In your tree sequence, each sample is represented by a node with a unique node ID. Additionally, inferred ancestors are represented as additional nodes across the trees of the tree sequence.\nThe tree sequence can be inferred using tsinfer [cite], relate [cite], or a host of other ARG-inference methods - see Lewanski et al.’s review of ARGs (2024) here for more information. For testing purposes, tree sequences can also be generated from spatially explicit simulations run in SLiM [cite] - see the Tree Sequences chapter in the appendix for more information.\nGaia includes multiple functions to help you load and modify your tree sequence in R. These include …\n\n\nGeoreferences\nTo infer geographic history, gaia uses known information about the geographic origin of contemporary genomic samples. Georeference information is stored differently depending on your choice of continuous or discrete space models:\n\nContinuous space\nIn continuous space, georeferences are stored in a \\(SxD\\) matrix, where \\(S\\) is the number of samples in your tree sequence and \\(D\\) is the number of spatial dimensions in your continuous space. For example, in a 2-dimensional continuous space, the georeference matrix for \\(S\\) samples may look like:\n\n\n\nLatitude\nLongitude\n\n\n\n\n\\(x_0\\)\n\\(y_0\\)\n\n\n\\(x_1\\)\n\\(y_1\\)\n\n\n\\(...\\)\n\\(...\\)\n\n\n\\(x_S\\)\n\\(y_S\\)\n\n\n\nGaia can also function in other spatial dimensions, including 3-dimensional space, introducing an altitude component.\n\n\nDiscrete space\nIn discrete space, georeferences are stored in a \\(Sx2\\) matrix, where \\(S\\) is the number of samples in your tree sequence. The matrix should contain two columns: ‘node_id’ and ‘state_id’. Each discrete geographic location is represented by a state with a unique state ID. For example, a georeference matrix for \\(S\\) samples in a discrete space may look like:\n\n\n\nnode_id\nstate_id\n\n\n\n\n\\(0\\)\n\\(state_0\\)\n\n\n\\(1\\)\n\\(state_1\\)\n\n\n\\(...\\)\n\\(...\\)\n\n\n\\(S\\)\n\\(state_S\\)\n\n\n\n\n\n\nA cost matrix\nIn continuous space, gaia uses Euclidean (quadratic) or Manhattan (linear) distance between points as a direct migration cost between locations. In discrete space, users must define a cost matrix representing the cost of migration between any two discrete locations. The cost matrix is a \\(DxD\\) matrix, where \\(D\\) is the number of discrete locations (states) in your model. The diagonal of the matrix represents the migration cost of staying in place - values besides 0 on the diagonal will be ignored. The cost matrix may not contain negative values. The matrix does not need to be symmetrical - that is, the cost of migrating from A to B need not equal the cost of migrating from B to A. For \\(D\\) discrete locations, the cost matrix may look like:\n\n\n\n\nState 1\nState 2\n…\nState D\n\n\n\n\nState 1\n\\(0\\)\n\\(3\\)\n\\(...\\)\n\\(2\\)\n\n\nState 2\n\\(1\\)\n\\(0\\)\n\\(...\\)\n\\(3\\)\n\n\n…\n\\(...\\)\n\\(...\\)\n\\(...\\)\n\\(...\\)\n\n\nState D\n\\(2\\)\n\\(2\\)\n\\(...\\)\n\\(0\\)"
+  },
+  {
+    "objectID": "gaia.html#most-parsimonious-reconstruction",
+    "href": "gaia.html#most-parsimonious-reconstruction",
+    "title": "Gaia: Crash Course",
+    "section": "Most parsimonious reconstruction",
+    "text": "Most parsimonious reconstruction\nOnce your data is ready, you can calculate the most parsimonious reconstruction (MPR) of the geographic history of your samples.\n\nIn discrete space\nIn discrete space, the MPR of your samples is inferred using treeseq_discrete_mpr(). This function takes four arguments:\n\nA treeseq object\nA matrix of georeference locations for samples in the treeseq\nA cost matrix giving the cost of migration from each discrete location (state) to any other\nA true/false value indicating whether to use the inverse branch length to weight migration costs\n\nFor more details on the first three arguments, see the Prepare your data section.\n\n\nIn continuous space"
+  },
+  {
+    "objectID": "gaia.html#ancestry-coefficient",
+    "href": "gaia.html#ancestry-coefficient",
+    "title": "Gaia: Crash Course",
+    "section": "Ancestry Coefficient",
+    "text": "Ancestry Coefficient"
+  },
+  {
+    "objectID": "gaia.html#ancestry-flux",
+    "href": "gaia.html#ancestry-flux",
+    "title": "Gaia: Crash Course",
+    "section": "Ancestry Flux",
+    "text": "Ancestry Flux"
+  },
+  {
+    "objectID": "gaia.html#migration-history",
+    "href": "gaia.html#migration-history",
+    "title": "Gaia: Crash Course",
+    "section": "Migration History",
+    "text": "Migration History"
+  },
+  {
+    "objectID": "gaia.html#discrete-visualizations",
+    "href": "gaia.html#discrete-visualizations",
+    "title": "Gaia: Crash Course",
+    "section": "Discrete Visualizations",
+    "text": "Discrete Visualizations"
+  },
+  {
+    "objectID": "gaia.html#continuous-visualizations",
+    "href": "gaia.html#continuous-visualizations",
+    "title": "Gaia: Crash Course",
+    "section": "Continuous Visualizations",
+    "text": "Continuous Visualizations"
+  },
+  {
+    "objectID": "gaia.html#tree-sequences",
+    "href": "gaia.html#tree-sequences",
+    "title": "Gaia: Crash Course",
+    "section": "Tree Sequences",
+    "text": "Tree Sequences"
+  },
+  {
+    "objectID": "gaia.html#gaia-algorithm",
+    "href": "gaia.html#gaia-algorithm",
+    "title": "Gaia: Crash Course",
+    "section": "Gaia Algorithm",
+    "text": "Gaia Algorithm"
+  },
+  {
+    "objectID": "gaia.html#choosing-a-spatial-scenario",
+    "href": "gaia.html#choosing-a-spatial-scenario",
+    "title": "Gaia: Crash Course",
+    "section": "Choosing a spatial scenario",
+    "text": "Choosing a spatial scenario\n[Content for Cost Function would go here]"
+  },
+  {
+    "objectID": "gaia.html#choose-a-spatial-scenario",
+    "href": "gaia.html#choose-a-spatial-scenario",
+    "title": "Gaia: Crash Course",
+    "section": "Choose a spatial scenario",
+    "text": "Choose a spatial scenario"
   }
 ]
