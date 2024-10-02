@@ -12,7 +12,7 @@ format:
 css: cv.css
 ---
 
-**Status**: Lab Technician at the University of Michigan, Weber Lab <br> **Field**: Ecology & Evolutionary Biology <br> **Interests**: Evolutionary ecology, global change, genetics, machine learning <br> **Techs**: R, Python, C++, Git, LaTeX, SLiM
+**Status**: Lab Technician at the University of Michigan, Weber Lab <br> **Field**: Ecology & Evolutionary Biology <br> **Interests**: Evolutionary ecology, global change, population genetics, machine learning <br> **Techs**: Python, R, C++, Rust, SLiM
 
 ## Summary
 

@@ -11,7 +11,7 @@
     "href": "CV.html",
     "title": "Chris Talbot | CV",
     "section": "",
-    "text": "Status: Lab Technician at the University of Michigan, Weber Lab  Field: Ecology & Evolutionary Biology  Interests: Evolutionary ecology, global change, genetics, machine learning  Techs: R, Python, C++, Git, LaTeX, SLiM"
+    "text": "Status: Lab Technician at the University of Michigan, Weber Lab  Field: Ecology & Evolutionary Biology  Interests: Evolutionary ecology, global change, population genetics, machine learning  Techs: Python, R, C++, Rust, SLiM"
   },
   {
     "objectID": "CV.html#education",
@@ -25,7 +25,7 @@
     "href": "CV.html#research",
     "title": "Chris Talbot | CV",
     "section": "Research",
-    "text": "Research\nLab Technician – Bradburd Lab Starting 2024  UMich-Ecology & Evolutionary Biology (EEB) \nLab Technician – Weber Lab 2022-Present  UMich-EEB \n\nProject: “Patterns of floral color in communities of common Northeast American wildflowers”\n\nUndergraduate Researcher – Márquez Lab 2021-2022  UMich-EEB \n\nProject: “Optimizing CRISPR-Cas9 genetic modification in Phyllobates poison-dart frogs”"
+    "text": "Research\nLab Technician – Bradburd Lab 2024-Present  UMich-Ecology & Evolutionary Biology (EEB) \nLab Technician – Weber Lab 2022-Present  UMich-EEB \n\nProject: “Patterns of floral color in communities of common Northeast American wildflowers”\n\nUndergraduate Researcher – Márquez Lab 2021-2022  UMich-EEB \n\nProject: “Optimizing CRISPR-Cas9 genetic modification in Phyllobates poison-dart frogs”"
   },
   {
     "objectID": "CV.html#teaching-and-mentoring",
@@ -123,7 +123,7 @@
     "href": "CV.html#summary",
     "title": "Chris Talbot | CV",
     "section": "Summary",
-    "text": "Summary\nFirst-gen academic with years of experience in the lab, field, and behind a screen. Interested in patterns of ecological organization across spatiotemporal scales, the evolutionary drivers of those patterns, and how those patterns respond to global change. Fascinated with emerging methods for evaluating complex systems, including community science and machine learning."
+    "text": "Summary\nFirst-gen academic with years of experience in the lab, field, and behind a screen. Interested in patterns of ecological organization across spatiotemporal scales, the evolutionary drivers of those patterns, and how those patterns respond to global change. Fascinated with emerging methods for evaluating complex systems, including community science, machine learning, and tree sequence statistics."
   },
   {
     "objectID": "CV.html#publications",
@@ -600,5 +600,12 @@
     "title": "Gaia: Crash Course",
     "section": "Choose a spatial scenario",
     "text": "Choose a spatial scenario"
+  },
+  {
+    "objectID": "index.html#research-experience",
+    "href": "index.html#research-experience",
+    "title": "chris-a-talbot.github.io",
+    "section": "Research Experience",
+    "text": "Research Experience\nBradburd Lab, UMich-EEB  Lab Technician | 2024 - present\nWeber Lab, UMich-EEB  Lab Technician | 2022 - present\nMárquez Lab, UMich-EEB  Undergraduate Researcher | 2021-2022"
   }
 ]
