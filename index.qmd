@@ -18,7 +18,7 @@ about:
         href: https://www.linkedin.com/in/chris-talbot
 ---
 
-First-gen academic with years of experience in the lab, field, and behind a screen. Interested in patterns of ecological organization across spatiotemporal scales, the evolutionary drivers of those patterns, and how those patterns respond to global change. Fascinated with emerging methods for evaluating complex systems, including community science and machine learning.
+First-gen academic with years of experience in the lab, field, and behind a screen. Interested in patterns of ecological organization across spatiotemporal scales, the evolutionary drivers of those patterns, and how those patterns respond to global change. Fascinated with emerging methods for evaluating complex systems, including community science, machine learning, and tree sequence statistics.
 
 ## Education
 
@@ -30,11 +30,14 @@ A.G.S. Computer Science and Mathematics | 2020 <br>
 
 ## Experience
 
-**Bradburd Lab**, UMich-EEB | Lab Technician | Starting Sep. 2024
+**Bradburd Lab**, UMich-EEB <br> 
+Lab Technician | 2024 - present
 
-**Weber Lab**, UMich-EEB | Lab Technician | 2022 - present
+**Weber Lab**, UMich-EEB <br>
+Lab Technician | 2022 - present
 
-**Márquez Lab**, UMich-EEB | Undergraduate Researcher | 2021-2022
+**Márquez Lab**, UMich-EEB <br>
+Undergraduate Researcher | 2021-2022
 
 ## Contact
 
