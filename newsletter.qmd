@@ -1,0 +1,9 @@
+---
+title: "Popgen Weekly"
+format:
+  html:
+    toc: true
+    toc-depth: 4
+---
+
+**Popgen Weekly**
