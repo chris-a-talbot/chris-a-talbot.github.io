@@ -22,8 +22,6 @@ website:
         text: Botany 2024
       - href: evolution2024.qmd
         text: Evolution 2024
-      - href: gaia.qmd
-        text: Gaia Crash Course
   back-to-top-navigation: true
   page-footer: 
     left: "Copyright 2024, Chris Talbot" 

@@ -86,23 +86,17 @@ First-gen academic with years of experience in the lab, field, and behind a scre
 
 ## Presentations
 
-**Talk** [\@ Evolution 2024, Montreal, QC]{.small} <br>
-[Do flowers of a color bloom together? (Talk V.2)](files/evolution_talk.pdf) [2024]{.cvdate} <br>
+**Talk** [\@ Evolution 2024, Montreal, QC]{.small} <br> [Do flowers of a color bloom together? (Talk V.2)](files/evolution_talk.pdf) [2024]{.cvdate} <br>
 
-**Poster** [\@ Evolution 2024, Montreal, QC]{.small} <br>
-[Do flowers of a color bloom together? (Poster V.2)](evolution2024poster.html) [2024]{.cvdate} <br>
+**Poster** [\@ Evolution 2024, Montreal, QC]{.small} <br> [Do flowers of a color bloom together? (Poster V.2)](evolution2024poster.html) [2024]{.cvdate} <br>
 
-**Lightning Talk** [\@ Botany 2024, Grand Rapids, MI]{.small} <br>
-[Do flowers of a color bloom together? (Lightning Talk)](files/botany_talk.pdf) [2024]{.cvdate} <br>
+**Lightning Talk** [\@ Botany 2024, Grand Rapids, MI]{.small} <br> [Do flowers of a color bloom together? (Lightning Talk)](files/botany_talk.pdf) [2024]{.cvdate} <br>
 
-**Poster** [\@ Botany 2024, Grand Rapids, MI]{.small} <br>
-[Do flowers of a color bloom together? (Poster V.1)](botany2024poster.html) [2024]{.cvdate} <br>
+**Poster** [\@ Botany 2024, Grand Rapids, MI]{.small} <br> [Do flowers of a color bloom together? (Poster V.1)](botany2024poster.html) [2024]{.cvdate} <br>
 
-**Talk** [\@ UMich -- Department of Ecology and Evolutionary Biology]{.small} <br> 
-Do flowers of a color bloom together? (Talk V.1) [2024]{.cvdate} <br>
+**Talk** [\@ UMich -- Department of Ecology and Evolutionary Biology]{.small} <br> Do flowers of a color bloom together? (Talk V.1) [2024]{.cvdate} <br>
 
-**Poster** [\@ UMich -- UROP -- Spring Symposium]{.small} <br> 
-[Optimizing CRISPR-Cas9 genetic modification in *Phyllobates* poison-dart frogs](files/pres/poster_22apr22.pdf) [2022]{.cvdate} <br>
+**Poster** [\@ UMich -- UROP -- Spring Symposium]{.small} <br> [Optimizing CRISPR-Cas9 genetic modification in *Phyllobates* poison-dart frogs](files/pres/poster_22apr22.pdf) [2022]{.cvdate} <br>
 
 ## Languages
 

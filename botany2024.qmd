@@ -16,7 +16,7 @@ css: cv.css
     -   [View the poster here!](botany2024poster.html)
 -   **Lightning Talk: Wednesday, June 19th**
     -   1:55pm-2:00pm, Gallery Overlook A – Germinating Ideas
-    -   [View the slides here!]("files/botany_talk.pdf")
+    -   [View the slides here!](%22files/botany_talk.pdf%22)
 
 Be sure to catch the rest of the Weber Lab at Botany, too! Thanks to Rosy for this awesome flyer.
 
@@ -48,7 +48,7 @@ $$
 
 **A**: Floral color for each species was transformed into HSL space. Floral color dissimilarity was calculated as the **Euclidean distance** between colors in **HSL** space:
 
-``` R
+``` r
 color_dis <- dist(hsl_data, method = "euclidean")
 ```
 
