@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.6.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chris Talbot - Popgen Weekly</title>
+<title>Popgen Weekly – Chris Talbot</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,11 +35,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2486e1f0a3ee9ee1fc393803a1361cdb.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-6561bbde787c299e21493071c8edc6ff.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5c1771a03235c90e7ec42f22b01facb9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -71,6 +71,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="newsletter.css">
 </head>
 
 <body class="nav-fixed">
@@ -85,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -112,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools tools-wide">
+            <div class="quarto-navbar-tools tools-wide">
     <a href="https://www.github.com/chris-a-talbot" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
     <a href="https://twitter.com/chris__talbot" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
     <a href="https://www.linkedin.com/in/chris-talbot" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
@@ -126,7 +127,30 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#popgen-weekly" id="toc-popgen-weekly" class="nav-link active" data-scroll-target="#popgen-weekly"><strong>Popgen Weekly</strong></a>
+  <ul>
+  <li><a href="#nov.-11-24" id="toc-nov.-11-24" class="nav-link" data-scroll-target="#nov.-11-24">Nov.&nbsp;11 ’24</a>
+  <ul class="collapse">
+  <li><a href="#grenedalf-population-genetic-statistics-for-the-next-generation-of-pool-sequencing" id="toc-grenedalf-population-genetic-statistics-for-the-next-generation-of-pool-sequencing" class="nav-link" data-scroll-target="#grenedalf-population-genetic-statistics-for-the-next-generation-of-pool-sequencing">grenedalf: population genetic statistics for the next generation of pool sequencing</a>
+  <ul class="collapse">
+  <li><a href="#tldr" id="toc-tldr" class="nav-link" data-scroll-target="#tldr">TL;DR</a></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key Points</a></li>
+  <li><a href="#methods-spotlight" id="toc-methods-spotlight" class="nav-link" data-scroll-target="#methods-spotlight">Methods Spotlight</a></li>
+  <li><a href="#notable-findings" id="toc-notable-findings" class="nav-link" data-scroll-target="#notable-findings">Notable Findings</a></li>
+  <li><a href="#impact-applications" id="toc-impact-applications" class="nav-link" data-scroll-target="#impact-applications">Impact &amp; Applications</a></li>
+  <li><a href="#personal-notes" id="toc-personal-notes" class="nav-link" data-scroll-target="#personal-notes">Personal Notes</a></li>
+  </ul></li>
+  <li><a href="#bridging-wright-fisher-and-moran-models" id="toc-bridging-wright-fisher-and-moran-models" class="nav-link" data-scroll-target="#bridging-wright-fisher-and-moran-models">Bridging Wright-Fisher and Moran models</a></li>
+  <li><a href="#graph-signal-processing-graph-neural-network-and-graph-learning-on-biological-data-a-systematic-review" id="toc-graph-signal-processing-graph-neural-network-and-graph-learning-on-biological-data-a-systematic-review" class="nav-link" data-scroll-target="#graph-signal-processing-graph-neural-network-and-graph-learning-on-biological-data-a-systematic-review">Graph Signal Processing, Graph Neural Network and Graph Learning on Biological Data: A Systematic Review</a></li>
+  <li><a href="#the-expected-sample-allele-frequencies-from-populations-of-changing-size-via-orthogonal-polynomials" id="toc-the-expected-sample-allele-frequencies-from-populations-of-changing-size-via-orthogonal-polynomials" class="nav-link" data-scroll-target="#the-expected-sample-allele-frequencies-from-populations-of-changing-size-via-orthogonal-polynomials">The expected sample allele frequencies from populations of changing size via orthogonal polynomials</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -150,9 +174,133 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>Popgen Weekly</strong></p>
+<section id="popgen-weekly" class="level1">
+<h1><strong>Popgen Weekly</strong></h1>
+<section id="nov.-11-24" class="level2 weekly-edition">
+<h2 class="anchored" data-anchor-id="nov.-11-24">Nov.&nbsp;11 ’24</h2>
+<section id="grenedalf-population-genetic-statistics-for-the-next-generation-of-pool-sequencing" class="level3">
+<h3 class="anchored" data-anchor-id="grenedalf-population-genetic-statistics-for-the-next-generation-of-pool-sequencing">grenedalf: population genetic statistics for the next generation of pool sequencing</h3>
+<p><strong>Journal</strong>: Bioinformatics&nbsp;<strong>Date</strong>: August 2024</p>
+<p><strong>Authors</strong>: Czech, L.; Spence, J.; Expósito-Alonso, M. é.&nbsp;<!-- Section content goes here --></p>
+<section id="tldr" class="level4">
+<h4 class="anchored" data-anchor-id="tldr">TL;DR</h4>
+<p>🔍 Study type: Methods/Software<br>
+📊 Key methods: Pool sequencing statistics, C++ optimization, streaming algorithms<br>
+🎯 Target audience: Population geneticists, bioinformaticians<br>
+⭐ Recommended citation context: When analyzing pool sequencing data or discussing modern population genetics tools</p>
+</section>
+<section id="key-points" class="level4">
+<h4 class="anchored" data-anchor-id="key-points">Key Points</h4>
+</section>
+<section id="methods-spotlight" class="level4">
+<h4 class="anchored" data-anchor-id="methods-spotlight">Methods Spotlight</h4>
+</section>
+<section id="notable-findings" class="level4">
+<h4 class="anchored" data-anchor-id="notable-findings">Notable Findings</h4>
+</section>
+<section id="impact-applications" class="level4">
+<h4 class="anchored" data-anchor-id="impact-applications">Impact &amp; Applications</h4>
+</section>
+<section id="personal-notes" class="level4">
+<h4 class="anchored" data-anchor-id="personal-notes">Personal Notes</h4>
+</section>
+</section>
+<section id="bridging-wright-fisher-and-moran-models" class="level3">
+<h3 class="anchored" data-anchor-id="bridging-wright-fisher-and-moran-models">Bridging Wright-Fisher and Moran models</h3>
+<p><strong>Journal</strong>: arXiv&nbsp;<strong>Date</strong>: October 2024</p>
+<p><strong>Authors</strong>: Alexandre, A.; Abbara, A.; Fruet, C.; Loverdo, C.; Bitbol, A.&nbsp;<!-- Section content goes here --></p>
+<div class="weekly-edition">
+<section id="tldr-1" class="level4">
+<h4 class="anchored" data-anchor-id="tldr-1">TL;DR</h4>
+<p>🔍 Study type: Theoretical mathematics/computational biology<br>
+📊 Key methods: Mathematical modeling, diffusion approximation, eigenvalue analysis<br>
+🎯 Target audience: Population geneticists, mathematical biologists<br>
+⭐ Recommended citation context: When discussing ur developing population genetic models, hen analyzing theoretical evolutionary scenarios and the relative influence of demographic values</p>
+</section>
+<section id="background" class="level4">
+<h4 class="anchored" data-anchor-id="background">Background</h4>
+<p>Population genetic models provide a theoretical framework from which to evaluate evolutionary scenarios. This paper contributes to the literature on population genetic models in well-mixed (random mating) constant-size populations. The Wright-Fisher model is one of the oldest population genetic models, dating back to the 1930s. It uses discrete, non-overlapping generations, where each individual dies and is replaced by one new individual in each generation. The Moran model allows for continuous, overlapping generations, where at any given time, one individual may die and be replaced by one new individual. Chia and Watterson (1969) generalized these two models by allowing individuals to reproduce independently, then populating the next generation using a random fraction of parents and offspring from the previous generation. This model generalizes both Wright-Fisher and Moran models for particular proportions of parents to offspring in subsequent generations. However, the Chia and Watterson model is highly mathematically complex, making it difficult to study the properties of the model. The model is so complex that the probability of fixation for a particular mutant haplotype in this model has never been derived.</p>
+</section>
+<section id="key-points-1" class="level4">
+<h4 class="anchored" data-anchor-id="key-points-1">Key Points</h4>
+<p>Alexandre et al.&nbsp;developed a model that tracks evolution in well-mixed populations of constant size by updating a proportion of the population randomly in discrete intervals. This model generalizes to the Wright-Fisher model (when the entire population is updated at each time step) and the Moran model (when one individual is updated at each time step). It is mathematically simpler than previous generalizations of these two models, allowing for the straight-forward derivation of the fixation probability of mutant alleles in the population.</p>
+</section>
+<section id="methods-spotlight-1" class="level4">
+<h4 class="anchored" data-anchor-id="methods-spotlight-1">Methods Spotlight</h4>
+</section>
+<section id="notable-findings-1" class="level4">
+<h4 class="anchored" data-anchor-id="notable-findings-1">Notable Findings</h4>
+</section>
+<section id="impact-applications-1" class="level4">
+<h4 class="anchored" data-anchor-id="impact-applications-1">Impact &amp; Applications</h4>
+</section>
+<section id="personal-notes-1" class="level4">
+<h4 class="anchored" data-anchor-id="personal-notes-1">Personal Notes</h4>
+</section>
+</div>
+</section>
+<section id="graph-signal-processing-graph-neural-network-and-graph-learning-on-biological-data-a-systematic-review" class="level3">
+<h3 class="anchored" data-anchor-id="graph-signal-processing-graph-neural-network-and-graph-learning-on-biological-data-a-systematic-review">Graph Signal Processing, Graph Neural Network and Graph Learning on Biological Data: A Systematic Review</h3>
+<p><strong>Journal</strong>: IEEE Reviews in Biomedical Engineering&nbsp;<strong>Date</strong>: 2023</p>
+<p><strong>Authors</strong>: Li, R.; Yuan, X.; Radfar, M. e.; Marendy, P.; Ni, W.; O’Brien, T.; Casillas-Espinosa, P.&nbsp;<!-- Section content goes here --></p>
+<div class="weekly-edition">
+<section id="tldr-2" class="level4">
+<h4 class="anchored" data-anchor-id="tldr-2">TL;DR</h4>
+<p>🔍 Study type:<br>
+📊 Key methods:<br>
+🎯 Target audience:<br>
+⭐ Recommended citation context:</p>
+</section>
+<section id="key-points-2" class="level4">
+<h4 class="anchored" data-anchor-id="key-points-2">Key Points</h4>
+</section>
+<section id="methods-spotlight-2" class="level4">
+<h4 class="anchored" data-anchor-id="methods-spotlight-2">Methods Spotlight</h4>
+</section>
+<section id="notable-findings-2" class="level4">
+<h4 class="anchored" data-anchor-id="notable-findings-2">Notable Findings</h4>
+</section>
+<section id="impact-applications-2" class="level4">
+<h4 class="anchored" data-anchor-id="impact-applications-2">Impact &amp; Applications</h4>
+</section>
+<section id="personal-notes-2" class="level4">
+<h4 class="anchored" data-anchor-id="personal-notes-2">Personal Notes</h4>
+</section>
+</div>
+</section>
+<section id="the-expected-sample-allele-frequencies-from-populations-of-changing-size-via-orthogonal-polynomials" class="level3">
+<h3 class="anchored" data-anchor-id="the-expected-sample-allele-frequencies-from-populations-of-changing-size-via-orthogonal-polynomials">The expected sample allele frequencies from populations of changing size via orthogonal polynomials</h3>
+<p><strong>Journal</strong>: Theoretical Population Biology&nbsp;<strong>Date</strong>: June 2024</p>
+<p><strong>Authors</strong>: Mikula, L.; Vogl, C.&nbsp;<!-- Section content goes here --></p>
+<div class="weekly-edition">
+<section id="tldr-3" class="level4">
+<h4 class="anchored" data-anchor-id="tldr-3">TL;DR</h4>
+<p>🔍 Study type:<br>
+📊 Key methods:<br>
+🎯 Target audience:<br>
+⭐ Recommended citation context:</p>
+</section>
+<section id="key-points-3" class="level4">
+<h4 class="anchored" data-anchor-id="key-points-3">Key Points</h4>
+</section>
+<section id="methods-spotlight-3" class="level4">
+<h4 class="anchored" data-anchor-id="methods-spotlight-3">Methods Spotlight</h4>
+</section>
+<section id="notable-findings-3" class="level4">
+<h4 class="anchored" data-anchor-id="notable-findings-3">Notable Findings</h4>
+</section>
+<section id="impact-applications-3" class="level4">
+<h4 class="anchored" data-anchor-id="impact-applications-3">Impact &amp; Applications</h4>
+</section>
+<section id="personal-notes-3" class="level4">
+<h4 class="anchored" data-anchor-id="personal-notes-3">Personal Notes</h4>
+</section>
+</div>
+</section>
+</section>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -334,18 +482,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -377,7 +514,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -385,7 +544,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

@@ -4,6 +4,199 @@ format:
   html:
     toc: true
     toc-depth: 4
+    css: newsletter.css
+bibliography: newsletter.bib
+suppress-bibliography: true
 ---
 
-**Popgen Weekly**
+```{r setup}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: 'hide'
+library(RefManageR)
+library(stringr)
+
+#| echo: false
+#| message: false
+#| warning: false
+#| results: 'hide'
+library(RefManageR)
+library(stringr)
+create_article_section <- function(citation_key, 
+                                 bib_file = "newsletter.bib",
+                                 title = NULL,
+                                 journal = NULL,
+                                 date = NULL,
+                                 authors = NULL) {
+  # Read bibliography
+  bib <- ReadBib(bib_file)
+  if (!citation_key %in% names(bib)) {
+    return(NULL)
+  }
+  
+  entry <- bib[[citation_key]]
+  
+  # Process authors
+  if (is.null(authors)) {
+    authors <- sapply(entry$author, function(author) {
+      # Get family name
+      family <- author$family
+      
+      # Process given name
+      if (!is.null(author$given)) {
+        given <- trimws(author$given)
+        # Split given names on spaces or dots
+        given_parts <- strsplit(given, "[\\s\\.]+")[[1]]
+        # Abbreviate each part
+        abbreviated <- sapply(given_parts, function(x) {
+          paste0(substr(x, 1, 1), ".")
+        })
+        # Combine abbreviated parts
+        given <- paste(abbreviated, collapse = " ")
+      } else {
+        given <- ""
+      }
+      
+      # Combine family and given names
+      paste0(family, ifelse(given != "", paste0(", ", given), ""))
+    })
+    authors_text <- paste(authors, collapse = "; ")
+  } else {
+    authors_text <- authors
+  }
+  
+  # Process title - remove curly braces
+  if (!is.null(title)) {
+    clean_title <- gsub("[{}]", "", title)
+  } else {
+    clean_title <- gsub("[{}]", "", entry$title)
+  }
+  
+  # Process journal
+  journal <- if (!is.null(journal)) journal else entry$journal
+  
+  # Process publication date
+  if (!is.null(date)) {
+    pub_date <- date
+  } else {
+    year <- entry$year
+    month <- entry$month
+    
+    months_full <- c("January", "February", "March", "April", "May", "June",
+                    "July", "August", "September", "October", "November", "December")
+    month_num <- match(tolower(month), tolower(substr(months_full, 1, 3)))
+    
+    pub_date <- if (!is.null(month) && !is.na(month_num)) {
+      paste(months_full[month_num], year)
+    } else {
+      year
+    }
+  }
+  
+  # Create the section content
+  content <- paste0(
+    "### ", clean_title, "\n",
+    "**Journal**: ", journal, "\\ ",
+    "**Date**: ", pub_date, "\n\n",
+    "**Authors**: ", authors_text, "\\ ",
+    "<!-- Section content goes here -->\n\n"
+  )
+  
+  return(content)
+}
+```
+
+# **Popgen Weekly**
+
+:::::: weekly-edition
+## Nov. 11 '24
+
+`r create_article_section("czech_grenedalf_2024")`
+
+#### TL;DR
+
+🔍 Study type: Methods/Software\
+📊 Key methods: Pool sequencing statistics, C++ optimization, streaming algorithms\
+🎯 Target audience: Population geneticists, bioinformaticians\
+⭐ Recommended citation context: When analyzing pool sequencing data or discussing modern population genetics tools
+
+#### Key Points
+
+#### Methods Spotlight
+
+#### Notable Findings
+
+#### Impact & Applications
+
+#### Personal Notes
+
+`r create_article_section("alexandre_bridging_2024", journal="arXiv")`
+
+::: weekly-edition
+#### TL;DR
+
+🔍 Study type: Theoretical mathematics/computational biology\
+📊 Key methods: Mathematical modeling, diffusion approximation, eigenvalue analysis\
+🎯 Target audience: Population geneticists, mathematical biologists\
+⭐ Recommended citation context: When discussing ur developing population genetic models,  hen analyzing theoretical evolutionary scenarios and the relative influence of demographic values
+
+#### Background
+
+Population genetic models provide a theoretical framework from which to evaluate evolutionary scenarios. This paper contributes to the literature on population genetic models in well-mixed (random mating) constant-size populations. The Wright-Fisher model is one of the oldest population genetic models, dating back to the 1930s. It uses discrete, non-overlapping generations, where each individual dies and is replaced by one new individual in each generation. The Moran model allows for continuous, overlapping generations, where at any given time, one individual may die and be replaced by one new individual. Chia and Watterson (1969) generalized these two models by allowing individuals to reproduce independently, then populating the next generation using a random fraction of parents and offspring from the previous generation. This model generalizes both Wright-Fisher and Moran models for particular proportions of parents to offspring in subsequent generations. However, the Chia and Watterson model is highly mathematically complex, making it difficult to study the properties of the model. The model is so complex that the probability of fixation for a particular mutant haplotype in this model has never been derived.
+
+#### Key Points
+
+Alexandre et al. developed a model that tracks evolution in well-mixed populations of constant size by updating a proportion of the population randomly in discrete intervals. This model generalizes to the Wright-Fisher model (when the entire population is updated at each time step) and the Moran model (when one individual is updated at each time step). It is mathematically simpler than previous generalizations of these two models, allowing for the straight-forward derivation of the fixation probability of mutant alleles in the population.
+
+#### Methods Spotlight
+
+#### Notable Findings
+
+#### Impact & Applications
+
+#### Personal Notes
+:::
+
+`r create_article_section("li_graph_2023")`
+
+::: weekly-edition
+#### TL;DR
+
+🔍 Study type: \
+📊 Key methods: \
+🎯 Target audience: \
+⭐ Recommended citation context:
+
+#### Key Points
+
+#### Methods Spotlight
+
+#### Notable Findings
+
+#### Impact & Applications
+
+#### Personal Notes
+:::
+
+`r create_article_section("mikula_expected_2024")`
+
+::: weekly-edition
+#### TL;DR
+
+🔍 Study type: \
+📊 Key methods: \
+🎯 Target audience: \
+⭐ Recommended citation context:
+
+#### Key Points
+
+#### Methods Spotlight
+
+#### Notable Findings
+
+#### Impact & Applications
+
+#### Personal Notes
+:::
+::::::
