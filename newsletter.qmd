@@ -121,82 +121,58 @@ create_article_section <- function(citation_key,
 🎯 Target audience: Population geneticists, bioinformaticians\
 ⭐ Recommended citation context: When analyzing pool sequencing data or discussing modern population genetics tools
 
-#### Key Points
-
-#### Methods Spotlight
-
-#### Notable Findings
-
-#### Impact & Applications
-
-#### Personal Notes
+#### Summary
 
 `r create_article_section("alexandre_bridging_2024", journal="arXiv")`
 
-::: weekly-edition
 #### TL;DR
 
 🔍 Study type: Theoretical mathematics/computational biology\
 📊 Key methods: Mathematical modeling, diffusion approximation, eigenvalue analysis\
 🎯 Target audience: Population geneticists, mathematical biologists\
-⭐ Recommended citation context: When discussing ur developing population genetic models,  hen analyzing theoretical evolutionary scenarios and the relative influence of demographic values
+⭐ Recommended citation context: When discussing ur developing population genetic models, hen analyzing theoretical evolutionary scenarios and the relative influence of demographic values
 
 #### Background
 
 Population genetic models provide a theoretical framework from which to evaluate evolutionary scenarios. This paper contributes to the literature on population genetic models in well-mixed (random mating) constant-size populations. The Wright-Fisher model is one of the oldest population genetic models, dating back to the 1930s. It uses discrete, non-overlapping generations, where each individual dies and is replaced by one new individual in each generation. The Moran model allows for continuous, overlapping generations, where at any given time, one individual may die and be replaced by one new individual. Chia and Watterson (1969) generalized these two models by allowing individuals to reproduce independently, then populating the next generation using a random fraction of parents and offspring from the previous generation. This model generalizes both Wright-Fisher and Moran models for particular proportions of parents to offspring in subsequent generations. However, the Chia and Watterson model is highly mathematically complex, making it difficult to study the properties of the model. The model is so complex that the probability of fixation for a particular mutant haplotype in this model has never been derived.
 
-#### Key Points
+#### Summary
 
 Alexandre et al. developed a model that tracks evolution in well-mixed populations of constant size by updating a proportion of the population randomly in discrete intervals. This model generalizes to the Wright-Fisher model (when the entire population is updated at each time step) and the Moran model (when one individual is updated at each time step). It is mathematically simpler than previous generalizations of these two models, allowing for the straight-forward derivation of the fixation probability of mutant alleles in the population.
 
-#### Methods Spotlight
-
-#### Notable Findings
-
-#### Impact & Applications
-
-#### Personal Notes
-:::
-
 `r create_article_section("li_graph_2023")`
 
-::: weekly-edition
 #### TL;DR
 
-🔍 Study type: \
-📊 Key methods: \
-🎯 Target audience: \
+🔍 Study type:\
+📊 Key methods:\
+🎯 Target audience:\
 ⭐ Recommended citation context:
 
-#### Key Points
-
-#### Methods Spotlight
-
-#### Notable Findings
-
-#### Impact & Applications
-
-#### Personal Notes
-:::
+#### Summary
 
 `r create_article_section("mikula_expected_2024")`
 
-::: weekly-edition
 #### TL;DR
 
-🔍 Study type: \
-📊 Key methods: \
-🎯 Target audience: \
+🔍 Study type:\
+📊 Key methods:\
+🎯 Target audience:\
 ⭐ Recommended citation context:
 
-#### Key Points
+#### Summary
 
-#### Methods Spotlight
+`r create_article_section("nguyen_whole-genome_2024", journal="bioarXiv")`
 
-#### Notable Findings
+#### TL;DR
 
-#### Impact & Applications
+🔍 Study type: spatiotemporal population genomics; conservation genetics\
+📊 Key methods: whole-genome sequencing; PCA; ADMIXTURE; SMC++; IBDNe\
+🎯 Target audience: Population genomicists, conservation geneticists\
+⭐ Recommended citation context: studies investigating the genomics of population decline,
+ 
+#### Summary
 
-#### Personal Notes
-:::
+The Florida Scrub-Jay (*Aphelocoma coerulescens*) has experienced a 95% population decline since 1920, providing an opportunity to study the genomic consequences of habitat fragmentation and population decline in real-time. Using whole-genome sequencing data from 241 individuals across five populations sampled at two time points (1990s and 2017-2019), Nguyen et al. inferred demographic histories for each population and quantified changes in genetic diversity, inbreeding levels, and gene flow. The team employed both SFS-based (SMC++) and IBD segment-based (IBDNe) approaches to reconstruct demographic histories across different timescales, revealing that all populations experienced significant declines during the Last Glacial Maximum, followed by divergent trajectories during the Holocene. Their analyses showed that large, stable populations (ONF and ABS) maintained higher genetic diversity and lower inbreeding levels compared to smaller populations, while the isolated JDSP population exhibited significant increases in inbreeding and runs of homozygosity (ROH) over the sampling period. Intriguingly, small but non-isolated populations (PLE and SPSP) showed relatively stable inbreeding levels despite their size, highlighting the critical role of gene flow in maintaining genetic diversity. Contemporary gene flow analysis revealed reduced connectivity across all populations compared to historic levels, suggesting increasing isolation due to habitat fragmentation. The study demonstrates how different demographic histories and degrees of isolation influence genomic patterns in declining populations, providing valuable insights for conservation genetics. The researchers conclude that even small, remnant populations should be prioritized for conservation as they can serve as important stepping stones for maintaining gene flow across the landscape.
+
 ::::::
