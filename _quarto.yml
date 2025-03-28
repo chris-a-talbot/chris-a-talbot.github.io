@@ -18,8 +18,6 @@ website:
         text: Home
       - href: CV.qmd
         text: CV
-      - href: newsletter.qmd
-        text: Popgen Weekly
       - href: botany2024.qmd
         text: Botany 2024
       - href: evolution2024.qmd
