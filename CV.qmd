@@ -20,6 +20,10 @@ First-gen academic with years of experience in the lab, field, and behind a scre
 
 ## Education
 
+**Ph.D.** -- Computational Biology [Starting 2025]{.cvdate} <br> *Cornell University* [GPA: N/A]{.cvgpa}
+
+-   Research Advisor: Philipp Messer
+
 **B.S.** -- Ecology, Evolution, and Biodiversity [2024]{.cvdate} <br> *University of Michigan (UMich)* [GPA: 3.74]{.cvgpa}
 
 -   Graduated with **Highest Honors** under the supervision of Marjorie Weber
