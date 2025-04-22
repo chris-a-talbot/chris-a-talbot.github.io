@@ -1,6 +1,6 @@
 ---
 title: "Chris Talbot | CV"
-subtitle: "Computational Lab Tech at the University of Michigan -- Bradburd and Weber Labs"
+subtitle: "Incoming Ph.D. Student in Computational Biology, Cornell University | National Science Foundation Graduate Research Fellow"
 format:
   html:
     toc: true
@@ -8,107 +8,172 @@ format:
     toc-expand: 2
     other-links:
       - text: "PDF"
-        href: "files/CV.pdf"
+        href: "files/CV.pdf" # Make sure this path is correct and the PDF is updated
 css: cv.css
 ---
 
-**Status**: Computational Lab Tech at the University of Michigan, Bradburd and Weber Labs <br> **Field**: Ecology & Evolutionary Biology <br> **Interests**: Evolutionary ecology, global change, population genetics, machine learning <br> **Techs**: Python, R, C++, Rust, SLiM
+**Status**: Technician at the University of Michigan, Weber and Bradburd Labs <br>
+**Fields**: Evolutionary Biology, Computational Biology, Evolutionary Ecology <br>
+**Interests**: Population genetics, global change, genomics, community ecology <br>
+**Techs**: Python, R, C++, Rust, TypeScript, SLiM
 
 ## Summary
 
-First-gen academic with years of experience in the lab, field, and behind a screen. Interested in patterns of ecological organization across spatiotemporal scales, the evolutionary drivers of those patterns, and how those patterns respond to global change. Fascinated with emerging methods for evaluating complex systems, including community science, machine learning, and tree sequence statistics.
+*   First-gen academic and biologist with years of experience in lab, field, and computational work.
+*   Interested in patterns and drivers of ecological organization across spatiotemporal scales under global change.
+*   Exploring emerging methods for complex systems, including community science and machine learning.
 
 ## Education
 
-**Ph.D.** -- Computational Biology [Starting 2025]{.cvdate} <br> *Cornell University* [GPA: N/A]{.cvgpa}
+**Ph.D.** -- Computational Biology [Starting 2025]{.cvdate} <br>
+*Cornell University* <br>
 
--   Research Advisor: Philipp Messer
+*   Advisor: Philipp Messer
+*   Key Funding: National Science Foundation Graduate Research Fellowship Program (2025-2028)
 
-**B.S.** -- Ecology, Evolution, and Biodiversity [2024]{.cvdate} <br> *University of Michigan (UMich)* [GPA: 3.74]{.cvgpa}
+**B.S.** -- Ecology, Evolution, and Biodiversity [2024]{.cvdate} <br>
+*University of Michigan (UMich)* [GPA: 3.74]{.cvgpa} <br>
 
--   Graduated with **Highest Honors** under the supervision of Marjorie Weber
--   Honors Thesis: [Patterns of floral color in communities of common Northeast American wildflowers](files/honors_thesis.pdf)
--   Coursework: Statistics & probability, programming & data structures, genetics, macroevolution, ethnobotany
+*   Graduated with **Highest Honors** under the supervision of Marjorie Weber
+*   Honors Thesis: [Patterns of floral color in communities of common Northeast American wildflowers](files/honors_thesis.pdf) <!-- Assuming you have this PDF -->
+*   Coursework: Statistics & probability, programming & data structures, genetics, macroevolution, ethnobotany
 
-**A.G.S.** -- Computer Science & Mathematics [2020]{.cvdate} <br> *Grand Rapids Community College (GRCC)* [GPA: 3.9]{.cvgpa}
+**A.G.S.** -- General Studies (Computer Science & Mathematics Concentration) [2020]{.cvdate} <br>
+*Grand Rapids Community College (GRCC)* [GPA: 3.9]{.cvgpa} <br>
 
--   Coursework: C++ programming, database development, web application programming, information security
+*   Coursework: C++ programming, database development, web application programming, information security
 
 ## Research
 
-**Lab Technician** -- Bradburd Lab [2024-Present]{.cvdate} <br> *UMich-Ecology & Evolutionary Biology (EEB)* <br>
+**Lab Technician** -- Bradburd Lab [2024-Present]{.cvdate} <br>
+*UMich-Ecology & Evolutionary Biology (EEB)* <br>
 
-**Lab Technician** -- Weber Lab [2022-Present]{.cvdate} <br> *UMich-EEB* <br>
+*   Project: Testing, documenting, and visualizing novel geographic evolutionary inference methods
 
--   Project: "Patterns of floral color in communities of common Northeast American wildflowers"
+**Lab Technician** -- Weber Lab [2022-Present]{.cvdate} <br>
+*UMich-EEB* <br>
 
-**Undergraduate Researcher** -- Márquez Lab [2021-2022]{.cvdate} <br> *UMich-EEB* <br>
+*   Project: "Patterns of floral color in communities of common Northeast American wildflowers"
 
--   Project: "Optimizing CRISPR-Cas9 genetic modification in Phyllobates poison-dart frogs"
+**Undergraduate Researcher** -- Márquez Lab [2021-2022]{.cvdate} <br>
+*UMich-EEB* <br>
+
+*   Project: "Optimizing CRISPR-Cas9 genetic modification in *Phyllobates* poison-dart frogs"
 
 ## Publications
 
-#### [*In Preparation*]{.underline}
+#### *Pre-prints/In Prep/In Review:*
 
-[Talbot, CA]{.underline}, Weber, MG. **2024**. Investigating patterns of floral color across Northeast American wildflowers using citizen science data.
+**2025** -- [Talbot, C. A.]{.underline}, Bradburd, G. S. Optimizing temporal sampling strategies for spatial population genetic inference using ancestral recombination graphs. **In Preparation for Evolution.**
 
-## Fellowships and Grants
+**2025** -- [Talbot, C. A.]{.underline}, Weber, M. G. Investigating patterns of floral color across Northeast American wildflowers using community science data. **In Preparation for American Journal of Botany.**
 
-**Biological Station Student Fellow** [2023]{.cvdate} <br> *UMich Biological Station* [\$1,680]{.cvgpa} <br>
+#### *Published:*
 
-**Student Research Grant** [2022-2023]{.cvdate} <br> *UMich Undergraduate Research Opportunity Program (UROP)* [\$5,000]{.cvgpa} <br>
+**2024** -- Graham, C. D. K., ..., [Talbot, C. A.]{.underline}, Yerks, A. L., & Weber, M. G. Mite domatia and associated mite density in a North American Eastern Deciduous Forest in Michigan. **Published in Ecology and Evolution.**
 
-**Biomedical and Life Sciences Summer Fellow** [2022]{.cvdate} <br> *UMich UROP* [\$4,000]{.cvgpa} <br>
+## Funding & Awards
 
-**Community College Summer Institute Fellow** [2019]{.cvdate} <br> *UMich-School of Information* [\$100]{.cvgpa} <br>
+**Total: \$172,280**
 
-## Teaching and Mentoring
+**Graduate Research Fellowship Program** [2025-2030]{.cvdate} <br>
+*National Science Foundation* [\$159,000]{.cvgpa} <br>
 
-**Docent (Volunteer Educator)** [2023-Present]{.cvdate} <br> *Matthaei Botanical Gardens and Nichols Arboretum* <br>
+**Chancellor's Fellowship** [Offered 2025]{.cvdate} <br>
+*University of California, Berkeley* [(Declined)]{.cvgpa} <br>
 
-**Forestry Test Writer & Proctor (Volunteer)** [2023-Present]{.cvdate} <br> *UMich Science Olympiad* <br>
+**Eugene Cota-Robles Fellowship** [Offered 2025]{.cvdate} <br>
+*University of California, Davis* [(Declined)]{.cvgpa} <br>
 
-**Director of Percussion** [2022-2023]{.cvdate} <br> *Lake Orion Community Schools, Lake Orion, MI* <br>
+**Eugene Cota-Robles Fellowship** [Offered 2025]{.cvdate} <br>
+*University of California, Santa Cruz* [(Declined)]{.cvgpa} <br>
 
-**Transfer Student Peer Mentor** [2022-2023]{.cvdate} <br> *UMich-LSA Transfer Bridges Program* <br>
+**Biological Station Student Fellowship** [2023]{.cvdate} <br>
+*UMich Biological Station* [\$1,680]{.cvgpa} <br>
 
-**Director of Percussion** [2019-2022]{.cvdate} <br> *Spring Lake Public Schools, Spring Lake, MI* <br>
+**Student Research Grant** [2022-2023]{.cvdate} <br>
+*UMich Undergraduate Research Opportunity Program (UROP)* [\$5,000]{.cvgpa} <br>
 
-**Freelance Percussion Instructor and Composer** [2018-2022]{.cvdate} <br> *8 local high schools, Michigan* <br>
+**Travel Grant** [2022]{.cvdate} <br>
+*SACNAS* [\$2,500]{.cvgpa} <br>
 
-**Professional Peer Tutor** -- GRCC Drop-in Tutoring Labs - Mathematics, Language Arts [2019-2020]{.cvdate} <br> *GRCC* <br>
+**Biomedical & Life Sciences Summer Fellowship** [2022]{.cvdate} <br>
+*UMich UROP* [\$4,000]{.cvgpa} <br>
+
+**Community College Summer Institute Fellowship** [2019]{.cvdate} <br>
+*UMich-School of Information* [\$100]{.cvgpa} <br>
+
+## Teaching & Mentoring
+
+**Docent (Volunteer Educator)** [2023-Present]{.cvdate} <br>
+*Matthaei Botanical Gardens & Nichols Arboretum* <br>
+
+**Test Writer & Proctor, Forestry & Botany (Volunteer)** [2023-2025]{.cvdate} <br>
+*UMich Science Olympiad* <br>
+
+**Director of Percussion** [2022-2023]{.cvdate} <br>
+*Lake Orion Community Schools, Lake Orion, MI* <br>
+
+**Transfer Student Peer Mentor** [2022-2023]{.cvdate} <br>
+*UMich-LSA Transfer Bridges Program* <br>
+
+**Director of Percussion** [2019-2022]{.cvdate} <br>
+*Spring Lake Public Schools, Spring Lake, MI* <br>
+
+**Freelance Percussion Instructor & Composer** [2018-2022]{.cvdate} <br>
+*8 school districts across Michigan* <br>
+
+**Professional Peer Tutor** -- Mathematics, Language Arts [2019-2020]{.cvdate} <br>
+*GRCC Drop-in Tutoring Labs* <br>
+
+## Talks
+
+**Third Joint Congress on Evolutionary Biology** [Montreal, QC (Talk)]{.small} [2024]{.cvdate} <br>
+[*Do flowers of a color bloom together? (Talk V.2)*](files/evolution_talk.pdf) <!-- Link from old CV -->
+
+**Botany 2024** [Grand Rapids, MI (Lightning Talk)]{.small} [2024]{.cvdate} <br>
+[*Do flowers of a color bloom together? (Lightning Talk)*](files/botany_talk.pdf) <!-- Link from old CV -->
+
+**UMich Ecology & Evolutionary Biology** [Ann Arbor, MI (Honors Thesis Talk)]{.small} [2024]{.cvdate} <br>
+*Patterns of floral color in communities of common Northeast American wildflowers* <!-- Title derived from thesis -->
+
+## Posters
+
+**Third Joint Congress on Evolutionary Biology** [Montreal, QC]{.small} [2024]{.cvdate} <br>
+[*Do flowers of a color bloom together? (Poster V.2)*](evolution2024poster.html) <!-- Link from old CV -->
+
+**Botany 2024** [Grand Rapids, MI]{.small} [2024]{.cvdate} <br>
+[*Do flowers of a color bloom together? (Poster V.1)*](botany2024poster.html) <!-- Link from old CV -->
+
+**UMich Undergraduate Research Opportunity Program Symposium** [Ann Arbor, MI]{.small} [2022]{.cvdate} <br>
+[*Optimizing CRISPR-Cas9 genetic modification in *Phyllobates* poison-dart frogs*](files/pres/poster_22apr22.pdf) <!-- Link from old CV -->
 
 ## Professional & Service
 
-**Percussionist** [2024-Present]{.cvdate} <br> *Straits of Mackinac Concert Band, Mackinaw City, MI* <br>
+**Percussionist** [2024-Present]{.cvdate} <br>
+*Straits of Mackinac Concert Band, Mackinaw City, MI* <br>
 
-**Founder, President, and Volunteer** [2023-Present]{.cvdate} <br> *Students for Public Power @UM* <br>
+**Co-Founder, President, and Volunteer** [2023-2025]{.cvdate} <br>
+*Students for Public Power @UM* <br>
 
-**Shift Leader** [2021-2022]{.cvdate} <br> *Biggby Coffee, Grand Rapids, MI* <br>
+**Shift Leader** [2021-2023]{.cvdate} <br>
+*Biggby Coffee, Grand Rapids, MI* <br>
 
-**Seasonal Retail Lead** [2019]{.cvdate} <br> *John Ball Zoo, Grand Rapids, MI* <br>
-
-## Presentations
-
-**Talk** [\@ Evolution 2024, Montreal, QC]{.small} <br> [Do flowers of a color bloom together? (Talk V.2)](files/evolution_talk.pdf) [2024]{.cvdate} <br>
-
-**Poster** [\@ Evolution 2024, Montreal, QC]{.small} <br> [Do flowers of a color bloom together? (Poster V.2)](evolution2024poster.html) [2024]{.cvdate} <br>
-
-**Lightning Talk** [\@ Botany 2024, Grand Rapids, MI]{.small} <br> [Do flowers of a color bloom together? (Lightning Talk)](files/botany_talk.pdf) [2024]{.cvdate} <br>
-
-**Poster** [\@ Botany 2024, Grand Rapids, MI]{.small} <br> [Do flowers of a color bloom together? (Poster V.1)](botany2024poster.html) [2024]{.cvdate} <br>
-
-**Talk** [\@ UMich -- Department of Ecology and Evolutionary Biology]{.small} <br> Do flowers of a color bloom together? (Talk V.1) [2024]{.cvdate} <br>
-
-**Poster** [\@ UMich -- UROP -- Spring Symposium]{.small} <br> [Optimizing CRISPR-Cas9 genetic modification in *Phyllobates* poison-dart frogs](files/pres/poster_22apr22.pdf) [2022]{.cvdate} <br>
+**Seasonal Retail Lead** [2019]{.cvdate} <br>
+*John Ball Zoo, Grand Rapids, MI* <br>
 
 ## Languages
 
-**R** -- Advanced (C1) <br> **German** -- Intermediate (B2) <br> **C++** -- Intermediate (B2) <br> **Python** -- Intermediate (B1) <br> **Nishnaabemwin** -- Beginner (A1) <br>
+**R**: Advanced (C1) <br>
+**German**: Intermediate (B2) <br>
+**C++**: Intermediate (B2) <br>
+**Python**: Intermediate (B1) <br>
+**Nishnaabemwin (Eastern Ojibwe)**: Beginner (A1) <br>
 
 ## Certifications
 
-**Certified Michigan Naturalist** [2024]{.cvdate} <br> *Michigan State University-College of Agriculture and Natural Resources Extension* <br>
+**Certified Michigan Naturalist** [2024]{.cvdate} <br>
+*Michigan State University Extension* <br>
 
 ## Professional Memberships
 
@@ -120,8 +185,11 @@ First-gen academic with years of experience in the lab, field, and behind a scre
 
 ## Extracurriculars
 
-**Founding Member** [2023-Present]{.cvdate} <br> *UMich Ecological Restoration Club* <br>
+**Founding Member** [2023-2025]{.cvdate} <br>
+*UMich Ecological Restoration Club* <br>
 
-**Vice President** [2019-2020]{.cvdate} <br> *GRCC Programmers* <br>
+**Vice President** [2019-2020]{.cvdate} <br>
+*GRCC Programmers* <br>
 
-**Ensemble Leader, Section Leader, and Snare Drummer** [2014-2020]{.cvdate} <br> *Genesis Percussion Ensemble* <br>
+**Ensemble & Section Leader, Performer** [2014-2020]{.cvdate} <br>
+*Genesis Percussion Ensemble* <br>

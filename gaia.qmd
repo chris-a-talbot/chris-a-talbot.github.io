@@ -2,7 +2,6 @@
 title: "Gaia: Crash Course"
 author: "Chris Talbot"
 date: "9/11/2024"
-bibliography: references.bib
 execute:
   eval: false
 ---
