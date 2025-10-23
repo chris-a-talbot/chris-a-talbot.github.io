@@ -1,108 +1,108 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "chris-a-talbot.github.io",
+    "objectID": "gaia.html",
+    "href": "gaia.html",
+    "title": "Gaia: Crash Course",
     "section": "",
-    "text": "First-gen academic with years of experience in the lab, field, and behind a screen. Interested in patterns of ecological organization across spatiotemporal scales, the evolutionary drivers of those patterns, and how those patterns respond to global change. Fascinated with emerging methods for evaluating complex systems, including community science, machine learning, and tree sequence statistics."
+    "text": "Gaia is a method and R package for efficiently inferring the geographic locations of the shared ancestors of a modern, georeferenced sample of genomes.1\n\n\nIn uninterrupted continuous space models, gaia can be used to infer the most likely geographic coordinates of ancestors of contemporary samples, reconstructing spatial demographic history. In discrete space models, gaia can be used to infer the most likely discrete locations of ancestors of contemporary samples as well as various new spatial demographic parameters, such as ancestry coefficients and ancestry flux, detailed in later sections.\n\n\n\nGaia works by inferring ancestral geographic locations of ancestors of contemporary samples using the information encoded in a georeferenced Ancestral Recombination Graph (ARG) as implemented by tskit as a tree sequence.2 In addition to the georeferenced ARG, when using discrete models of space, gaia requires a migration cost matrix representing the cost of migration from one discrete location to any other."
   },
   {
-    "objectID": "CV.html",
-    "href": "CV.html",
-    "title": "Chris Talbot | CV",
+    "objectID": "gaia.html#what-can-i-do-with-it",
+    "href": "gaia.html#what-can-i-do-with-it",
+    "title": "Gaia: Crash Course",
     "section": "",
-    "text": "Status: Technician at the University of Michigan, Weber and Bradburd Labs  Fields: Evolutionary Biology, Computational Biology, Evolutionary Ecology  Interests: Population genetics, global change, genomics, community ecology  Techs: Python, R, C++, Rust, TypeScript, SLiM"
+    "text": "In uninterrupted continuous space models, gaia can be used to infer the most likely geographic coordinates of ancestors of contemporary samples, reconstructing spatial demographic history. In discrete space models, gaia can be used to infer the most likely discrete locations of ancestors of contemporary samples as well as various new spatial demographic parameters, such as ancestry coefficients and ancestry flux, detailed in later sections."
   },
   {
-    "objectID": "CV.html#education",
-    "href": "CV.html#education",
-    "title": "Chris Talbot | CV",
-    "section": "Education",
-    "text": "Education\nPh.D. – Computational Biology Starting 2025  Cornell University \n\nAdvisor: Philipp Messer\nKey Funding: National Science Foundation Graduate Research Fellowship Program (2025-2028)\n\nB.S. – Ecology, Evolution, and Biodiversity 2024  University of Michigan (UMich) GPA: 3.74 \n\nGraduated with Highest Honors under the supervision of Marjorie Weber\nHonors Thesis: Patterns of floral color in communities of common Northeast American wildflowers \nCoursework: Statistics & probability, programming & data structures, genetics, macroevolution, ethnobotany\n\nA.G.S. – General Studies (Computer Science & Mathematics Concentration) 2020  Grand Rapids Community College (GRCC) GPA: 3.9 \n\nCoursework: C++ programming, database development, web application programming, information security"
+    "objectID": "gaia.html#what-data-do-i-need",
+    "href": "gaia.html#what-data-do-i-need",
+    "title": "Gaia: Crash Course",
+    "section": "",
+    "text": "Gaia works by inferring ancestral geographic locations of ancestors of contemporary samples using the information encoded in a georeferenced Ancestral Recombination Graph (ARG) as implemented by tskit as a tree sequence.2 In addition to the georeferenced ARG, when using discrete models of space, gaia requires a migration cost matrix representing the cost of migration from one discrete location to any other."
   },
   {
-    "objectID": "CV.html#research",
-    "href": "CV.html#research",
-    "title": "Chris Talbot | CV",
-    "section": "Research",
-    "text": "Research\nLab Technician – Bradburd Lab 2024-Present  UMich-Ecology & Evolutionary Biology (EEB) \n\nProject: Testing, documenting, and visualizing novel geographic evolutionary inference methods\n\nLab Technician – Weber Lab 2022-Present  UMich-EEB \n\nProject: “Patterns of floral color in communities of common Northeast American wildflowers”\n\nUndergraduate Researcher – Márquez Lab 2021-2022  UMich-EEB \n\nProject: “Optimizing CRISPR-Cas9 genetic modification in Phyllobates poison-dart frogs”"
+    "objectID": "gaia.html#installation",
+    "href": "gaia.html#installation",
+    "title": "Gaia: Crash Course",
+    "section": "Installation",
+    "text": "Installation\n\nIn an R session:\nUsing remotes:\n\n# Install remotes if not already installed\nif (!requireNamespace(\"remotes\", quietly = TRUE)) {\n  install.packages(\"remotes\")\n}\n\nlibrary(remotes)\ninstall_github(\"blueraleigh/gaia\")\n\nUsing pak:\n\n# Install pak if not already installed\nif (!requireNamespace(\"pak\", quietly = TRUE)) {\n  install.packages(\"pak\")\n}\n\nlibrary(pak)\npkg_install(\"blueraleigh/gaia\")\n\nGaia can then be loaded using:\n\nlibrary(gaia) \n\n\n\nOn the command line:\n\ngit clone https://github.com/blueraleigh/gaia\ncd gaia\nR CMD BUILD .\nR CMD INSTALL &lt;name of tarball&gt;\n\nGaia can then be loaded in an R session using:\n\nlibrary(gaia)"
   },
   {
-    "objectID": "CV.html#teaching-and-mentoring",
-    "href": "CV.html#teaching-and-mentoring",
-    "title": "Chris Talbot | CV",
-    "section": "Teaching and Mentoring",
-    "text": "Teaching and Mentoring\nDocent (Volunteer Educator) 2023-Present  Matthaei Botanical Gardens and Nichols Arboretum \nForestry Test Writer & Proctor (Volunteer) 2023-Present  UMich Science Olympiad \nDirector of Percussion 2022-2023  Lake Orion Community Schools, Lake Orion, MI \nTransfer Student Peer Mentor 2022-2023  UMich-LSA Transfer Bridges Program \nDirector of Percussion 2019-2022  Spring Lake Public Schools, Spring Lake, MI \nFreelance Percussion Instructor and Composer 2018-2022  8 local high schools, Michigan \nProfessional Peer Tutor – GRCC Drop-in Tutoring Labs - Mathematics, Language Arts 2019-2020  GRCC"
+    "objectID": "gaia.html#choose-a-spatial-scenario",
+    "href": "gaia.html#choose-a-spatial-scenario",
+    "title": "Gaia: Crash Course",
+    "section": "Choose a spatial scenario",
+    "text": "Choose a spatial scenario"
   },
   {
-    "objectID": "CV.html#presentations",
-    "href": "CV.html#presentations",
-    "title": "Chris Talbot | CV",
-    "section": "Presentations",
-    "text": "Presentations\nTalk @ Evolution 2024, Montreal, QC  Do flowers of a color bloom together? (Talk V.2) 2024 \nPoster @ Evolution 2024, Montreal, QC  Do flowers of a color bloom together? (Poster V.2) 2024 \nLightning Talk @ Botany 2024, Grand Rapids, MI  Do flowers of a color bloom together? (Lightning Talk) 2024 \nPoster @ Botany 2024, Grand Rapids, MI  Do flowers of a color bloom together? (Poster V.1) 2024 \nTalk @ UMich – Department of Ecology and Evolutionary Biology  Do flowers of a color bloom together? (Talk V.1) 2024 \nPoster @ UMich – UROP – Spring Symposium  Optimizing CRISPR-Cas9 genetic modification in Phyllobates poison-dart frogs 2022"
+    "objectID": "gaia.html#prepare-your-data",
+    "href": "gaia.html#prepare-your-data",
+    "title": "Gaia: Crash Course",
+    "section": "Prepare your data",
+    "text": "Prepare your data\nTo begin a new analysis in gaia, you will need:\n\nA tree sequence\nThe base of your gaia analysis is an Ancestral Recombination Graph (ARG) inferred from your samples, stored as a tree sequence with .trees filetype using the tskit library [cite]. In your tree sequence, each sample is represented by a node with a unique node ID. Additionally, inferred ancestors are represented as additional nodes across the trees of the tree sequence.\nThe tree sequence can be inferred using tsinfer [cite], relate [cite], or a host of other ARG-inference methods - see Lewanski et al.’s review of ARGs (2024) here for more information. For testing purposes, tree sequences can also be generated from spatially explicit simulations run in SLiM [cite] - see the Tree Sequences chapter in the appendix for more information.\nGaia includes multiple functions to help you load and modify your tree sequence in R. These include …\n\n\nGeoreferences\nTo infer geographic history, gaia uses known information about the geographic origin of contemporary genomic samples. Georeference information is stored differently depending on your choice of continuous or discrete space models:\n\nContinuous space\nIn continuous space, georeferences are stored in a \\(SxD\\) matrix, where \\(S\\) is the number of samples in your tree sequence and \\(D\\) is the number of spatial dimensions in your continuous space. For example, in a 2-dimensional continuous space, the georeference matrix for \\(S\\) samples may look like:\n\n\n\nLatitude\nLongitude\n\n\n\n\n\\(x_0\\)\n\\(y_0\\)\n\n\n\\(x_1\\)\n\\(y_1\\)\n\n\n\\(...\\)\n\\(...\\)\n\n\n\\(x_S\\)\n\\(y_S\\)\n\n\n\nGaia can also function in other spatial dimensions, including 3-dimensional space, introducing an altitude component.\n\n\nDiscrete space\nIn discrete space, georeferences are stored in a \\(Sx2\\) matrix, where \\(S\\) is the number of samples in your tree sequence. The matrix should contain two columns: ‘node_id’ and ‘state_id’. Each discrete geographic location is represented by a state with a unique state ID. For example, a georeference matrix for \\(S\\) samples in a discrete space may look like:\n\n\n\nnode_id\nstate_id\n\n\n\n\n\\(0\\)\n\\(state_0\\)\n\n\n\\(1\\)\n\\(state_1\\)\n\n\n\\(...\\)\n\\(...\\)\n\n\n\\(S\\)\n\\(state_S\\)\n\n\n\n\n\n\nA cost matrix\nIn continuous space, gaia uses Euclidean (quadratic) or Manhattan (linear) distance between points as a direct migration cost between locations. In discrete space, users must define a cost matrix representing the cost of migration between any two discrete locations. The cost matrix is a \\(DxD\\) matrix, where \\(D\\) is the number of discrete locations (states) in your model. The diagonal of the matrix represents the migration cost of staying in place - values besides 0 on the diagonal will be ignored. The cost matrix may not contain negative values. The matrix does not need to be symmetrical - that is, the cost of migrating from A to B need not equal the cost of migrating from B to A. For \\(D\\) discrete locations, the cost matrix may look like:\n\n\n\n\nState 1\nState 2\n…\nState D\n\n\n\n\nState 1\n\\(0\\)\n\\(3\\)\n\\(...\\)\n\\(2\\)\n\n\nState 2\n\\(1\\)\n\\(0\\)\n\\(...\\)\n\\(3\\)\n\n\n…\n\\(...\\)\n\\(...\\)\n\\(...\\)\n\\(...\\)\n\n\nState D\n\\(2\\)\n\\(2\\)\n\\(...\\)\n\\(0\\)"
   },
   {
-    "objectID": "CV.html#fellowships-and-grants",
-    "href": "CV.html#fellowships-and-grants",
-    "title": "Chris Talbot | CV",
-    "section": "Fellowships and Grants",
-    "text": "Fellowships and Grants\nBiological Station Student Fellow 2023  UMich Biological Station $1,680 \nStudent Research Grant 2022-2023  UMich Undergraduate Research Opportunity Program (UROP) $5,000 \nBiomedical and Life Sciences Summer Fellow 2022  UMich UROP $4,000 \nCommunity College Summer Institute Fellow 2019  UMich-School of Information $100"
+    "objectID": "gaia.html#most-parsimonious-reconstruction",
+    "href": "gaia.html#most-parsimonious-reconstruction",
+    "title": "Gaia: Crash Course",
+    "section": "Most parsimonious reconstruction",
+    "text": "Most parsimonious reconstruction\nOnce your data is ready, you can calculate the most parsimonious reconstruction (MPR) of the geographic history of your samples.\n\nIn discrete space\nIn discrete space, the MPR of your samples is inferred using treeseq_discrete_mpr(). This function takes four arguments:\n\nA treeseq object\nA matrix of georeference locations for samples in the treeseq\nA cost matrix giving the cost of migration from each discrete location (state) to any other\nA true/false value indicating whether to use the inverse branch length to weight migration costs\n\nFor more details on the first three arguments, see the Prepare your data section.\n\n\nIn continuous space"
   },
   {
-    "objectID": "CV.html#coursework",
-    "href": "CV.html#coursework",
-    "title": "Chris Talbot | CV",
-    "section": "Coursework",
-    "text": "Coursework"
+    "objectID": "gaia.html#ancestry-coefficient",
+    "href": "gaia.html#ancestry-coefficient",
+    "title": "Gaia: Crash Course",
+    "section": "Ancestry Coefficient",
+    "text": "Ancestry Coefficient"
   },
   {
-    "objectID": "CV.html#honors-and-awards",
-    "href": "CV.html#honors-and-awards",
-    "title": "Chris Talbot | CV",
-    "section": "Honors and Awards",
-    "text": "Honors and Awards\nPhi Theta Kappa Honors Society 2019  Grand Rapids Community College \nPresident’s List 2019  Grand Rapids Community College"
+    "objectID": "gaia.html#ancestry-flux",
+    "href": "gaia.html#ancestry-flux",
+    "title": "Gaia: Crash Course",
+    "section": "Ancestry Flux",
+    "text": "Ancestry Flux"
   },
   {
-    "objectID": "CV.html#skills",
-    "href": "CV.html#skills",
-    "title": "Chris Talbot | CV",
-    "section": "Skills",
-    "text": "Skills\n\nComputational\n\n\n\nSkill\nProficiency\nSkill\nProficiency\n\n\n\n\nR\n4/5\nGit\n2/5\n\n\nPython\n3/5\nLatex\n2/5\n\n\nC++\n3/5\nSQL\n2/5\n\n\nJavascript\n2/5\nQGIS\n1/5\n\n\n\n\n\nLaboratory & Field\n\n\n\nLab Skills\nField Skills\n\n\n\n\nCRISPR-Cas9 microinjections\nPlant identification\n\n\nPCR\nSoil sampling\n\n\nAmphibian breeding and rearing\nPlant propagation and care\n\n\n\n\n\nResearch\n\nStatistics and probability\nData analysis and visualization\nScience communication\n\n\n\nProfessional\n\nEducation and lesson planning\nOrganizational administration\nVolunteer coordination\nEvent organization"
+    "objectID": "gaia.html#migration-history",
+    "href": "gaia.html#migration-history",
+    "title": "Gaia: Crash Course",
+    "section": "Migration History",
+    "text": "Migration History"
   },
   {
-    "objectID": "CV.html#languages",
-    "href": "CV.html#languages",
-    "title": "Chris Talbot | CV",
-    "section": "Languages",
-    "text": "Languages\nR: Advanced (C1)  German: Intermediate (B2)  C++: Intermediate (B2)  Python: Intermediate (B1)  Nishnaabemwin (Eastern Ojibwe): Beginner (A1)"
+    "objectID": "gaia.html#discrete-visualizations",
+    "href": "gaia.html#discrete-visualizations",
+    "title": "Gaia: Crash Course",
+    "section": "Discrete Visualizations",
+    "text": "Discrete Visualizations"
   },
   {
-    "objectID": "CV.html#work",
-    "href": "CV.html#work",
-    "title": "Chris Talbot | CV",
-    "section": "Work",
-    "text": "Work\nShift Leader – Biggby Coffee 2021-2022  Grand Rapids, MI \nSeasonal Retail Lead – John Ball Zoo 2019  Grand Rapids, MI"
+    "objectID": "gaia.html#continuous-visualizations",
+    "href": "gaia.html#continuous-visualizations",
+    "title": "Gaia: Crash Course",
+    "section": "Continuous Visualizations",
+    "text": "Continuous Visualizations"
   },
   {
-    "objectID": "CV.html#volunteering",
-    "href": "CV.html#volunteering",
-    "title": "Chris Talbot | CV",
-    "section": "Volunteering",
-    "text": "Volunteering\nFounder, President, and Volunteer 2023-Present  Students for Public Power @UM"
+    "objectID": "gaia.html#tree-sequences",
+    "href": "gaia.html#tree-sequences",
+    "title": "Gaia: Crash Course",
+    "section": "Tree Sequences",
+    "text": "Tree Sequences"
   },
   {
-    "objectID": "CV.html#certifications",
-    "href": "CV.html#certifications",
-    "title": "Chris Talbot | CV",
-    "section": "Certifications",
-    "text": "Certifications\nCertified Michigan Naturalist 2024  Michigan State University Extension"
+    "objectID": "gaia.html#gaia-algorithm",
+    "href": "gaia.html#gaia-algorithm",
+    "title": "Gaia: Crash Course",
+    "section": "Gaia Algorithm",
+    "text": "Gaia Algorithm"
   },
   {
-    "objectID": "CV.html#extracurriculars",
-    "href": "CV.html#extracurriculars",
-    "title": "Chris Talbot | CV",
-    "section": "Extracurriculars",
-    "text": "Extracurriculars\nFounding Member 2023-2025  UMich Ecological Restoration Club \nVice President 2019-2020  GRCC Programmers \nEnsemble & Section Leader, Performer 2014-2020  Genesis Percussion Ensemble"
+    "objectID": "evolution2024poster.html",
+    "href": "evolution2024poster.html",
+    "title": "Chris @ Evolution 2024 | Poster",
+    "section": "",
+    "text": "PDF version here!\n\n\n\n\n Back to top"
   },
   {
     "objectID": "about.html",
@@ -112,60 +112,46 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "honors-thesis.html",
-    "href": "honors-thesis.html",
-    "title": "Honors Thesis",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "chris-a-talbot.github.io",
     "section": "",
-    "text": "**This honors thesis was submit to the University of Michigan for honors recognition, but has not been peer-reviewed and is not considered publication-ready.\nPatterns of floral color in communities of common Northeast American wildflowers\nChris Talbot1, Marjorie Weber1\n1Department of Ecology and Evolutionary Biology, University of Michigan, 1105 North University Avenue, Ann Arbor, MI 48109-1085, USA."
-  },
-  {
-    "objectID": "CV.html#summary",
-    "href": "CV.html#summary",
-    "title": "Chris Talbot | CV",
-    "section": "Summary",
-    "text": "Summary\n\nFirst-gen academic and biologist with years of experience in lab, field, and computational work.\nInterested in patterns and drivers of ecological organization across spatiotemporal scales under global change.\nExploring emerging methods for complex systems, including community science and machine learning."
-  },
-  {
-    "objectID": "CV.html#publications",
-    "href": "CV.html#publications",
-    "title": "Chris Talbot | CV",
-    "section": "Publications",
-    "text": "Publications\n\nPre-prints/In Prep/In Review:\n2025 – Talbot, C. A., Bradburd, G. S. Optimizing temporal sampling strategies for spatial population genetic inference using ancestral recombination graphs. In Preparation for Evolution.\n2025 – Talbot, C. A., Weber, M. G. Investigating patterns of floral color across Northeast American wildflowers using community science data. In Preparation for American Journal of Botany.\n\n\nPublished:\n2024 – Graham, C. D. K., …, Talbot, C. A., Yerks, A. L., & Weber, M. G. Mite domatia and associated mite density in a North American Eastern Deciduous Forest in Michigan. Published in Ecology and Evolution."
-  },
-  {
-    "objectID": "CV.html#professional-service",
-    "href": "CV.html#professional-service",
-    "title": "Chris Talbot | CV",
-    "section": "Professional & Service",
-    "text": "Professional & Service\nPercussionist 2024-Present  Straits of Mackinac Concert Band, Mackinaw City, MI \nCo-Founder, President, and Volunteer 2023-2025  Students for Public Power @UM \nShift Leader 2021-2023  Biggby Coffee, Grand Rapids, MI \nSeasonal Retail Lead 2019  John Ball Zoo, Grand Rapids, MI"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "chtalbot@umich.edu  269-751-9444\n\n\n\n Back to top"
+    "text": "Hey, I’m Chris. I’m a PhD student in Computational Biology at Cornell University, advised by Philipp Messer. I’m interested in how genetic diversity is distributed through space and time, how that diversity is shaped by evolutionary processes, and how that diversity responds to global change. I aim to use evolutionary ecology to develop methods and tools for conservation and management of biodiversity under global change, guided by rigorous statistical and computational frameworks. I’m fascinated with emerging methods for evaluating complex systems, including community science, machine learning, and simulations."
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "chris-a-talbot.github.io",
     "section": "Education",
-    "text": "Education\nCornell University | Ithaca, NY  Ph.D. Computational Biology | Starting 2025 \nUniversity of Michigan | Ann Arbor, MI  B.S. Ecology, Evolution, and Biodiversity | 2024 \nGrand Rapids Community College | Grand Rapids, MI  A.G.S. Computer Science and Mathematics | 2020"
+    "text": "Education\nCornell University | Ithaca, NY  Ph.D. Computational Biology | 2025-Present \nUniversity of Michigan | Ann Arbor, MI  B.S. Ecology, Evolution, and Biodiversity | 2024 \nGrand Rapids Community College | Grand Rapids, MI  A.G.S. Computer Science and Mathematics | 2020"
   },
   {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
+    "objectID": "index.html#research-experience",
+    "href": "index.html#research-experience",
     "title": "chris-a-talbot.github.io",
-    "section": "Experience",
-    "text": "Experience\nBradburd Lab, UMich-EEB  Lab Technician | 2024 - present\nWeber Lab, UMich-EEB  Lab Technician | 2022 - present\nMárquez Lab, UMich-EEB  Undergraduate Researcher | 2021-2022"
+    "section": "Research Experience",
+    "text": "Research Experience\nMesser Lab, Cornell-CB  Ph.D. Student | 2025-Present\nBradburd Lab, UMich-EEB  Lab Technician | 2024-2025\nWeber Lab, UMich-EEB  Lab Technician | 2022-2025\nMárquez Lab, UMich-EEB  Undergraduate Researcher | 2021-2022"
   },
   {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
     "title": "chris-a-talbot.github.io",
     "section": "Contact",
-    "text": "Contact\nEmail: chtalbot@umich.edu"
+    "text": "Contact\nEmail: cat267{at}cornell.edu"
+  },
+  {
+    "objectID": "evolution2024.html",
+    "href": "evolution2024.html",
+    "title": "Chris @ Evolution 2024",
+    "section": "",
+    "text": "Presentations\n\nPoster: Saturday, July 27th\n\n5:45pm-8:15pm, Room 220DE, Poster Board F20 – Poster Session 1\nView the poster here!\n\nTalk: Tuesday, July 30th\n\n3:00pm-3:15pm, Room 523AB – Ecology III\nView the slides here!\n\n\n\n\nSupplemental information\n\nQ1: How was the floral color data collected?\nA: A k-means clustering algorithm, hand-trained for each species using a custom GUI, ran on up to 100 research-grade images from iNaturalist. Coded in Python, and adapted from Perez-Udell et al., 2019. Find the GUI and algorithm on my GitHub here. Floral color data is initially calculated as the average color value in HSV space for the most common floral color of a given species.\n\n\nQ2: How was the range data collected?\nA: GBIF occurrences, 1960 and later, isolated to North America, and filtered to exclude erroneous occurrences of various sorts. Representing North America as a raster of 10km2 cells, cells were populated with presence data based on the existence of an occurrence within that cell. This range format exhibits similar accuracy to convex hulls and buffered points, while offering higher computational speeds.\n\n\nQ3: Where is the phylogeny from?\nA: Smith & Brown, 2018\n\n\nQ4: How was floral color (dis)similarity calculated?\nA: Floral color for each species was transformed into HSL space. Floral color dissimilarity was calculated as the Euclidean distance between colors in HSL space:\ncolor_dis &lt;- dist(hsl_data, method = \"euclidean\")\nFloral color similarity was calculated for each pair of species \\((a,b)\\) as:\n\\[\nsimilarity_{a,b} = max(color\\_dis) - color\\_dis_{a,b}\n\\]\n\n\nQ5: What about pollinator vision? The UV spectrum?\nA: Floral color data is restricted to camera color vision due to the number of species for which color data was required. Exploring this pattern at such large scales using spectral data would be an exciting avenue for future research.\n[Coming soon: figures on relatedness~overlap, and any other relationships that may be of interest from the current data]\n\n\n\nFun figures\n[Coming soon: GIF of floral color across range through time]\n\n\nContact info\nView my CV here!\n\nEmail: chtalbot@umich.edu\nGitHub: @chris-a-talbot\n\nSocial media:\n\nTwitter: @chris__talbot\nLinkedIn: @chris-talbot\nBlueSky: @chtalbot\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "honors-thesis.html",
+    "href": "honors-thesis.html",
+    "title": "Honors Thesis",
+    "section": "",
+    "text": "**This honors thesis was submit to the University of Michigan for honors recognition, but has not been peer-reviewed and is not considered publication-ready.\nPatterns of floral color in communities of common Northeast American wildflowers\nChris Talbot1, Marjorie Weber1\n1Department of Ecology and Evolutionary Biology, University of Michigan, 1105 North University Avenue, Ann Arbor, MI 48109-1085, USA."
   },
   {
     "objectID": "honors-thesis.html#open-research-statement",
@@ -238,48 +224,6 @@
     "text": "References\nAhmad, S., Chen, J., Chen, G.-Z., Huang, J., Zhou, Y., Kai, Z., Lan, S., Liu, Z.-J., & Peng, D. (2022). Why Black Flowers? An Extreme Environment and Molecular Perspective of Black Color Accumulation in the Ornamental and Food Crops. Frontiers in Plant Science, 13, 885176.https://doi.org/10.3389/fpls.2022.885176\nBarve, V., & Hart, E. (2022). rinat: Access “iNaturalist” Data Through APIs.https://CRAN.R-project.org/package=rinat\nBarve, V. V., Brenskelle, L., Li, D., Stucky, B. J., Barve, N. V., Hantak, M. M., McLean, B. S., Paluh, D. J., Oswald, J. A., Belitz, M. W., Folk, R. A., & Guralnick, R. P. (2020). Methods for broad-scale plant phenology assessments using citizen scientists’ photographs. Applications in Plant Sciences, 8(1), e11315.https://doi.org/10.1002/aps3.11315\nBergamo, P. J., Streher, N. S., Wolowski, M., & Sazima, M. (2020). Pollinator-mediated facilitation is associated with floral abundance, trait similarity and enhanced community-level fitness. Journal of Ecology, 108(4), 1334–1346.https://doi.org/10.1111/1365-2745.13348\nBittinger, K. (2020). abdiv: Alpha and Beta Diversity Measures.https://CRAN.R-project.org/package=abdiv\nChamberlain, S., & Boettiger, C. (2017). R Python, and Ruby clients for GBIF species occurrence data. PeerJ PrePrints.https://doi.org/10.7287/peerj.preprints.3304v1\nClegg, M. T., & Durbin, M. L. (2000). Flower color variation: A model for the experimental study of evolution. Proceedings of the National Academy of Sciences, 97(13), 7016–7023.https://doi.org/10.1073/pnas.97.13.7016\nErickson, M. F., & Pessoa, D. M. A. (2022). Determining factors of flower coloration. Acta Botanica Brasilica, 36.https://doi.org/10.1590/0102-33062021abb0299\nFox, B. J., & Brown, J. H. (1993). Assembly Rules for Functional Groups in North American Desert Rodent Communities. Oikos, 67(2), 358–370.https://doi.org/10.2307/3545483\nFreiberg, M., Winter, M., Gentile, A., Zizka, A., Muellner-Riehl, A. N., Weigelt, A., & Wirth, C. (2020). LCVP, The Leipzig catalogue of vascular plants, a new taxonomic reference list for all known vascular plants. bioRxiv, 0, 0.https://doi.org/10.1101/2020.05.08.077149\nGrossenbacher, D. L., & Whittall, J. B. (2011). INCREASED FLORAL DIVERGENCE IN SYMPATRIC MONKEYFLOWERS. Evolution, 65(9), 2712–2718.https://doi.org/10.1111/j.1558-5646.2011.01306.x\nJin, Y., & Qian, H. (2022). V.PhyloMaker2: An updated and enlarged R package that can generate very large phylogenies for vascular plants. Plant Diversity, 44(4), 335–339.https://doi.org/10.1016/j.pld.2022.05.005\nKembel, S. W., Cowan, P. D., Helmus, M. R., Cornwell, W. K., Morlon, H., Ackerly, D. D., Blomberg, S. P., & Webb, C. O. (2010). Picante: R tools for integrating phylogenies and ecology. Bioinformatics, 26, 1463–1464.\nKemp, J. E., Bergh, N. G., Soares, M., & Ellis, A. G. (2019). Dominant pollinators drive non-random community assembly and shared flower colour patterns in daisy communities. Annals of Botany, 123(2), 277–288.https://doi.org/10.1093/aob/mcy126\nKoski, M. H., & Ashman, T.-L. (2016). Macroevolutionary patterns of ultraviolet floral pigmentation explained by geography and associated bioclimatic factors. New Phytologist, 211(2), 708–718.https://doi.org/10.1111/nph.13921\nMuñoz-Galicia, D., Castillo-Guevara, C., & Lara, C. (2021). Innate and learnt color preferences in the common green-eyed white butterfly (Leptophobia aripa): Experimental evidence. PeerJ, 9, e12567.https://doi.org/10.7717/peerj.12567\nNewcomb, L. (1977). Newcomb’s Wildflower Guide. Little, Brown and Company.\nPebesma, E. (2018). Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal, 10(1), 439–446.https://doi.org/10.32614/RJ-2018-009\nRabosky, A. D., Cox, C., Rabosky, D., Title, P., Holmes, I., Feldman, A., & McGuire, J. (2016). Coral snakes predict the evolution of mimicry across New World snakes. Nature Communications, 7, 11484.https://doi.org/10.1038/ncomms11484\nReverté, S., Retana, J., Gómez, J. M., & Bosch, J. (2016). Pollinators show flower colour preferences but flowers with similar colours do not attract similar pollinators. Annals of Botany, 118(2), 249–257.https://doi.org/10.1093/aob/mcw103\nSapir, Y., Gallagher, M. K., & Senden, E. (2021). What Maintains Flower Colour Variation within Populations? Trends in Ecology & Evolution, 36(6), 507–519.https://doi.org/10.1016/j.tree.2021.01.011\nSmith, B., & Wilson, J. B. (1996). A Consumer’s Guide to Evenness Indices. Oikos, 76(1), 70–82.https://doi.org/10.2307/3545749\nSobel, J. M., & Streisfeld, M. A. (2013). Flower color as a model system for studies of plant evo-devo. Frontiers in Plant Science, 4.https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2013.00321\nTitle, P. (2017). speciesRaster: Generation of SpeciesRaster Object and Calculation of Morphological and Phylogenetic Metrics.\nTrunschke, J., Lunau, K., Pyke, G. H., Ren, Z.-X., & Wang, H. (2021). Flower Color Evolution and the Evidence of Pollinator-Mediated Selection. Frontiers in Plant Science, 12.https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.617851\nWarren, J., & Mackenzie, S. (2001). Why are all colour combinations not equally represented as flower-colour polymorphisms? New Phytologist, 151(1), 237–241.https://doi.org/10.1046/j.1469-8137.2001.00159.x\nWeiss, M. R., & Papaj, D. R. (2003). Colour learning in two behavioural contexts: How much can a butterfly keep in mind? Animal Behaviour, 65(3), 425–434.https://doi.org/10.1006/anbe.2003.2084\nWillmer, P. (2011). Pollination and Floral Ecology. In Pollination and Floral Ecology. Princeton University Press.https://doi.org/10.1515/9781400838943"
   },
   {
-    "objectID": "CV.html#professional-memberships",
-    "href": "CV.html#professional-memberships",
-    "title": "Chris Talbot | CV",
-    "section": "Professional Memberships",
-    "text": "Professional Memberships\nAmerican Society of Naturalists – Student Member 2024-Present\nBotanical Society of America – Student Member 2024-Present\nSociety for the Study of Evolution – Student Member 2022-Present"
-  },
-  {
-    "objectID": "ryan.html",
-    "href": "ryan.html",
-    "title": "The Chronicles of Ryan’s Inabilities",
-    "section": "",
-    "text": "Meet Ryan Steinke - the man who could have it all but chooses to do nothing. Dive into the chronicles of missed opportunities and wasted potential. This website is dedicated to shedding light on the talents and capabilities of Ryan that are going unutilized and the life of comfort he has chosen over ambition and success.\n\n\n\nRyan Steinke, a talented individual from Fishers, Indiana, graduated from Rockford High School and attended Testicle Tech University. Known for his skills in the marching band and rock climbing, Ryan has all the potential to succeed but chooses to remain stagnant. Despite having a supportive family, including his mom Rebecca, and a loyal dog, Ryan prefers to spend his days in idleness.\nRyan was once a shining star, known for his exceptional musical talent and athletic prowess. His dedication to the marching band was unmatched, and his ability to master complex rhythms on the snare drum earned him respect among his peers. In addition to his musical abilities, Ryan had a passion for rock climbing, demonstrating not only physical strength but also mental endurance.\n\n\n\n\n\nRyan’s time in the marching band at Testicle Tech University was his peak. Sadly, his musical talents have done nothing to propel him into a successful career. Instead of using his rhythm and dedication to find a job, he clings to his past glories.\nRyan’s prowess on the snare drum was remarkable. He could effortlessly execute complex rudiments and cadences, making him a standout performer in his band. His ability to synchronize with the rest of the ensemble and lead them through challenging pieces was truly impressive. However, this talent has not translated into any professional success. Rather than pursuing opportunities in music, whether as a performer, teacher, or even in a music-related field, Ryan has chosen to let his skills stagnate.\nIt’s disheartening to see someone with such potential settle for mediocrity. Ryan’s dedication to perfecting his craft could have opened many doors for him, but instead, he remains content with reminiscing about his glory days. The discipline and work ethic required to excel at the snare drum are qualities that could benefit him in any career, yet he has chosen to ignore this potential.\n\n\n\nWhile Ryan enjoys climbing rocks, this hobby does little to help him climb the ladder of success. His energy would be better spent finding a job. Climbing rocks might keep him fit, but it won’t pay the bills or earn him respect in the professional world.\nRock climbing requires strength, agility, and determination. Ryan’s dedication to this sport is evident in his ability to tackle challenging climbs and push his physical limits. However, this passion has not translated into any meaningful achievements outside of personal satisfaction. Instead of leveraging his determination and resilience in a professional setting, Ryan has chosen to focus solely on his hobby.\nThere are many ways Ryan could have turned his love for climbing into a career. He could have pursued opportunities as a climbing instructor, guide, or even a fitness coach. Additionally, the skills he has developed through climbing, such as problem-solving and perseverance, are highly valuable in any job. Unfortunately, Ryan has not taken the initiative to explore these possibilities, preferring instead to remain in his comfort zone.\n\n\n\nRyan spends most of his time lounging around, reminiscing about his past achievements instead of making new ones. His lack of ambition is truly disappointing. Days turn into weeks, and weeks into months, yet Ryan remains stuck in his comfort zone, refusing to take action.\nThe life of a professional couch potato involves endless hours of inactivity and wasted potential. Ryan’s daily routine consists of lounging on the couch, watching TV, and reminiscing about his past glories. Instead of using his time productively, he chooses to remain idle, allowing his talents to wither away.\nRyan’s lack of ambition is evident in his refusal to take steps towards a better future. He has the skills, the talent, and the support needed to succeed, but he lacks the drive to make it happen. It’s frustrating to see someone with so much potential choose a life of mediocrity over one of achievement and fulfillment.\n\n\n\n\n\n\nRyan, you’ve always been one of the most talented and capable people around. But seriously, when are you going to stop being a couch potato and get a job? It’s pretty sad that your crowning achievement seems to be playing snare drum in the marching band at Testicle Tech University. If only employers were looking for professional band nerds, right?\nYour talents are going to waste, Ryan. It’s time to stop living in the past and start building a future. You have so much potential, but it means nothing if you don’t put it to use. Get off the couch, dust off your resume, and start applying for jobs. It’s time to show the world what you’re really capable of.\n\n\n\nRemember when you used to proudly wear that marching band uniform and thought you were the coolest thing ever? Well, newsflash: it’s time to trade in your drumsticks for something a little more practical. Watching you waste your potential is almost as painful as being downwind from you after one of your climbing sessions. Soap and water are your friends, Ryan.\nYou need to wake up and realize that your life is passing you by. The skills and talents you have are being wasted, and it’s time to do something about it. Take a shower, put on some decent clothes, and start looking for a job. Your future depends on it.\n\n\n\nRyan, it’s baffling to see you with so much talent, yet so little drive. Your snare drum skills were impressive back in high school, but what have you done since then? Climbing rocks and lounging on the couch won’t get you anywhere. It’s time to step up and find a real job.\nThe world is full of opportunities, but you have to be willing to pursue them. Stop wasting your time and start making an effort to improve your life. Your talents are too valuable to be squandered on idle pursuits.\n\n\n\nWe used to talk about our dreams and ambitions, Ryan. What happened to yours? It’s painful to see you wasting away in Fishers, Indiana, doing nothing of significance. Your mom, Rebecca, didn’t raise you to be a quitter. Even your dog seems more motivated than you these days.\nYou owe it to yourself and those who care about you to do better. Get up, get moving, and start making something of your life. Your potential is being wasted, and it’s time to change that.\n\n\n\nI don’t know you well, Ryan, but from what I’ve seen and heard, you’re wasting your potential. The world needs people with your talents, but you’re stuck in a rut. Rock climbing might be fun, but it’s not a career. Get it together and start making something of yourself.\nYour life could be so much more if you just took the initiative. Don’t let your talents go to waste. It’s time to start making an effort and working towards a better future.\n\n\n\nRyan, I’ve been watching from the sidelines, hoping you would find your way. But it’s clear you need a wake-up call. Your abilities in music and sports are going to waste. Don’t let your life become a series of missed opportunities. Act now before it’s too late.\nYou have the potential to achieve great things, but you need to be willing to put in the effort. Stop wasting time and start working towards your goals. The world won’t wait for you forever.\n\n\n\nRemember our days back in Rockford High School? You were full of ambition and promise. Seeing you now, wasting away, is heartbreaking. Fishers, Indiana, isn’t the end of the world, but it’s time you left your comfort zone and started pursuing something meaningful.\nYour talents and abilities are being wasted, and it’s time to change that. Get up, get moving, and start making something of your life. The world needs you, Ryan.\n\n\n\nRyan, this is coming from a place of concern. Watching you throw away your potential is frustrating. You’ve got so much to offer, but lounging around and reminiscing about the past isn’t helping anyone, least of all you. Get off your ass and start making a difference.\nThe time for excuses is over. It’s time to start taking responsibility for your future and working towards something better. Your talents are too valuable to be wasted on idle pursuits.\n\n\n\nRyan, for the love of everything you used to stand for, get your act together. Your friends, family, and even casual acquaintances are rooting for you, but we can’t do it for you. It’s time to stop making excuses and start making moves. The world won’t wait for you forever.\nYour life could be so much more if you just took the initiative. Don’t let your talents go to waste. It’s time to start making an effort and working towards a better future.\n\n\n© 2024 The Chronicles of Ryan’s Inabilities. All rights reserved."
-  },
-  {
-    "objectID": "ryan.html#welcome-to-ryans-reality-check",
-    "href": "ryan.html#welcome-to-ryans-reality-check",
-    "title": "The Chronicles of Ryan’s Inabilities",
-    "section": "",
-    "text": "Meet Ryan Steinke - the man who could have it all but chooses to do nothing. Dive into the chronicles of missed opportunities and wasted potential. This website is dedicated to shedding light on the talents and capabilities of Ryan that are going unutilized and the life of comfort he has chosen over ambition and success."
-  },
-  {
-    "objectID": "ryan.html#who-is-ryan-steinke",
-    "href": "ryan.html#who-is-ryan-steinke",
-    "title": "The Chronicles of Ryan’s Inabilities",
-    "section": "",
-    "text": "Ryan Steinke, a talented individual from Fishers, Indiana, graduated from Rockford High School and attended Testicle Tech University. Known for his skills in the marching band and rock climbing, Ryan has all the potential to succeed but chooses to remain stagnant. Despite having a supportive family, including his mom Rebecca, and a loyal dog, Ryan prefers to spend his days in idleness.\nRyan was once a shining star, known for his exceptional musical talent and athletic prowess. His dedication to the marching band was unmatched, and his ability to master complex rhythms on the snare drum earned him respect among his peers. In addition to his musical abilities, Ryan had a passion for rock climbing, demonstrating not only physical strength but also mental endurance."
-  },
-  {
-    "objectID": "ryan.html#the-wasted-talents",
-    "href": "ryan.html#the-wasted-talents",
-    "title": "The Chronicles of Ryan’s Inabilities",
-    "section": "",
-    "text": "Ryan’s time in the marching band at Testicle Tech University was his peak. Sadly, his musical talents have done nothing to propel him into a successful career. Instead of using his rhythm and dedication to find a job, he clings to his past glories.\nRyan’s prowess on the snare drum was remarkable. He could effortlessly execute complex rudiments and cadences, making him a standout performer in his band. His ability to synchronize with the rest of the ensemble and lead them through challenging pieces was truly impressive. However, this talent has not translated into any professional success. Rather than pursuing opportunities in music, whether as a performer, teacher, or even in a music-related field, Ryan has chosen to let his skills stagnate.\nIt’s disheartening to see someone with such potential settle for mediocrity. Ryan’s dedication to perfecting his craft could have opened many doors for him, but instead, he remains content with reminiscing about his glory days. The discipline and work ethic required to excel at the snare drum are qualities that could benefit him in any career, yet he has chosen to ignore this potential.\n\n\n\nWhile Ryan enjoys climbing rocks, this hobby does little to help him climb the ladder of success. His energy would be better spent finding a job. Climbing rocks might keep him fit, but it won’t pay the bills or earn him respect in the professional world.\nRock climbing requires strength, agility, and determination. Ryan’s dedication to this sport is evident in his ability to tackle challenging climbs and push his physical limits. However, this passion has not translated into any meaningful achievements outside of personal satisfaction. Instead of leveraging his determination and resilience in a professional setting, Ryan has chosen to focus solely on his hobby.\nThere are many ways Ryan could have turned his love for climbing into a career. He could have pursued opportunities as a climbing instructor, guide, or even a fitness coach. Additionally, the skills he has developed through climbing, such as problem-solving and perseverance, are highly valuable in any job. Unfortunately, Ryan has not taken the initiative to explore these possibilities, preferring instead to remain in his comfort zone.\n\n\n\nRyan spends most of his time lounging around, reminiscing about his past achievements instead of making new ones. His lack of ambition is truly disappointing. Days turn into weeks, and weeks into months, yet Ryan remains stuck in his comfort zone, refusing to take action.\nThe life of a professional couch potato involves endless hours of inactivity and wasted potential. Ryan’s daily routine consists of lounging on the couch, watching TV, and reminiscing about his past glories. Instead of using his time productively, he chooses to remain idle, allowing his talents to wither away.\nRyan’s lack of ambition is evident in his refusal to take steps towards a better future. He has the skills, the talent, and the support needed to succeed, but he lacks the drive to make it happen. It’s frustrating to see someone with so much potential choose a life of mediocrity over one of achievement and fulfillment."
-  },
-  {
-    "objectID": "ryan.html#messages-from-concerned-friends",
-    "href": "ryan.html#messages-from-concerned-friends",
-    "title": "The Chronicles of Ryan’s Inabilities",
-    "section": "",
-    "text": "Ryan, you’ve always been one of the most talented and capable people around. But seriously, when are you going to stop being a couch potato and get a job? It’s pretty sad that your crowning achievement seems to be playing snare drum in the marching band at Testicle Tech University. If only employers were looking for professional band nerds, right?\nYour talents are going to waste, Ryan. It’s time to stop living in the past and start building a future. You have so much potential, but it means nothing if you don’t put it to use. Get off the couch, dust off your resume, and start applying for jobs. It’s time to show the world what you’re really capable of.\n\n\n\nRemember when you used to proudly wear that marching band uniform and thought you were the coolest thing ever? Well, newsflash: it’s time to trade in your drumsticks for something a little more practical. Watching you waste your potential is almost as painful as being downwind from you after one of your climbing sessions. Soap and water are your friends, Ryan.\nYou need to wake up and realize that your life is passing you by. The skills and talents you have are being wasted, and it’s time to do something about it. Take a shower, put on some decent clothes, and start looking for a job. Your future depends on it.\n\n\n\nRyan, it’s baffling to see you with so much talent, yet so little drive. Your snare drum skills were impressive back in high school, but what have you done since then? Climbing rocks and lounging on the couch won’t get you anywhere. It’s time to step up and find a real job.\nThe world is full of opportunities, but you have to be willing to pursue them. Stop wasting your time and start making an effort to improve your life. Your talents are too valuable to be squandered on idle pursuits.\n\n\n\nWe used to talk about our dreams and ambitions, Ryan. What happened to yours? It’s painful to see you wasting away in Fishers, Indiana, doing nothing of significance. Your mom, Rebecca, didn’t raise you to be a quitter. Even your dog seems more motivated than you these days.\nYou owe it to yourself and those who care about you to do better. Get up, get moving, and start making something of your life. Your potential is being wasted, and it’s time to change that.\n\n\n\nI don’t know you well, Ryan, but from what I’ve seen and heard, you’re wasting your potential. The world needs people with your talents, but you’re stuck in a rut. Rock climbing might be fun, but it’s not a career. Get it together and start making something of yourself.\nYour life could be so much more if you just took the initiative. Don’t let your talents go to waste. It’s time to start making an effort and working towards a better future.\n\n\n\nRyan, I’ve been watching from the sidelines, hoping you would find your way. But it’s clear you need a wake-up call. Your abilities in music and sports are going to waste. Don’t let your life become a series of missed opportunities. Act now before it’s too late.\nYou have the potential to achieve great things, but you need to be willing to put in the effort. Stop wasting time and start working towards your goals. The world won’t wait for you forever.\n\n\n\nRemember our days back in Rockford High School? You were full of ambition and promise. Seeing you now, wasting away, is heartbreaking. Fishers, Indiana, isn’t the end of the world, but it’s time you left your comfort zone and started pursuing something meaningful.\nYour talents and abilities are being wasted, and it’s time to change that. Get up, get moving, and start making something of your life. The world needs you, Ryan.\n\n\n\nRyan, this is coming from a place of concern. Watching you throw away your potential is frustrating. You’ve got so much to offer, but lounging around and reminiscing about the past isn’t helping anyone, least of all you. Get off your ass and start making a difference.\nThe time for excuses is over. It’s time to start taking responsibility for your future and working towards something better. Your talents are too valuable to be wasted on idle pursuits.\n\n\n\nRyan, for the love of everything you used to stand for, get your act together. Your friends, family, and even casual acquaintances are rooting for you, but we can’t do it for you. It’s time to stop making excuses and start making moves. The world won’t wait for you forever.\nYour life could be so much more if you just took the initiative. Don’t let your talents go to waste. It’s time to start making an effort and working towards a better future.\n\n\n© 2024 The Chronicles of Ryan’s Inabilities. All rights reserved."
-  },
-  {
     "objectID": "botany2024.html",
     "href": "botany2024.html",
     "title": "Chris @ Botany 2024",
@@ -287,11 +231,32 @@
     "text": "Presentations\n\nPoster: Monday, June 17th\n\n6:15pm-7:00pm, Exhibit Hall, #102 – All Society Poster Session\nView the poster here!\n\nLightning Talk: Wednesday, June 19th\n\n1:55pm-2:00pm, Gallery Overlook A – Germinating Ideas\nView the slides here!\n\n\nBe sure to catch the rest of the Weber Lab at Botany, too! Thanks to Rosy for this awesome flyer.\n\n\n\n\n\n\n\nSupplemental information\n\nQ1: How was the floral color data collected?\nA: A k-means clustering algorithm, hand-trained for each species using a custom GUI, ran on up to 100 research-grade images from iNaturalist. Coded in Python, and adapted from Perez-Udell et al., 2019. Find the GUI and algorithm on my GitHub here. Floral color data is initially calculated as the average color value in HSV space for the most common floral color of a given species.\n\n\nQ2: How was the range data collected?\nA: GBIF occurrences, 1960 and later, isolated to North America, and filtered to exclude erroneous occurrences of various sorts. Representing North America as a raster of 10km2 cells, cells were populated with presence data based on the existence of an occurrence within that cell. This range format exhibits similar accuracy to convex hulls and buffered points, while offering higher computational speeds.\n\n\nQ3: Where is the phylogeny from?\nA: Smith & Brown, 2018\n\n\nQ4: How was co-occurrence calculated?\nA: Frequency of co-occurrence between two species was calculated using the overlap (Szymkiewicz–Simpson) coefficient, calculated from our cell-based presence data as follows, where \\(A\\) and \\(B\\) are the set of cells occupied by species \\(a\\) and \\(b\\) respectively:\n\\[\noverlap_{a,b} = \\frac{|A \\cap B|}{min(|A|, |B|)}\n\\]\n\n\nQ5: How was floral color (dis)similarity calculated?\nA: Floral color for each species was transformed into HSL space. Floral color dissimilarity was calculated as the Euclidean distance between colors in HSL space:\ncolor_dis &lt;- dist(hsl_data, method = \"euclidean\")\nFloral color similarity was calculated for each pair of species \\((a,b)\\) as:\n\\[\nsimilarity_{a,b} = max(color\\_dis) - color\\_dis_{a,b}\n\\]\n\n\nQ6: What about pollinator vision? The UV spectrum?\nA: Floral color data is restricted to camera color vision due to the number of species for which color data was required. Exploring this pattern at such large scales using spectral data would be an exciting avenue for future research.\n[Coming soon: figures on relatedness~overlap, and any other relationships that may be of interest from the current data]\n\n\n\nFun figures\n[Coming soon: GIF of floral color across range through time]\n\n\nContact info\nView my CV here!\n\nEmail: chtalbot@umich.edu\nGitHub: @chris-a-talbot\n\nSocial media:\n\nTwitter: @chris__talbot\nLinkedIn: @chris-talbot\nBlueSky: @chtalbot\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "docs/botany2024poster.html",
-    "href": "docs/botany2024poster.html",
-    "title": "Chris @ Botany 2024",
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
     "section": "",
-    "text": "PDF version here!\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "View my Google Scholar profile: scholar.google.com/citations?user=iC5hGLYAAAAJ"
+  },
+  {
+    "objectID": "publications.html#published",
+    "href": "publications.html#published",
+    "title": "Publications",
+    "section": "Published",
+    "text": "Published\n\n2025 — Graham, C. D. K., …, Talbot, C. A., Yerks, A. L., & Weber, M. G. Mite domatia and associated mite density in a North American Eastern Deciduous Forest in Michigan. Ecology and Evolution. Public link | PDF"
+  },
+  {
+    "objectID": "publications.html#pre-prints-in-review",
+    "href": "publications.html#pre-prints-in-review",
+    "title": "Publications",
+    "section": "Pre-prints / In Review",
+    "text": "Pre-prints / In Review\n\n2025 — Talbot, C. A., Bradburd, G. S. ARGscape: A modular, interactive tool for manipulation of spatiotemporal ancestral recombination graphs. arXiv:2510.07255 [q-bio.PE]. Submitted to Bioinformatics. Public link | PDF\n2025 — Talbot, C. A., Weber, M. G. Opposing seasonal dynamics in phylogenetic and flower color diversity of co-flowering wildflower assemblages. bioRxiv 2025.10.21.683724. Submitted to Ecology. Public link | PDF"
+  },
+  {
+    "objectID": "publications.html#in-preparation",
+    "href": "publications.html#in-preparation",
+    "title": "Publications",
+    "section": "In Preparation",
+    "text": "In Preparation\n\n2025 — Talbot, C. A., Bradburd, G. S. Optimizing temporal sampling strategies for spatial population genetic inference using ancestral recombination graphs. In preparation for Genetics."
   },
   {
     "objectID": "botany2024poster.html",
@@ -301,347 +266,53 @@
     "text": "PDF version here!\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "evolution2024.html",
-    "href": "evolution2024.html",
-    "title": "Chris @ Evolution 2024",
-    "section": "",
-    "text": "Presentations\n\nPoster: Saturday, July 27th\n\n5:45pm-8:15pm, Room 220DE, Poster Board F20 – Poster Session 1\nView the poster here!\n\nTalk: Tuesday, July 30th\n\n3:00pm-3:15pm, Room 523AB – Ecology III\nView the slides here!\n\n\n\n\nSupplemental information\n\nQ1: How was the floral color data collected?\nA: A k-means clustering algorithm, hand-trained for each species using a custom GUI, ran on up to 100 research-grade images from iNaturalist. Coded in Python, and adapted from Perez-Udell et al., 2019. Find the GUI and algorithm on my GitHub here. Floral color data is initially calculated as the average color value in HSV space for the most common floral color of a given species.\n\n\nQ2: How was the range data collected?\nA: GBIF occurrences, 1960 and later, isolated to North America, and filtered to exclude erroneous occurrences of various sorts. Representing North America as a raster of 10km2 cells, cells were populated with presence data based on the existence of an occurrence within that cell. This range format exhibits similar accuracy to convex hulls and buffered points, while offering higher computational speeds.\n\n\nQ3: Where is the phylogeny from?\nA: Smith & Brown, 2018\n\n\nQ4: How was floral color (dis)similarity calculated?\nA: Floral color for each species was transformed into HSL space. Floral color dissimilarity was calculated as the Euclidean distance between colors in HSL space:\ncolor_dis &lt;- dist(hsl_data, method = \"euclidean\")\nFloral color similarity was calculated for each pair of species \\((a,b)\\) as:\n\\[\nsimilarity_{a,b} = max(color\\_dis) - color\\_dis_{a,b}\n\\]\n\n\nQ5: What about pollinator vision? The UV spectrum?\nA: Floral color data is restricted to camera color vision due to the number of species for which color data was required. Exploring this pattern at such large scales using spectral data would be an exciting avenue for future research.\n[Coming soon: figures on relatedness~overlap, and any other relationships that may be of interest from the current data]\n\n\n\nFun figures\n[Coming soon: GIF of floral color across range through time]\n\n\nContact info\nView my CV here!\n\nEmail: chtalbot@umich.edu\nGitHub: @chris-a-talbot\n\nSocial media:\n\nTwitter: @chris__talbot\nLinkedIn: @chris-talbot\nBlueSky: @chtalbot\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "evolution2024poster.html",
-    "href": "evolution2024poster.html",
-    "title": "Chris @ Evolution 2024 | Poster",
-    "section": "",
-    "text": "PDF version here!\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "docs/evolution2024poster.html",
-    "href": "docs/evolution2024poster.html",
-    "title": "Chris @ Botany 2024 | Poster",
-    "section": "",
-    "text": "PDF version here!\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "gaia_crash_course/references.html",
-    "href": "gaia_crash_course/references.html",
-    "title": "References",
-    "section": "",
-    "text": "References\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_overview.html",
-    "href": "gaia_crash_course/gaia_overview.html",
-    "title": "How does gaia work?",
-    "section": "",
-    "text": "How does gaia work?\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_migration_history.html",
-    "href": "gaia_crash_course/gaia_migration_history.html",
-    "title": "Migration history",
-    "section": "",
-    "text": "Migration history\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_discrete_visualizations.html",
-    "href": "gaia_crash_course/gaia_discrete_visualizations.html",
-    "title": "Visualizing discrete space",
-    "section": "",
-    "text": "Visualizing discrete space\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_cost_function.html",
-    "href": "gaia_crash_course/gaia_cost_function.html",
-    "title": "Choose a spatial scenario",
-    "section": "",
-    "text": "Choose a spatial scenario\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_ancestry_flux.html",
-    "href": "gaia_crash_course/gaia_ancestry_flux.html",
-    "title": "Ancestry flux",
-    "section": "",
-    "text": "Ancestry flux\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_algorithm.html",
-    "href": "gaia_crash_course/gaia_algorithm.html",
-    "title": "Under the hood: Algorithm P",
-    "section": "",
-    "text": "Under the hood: Algorithm P\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "gaia_crash_course/acknowledgements.html",
-    "href": "gaia_crash_course/acknowledgements.html",
-    "title": "Acknowledgements",
-    "section": "",
-    "text": "Acknowledgements\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "gaia_crash_course/args.html",
-    "href": "gaia_crash_course/args.html",
-    "title": "Tree Sequences",
-    "section": "",
-    "text": "Tree Sequences\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_ancestry_coefficient.html",
-    "href": "gaia_crash_course/gaia_ancestry_coefficient.html",
-    "title": "Ancestry coefficients",
-    "section": "",
-    "text": "Ancestry coefficients\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_continuous_visualizations.html",
-    "href": "gaia_crash_course/gaia_continuous_visualizations.html",
-    "title": "Visualizing continuous space",
-    "section": "",
-    "text": "Visualizing continuous space\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_data.html",
-    "href": "gaia_crash_course/gaia_data.html",
-    "title": "Prepare your data",
-    "section": "",
-    "text": "To begin a new analysis in gaia, you will need:\n\n\nThe base of your gaia analysis is an Ancestral Recombination Graph (ARG) inferred from your samples, stored as a tree sequence with .trees filetype using the tskit library [cite]. In your tree sequence, each sample is represented by a node with a unique node ID. Additionally, inferred ancestors are represented as additional nodes across the trees of the tree sequence.\nThe tree sequence can be inferred using tsinfer [cite], relate [cite], or a host of other ARG-inference methods - see Lewanski et al.’s review of ARGs (2024) here for more information. For testing purposes, tree sequences can also be generated from spatially explicit simulations run in SLiM [cite] - see the Tree Sequences chapter in the appendix for more information.\nGaia includes multiple functions to help you load and modify your tree sequence in R. These include …\n\n\n\nTo infer geographic history, gaia uses known information about the geographic origin of contemporary genomic samples. Georeference information is stored differently depending on your choice of continuous or discrete space models:\n\n\nIn continuous space, georeferences are stored in a \\(SxD\\) matrix, where \\(S\\) is the number of samples in your tree sequence and \\(D\\) is the number of spatial dimensions in your continuous space. For example, in a 2-dimensional continuous space, the georeference matrix for \\(S\\) samples may look like:\n\n\n\nLatitude\nLongitude\n\n\n\n\n\\(x_0\\)\n\\(y_0\\)\n\n\n\\(x_1\\)\n\\(y_1\\)\n\n\n\\(...\\)\n\\(...\\)\n\n\n\\(x_S\\)\n\\(y_S\\)\n\n\n\nGaia can also function in other spatial dimensions, including 3-dimensional space, introducing an altitude component.\n\n\n\nIn discrete space, georeferences are stored in a \\(Sx2\\) matrix, where \\(S\\) is the number of samples in your tree sequence. The matrix should contain two columns: ‘node_id’ and ‘state_id’. Each discrete geographic location is represented by a state with a unique state ID. For example, a georeference matrix for \\(S\\) samples in a discrete space may look like:\n\n\n\nnode_id\nstate_id\n\n\n\n\n\\(0\\)\n\\(state_0\\)\n\n\n\\(1\\)\n\\(state_1\\)\n\n\n\\(...\\)\n\\(...\\)\n\n\n\\(S\\)\n\\(state_S\\)\n\n\n\n\n\n\n\nIn continuous space, gaia uses Euclidean (quadratic) or Manhttan (linear) distance between points as a direct migration cost between locations. In discrete space, users must define a cost matrix representing the cost of migration between any two discrete locations. The cost matrix is a \\(DxD\\) matrix, where \\(D\\) is the number of discrete locations (states) in your model. The diagonal of the matrix represents the migration cost of staying in place - values besides 0 on the diagonal will be ignored. The cost matrix may not contain negative values. The matrix does not need to be symmetrical - that is, the cost of migrating from A to B need not equal the cost of migrating from B to A. For \\(D\\) discrete locations, the cost matrix may look like:\n\n\n\n\nState 1\nState 2\n…\nState D\n\n\n\n\nState 1\n\\(0\\)\n\\(3\\)\n\\(...\\)\n\\(2\\)\n\n\nState 2\n\\(1\\)\n\\(0\\)\n\\(...\\)\n\\(3\\)\n\n\n…\n\\(...\\)\n\\(...\\)\n\\(...\\)\n\\(...\\)\n\n\nState D\n\\(2\\)\n\\(2\\)\n\\(...\\)\n\\(0\\)"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_data.html#a-tree-sequence",
-    "href": "gaia_crash_course/gaia_data.html#a-tree-sequence",
-    "title": "Prepare your data",
-    "section": "",
-    "text": "The base of your gaia analysis is an Ancestral Recombination Graph (ARG) inferred from your samples, stored as a tree sequence with .trees filetype using the tskit library [cite]. In your tree sequence, each sample is represented by a node with a unique node ID. Additionally, inferred ancestors are represented as additional nodes across the trees of the tree sequence.\nThe tree sequence can be inferred using tsinfer [cite], relate [cite], or a host of other ARG-inference methods - see Lewanski et al.’s review of ARGs (2024) here for more information. For testing purposes, tree sequences can also be generated from spatially explicit simulations run in SLiM [cite] - see the Tree Sequences chapter in the appendix for more information.\nGaia includes multiple functions to help you load and modify your tree sequence in R. These include …"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_data.html#georeferences",
-    "href": "gaia_crash_course/gaia_data.html#georeferences",
-    "title": "Prepare your data",
-    "section": "",
-    "text": "To infer geographic history, gaia uses known information about the geographic origin of contemporary genomic samples. Georeference information is stored differently depending on your choice of continuous or discrete space models:\n\n\nIn continuous space, georeferences are stored in a \\(SxD\\) matrix, where \\(S\\) is the number of samples in your tree sequence and \\(D\\) is the number of spatial dimensions in your continuous space. For example, in a 2-dimensional continuous space, the georeference matrix for \\(S\\) samples may look like:\n\n\n\nLatitude\nLongitude\n\n\n\n\n\\(x_0\\)\n\\(y_0\\)\n\n\n\\(x_1\\)\n\\(y_1\\)\n\n\n\\(...\\)\n\\(...\\)\n\n\n\\(x_S\\)\n\\(y_S\\)\n\n\n\nGaia can also function in other spatial dimensions, including 3-dimensional space, introducing an altitude component.\n\n\n\nIn discrete space, georeferences are stored in a \\(Sx2\\) matrix, where \\(S\\) is the number of samples in your tree sequence. The matrix should contain two columns: ‘node_id’ and ‘state_id’. Each discrete geographic location is represented by a state with a unique state ID. For example, a georeference matrix for \\(S\\) samples in a discrete space may look like:\n\n\n\nnode_id\nstate_id\n\n\n\n\n\\(0\\)\n\\(state_0\\)\n\n\n\\(1\\)\n\\(state_1\\)\n\n\n\\(...\\)\n\\(...\\)\n\n\n\\(S\\)\n\\(state_S\\)"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_data.html#a-cost-matrix",
-    "href": "gaia_crash_course/gaia_data.html#a-cost-matrix",
-    "title": "Prepare your data",
-    "section": "",
-    "text": "In continuous space, gaia uses Euclidean (quadratic) or Manhttan (linear) distance between points as a direct migration cost between locations. In discrete space, users must define a cost matrix representing the cost of migration between any two discrete locations. The cost matrix is a \\(DxD\\) matrix, where \\(D\\) is the number of discrete locations (states) in your model. The diagonal of the matrix represents the migration cost of staying in place - values besides 0 on the diagonal will be ignored. The cost matrix may not contain negative values. The matrix does not need to be symmetrical - that is, the cost of migrating from A to B need not equal the cost of migrating from B to A. For \\(D\\) discrete locations, the cost matrix may look like:\n\n\n\n\nState 1\nState 2\n…\nState D\n\n\n\n\nState 1\n\\(0\\)\n\\(3\\)\n\\(...\\)\n\\(2\\)\n\n\nState 2\n\\(1\\)\n\\(0\\)\n\\(...\\)\n\\(3\\)\n\n\n…\n\\(...\\)\n\\(...\\)\n\\(...\\)\n\\(...\\)\n\n\nState D\n\\(2\\)\n\\(2\\)\n\\(...\\)\n\\(0\\)"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_install.html",
-    "href": "gaia_crash_course/gaia_install.html",
-    "title": "Installation",
-    "section": "",
-    "text": "Using remotes:\n\n# Install remotes if not already installed\nif (!requireNamespace(\"remotes\", quietly = TRUE)) {\n  install.packages(\"remotes\")\n}\n\nlibrary(remotes)\ninstall_github(\"blueraleigh/gaia\")\n\nUsing pak:\n\n# Install pak if not already installed\nif (!requireNamespace(\"pak\", quietly = TRUE)) {\n  install.packages(\"pak\")\n}\n\nlibrary(pak)\npkg_install(\"blueraleigh/gaia\")\n\nGaia can then be loaded using:\n\nlibrary(gaia) \n\n\n\n\n\ngit clone https://github.com/blueraleigh/gaia\ncd gaia\nR CMD BUILD .\nR CMD INSTALL &lt;name of tarball&gt;\n\nGaia can then be loaded in an R session using:\n\nlibrary(gaia)"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_install.html#in-an-r-session",
-    "href": "gaia_crash_course/gaia_install.html#in-an-r-session",
-    "title": "Installation",
-    "section": "",
-    "text": "Using remotes:\n\n# Install remotes if not already installed\nif (!requireNamespace(\"remotes\", quietly = TRUE)) {\n  install.packages(\"remotes\")\n}\n\nlibrary(remotes)\ninstall_github(\"blueraleigh/gaia\")\n\nUsing pak:\n\n# Install pak if not already installed\nif (!requireNamespace(\"pak\", quietly = TRUE)) {\n  install.packages(\"pak\")\n}\n\nlibrary(pak)\npkg_install(\"blueraleigh/gaia\")\n\nGaia can then be loaded using:\n\nlibrary(gaia)"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_install.html#on-the-command-line",
-    "href": "gaia_crash_course/gaia_install.html#on-the-command-line",
-    "title": "Installation",
-    "section": "",
-    "text": "git clone https://github.com/blueraleigh/gaia\ncd gaia\nR CMD BUILD .\nR CMD INSTALL &lt;name of tarball&gt;\n\nGaia can then be loaded in an R session using:\n\nlibrary(gaia)"
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_mpr.html",
-    "href": "gaia_crash_course/gaia_mpr.html",
-    "title": "Most parsimonious reconstruction",
-    "section": "",
-    "text": "Once your data is ready, you can calculate the most parsimonious reconstruction (MPR) of the geographic history of your samples.\n\n\nIn discrete space, the MPR of your samples is inferred using treeseq_discrete_mpr(). This function takes four arguments:\n\nA treeseq object\nA matrix of georeference locations for samples in the treeseq\nA cost matrix giving the cost of migration from each discrete location (state) to any other\nA true/false value indicating whether to use the inverse branch length to weight migration costs\n\nFor more details on the first three arguments, see Chapter 5."
-  },
-  {
-    "objectID": "gaia_crash_course/gaia_mpr.html#in-discrete-space",
-    "href": "gaia_crash_course/gaia_mpr.html#in-discrete-space",
-    "title": "Most parsimonious reconstruction",
-    "section": "",
-    "text": "In discrete space, the MPR of your samples is inferred using treeseq_discrete_mpr(). This function takes four arguments:\n\nA treeseq object\nA matrix of georeference locations for samples in the treeseq\nA cost matrix giving the cost of migration from each discrete location (state) to any other\nA true/false value indicating whether to use the inverse branch length to weight migration costs\n\nFor more details on the first three arguments, see Chapter 5."
-  },
-  {
-    "objectID": "gaia_crash_course/index.html",
-    "href": "gaia_crash_course/index.html",
-    "title": "What is gaia?",
-    "section": "",
-    "text": "Gaia is a method and R package for efficiently inferring the geographic locations of the shared ancestors of a modern, georeferenced sample of genomes.1\n\n\nIn uninterrupted continuous space models, gaia can be used to infer the most likely geographic coordinates of ancestors of contemporary samples, reconstructing spatial demographic history. In discrete space models, gaia can be used to infer the most likely discrete locations of ancestors of contemporary samples as well as various new spatial demographic parameters, such as ancestry coefficients and ancestry flux, detailed in Chapter 7 and Chapter 8.\n\n\n\nGaia works by inferring ancestral geographic locations of ancestors of contemporary samples using the information encoded in a georeferenced Ancestral Recombination Graph (ARG) as implemented by tskit as a tree sequence.2 In addition to the georeferenced ARG, when using discrete models of space, gaia requires a migration cost matrix representing the cost of migration from one discrete location to any other.\n\n\n\n\nGrundler et al., preprint\nKelleher et al., 2019"
-  },
-  {
-    "objectID": "gaia_crash_course/index.html#what-can-i-do-with-it",
-    "href": "gaia_crash_course/index.html#what-can-i-do-with-it",
-    "title": "What is gaia?",
-    "section": "",
-    "text": "In uninterrupted continuous space models, gaia can be used to infer the most likely geographic coordinates of ancestors of contemporary samples, reconstructing spatial demographic history. In discrete space models, gaia can be used to infer the most likely discrete locations of ancestors of contemporary samples as well as various new spatial demographic parameters, such as ancestry coefficients and ancestry flux, detailed in Chapter 7 and Chapter 8."
-  },
-  {
-    "objectID": "gaia_crash_course/index.html#what-data-do-i-need",
-    "href": "gaia_crash_course/index.html#what-data-do-i-need",
-    "title": "What is gaia?",
-    "section": "",
-    "text": "Gaia works by inferring ancestral geographic locations of ancestors of contemporary samples using the information encoded in a georeferenced Ancestral Recombination Graph (ARG) as implemented by tskit as a tree sequence.2 In addition to the georeferenced ARG, when using discrete models of space, gaia requires a migration cost matrix representing the cost of migration from one discrete location to any other."
-  },
-  {
-    "objectID": "gaia_crash_course/index.html#references",
-    "href": "gaia_crash_course/index.html#references",
-    "title": "What is gaia?",
-    "section": "",
-    "text": "Grundler et al., preprint\nKelleher et al., 2019"
-  },
-  {
-    "objectID": "gaia.html",
-    "href": "gaia.html",
-    "title": "Gaia: Crash Course",
-    "section": "",
-    "text": "Gaia is a method and R package for efficiently inferring the geographic locations of the shared ancestors of a modern, georeferenced sample of genomes.1\n\n\nIn uninterrupted continuous space models, gaia can be used to infer the most likely geographic coordinates of ancestors of contemporary samples, reconstructing spatial demographic history. In discrete space models, gaia can be used to infer the most likely discrete locations of ancestors of contemporary samples as well as various new spatial demographic parameters, such as ancestry coefficients and ancestry flux, detailed in later sections.\n\n\n\nGaia works by inferring ancestral geographic locations of ancestors of contemporary samples using the information encoded in a georeferenced Ancestral Recombination Graph (ARG) as implemented by tskit as a tree sequence.2 In addition to the georeferenced ARG, when using discrete models of space, gaia requires a migration cost matrix representing the cost of migration from one discrete location to any other."
-  },
-  {
-    "objectID": "gaia.html#what-can-i-do-with-it",
-    "href": "gaia.html#what-can-i-do-with-it",
-    "title": "Gaia: Crash Course",
-    "section": "",
-    "text": "In uninterrupted continuous space models, gaia can be used to infer the most likely geographic coordinates of ancestors of contemporary samples, reconstructing spatial demographic history. In discrete space models, gaia can be used to infer the most likely discrete locations of ancestors of contemporary samples as well as various new spatial demographic parameters, such as ancestry coefficients and ancestry flux, detailed in later sections."
-  },
-  {
-    "objectID": "gaia.html#what-data-do-i-need",
-    "href": "gaia.html#what-data-do-i-need",
-    "title": "Gaia: Crash Course",
-    "section": "",
-    "text": "Gaia works by inferring ancestral geographic locations of ancestors of contemporary samples using the information encoded in a georeferenced Ancestral Recombination Graph (ARG) as implemented by tskit as a tree sequence.2 In addition to the georeferenced ARG, when using discrete models of space, gaia requires a migration cost matrix representing the cost of migration from one discrete location to any other."
-  },
-  {
-    "objectID": "gaia.html#installation",
-    "href": "gaia.html#installation",
-    "title": "Gaia: Crash Course",
-    "section": "Installation",
-    "text": "Installation\n\nIn an R session:\nUsing remotes:\n\n# Install remotes if not already installed\nif (!requireNamespace(\"remotes\", quietly = TRUE)) {\n  install.packages(\"remotes\")\n}\n\nlibrary(remotes)\ninstall_github(\"blueraleigh/gaia\")\n\nUsing pak:\n\n# Install pak if not already installed\nif (!requireNamespace(\"pak\", quietly = TRUE)) {\n  install.packages(\"pak\")\n}\n\nlibrary(pak)\npkg_install(\"blueraleigh/gaia\")\n\nGaia can then be loaded using:\n\nlibrary(gaia) \n\n\n\nOn the command line:\n\ngit clone https://github.com/blueraleigh/gaia\ncd gaia\nR CMD BUILD .\nR CMD INSTALL &lt;name of tarball&gt;\n\nGaia can then be loaded in an R session using:\n\nlibrary(gaia)"
-  },
-  {
-    "objectID": "gaia.html#cost-function",
-    "href": "gaia.html#cost-function",
-    "title": "Gaia: Crash Course",
-    "section": "Cost Function",
-    "text": "Cost Function\n[Content for Cost Function would go here]"
-  },
-  {
-    "objectID": "gaia.html#prepare-your-data",
-    "href": "gaia.html#prepare-your-data",
-    "title": "Gaia: Crash Course",
-    "section": "Prepare your data",
-    "text": "Prepare your data\nTo begin a new analysis in gaia, you will need:\n\nA tree sequence\nThe base of your gaia analysis is an Ancestral Recombination Graph (ARG) inferred from your samples, stored as a tree sequence with .trees filetype using the tskit library [cite]. In your tree sequence, each sample is represented by a node with a unique node ID. Additionally, inferred ancestors are represented as additional nodes across the trees of the tree sequence.\nThe tree sequence can be inferred using tsinfer [cite], relate [cite], or a host of other ARG-inference methods - see Lewanski et al.’s review of ARGs (2024) here for more information. For testing purposes, tree sequences can also be generated from spatially explicit simulations run in SLiM [cite] - see the Tree Sequences chapter in the appendix for more information.\nGaia includes multiple functions to help you load and modify your tree sequence in R. These include …\n\n\nGeoreferences\nTo infer geographic history, gaia uses known information about the geographic origin of contemporary genomic samples. Georeference information is stored differently depending on your choice of continuous or discrete space models:\n\nContinuous space\nIn continuous space, georeferences are stored in a \\(SxD\\) matrix, where \\(S\\) is the number of samples in your tree sequence and \\(D\\) is the number of spatial dimensions in your continuous space. For example, in a 2-dimensional continuous space, the georeference matrix for \\(S\\) samples may look like:\n\n\n\nLatitude\nLongitude\n\n\n\n\n\\(x_0\\)\n\\(y_0\\)\n\n\n\\(x_1\\)\n\\(y_1\\)\n\n\n\\(...\\)\n\\(...\\)\n\n\n\\(x_S\\)\n\\(y_S\\)\n\n\n\nGaia can also function in other spatial dimensions, including 3-dimensional space, introducing an altitude component.\n\n\nDiscrete space\nIn discrete space, georeferences are stored in a \\(Sx2\\) matrix, where \\(S\\) is the number of samples in your tree sequence. The matrix should contain two columns: ‘node_id’ and ‘state_id’. Each discrete geographic location is represented by a state with a unique state ID. For example, a georeference matrix for \\(S\\) samples in a discrete space may look like:\n\n\n\nnode_id\nstate_id\n\n\n\n\n\\(0\\)\n\\(state_0\\)\n\n\n\\(1\\)\n\\(state_1\\)\n\n\n\\(...\\)\n\\(...\\)\n\n\n\\(S\\)\n\\(state_S\\)\n\n\n\n\n\n\nA cost matrix\nIn continuous space, gaia uses Euclidean (quadratic) or Manhattan (linear) distance between points as a direct migration cost between locations. In discrete space, users must define a cost matrix representing the cost of migration between any two discrete locations. The cost matrix is a \\(DxD\\) matrix, where \\(D\\) is the number of discrete locations (states) in your model. The diagonal of the matrix represents the migration cost of staying in place - values besides 0 on the diagonal will be ignored. The cost matrix may not contain negative values. The matrix does not need to be symmetrical - that is, the cost of migrating from A to B need not equal the cost of migrating from B to A. For \\(D\\) discrete locations, the cost matrix may look like:\n\n\n\n\nState 1\nState 2\n…\nState D\n\n\n\n\nState 1\n\\(0\\)\n\\(3\\)\n\\(...\\)\n\\(2\\)\n\n\nState 2\n\\(1\\)\n\\(0\\)\n\\(...\\)\n\\(3\\)\n\n\n…\n\\(...\\)\n\\(...\\)\n\\(...\\)\n\\(...\\)\n\n\nState D\n\\(2\\)\n\\(2\\)\n\\(...\\)\n\\(0\\)"
-  },
-  {
-    "objectID": "gaia.html#most-parsimonious-reconstruction",
-    "href": "gaia.html#most-parsimonious-reconstruction",
-    "title": "Gaia: Crash Course",
-    "section": "Most parsimonious reconstruction",
-    "text": "Most parsimonious reconstruction\nOnce your data is ready, you can calculate the most parsimonious reconstruction (MPR) of the geographic history of your samples.\n\nIn discrete space\nIn discrete space, the MPR of your samples is inferred using treeseq_discrete_mpr(). This function takes four arguments:\n\nA treeseq object\nA matrix of georeference locations for samples in the treeseq\nA cost matrix giving the cost of migration from each discrete location (state) to any other\nA true/false value indicating whether to use the inverse branch length to weight migration costs\n\nFor more details on the first three arguments, see the Prepare your data section.\n\n\nIn continuous space"
-  },
-  {
-    "objectID": "gaia.html#ancestry-coefficient",
-    "href": "gaia.html#ancestry-coefficient",
-    "title": "Gaia: Crash Course",
-    "section": "Ancestry Coefficient",
-    "text": "Ancestry Coefficient"
-  },
-  {
-    "objectID": "gaia.html#ancestry-flux",
-    "href": "gaia.html#ancestry-flux",
-    "title": "Gaia: Crash Course",
-    "section": "Ancestry Flux",
-    "text": "Ancestry Flux"
-  },
-  {
-    "objectID": "gaia.html#migration-history",
-    "href": "gaia.html#migration-history",
-    "title": "Gaia: Crash Course",
-    "section": "Migration History",
-    "text": "Migration History"
-  },
-  {
-    "objectID": "gaia.html#discrete-visualizations",
-    "href": "gaia.html#discrete-visualizations",
-    "title": "Gaia: Crash Course",
-    "section": "Discrete Visualizations",
-    "text": "Discrete Visualizations"
-  },
-  {
-    "objectID": "gaia.html#continuous-visualizations",
-    "href": "gaia.html#continuous-visualizations",
-    "title": "Gaia: Crash Course",
-    "section": "Continuous Visualizations",
-    "text": "Continuous Visualizations"
-  },
-  {
-    "objectID": "gaia.html#tree-sequences",
-    "href": "gaia.html#tree-sequences",
-    "title": "Gaia: Crash Course",
-    "section": "Tree Sequences",
-    "text": "Tree Sequences"
-  },
-  {
-    "objectID": "gaia.html#gaia-algorithm",
-    "href": "gaia.html#gaia-algorithm",
-    "title": "Gaia: Crash Course",
-    "section": "Gaia Algorithm",
-    "text": "Gaia Algorithm"
-  },
-  {
-    "objectID": "gaia.html#choosing-a-spatial-scenario",
-    "href": "gaia.html#choosing-a-spatial-scenario",
-    "title": "Gaia: Crash Course",
-    "section": "Choosing a spatial scenario",
-    "text": "Choosing a spatial scenario\n[Content for Cost Function would go here]"
-  },
-  {
-    "objectID": "gaia.html#choose-a-spatial-scenario",
-    "href": "gaia.html#choose-a-spatial-scenario",
-    "title": "Gaia: Crash Course",
-    "section": "Choose a spatial scenario",
-    "text": "Choose a spatial scenario"
-  },
-  {
-    "objectID": "index.html#research-experience",
-    "href": "index.html#research-experience",
-    "title": "chris-a-talbot.github.io",
-    "section": "Research Experience",
-    "text": "Research Experience\nMesser Lab, Cornell-CB  Ph.D. Student | Starting 2025\nBradburd Lab, UMich-EEB  Lab Technician | 2024 - present\nWeber Lab, UMich-EEB  Lab Technician | 2022 - present\nMárquez Lab, UMich-EEB  Undergraduate Researcher | 2021-2022"
-  },
-  {
-    "objectID": "newsletter.html",
-    "href": "newsletter.html",
-    "title": "Popgen Weekly",
-    "section": "",
-    "text": "Journal: Bioinformatics Date: August 2024\nAuthors: Czech, L.; Spence, J.; Expósito-Alonso, M. é. \n\n\n🔍 Study type: Methods/Software\n📊 Key methods: Pool sequencing statistics, C++ optimization, streaming algorithms\n🎯 Target audience: Population geneticists, bioinformaticians\n⭐ Recommended citation context: When analyzing pool sequencing data or discussing modern population genetics tools\n\n\n\n\n\n\n\nJournal: arXiv Date: October 2024\nAuthors: Alexandre, A.; Abbara, A.; Fruet, C.; Loverdo, C.; Bitbol, A. \n\n\n🔍 Study type: Theoretical mathematics/computational biology\n📊 Key methods: Mathematical modeling, diffusion approximation, eigenvalue analysis\n🎯 Target audience: Population geneticists, mathematical biologists\n⭐ Recommended citation context: When discussing ur developing population genetic models, hen analyzing theoretical evolutionary scenarios and the relative influence of demographic values\n\n\n\nPopulation genetic models provide a theoretical framework from which to evaluate evolutionary scenarios. This paper contributes to the literature on population genetic models in well-mixed (random mating) constant-size populations. The Wright-Fisher model is one of the oldest population genetic models, dating back to the 1930s. It uses discrete, non-overlapping generations, where each individual dies and is replaced by one new individual in each generation. The Moran model allows for continuous, overlapping generations, where at any given time, one individual may die and be replaced by one new individual. Chia and Watterson (1969) generalized these two models by allowing individuals to reproduce independently, then populating the next generation using a random fraction of parents and offspring from the previous generation. This model generalizes both Wright-Fisher and Moran models for particular proportions of parents to offspring in subsequent generations. However, the Chia and Watterson model is highly mathematically complex, making it difficult to study the properties of the model. The model is so complex that the probability of fixation for a particular mutant haplotype in this model has never been derived.\n\n\n\nAlexandre et al. developed a model that tracks evolution in well-mixed populations of constant size by updating a proportion of the population randomly in discrete intervals. This model generalizes to the Wright-Fisher model (when the entire population is updated at each time step) and the Moran model (when one individual is updated at each time step). It is mathematically simpler than previous generalizations of these two models, allowing for the straight-forward derivation of the fixation probability of mutant alleles in the population.\n\n\n\n\nJournal: IEEE Reviews in Biomedical Engineering Date: 2023\nAuthors: Li, R.; Yuan, X.; Radfar, M. e.; Marendy, P.; Ni, W.; O’Brien, T.; Casillas-Espinosa, P. \n\n\n🔍 Study type:\n📊 Key methods:\n🎯 Target audience:\n⭐ Recommended citation context:\n\n\n\n\n\n\n\nJournal: Theoretical Population Biology Date: June 2024\nAuthors: Mikula, L.; Vogl, C. \n\n\n🔍 Study type:\n📊 Key methods:\n🎯 Target audience:\n⭐ Recommended citation context:\n\n\n\n\n\n\n\nJournal: bioarXiv Date: November 2024\nAuthors: Nguyen, T.; Cosgrove, E. a.; Chen, N.; Lehr, N. h.; Lokey, M.; Beaudry, F.; Fitzpatrick, S.; Bowman, R.; Miller, K.; Fitzpatrick, J.; Clark, A. \n\n\n🔍 Study type: spatiotemporal population genomics; conservation genetics\n📊 Key methods: whole-genome sequencing; PCA; ADMIXTURE; SMC++; IBDNe\n🎯 Target audience: Population genomicists, conservation geneticists\n⭐ Recommended citation context: studies investigating the genomics of population decline,\n\n\n\nThe Florida Scrub-Jay (Aphelocoma coerulescens) has experienced a 95% population decline since 1920, providing an opportunity to study the genomic consequences of habitat fragmentation and population decline in real-time. Using whole-genome sequencing data from 241 individuals across five populations sampled at two time points (1990s and 2017-2019), Nguyen et al. inferred demographic histories for each population and quantified changes in genetic diversity, inbreeding levels, and gene flow. The team employed both SFS-based (SMC++) and IBD segment-based (IBDNe) approaches to reconstruct demographic histories across different timescales, revealing that all populations experienced significant declines during the Last Glacial Maximum, followed by divergent trajectories during the Holocene. Their analyses showed that large, stable populations (ONF and ABS) maintained higher genetic diversity and lower inbreeding levels compared to smaller populations, while the isolated JDSP population exhibited significant increases in inbreeding and runs of homozygosity (ROH) over the sampling period. Intriguingly, small but non-isolated populations (PLE and SPSP) showed relatively stable inbreeding levels despite their size, highlighting the critical role of gene flow in maintaining genetic diversity. Contemporary gene flow analysis revealed reduced connectivity across all populations compared to historic levels, suggesting increasing isolation due to habitat fragmentation. The study demonstrates how different demographic histories and degrees of isolation influence genomic patterns in declining populations, providing valuable insights for conservation genetics. The researchers conclude that even small, remnant populations should be prioritized for conservation as they can serve as important stepping stones for maintaining gene flow across the landscape."
-  },
-  {
-    "objectID": "newsletter.html#section",
-    "href": "newsletter.html#section",
-    "title": "Popgen Weekly",
-    "section": "",
-    "text": "Journal:\nAuthors:\nPublication date:"
-  },
-  {
-    "objectID": "newsletter.html#nov.-11-24",
-    "href": "newsletter.html#nov.-11-24",
-    "title": "Popgen Weekly",
-    "section": "",
-    "text": "Journal: Bioinformatics Date: August 2024\nAuthors: Czech, L.; Spence, J.; Expósito-Alonso, M. é. \n\n\n🔍 Study type: Methods/Software\n📊 Key methods: Pool sequencing statistics, C++ optimization, streaming algorithms\n🎯 Target audience: Population geneticists, bioinformaticians\n⭐ Recommended citation context: When analyzing pool sequencing data or discussing modern population genetics tools\n\n\n\n\n\n\n\nJournal: arXiv Date: October 2024\nAuthors: Alexandre, A.; Abbara, A.; Fruet, C.; Loverdo, C.; Bitbol, A. \n\n\n🔍 Study type: Theoretical mathematics/computational biology\n📊 Key methods: Mathematical modeling, diffusion approximation, eigenvalue analysis\n🎯 Target audience: Population geneticists, mathematical biologists\n⭐ Recommended citation context: When discussing ur developing population genetic models, hen analyzing theoretical evolutionary scenarios and the relative influence of demographic values\n\n\n\nPopulation genetic models provide a theoretical framework from which to evaluate evolutionary scenarios. This paper contributes to the literature on population genetic models in well-mixed (random mating) constant-size populations. The Wright-Fisher model is one of the oldest population genetic models, dating back to the 1930s. It uses discrete, non-overlapping generations, where each individual dies and is replaced by one new individual in each generation. The Moran model allows for continuous, overlapping generations, where at any given time, one individual may die and be replaced by one new individual. Chia and Watterson (1969) generalized these two models by allowing individuals to reproduce independently, then populating the next generation using a random fraction of parents and offspring from the previous generation. This model generalizes both Wright-Fisher and Moran models for particular proportions of parents to offspring in subsequent generations. However, the Chia and Watterson model is highly mathematically complex, making it difficult to study the properties of the model. The model is so complex that the probability of fixation for a particular mutant haplotype in this model has never been derived.\n\n\n\nAlexandre et al. developed a model that tracks evolution in well-mixed populations of constant size by updating a proportion of the population randomly in discrete intervals. This model generalizes to the Wright-Fisher model (when the entire population is updated at each time step) and the Moran model (when one individual is updated at each time step). It is mathematically simpler than previous generalizations of these two models, allowing for the straight-forward derivation of the fixation probability of mutant alleles in the population.\n\n\n\n\nJournal: IEEE Reviews in Biomedical Engineering Date: 2023\nAuthors: Li, R.; Yuan, X.; Radfar, M. e.; Marendy, P.; Ni, W.; O’Brien, T.; Casillas-Espinosa, P. \n\n\n🔍 Study type:\n📊 Key methods:\n🎯 Target audience:\n⭐ Recommended citation context:\n\n\n\n\n\n\n\nJournal: Theoretical Population Biology Date: June 2024\nAuthors: Mikula, L.; Vogl, C. \n\n\n🔍 Study type:\n📊 Key methods:\n🎯 Target audience:\n⭐ Recommended citation context:\n\n\n\n\n\n\n\nJournal: bioarXiv Date: November 2024\nAuthors: Nguyen, T.; Cosgrove, E. a.; Chen, N.; Lehr, N. h.; Lokey, M.; Beaudry, F.; Fitzpatrick, S.; Bowman, R.; Miller, K.; Fitzpatrick, J.; Clark, A. \n\n\n🔍 Study type: spatiotemporal population genomics; conservation genetics\n📊 Key methods: whole-genome sequencing; PCA; ADMIXTURE; SMC++; IBDNe\n🎯 Target audience: Population genomicists, conservation geneticists\n⭐ Recommended citation context: studies investigating the genomics of population decline,\n\n\n\nThe Florida Scrub-Jay (Aphelocoma coerulescens) has experienced a 95% population decline since 1920, providing an opportunity to study the genomic consequences of habitat fragmentation and population decline in real-time. Using whole-genome sequencing data from 241 individuals across five populations sampled at two time points (1990s and 2017-2019), Nguyen et al. inferred demographic histories for each population and quantified changes in genetic diversity, inbreeding levels, and gene flow. The team employed both SFS-based (SMC++) and IBD segment-based (IBDNe) approaches to reconstruct demographic histories across different timescales, revealing that all populations experienced significant declines during the Last Glacial Maximum, followed by divergent trajectories during the Holocene. Their analyses showed that large, stable populations (ONF and ABS) maintained higher genetic diversity and lower inbreeding levels compared to smaller populations, while the isolated JDSP population exhibited significant increases in inbreeding and runs of homozygosity (ROH) over the sampling period. Intriguingly, small but non-isolated populations (PLE and SPSP) showed relatively stable inbreeding levels despite their size, highlighting the critical role of gene flow in maintaining genetic diversity. Contemporary gene flow analysis revealed reduced connectivity across all populations compared to historic levels, suggesting increasing isolation due to habitat fragmentation. The study demonstrates how different demographic histories and degrees of isolation influence genomic patterns in declining populations, providing valuable insights for conservation genetics. The researchers conclude that even small, remnant populations should be prioritized for conservation as they can serve as important stepping stones for maintaining gene flow across the landscape."
-  },
-  {
-    "objectID": "newsletter.html#references",
-    "href": "newsletter.html#references",
-    "title": "Popgen Weekly",
-    "section": "References",
-    "text": "References"
-  },
-  {
-    "objectID": "CV.html#funding-awards",
-    "href": "CV.html#funding-awards",
+    "objectID": "CV.html",
+    "href": "CV.html",
     "title": "Chris Talbot | CV",
-    "section": "Funding & Awards",
-    "text": "Funding & Awards\nTotal: $172,280\nGraduate Research Fellowship Program 2025-2030  National Science Foundation $159,000 \nChancellor’s Fellowship Offered 2025  University of California, Berkeley (Declined) \nEugene Cota-Robles Fellowship Offered 2025  University of California, Davis (Declined) \nEugene Cota-Robles Fellowship Offered 2025  University of California, Santa Cruz (Declined) \nBiological Station Student Fellowship 2023  UMich Biological Station $1,680 \nStudent Research Grant 2022-2023  UMich Undergraduate Research Opportunity Program (UROP) $5,000 \nTravel Grant 2022  SACNAS $2,500 \nBiomedical & Life Sciences Summer Fellowship 2022  UMich UROP $4,000 \nCommunity College Summer Institute Fellowship 2019  UMich-School of Information $100"
+    "section": "",
+    "text": "Status: Ph.D. Student in Computational Biology at Cornell University, Messer Lab  Fields: Population Genetics, Computational Biology, Evolutionary Ecology  Interests: Population genetics, global change, stochastic modeling, conservation  Techs: Python, R, C++, Rust, TypeScript, SLiM"
+  },
+  {
+    "objectID": "CV.html#summary",
+    "href": "CV.html#summary",
+    "title": "Chris Talbot | CV",
+    "section": "Summary",
+    "text": "Summary\n\nFirst-gen academic and biologist with years of experience in lab, field, and computational work.\nInterested in patterns and drivers of ecological organization across spatiotemporal scales under global change.\nExploring emerging methods for complex systems, including community science and machine learning."
+  },
+  {
+    "objectID": "CV.html#education",
+    "href": "CV.html#education",
+    "title": "Chris Talbot | CV",
+    "section": "Education",
+    "text": "Education\nPh.D. – Computational Biology 2025-Present  Cornell University \n\nAdvisor: Philipp Messer\nKey Funding: National Science Foundation Graduate Research Fellowship Program (2025-2030)\n\nB.S. – Ecology, Evolution, and Biodiversity 2024  University of Michigan (UMich) GPA: 3.74 \n\nGraduated with Highest Honors under the supervision of Marjorie Weber\nHonors Thesis: Patterns of floral color in communities of common Northeast American wildflowers \nCoursework: Statistics & probability, programming & data structures, genetics, macroevolution, ethnobotany\n\nA.G.S. – General Studies (Computer Science & Mathematics Concentration) 2020  Grand Rapids Community College (GRCC) GPA: 3.9 \n\nCoursework: C++ programming, database development, web application programming, information security"
+  },
+  {
+    "objectID": "CV.html#research",
+    "href": "CV.html#research",
+    "title": "Chris Talbot | CV",
+    "section": "Research",
+    "text": "Research\nDoctoral Researcher – Messer Lab 2025-Present  Cornell University - Computational Biology \nResearch Programmer – Bradburd Lab 2024-2025  UMich-Ecology & Evolutionary Biology (EEB) \n\nProject: Testing, documenting, and visualizing novel geographic evolutionary inference methods\n\nLab Technician – Weber Lab 2022-2025  UMich-EEB \n\nProject: “Patterns of floral color in communities of common Northeast American wildflowers”\n\nUndergraduate Researcher – Márquez Lab 2021-2022  UMich-EEB \n\nProject: “Optimizing CRISPR-Cas9 genetic modification in Phyllobates poison-dart frogs”"
+  },
+  {
+    "objectID": "CV.html#publications",
+    "href": "CV.html#publications",
+    "title": "Chris Talbot | CV",
+    "section": "Publications",
+    "text": "Publications\n\nPublished:\n2025 – Graham, C. D. K., …, Talbot, C. A., Yerks, A. L., & Weber, M. G. Mite domatia and associated mite density in a North American Eastern Deciduous Forest in Michigan. Published in Ecology and Evolution.\n\n\nPre-prints/In Review:\n2025 – Talbot, C. A., Bradburd, G. S. ARGscape: A modular, interactive tool for manipulation of spatiotemporal ancestral recombination graphs. arXiv:2510.07255 [q-bio.PE]. Submitted to Bioinformatics.\n2025 – Talbot, C. A., Weber, M. G. Opposing seasonal dynamics in phylogenetic and flower color diversity of co-flowering wildflower assemblages. bioRxiv 2025.10.21.683724. Submitted to Ecology.\n\n\nIn Prep:\n2025 – Talbot, C. A., Bradburd, G. S. Optimizing temporal sampling strategies for spatial population genetic inference using ancestral recombination graphs. In Preparation for Genetics."
+  },
+  {
+    "objectID": "CV.html#software-development",
+    "href": "CV.html#software-development",
+    "title": "Chris Talbot | CV",
+    "section": "Software Development",
+    "text": "Software Development\nOpen-Source Contributor 2025-Present  SLiM simulator, Messer Lab, Cornell University \nPrimary Developer 2025-Present  ARGscape software"
+  },
+  {
+    "objectID": "CV.html#funding",
+    "href": "CV.html#funding",
+    "title": "Chris Talbot | CV",
+    "section": "Funding",
+    "text": "Funding\nTotal: $174,280\nGraduate Research Fellowship Program 2025-2030  National Science Foundation $159,000 \nGraduate School Dean’s Scholar Fellowship 2025  Cornell University $2,000 \nChancellor’s Fellowship Offered 2025  University of California, Berkeley (Declined) \nEugene Cota-Robles Fellowship Offered 2025  University of California, Davis (Declined) \nEugene Cota-Robles Fellowship Offered 2025  University of California, Santa Cruz (Declined) \nBiological Station Student Fellowship 2023  UMich Biological Station $1,680 \nStudent Research Grant 2022-2023  UMich Undergraduate Research Opportunity Program (UROP) $5,000 \nTravel Grant 2022  SACNAS $2,500 \nBiomedical & Life Sciences Summer Fellowship 2022  UMich UROP $4,000 \nCommunity College Summer Institute Fellowship 2019  UMich-School of Information $100"
   },
   {
     "objectID": "CV.html#teaching-mentoring",
@@ -651,11 +322,18 @@
     "text": "Teaching & Mentoring\nDocent (Volunteer Educator) 2023-Present  Matthaei Botanical Gardens & Nichols Arboretum \nTest Writer & Proctor, Forestry & Botany (Volunteer) 2023-2025  UMich Science Olympiad \nDirector of Percussion 2022-2023  Lake Orion Community Schools, Lake Orion, MI \nTransfer Student Peer Mentor 2022-2023  UMich-LSA Transfer Bridges Program \nDirector of Percussion 2019-2022  Spring Lake Public Schools, Spring Lake, MI \nFreelance Percussion Instructor & Composer 2018-2022  8 school districts across Michigan \nProfessional Peer Tutor – Mathematics, Language Arts 2019-2020  GRCC Drop-in Tutoring Labs"
   },
   {
-    "objectID": "CV.html#talks",
-    "href": "CV.html#talks",
+    "objectID": "CV.html#invited-talks-workshops",
+    "href": "CV.html#invited-talks-workshops",
     "title": "Chris Talbot | CV",
-    "section": "Talks",
-    "text": "Talks\nThird Joint Congress on Evolutionary Biology Montreal, QC (Talk) 2024  Do flowers of a color bloom together? (Talk V.2) \nBotany 2024 Grand Rapids, MI (Lightning Talk) 2024  Do flowers of a color bloom together? (Lightning Talk) \nUMich Ecology & Evolutionary Biology Ann Arbor, MI (Honors Thesis Talk) 2024  Patterns of floral color in communities of common Northeast American wildflowers"
+    "section": "Invited Talks & Workshops",
+    "text": "Invited Talks & Workshops\n2025 — tskit-dev Seminar Virtual (Invited Talk)\nUpcoming 2025 — ARGEvol Conference Porto, Portugal (Invited Talk)\nUpcoming 2025 — ARGEvol Spatial ARG Workshop Porto, Portugal (Workshop Contributor)"
+  },
+  {
+    "objectID": "CV.html#contributed-talks",
+    "href": "CV.html#contributed-talks",
+    "title": "Chris Talbot | CV",
+    "section": "Contributed Talks",
+    "text": "Contributed Talks\nThird Joint Congress on Evolutionary Biology Montreal, QC (Talk) 2024  Do flowers of a color bloom together? (Talk V.2)\nBotany 2024 Grand Rapids, MI (Lightning Talk) 2024  Do flowers of a color bloom together? (Lightning Talk)\nUMich Ecology & Evolutionary Biology Ann Arbor, MI (Honors Thesis Defense) 2024"
   },
   {
     "objectID": "CV.html#posters",
@@ -663,5 +341,40 @@
     "title": "Chris Talbot | CV",
     "section": "Posters",
     "text": "Posters\nThird Joint Congress on Evolutionary Biology Montreal, QC 2024  Do flowers of a color bloom together? (Poster V.2) \nBotany 2024 Grand Rapids, MI 2024  Do flowers of a color bloom together? (Poster V.1) \nUMich Undergraduate Research Opportunity Program Symposium Ann Arbor, MI 2022  Optimizing CRISPR-Cas9 genetic modification in Phyllobates* poison-dart frogs*"
+  },
+  {
+    "objectID": "CV.html#professional-service",
+    "href": "CV.html#professional-service",
+    "title": "Chris Talbot | CV",
+    "section": "Professional & Service",
+    "text": "Professional & Service\nPercussionist 2024-2025  Straits of Mackinac Concert Band, Mackinaw City, MI \nCo-Founder, President, and Volunteer 2023-2025  Students for Public Power @UM \nShift Leader 2021-2023  Biggby Coffee, Grand Rapids, MI \nSeasonal Retail Lead 2019  John Ball Zoo, Grand Rapids, MI"
+  },
+  {
+    "objectID": "CV.html#languages",
+    "href": "CV.html#languages",
+    "title": "Chris Talbot | CV",
+    "section": "Languages",
+    "text": "Languages\nR: Advanced (C1)  German: Intermediate (B2)  C++: Intermediate (B2)  Python: Intermediate (B2)  TypeScript: Intermediate (B1)  Nishnaabemwin (Eastern Ojibwe): Beginner (A1)"
+  },
+  {
+    "objectID": "CV.html#certifications",
+    "href": "CV.html#certifications",
+    "title": "Chris Talbot | CV",
+    "section": "Certifications",
+    "text": "Certifications\nCertified Michigan Naturalist 2024  Michigan State University Extension"
+  },
+  {
+    "objectID": "CV.html#professional-memberships",
+    "href": "CV.html#professional-memberships",
+    "title": "Chris Talbot | CV",
+    "section": "Professional Memberships",
+    "text": "Professional Memberships\nAmerican Society of Naturalists – Student Member 2024-Present\nSociety for the Study of Evolution – Student Member 2022-Present\nBotanical Society of America – Student Member 2024-2025"
+  },
+  {
+    "objectID": "CV.html#extracurriculars",
+    "href": "CV.html#extracurriculars",
+    "title": "Chris Talbot | CV",
+    "section": "Extracurriculars",
+    "text": "Extracurriculars\nFounding Member 2023-2025  UMich Ecological Restoration Club \nVice President 2019-2020  GRCC Programmers \nEnsemble & Section Leader, Performer 2014-2020  Genesis Percussion Ensemble"
   }
 ]

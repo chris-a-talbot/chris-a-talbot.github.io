@@ -10,19 +10,16 @@ about:
       - icon: github
         text: GitHub
         href: https://github.com/chris-a-talbot
-      - icon: twitter 
-        text: Twitter (X)
-        href: https://twitter.com/chris__talbot
       - icon: linkedin
         text: LinkedIn
         href: https://www.linkedin.com/in/chris-talbot
 ---
 
-First-gen academic with years of experience in the lab, field, and behind a screen. Interested in patterns of ecological organization across spatiotemporal scales, the evolutionary drivers of those patterns, and how those patterns respond to global change. Fascinated with emerging methods for evaluating complex systems, including community science, machine learning, and tree sequence statistics.
+Hey, I'm Chris. I'm a PhD student in Computational Biology at Cornell University, advised by Philipp Messer. I'm interested in how genetic diversity is distributed through space and time, how that diversity is shaped by evolutionary processes, and how that diversity responds to global change. I aim to use evolutionary ecology to develop methods and tools for conservation and management of biodiversity under global change, guided by rigorous statistical and computational frameworks. I'm fascinated with emerging methods for evaluating complex systems, including community science, machine learning, and simulations.
 
 ## Education
 
-**Cornell University** \| Ithaca, NY <br> Ph.D. Computational Biology \| Starting 2025 <br>
+**Cornell University** \| Ithaca, NY <br> Ph.D. Computational Biology \| 2025-Present <br>
 
 **University of Michigan** \| Ann Arbor, MI <br> B.S. Ecology, Evolution, and Biodiversity \| 2024 <br>
 
@@ -30,14 +27,14 @@ First-gen academic with years of experience in the lab, field, and behind a scre
 
 ## Research Experience
 
-**Messer Lab**, Cornell-CB <br> Ph.D. Student \| Starting 2025
+**Messer Lab**, Cornell-CB <br> Ph.D. Student \| 2025-Present
 
-**Bradburd Lab**, UMich-EEB <br> Lab Technician \| 2024 - present
+**Bradburd Lab**, UMich-EEB <br> Lab Technician \| 2024-2025
 
-**Weber Lab**, UMich-EEB <br> Lab Technician \| 2022 - present
+**Weber Lab**, UMich-EEB <br> Lab Technician \| 2022-2025
 
 **Márquez Lab**, UMich-EEB <br> Undergraduate Researcher \| 2021-2022
 
 ## Contact
 
-**Email**: chtalbot\@umich.edu
+**Email**: cat267\{at\}cornell.edu

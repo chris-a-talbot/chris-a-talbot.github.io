@@ -9,8 +9,6 @@ website:
     tools:
       - icon: github
         href: https://www.github.com/chris-a-talbot
-      - icon: twitter 
-        href: https://twitter.com/chris__talbot
       - icon: linkedin
         href: https://www.linkedin.com/in/chris-talbot
     left:
@@ -18,18 +16,16 @@ website:
         text: Home
       - href: CV.qmd
         text: CV
-      - href: botany2024.qmd
-        text: Botany 2024
-      - href: evolution2024.qmd
-        text: Evolution 2024
+      - href: publications.qmd
+        text: Publications
+      - href: https://www.argscape.com
+        text: ARGscape
   back-to-top-navigation: true
   page-footer: 
-    left: "Copyright 2024, Chris Talbot" 
+    left: "Copyright 2025, Chris Talbot" 
     right: 
       - icon: github
         href: https://github.com/chris-a-talbot
-      - icon: twitter 
-        href: https://twitter.com/chris__talbot
       - icon: linkedin
         href: https://www.linkedin.com/in/chris-talbot
 
