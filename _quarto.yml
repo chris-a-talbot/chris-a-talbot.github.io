@@ -18,6 +18,8 @@ website:
         text: CV
       - href: publications.qmd
         text: Publications
+      - href: portfolio.qmd
+        text: Portfolio
       - href: https://www.argscape.com
         text: ARGscape
   back-to-top-navigation: true

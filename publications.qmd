@@ -6,20 +6,9 @@ format:
     toc-depth: 2
 ---
 
-View my Google Scholar profile: [scholar.google.com/citations?user=iC5hGLYAAAAJ](https://scholar.google.com/citations?user=iC5hGLYAAAAJ)
+```{=html}
+<script src="https://pubsync.christopher-a-talbot.workers.dev/widget.js" async></script>
+```
 
-## Published
-
--  2025 — Graham, C. D. K., ..., Talbot, C. A., Yerks, A. L., & Weber, M. G. Mite domatia and associated mite density in a North American Eastern Deciduous Forest in Michigan. Ecology and Evolution. [Public link](https://onlinelibrary-wiley-com.proxy.library.cornell.edu/doi/10.1002/ece3.71379) | [PDF](files/manuscripts/graham_et_al_paper.pdf)
-
-## Pre-prints / In Review
-
--  2025 — Talbot, C. A., Bradburd, G. S. ARGscape: A modular, interactive tool for manipulation of spatiotemporal ancestral recombination graphs. arXiv:2510.07255 [q-bio.PE]. Submitted to Bioinformatics. [Public link](https://arxiv.org/abs/2510.07255) | [PDF](files/manuscripts/talbot_bradburd_argscape_preprint.pdf)
-
--  2025 — Talbot, C. A., Weber, M. G. Opposing seasonal dynamics in phylogenetic and flower color diversity of co-flowering wildflower assemblages. bioRxiv 2025.10.21.683724. Submitted to Ecology. [Public link](https://www.biorxiv.org/content/10.1101/2025.10.21.683724v1) | [PDF](files/manuscripts/talbot_weber_flower_color_preprint.pdf)
-
-## In Preparation
-
--  2025 — Talbot, C. A., Bradburd, G. S. Optimizing temporal sampling strategies for spatial population genetic inference using ancestral recombination graphs. In preparation for Genetics.
-
-
+::: {data-lab-id="cmjun5c8i00bq14hq9h0h0j76" data-api-url="https://pubsyncio-production.up.railway.app" data-config-preset="minimal-publications"}
+:::

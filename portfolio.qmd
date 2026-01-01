@@ -1,0 +1,61 @@
+---
+title: "Portfolio"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+## As Lead/Main Developer
+
+### ARGscape.com
+
+**Ancestral Recombination Graph Visualization**
+
+Explore ancestry through space, time, and the genome. A web-based tool for visualizing complex genetic ancestry patterns in population genetics.
+
+::: portfolio-preview
+[![ARGscape Homepage](images/argscape_homepage.png)](https://argscape.com)
+:::
+
+### Anstett Lab Website
+
+**The Anstett Lab - Evolutionary Ecology of Change**
+
+We study rapid adaptation in plants across space and time to understand when evolution can rescue populations from environmental extremes—and when it can't.
+
+::: portfolio-preview
+[![Anstett Lab Homepage](images/anstettlab_homepage.png)](https://anstettlab.chris-a-talbot.com)
+:::
+
+### PubSync Dashboard
+
+**Publication Synchronization Platform**
+
+PubSync aggregates publications from ORCID profiles into an embeddable widget for your lab, group, or department website. No manual updates required.
+
+::: portfolio-preview
+[![PubSync Homepage](images/pubsync_homepage.png)](https://pubsyncdashboard-production.up.railway.app/)
+:::
+
+### SLiM VS Code Tools
+
+**VS Code Extension for SLiM**
+
+A comprehensive VS Code extension for working with SLiM, providing syntax highlighting, IntelliSense, and integrated development tools for evolutionary simulation scripting.
+
+::: portfolio-preview
+[![SLiM VS Code Tools GitHub](images/slim_vscode_tools_homepage.png)](https://github.com/slim-community/slim-vscode-tools)
+:::
+
+## As Open-Source Contributor
+
+### SLiM
+
+**Genetically Explicit Forward Simulation Software**
+
+SLiM is a genetically explicit forward simulation software package for population genetics and evolutionary biology. It is highly flexible, with a built-in scripting language, and has a cross-platform graphical modeling environment called SLiMgui.
+
+::: portfolio-preview
+[![SLiM GitHub](images/slim_homepage.png)](https://github.com/MesserLab/SLiM)
+:::

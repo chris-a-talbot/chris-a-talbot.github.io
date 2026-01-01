@@ -12,7 +12,7 @@ format:
 css: cv.css
 ---
 
-**Status**: Ph.D. Student in Computational Biology at Cornell University, Messer Lab <br> **Fields**: Population Genetics, Computational Biology, Evolutionary Ecology <br> **Interests**: Population genetics, global change, stochastic modeling, conservation <br> **Techs**: Python, R, C++, Rust, TypeScript, SLiM
+**Status**: Ph.D. Student in Computational Biology at Cornell University, Messer Lab | Ithaca, New York <br> **Fields**: Population Genetics, Computational Biology, Evolutionary Ecology | chris-a-talbot.com <br> **Interests**: Population genetics, global change, stochastic modeling, conservation | christopher.a.talbot@gmail.com <br> **Techs**: Python, R, C++, Rust, TypeScript, SLiM
 
 ## Summary
 
@@ -61,19 +61,23 @@ css: cv.css
 
 #### *Pre-prints/In Review:*
 
-**2025** -- [Talbot, C. A.]{.underline}, Bradburd, G. S. ARGscape: A modular, interactive tool for manipulation of spatiotemporal ancestral recombination graphs. arXiv:2510.07255 \[q-bio.PE\]. **Submitted to Bioinformatics.**
+**2025** -- [Talbot, C. A.]{.underline}, Bradburd, G. S. ARGscape: A modular, interactive tool for manipulation of spatiotemporal ancestral recombination graphs. arXiv:2510.07255 \[q-bio.PE\]. **In Review at Bioinformatics.**
 
-**2025** -- [Talbot, C. A.]{.underline}, Weber, M. G. Opposing seasonal dynamics in phylogenetic and flower color diversity of co-flowering wildflower assemblages. bioRxiv 2025.10.21.683724. **Submitted to Ecology.**
+**2025** -- [Talbot, C. A.]{.underline}, Weber, M. G. Opposing seasonal dynamics in phylogenetic and flower color diversity of co-flowering wildflower assemblages. bioRxiv 2025.10.21.683724. **In Review at Ecology.**
 
 #### *In Prep:*
 
 **2025** -- [Talbot, C. A.]{.underline}, Bradburd, G. S. Optimizing temporal sampling strategies for spatial population genetic inference using ancestral recombination graphs. **In Preparation for Genetics.**
 
+**2025** -- [Talbot, C. A.]{.underline}, Kern, A. D. slim-vscode-tools: A comprehensive language server and development environment for SLiM forward-time simulations. **In Preparation for Bioinformatics.**
+
 ## Software Development
 
-**Open-Source Contributor** [2025-Present]{.cvdate} <br> *SLiM simulator, Messer Lab, Cornell University* <br>
+**Open-Source Contributor** [2025-Present]{.cvdate} <br> *"SLiM" simulator, Messer Lab, Cornell University* <br>
 
-**Primary Developer** [2025-Present]{.cvdate} <br> *ARGscape software* <br>
+**Open-Source Lead** [2025-Present]{.cvdate} <br> *ARGscape software* <br>
+
+**Open-Source Lead** [2025-Present]{.cvdate} <br> *slim-vscode-tools VScode extension and language server* <br>
 
 ## Funding
 
@@ -101,7 +105,11 @@ css: cv.css
 
 ## Teaching & Mentoring
 
-**Docent (Volunteer Educator)** [2023-Present]{.cvdate} <br> *Matthaei Botanical Gardens & Nichols Arboretum* <br>
+**Volunteer Presenter** [2025-Present]{.cvdate} <br> *Skype a Scientist* <br>
+
+**Docent (Volunteer Educator)** [2023-2025]{.cvdate} <br> *Matthaei Botanical Gardens & Nichols Arboretum* <br>
+
+**Peer GRFP Reviewer** [2025]{.cvdate} <br> *Cornell University* <br>
 
 **Test Writer & Proctor, Forestry & Botany (Volunteer)** [2023-2025]{.cvdate} <br> *UMich Science Olympiad* <br>
 
@@ -138,6 +146,16 @@ css: cv.css
 **Botany 2024** [Grand Rapids, MI]{.small} [2024]{.cvdate} <br> [*Do flowers of a color bloom together? (Poster V.1)*](botany2024poster.html) <!-- Link from old CV -->
 
 **UMich Undergraduate Research Opportunity Program Symposium** [Ann Arbor, MI]{.small} [2022]{.cvdate} <br> [*Optimizing CRISPR-Cas9 genetic modification in* Phyllobates\* poison-dart frogs\*](files/pres/poster_22apr22.pdf) <!-- Link from old CV -->
+
+## Honors & Awards
+
+**Highest Honors in Ecology & Evolutionary Biology** [2024]{.cvdate} <br> *University of Michigan* <br>
+
+**President's Scholar** [2020]{.cvdate} <br> *1 semester, Grand Rapids Community College (GRCC)* <br>
+
+**Dean's Scholar** [2019-2020]{.cvdate} <br> *4 semesters, GRCC* <br>
+
+**Phi Theta Kappa Honors Society** [2019]{.cvdate} <br> *Invited Member, GRCC* <br>
 
 ## Professional & Service
 

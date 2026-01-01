@@ -98,53 +98,144 @@
     "text": "Gaia Algorithm"
   },
   {
-    "objectID": "evolution2024poster.html",
-    "href": "evolution2024poster.html",
-    "title": "Chris @ Evolution 2024 | Poster",
+    "objectID": "CV.html",
+    "href": "CV.html",
+    "title": "Chris Talbot | CV",
     "section": "",
-    "text": "PDF version here!\n\n\n\n\n Back to top"
+    "text": "Status: Ph.D. Student in Computational Biology at Cornell University, Messer Lab | Ithaca, New York  Fields: Population Genetics, Computational Biology, Evolutionary Ecology | chris-a-talbot.com  Interests: Population genetics, global change, stochastic modeling, conservation | christopher.a.talbot@gmail.com  Techs: Python, R, C++, Rust, TypeScript, SLiM"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
+    "objectID": "CV.html#summary",
+    "href": "CV.html#summary",
+    "title": "Chris Talbot | CV",
+    "section": "Summary",
+    "text": "Summary\n\nFirst-gen academic and biologist with years of experience in lab, field, and computational work.\nInterested in patterns and drivers of ecological organization across spatiotemporal scales under global change.\nExploring emerging methods for complex systems, including community science and machine learning."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "chris-a-talbot.github.io",
-    "section": "",
-    "text": "Hey, I’m Chris. I’m a PhD student in Computational Biology at Cornell University, advised by Philipp Messer. I’m interested in how genetic diversity is distributed through space and time, how that diversity is shaped by evolutionary processes, and how that diversity responds to global change. I aim to use evolutionary ecology to develop methods and tools for conservation and management of biodiversity under global change, guided by rigorous statistical and computational frameworks. I’m fascinated with emerging methods for evaluating complex systems, including community science, machine learning, and simulations."
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "chris-a-talbot.github.io",
+    "objectID": "CV.html#education",
+    "href": "CV.html#education",
+    "title": "Chris Talbot | CV",
     "section": "Education",
-    "text": "Education\nCornell University | Ithaca, NY  Ph.D. Computational Biology | 2025-Present \nUniversity of Michigan | Ann Arbor, MI  B.S. Ecology, Evolution, and Biodiversity | 2024 \nGrand Rapids Community College | Grand Rapids, MI  A.G.S. Computer Science and Mathematics | 2020"
+    "text": "Education\nPh.D. – Computational Biology 2025-Present  Cornell University \n\nAdvisor: Philipp Messer\nKey Funding: National Science Foundation Graduate Research Fellowship Program (2025-2030)\n\nB.S. – Ecology, Evolution, and Biodiversity 2024  University of Michigan (UMich) GPA: 3.74 \n\nGraduated with Highest Honors under the supervision of Marjorie Weber\nHonors Thesis: Patterns of floral color in communities of common Northeast American wildflowers \nCoursework: Statistics & probability, programming & data structures, genetics, macroevolution, ethnobotany\n\nA.G.S. – General Studies (Computer Science & Mathematics Concentration) 2020  Grand Rapids Community College (GRCC) GPA: 3.9 \n\nCoursework: C++ programming, database development, web application programming, information security"
   },
   {
-    "objectID": "index.html#research-experience",
-    "href": "index.html#research-experience",
-    "title": "chris-a-talbot.github.io",
-    "section": "Research Experience",
-    "text": "Research Experience\nMesser Lab, Cornell-CB  Ph.D. Student | 2025-Present\nBradburd Lab, UMich-EEB  Lab Technician | 2024-2025\nWeber Lab, UMich-EEB  Lab Technician | 2022-2025\nMárquez Lab, UMich-EEB  Undergraduate Researcher | 2021-2022"
+    "objectID": "CV.html#research",
+    "href": "CV.html#research",
+    "title": "Chris Talbot | CV",
+    "section": "Research",
+    "text": "Research\nDoctoral Researcher – Messer Lab 2025-Present  Cornell University - Computational Biology \nResearch Programmer – Bradburd Lab 2024-2025  UMich-Ecology & Evolutionary Biology (EEB) \n\nProject: Testing, documenting, and visualizing novel geographic evolutionary inference methods\n\nLab Technician – Weber Lab 2022-2025  UMich-EEB \n\nProject: “Patterns of floral color in communities of common Northeast American wildflowers”\n\nUndergraduate Researcher – Márquez Lab 2021-2022  UMich-EEB \n\nProject: “Optimizing CRISPR-Cas9 genetic modification in Phyllobates poison-dart frogs”"
   },
   {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
-    "title": "chris-a-talbot.github.io",
-    "section": "Contact",
-    "text": "Contact\nEmail: cat267{at}cornell.edu"
+    "objectID": "CV.html#publications",
+    "href": "CV.html#publications",
+    "title": "Chris Talbot | CV",
+    "section": "Publications",
+    "text": "Publications\n\nPublished:\n2025 – Graham, C. D. K., …, Talbot, C. A., Yerks, A. L., & Weber, M. G. Mite domatia and associated mite density in a North American Eastern Deciduous Forest in Michigan. Published in Ecology and Evolution.\n\n\nPre-prints/In Review:\n2025 – Talbot, C. A., Bradburd, G. S. ARGscape: A modular, interactive tool for manipulation of spatiotemporal ancestral recombination graphs. arXiv:2510.07255 [q-bio.PE]. In Review at Bioinformatics.\n2025 – Talbot, C. A., Weber, M. G. Opposing seasonal dynamics in phylogenetic and flower color diversity of co-flowering wildflower assemblages. bioRxiv 2025.10.21.683724. In Review at Ecology.\n\n\nIn Prep:\n2025 – Talbot, C. A., Bradburd, G. S. Optimizing temporal sampling strategies for spatial population genetic inference using ancestral recombination graphs. In Preparation for Genetics.\n2025 – Talbot, C. A., Kern, A. D. slim-vscode-tools: A comprehensive language server and development environment for SLiM forward-time simulations. In Preparation for Bioinformatics."
   },
   {
-    "objectID": "evolution2024.html",
-    "href": "evolution2024.html",
-    "title": "Chris @ Evolution 2024",
+    "objectID": "CV.html#software-development",
+    "href": "CV.html#software-development",
+    "title": "Chris Talbot | CV",
+    "section": "Software Development",
+    "text": "Software Development\nOpen-Source Contributor 2025-Present  “SLiM” simulator, Messer Lab, Cornell University \nOpen-Source Lead 2025-Present  ARGscape software \nOpen-Source Lead 2025-Present  slim-vscode-tools VScode extension and language server"
+  },
+  {
+    "objectID": "CV.html#funding",
+    "href": "CV.html#funding",
+    "title": "Chris Talbot | CV",
+    "section": "Funding",
+    "text": "Funding\nTotal: $174,280\nGraduate Research Fellowship Program 2025-2030  National Science Foundation $159,000 \nGraduate School Dean’s Scholar Fellowship 2025  Cornell University $2,000 \nChancellor’s Fellowship Offered 2025  University of California, Berkeley (Declined) \nEugene Cota-Robles Fellowship Offered 2025  University of California, Davis (Declined) \nEugene Cota-Robles Fellowship Offered 2025  University of California, Santa Cruz (Declined) \nBiological Station Student Fellowship 2023  UMich Biological Station $1,680 \nStudent Research Grant 2022-2023  UMich Undergraduate Research Opportunity Program (UROP) $5,000 \nTravel Grant 2022  SACNAS $2,500 \nBiomedical & Life Sciences Summer Fellowship 2022  UMich UROP $4,000 \nCommunity College Summer Institute Fellowship 2019  UMich-School of Information $100"
+  },
+  {
+    "objectID": "CV.html#teaching-mentoring",
+    "href": "CV.html#teaching-mentoring",
+    "title": "Chris Talbot | CV",
+    "section": "Teaching & Mentoring",
+    "text": "Teaching & Mentoring\nVolunteer Presenter 2025-Present  Skype a Scientist \nDocent (Volunteer Educator) 2023-2025  Matthaei Botanical Gardens & Nichols Arboretum \nPeer GRFP Reviewer 2025  Cornell University \nTest Writer & Proctor, Forestry & Botany (Volunteer) 2023-2025  UMich Science Olympiad \nDirector of Percussion 2022-2023  Lake Orion Community Schools, Lake Orion, MI \nTransfer Student Peer Mentor 2022-2023  UMich-LSA Transfer Bridges Program \nDirector of Percussion 2019-2022  Spring Lake Public Schools, Spring Lake, MI \nFreelance Percussion Instructor & Composer 2018-2022  8 school districts across Michigan \nProfessional Peer Tutor – Mathematics, Language Arts 2019-2020  GRCC Drop-in Tutoring Labs"
+  },
+  {
+    "objectID": "CV.html#invited-talks-workshops",
+    "href": "CV.html#invited-talks-workshops",
+    "title": "Chris Talbot | CV",
+    "section": "Invited Talks & Workshops",
+    "text": "Invited Talks & Workshops\n2025 — tskit-dev Seminar Virtual (Invited Talk)\nUpcoming 2025 — ARGEvol Conference Porto, Portugal (Invited Talk)\nUpcoming 2025 — ARGEvol Spatial ARG Workshop Porto, Portugal (Workshop Contributor)"
+  },
+  {
+    "objectID": "CV.html#contributed-talks",
+    "href": "CV.html#contributed-talks",
+    "title": "Chris Talbot | CV",
+    "section": "Contributed Talks",
+    "text": "Contributed Talks\nThird Joint Congress on Evolutionary Biology Montreal, QC (Talk) 2024  Do flowers of a color bloom together? (Talk V.2)\nBotany 2024 Grand Rapids, MI (Lightning Talk) 2024  Do flowers of a color bloom together? (Lightning Talk)\nUMich Ecology & Evolutionary Biology Ann Arbor, MI (Honors Thesis Defense) 2024"
+  },
+  {
+    "objectID": "CV.html#posters",
+    "href": "CV.html#posters",
+    "title": "Chris Talbot | CV",
+    "section": "Posters",
+    "text": "Posters\nThird Joint Congress on Evolutionary Biology Montreal, QC 2024  Do flowers of a color bloom together? (Poster V.2) \nBotany 2024 Grand Rapids, MI 2024  Do flowers of a color bloom together? (Poster V.1) \nUMich Undergraduate Research Opportunity Program Symposium Ann Arbor, MI 2022  Optimizing CRISPR-Cas9 genetic modification in Phyllobates* poison-dart frogs*"
+  },
+  {
+    "objectID": "CV.html#honors-awards",
+    "href": "CV.html#honors-awards",
+    "title": "Chris Talbot | CV",
+    "section": "Honors & Awards",
+    "text": "Honors & Awards\nHighest Honors in Ecology & Evolutionary Biology 2024  University of Michigan \nPresident’s Scholar 2020  1 semester, Grand Rapids Community College (GRCC) \nDean’s Scholar 2019-2020  4 semesters, GRCC \nPhi Theta Kappa Honors Society 2019  Invited Member, GRCC"
+  },
+  {
+    "objectID": "CV.html#professional-service",
+    "href": "CV.html#professional-service",
+    "title": "Chris Talbot | CV",
+    "section": "Professional & Service",
+    "text": "Professional & Service\nPercussionist 2024-2025  Straits of Mackinac Concert Band, Mackinaw City, MI \nCo-Founder, President, and Volunteer 2023-2025  Students for Public Power @UM \nShift Leader 2021-2023  Biggby Coffee, Grand Rapids, MI \nSeasonal Retail Lead 2019  John Ball Zoo, Grand Rapids, MI"
+  },
+  {
+    "objectID": "CV.html#languages",
+    "href": "CV.html#languages",
+    "title": "Chris Talbot | CV",
+    "section": "Languages",
+    "text": "Languages\nR: Advanced (C1)  German: Intermediate (B2)  C++: Intermediate (B2)  Python: Intermediate (B2)  TypeScript: Intermediate (B1)  Nishnaabemwin (Eastern Ojibwe): Beginner (A1)"
+  },
+  {
+    "objectID": "CV.html#certifications",
+    "href": "CV.html#certifications",
+    "title": "Chris Talbot | CV",
+    "section": "Certifications",
+    "text": "Certifications\nCertified Michigan Naturalist 2024  Michigan State University Extension"
+  },
+  {
+    "objectID": "CV.html#professional-memberships",
+    "href": "CV.html#professional-memberships",
+    "title": "Chris Talbot | CV",
+    "section": "Professional Memberships",
+    "text": "Professional Memberships\nAmerican Society of Naturalists – Student Member 2024-Present\nSociety for the Study of Evolution – Student Member 2022-Present\nBotanical Society of America – Student Member 2024-2025"
+  },
+  {
+    "objectID": "CV.html#extracurriculars",
+    "href": "CV.html#extracurriculars",
+    "title": "Chris Talbot | CV",
+    "section": "Extracurriculars",
+    "text": "Extracurriculars\nFounding Member 2023-2025  UMich Ecological Restoration Club \nVice President 2019-2020  GRCC Programmers \nEnsemble & Section Leader, Performer 2014-2020  Genesis Percussion Ensemble"
+  },
+  {
+    "objectID": "botany2024poster.html",
+    "href": "botany2024poster.html",
+    "title": "Chris @ Botany 2024 | Poster",
     "section": "",
-    "text": "Presentations\n\nPoster: Saturday, July 27th\n\n5:45pm-8:15pm, Room 220DE, Poster Board F20 – Poster Session 1\nView the poster here!\n\nTalk: Tuesday, July 30th\n\n3:00pm-3:15pm, Room 523AB – Ecology III\nView the slides here!\n\n\n\n\nSupplemental information\n\nQ1: How was the floral color data collected?\nA: A k-means clustering algorithm, hand-trained for each species using a custom GUI, ran on up to 100 research-grade images from iNaturalist. Coded in Python, and adapted from Perez-Udell et al., 2019. Find the GUI and algorithm on my GitHub here. Floral color data is initially calculated as the average color value in HSV space for the most common floral color of a given species.\n\n\nQ2: How was the range data collected?\nA: GBIF occurrences, 1960 and later, isolated to North America, and filtered to exclude erroneous occurrences of various sorts. Representing North America as a raster of 10km2 cells, cells were populated with presence data based on the existence of an occurrence within that cell. This range format exhibits similar accuracy to convex hulls and buffered points, while offering higher computational speeds.\n\n\nQ3: Where is the phylogeny from?\nA: Smith & Brown, 2018\n\n\nQ4: How was floral color (dis)similarity calculated?\nA: Floral color for each species was transformed into HSL space. Floral color dissimilarity was calculated as the Euclidean distance between colors in HSL space:\ncolor_dis &lt;- dist(hsl_data, method = \"euclidean\")\nFloral color similarity was calculated for each pair of species \\((a,b)\\) as:\n\\[\nsimilarity_{a,b} = max(color\\_dis) - color\\_dis_{a,b}\n\\]\n\n\nQ5: What about pollinator vision? The UV spectrum?\nA: Floral color data is restricted to camera color vision due to the number of species for which color data was required. Exploring this pattern at such large scales using spectral data would be an exciting avenue for future research.\n[Coming soon: figures on relatedness~overlap, and any other relationships that may be of interest from the current data]\n\n\n\nFun figures\n[Coming soon: GIF of floral color across range through time]\n\n\nContact info\nView my CV here!\n\nEmail: chtalbot@umich.edu\nGitHub: @chris-a-talbot\n\nSocial media:\n\nTwitter: @chris__talbot\nLinkedIn: @chris-talbot\nBlueSky: @chtalbot\n\n\n\n\n\n Back to top"
+    "text": "PDF version here!\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "botany2024.html",
+    "href": "botany2024.html",
+    "title": "Chris @ Botany 2024",
+    "section": "",
+    "text": "Presentations\n\nPoster: Monday, June 17th\n\n6:15pm-7:00pm, Exhibit Hall, #102 – All Society Poster Session\nView the poster here!\n\nLightning Talk: Wednesday, June 19th\n\n1:55pm-2:00pm, Gallery Overlook A – Germinating Ideas\nView the slides here!\n\n\nBe sure to catch the rest of the Weber Lab at Botany, too! Thanks to Rosy for this awesome flyer.\n\n\n\n\n\n\n\nSupplemental information\n\nQ1: How was the floral color data collected?\nA: A k-means clustering algorithm, hand-trained for each species using a custom GUI, ran on up to 100 research-grade images from iNaturalist. Coded in Python, and adapted from Perez-Udell et al., 2019. Find the GUI and algorithm on my GitHub here. Floral color data is initially calculated as the average color value in HSV space for the most common floral color of a given species.\n\n\nQ2: How was the range data collected?\nA: GBIF occurrences, 1960 and later, isolated to North America, and filtered to exclude erroneous occurrences of various sorts. Representing North America as a raster of 10km2 cells, cells were populated with presence data based on the existence of an occurrence within that cell. This range format exhibits similar accuracy to convex hulls and buffered points, while offering higher computational speeds.\n\n\nQ3: Where is the phylogeny from?\nA: Smith & Brown, 2018\n\n\nQ4: How was co-occurrence calculated?\nA: Frequency of co-occurrence between two species was calculated using the overlap (Szymkiewicz–Simpson) coefficient, calculated from our cell-based presence data as follows, where \\(A\\) and \\(B\\) are the set of cells occupied by species \\(a\\) and \\(b\\) respectively:\n\\[\noverlap_{a,b} = \\frac{|A \\cap B|}{min(|A|, |B|)}\n\\]\n\n\nQ5: How was floral color (dis)similarity calculated?\nA: Floral color for each species was transformed into HSL space. Floral color dissimilarity was calculated as the Euclidean distance between colors in HSL space:\ncolor_dis &lt;- dist(hsl_data, method = \"euclidean\")\nFloral color similarity was calculated for each pair of species \\((a,b)\\) as:\n\\[\nsimilarity_{a,b} = max(color\\_dis) - color\\_dis_{a,b}\n\\]\n\n\nQ6: What about pollinator vision? The UV spectrum?\nA: Floral color data is restricted to camera color vision due to the number of species for which color data was required. Exploring this pattern at such large scales using spectral data would be an exciting avenue for future research.\n[Coming soon: figures on relatedness~overlap, and any other relationships that may be of interest from the current data]\n\n\n\nFun figures\n[Coming soon: GIF of floral color across range through time]\n\n\nContact info\nView my CV here!\n\nEmail: chtalbot@umich.edu\nGitHub: @chris-a-talbot\n\nSocial media:\n\nTwitter: @chris__talbot\nLinkedIn: @chris-talbot\nBlueSky: @chtalbot\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "honors-thesis.html",
@@ -224,157 +315,73 @@
     "text": "References\nAhmad, S., Chen, J., Chen, G.-Z., Huang, J., Zhou, Y., Kai, Z., Lan, S., Liu, Z.-J., & Peng, D. (2022). Why Black Flowers? An Extreme Environment and Molecular Perspective of Black Color Accumulation in the Ornamental and Food Crops. Frontiers in Plant Science, 13, 885176.https://doi.org/10.3389/fpls.2022.885176\nBarve, V., & Hart, E. (2022). rinat: Access “iNaturalist” Data Through APIs.https://CRAN.R-project.org/package=rinat\nBarve, V. V., Brenskelle, L., Li, D., Stucky, B. J., Barve, N. V., Hantak, M. M., McLean, B. S., Paluh, D. J., Oswald, J. A., Belitz, M. W., Folk, R. A., & Guralnick, R. P. (2020). Methods for broad-scale plant phenology assessments using citizen scientists’ photographs. Applications in Plant Sciences, 8(1), e11315.https://doi.org/10.1002/aps3.11315\nBergamo, P. J., Streher, N. S., Wolowski, M., & Sazima, M. (2020). Pollinator-mediated facilitation is associated with floral abundance, trait similarity and enhanced community-level fitness. Journal of Ecology, 108(4), 1334–1346.https://doi.org/10.1111/1365-2745.13348\nBittinger, K. (2020). abdiv: Alpha and Beta Diversity Measures.https://CRAN.R-project.org/package=abdiv\nChamberlain, S., & Boettiger, C. (2017). R Python, and Ruby clients for GBIF species occurrence data. PeerJ PrePrints.https://doi.org/10.7287/peerj.preprints.3304v1\nClegg, M. T., & Durbin, M. L. (2000). Flower color variation: A model for the experimental study of evolution. Proceedings of the National Academy of Sciences, 97(13), 7016–7023.https://doi.org/10.1073/pnas.97.13.7016\nErickson, M. F., & Pessoa, D. M. A. (2022). Determining factors of flower coloration. Acta Botanica Brasilica, 36.https://doi.org/10.1590/0102-33062021abb0299\nFox, B. J., & Brown, J. H. (1993). Assembly Rules for Functional Groups in North American Desert Rodent Communities. Oikos, 67(2), 358–370.https://doi.org/10.2307/3545483\nFreiberg, M., Winter, M., Gentile, A., Zizka, A., Muellner-Riehl, A. N., Weigelt, A., & Wirth, C. (2020). LCVP, The Leipzig catalogue of vascular plants, a new taxonomic reference list for all known vascular plants. bioRxiv, 0, 0.https://doi.org/10.1101/2020.05.08.077149\nGrossenbacher, D. L., & Whittall, J. B. (2011). INCREASED FLORAL DIVERGENCE IN SYMPATRIC MONKEYFLOWERS. Evolution, 65(9), 2712–2718.https://doi.org/10.1111/j.1558-5646.2011.01306.x\nJin, Y., & Qian, H. (2022). V.PhyloMaker2: An updated and enlarged R package that can generate very large phylogenies for vascular plants. Plant Diversity, 44(4), 335–339.https://doi.org/10.1016/j.pld.2022.05.005\nKembel, S. W., Cowan, P. D., Helmus, M. R., Cornwell, W. K., Morlon, H., Ackerly, D. D., Blomberg, S. P., & Webb, C. O. (2010). Picante: R tools for integrating phylogenies and ecology. Bioinformatics, 26, 1463–1464.\nKemp, J. E., Bergh, N. G., Soares, M., & Ellis, A. G. (2019). Dominant pollinators drive non-random community assembly and shared flower colour patterns in daisy communities. Annals of Botany, 123(2), 277–288.https://doi.org/10.1093/aob/mcy126\nKoski, M. H., & Ashman, T.-L. (2016). Macroevolutionary patterns of ultraviolet floral pigmentation explained by geography and associated bioclimatic factors. New Phytologist, 211(2), 708–718.https://doi.org/10.1111/nph.13921\nMuñoz-Galicia, D., Castillo-Guevara, C., & Lara, C. (2021). Innate and learnt color preferences in the common green-eyed white butterfly (Leptophobia aripa): Experimental evidence. PeerJ, 9, e12567.https://doi.org/10.7717/peerj.12567\nNewcomb, L. (1977). Newcomb’s Wildflower Guide. Little, Brown and Company.\nPebesma, E. (2018). Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal, 10(1), 439–446.https://doi.org/10.32614/RJ-2018-009\nRabosky, A. D., Cox, C., Rabosky, D., Title, P., Holmes, I., Feldman, A., & McGuire, J. (2016). Coral snakes predict the evolution of mimicry across New World snakes. Nature Communications, 7, 11484.https://doi.org/10.1038/ncomms11484\nReverté, S., Retana, J., Gómez, J. M., & Bosch, J. (2016). Pollinators show flower colour preferences but flowers with similar colours do not attract similar pollinators. Annals of Botany, 118(2), 249–257.https://doi.org/10.1093/aob/mcw103\nSapir, Y., Gallagher, M. K., & Senden, E. (2021). What Maintains Flower Colour Variation within Populations? Trends in Ecology & Evolution, 36(6), 507–519.https://doi.org/10.1016/j.tree.2021.01.011\nSmith, B., & Wilson, J. B. (1996). A Consumer’s Guide to Evenness Indices. Oikos, 76(1), 70–82.https://doi.org/10.2307/3545749\nSobel, J. M., & Streisfeld, M. A. (2013). Flower color as a model system for studies of plant evo-devo. Frontiers in Plant Science, 4.https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2013.00321\nTitle, P. (2017). speciesRaster: Generation of SpeciesRaster Object and Calculation of Morphological and Phylogenetic Metrics.\nTrunschke, J., Lunau, K., Pyke, G. H., Ren, Z.-X., & Wang, H. (2021). Flower Color Evolution and the Evidence of Pollinator-Mediated Selection. Frontiers in Plant Science, 12.https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.617851\nWarren, J., & Mackenzie, S. (2001). Why are all colour combinations not equally represented as flower-colour polymorphisms? New Phytologist, 151(1), 237–241.https://doi.org/10.1046/j.1469-8137.2001.00159.x\nWeiss, M. R., & Papaj, D. R. (2003). Colour learning in two behavioural contexts: How much can a butterfly keep in mind? Animal Behaviour, 65(3), 425–434.https://doi.org/10.1006/anbe.2003.2084\nWillmer, P. (2011). Pollination and Floral Ecology. In Pollination and Floral Ecology. Princeton University Press.https://doi.org/10.1515/9781400838943"
   },
   {
-    "objectID": "botany2024.html",
-    "href": "botany2024.html",
-    "title": "Chris @ Botany 2024",
+    "objectID": "evolution2024.html",
+    "href": "evolution2024.html",
+    "title": "Chris @ Evolution 2024",
     "section": "",
-    "text": "Presentations\n\nPoster: Monday, June 17th\n\n6:15pm-7:00pm, Exhibit Hall, #102 – All Society Poster Session\nView the poster here!\n\nLightning Talk: Wednesday, June 19th\n\n1:55pm-2:00pm, Gallery Overlook A – Germinating Ideas\nView the slides here!\n\n\nBe sure to catch the rest of the Weber Lab at Botany, too! Thanks to Rosy for this awesome flyer.\n\n\n\n\n\n\n\nSupplemental information\n\nQ1: How was the floral color data collected?\nA: A k-means clustering algorithm, hand-trained for each species using a custom GUI, ran on up to 100 research-grade images from iNaturalist. Coded in Python, and adapted from Perez-Udell et al., 2019. Find the GUI and algorithm on my GitHub here. Floral color data is initially calculated as the average color value in HSV space for the most common floral color of a given species.\n\n\nQ2: How was the range data collected?\nA: GBIF occurrences, 1960 and later, isolated to North America, and filtered to exclude erroneous occurrences of various sorts. Representing North America as a raster of 10km2 cells, cells were populated with presence data based on the existence of an occurrence within that cell. This range format exhibits similar accuracy to convex hulls and buffered points, while offering higher computational speeds.\n\n\nQ3: Where is the phylogeny from?\nA: Smith & Brown, 2018\n\n\nQ4: How was co-occurrence calculated?\nA: Frequency of co-occurrence between two species was calculated using the overlap (Szymkiewicz–Simpson) coefficient, calculated from our cell-based presence data as follows, where \\(A\\) and \\(B\\) are the set of cells occupied by species \\(a\\) and \\(b\\) respectively:\n\\[\noverlap_{a,b} = \\frac{|A \\cap B|}{min(|A|, |B|)}\n\\]\n\n\nQ5: How was floral color (dis)similarity calculated?\nA: Floral color for each species was transformed into HSL space. Floral color dissimilarity was calculated as the Euclidean distance between colors in HSL space:\ncolor_dis &lt;- dist(hsl_data, method = \"euclidean\")\nFloral color similarity was calculated for each pair of species \\((a,b)\\) as:\n\\[\nsimilarity_{a,b} = max(color\\_dis) - color\\_dis_{a,b}\n\\]\n\n\nQ6: What about pollinator vision? The UV spectrum?\nA: Floral color data is restricted to camera color vision due to the number of species for which color data was required. Exploring this pattern at such large scales using spectral data would be an exciting avenue for future research.\n[Coming soon: figures on relatedness~overlap, and any other relationships that may be of interest from the current data]\n\n\n\nFun figures\n[Coming soon: GIF of floral color across range through time]\n\n\nContact info\nView my CV here!\n\nEmail: chtalbot@umich.edu\nGitHub: @chris-a-talbot\n\nSocial media:\n\nTwitter: @chris__talbot\nLinkedIn: @chris-talbot\nBlueSky: @chtalbot\n\n\n\n\n\n Back to top"
+    "text": "Presentations\n\nPoster: Saturday, July 27th\n\n5:45pm-8:15pm, Room 220DE, Poster Board F20 – Poster Session 1\nView the poster here!\n\nTalk: Tuesday, July 30th\n\n3:00pm-3:15pm, Room 523AB – Ecology III\nView the slides here!\n\n\n\n\nSupplemental information\n\nQ1: How was the floral color data collected?\nA: A k-means clustering algorithm, hand-trained for each species using a custom GUI, ran on up to 100 research-grade images from iNaturalist. Coded in Python, and adapted from Perez-Udell et al., 2019. Find the GUI and algorithm on my GitHub here. Floral color data is initially calculated as the average color value in HSV space for the most common floral color of a given species.\n\n\nQ2: How was the range data collected?\nA: GBIF occurrences, 1960 and later, isolated to North America, and filtered to exclude erroneous occurrences of various sorts. Representing North America as a raster of 10km2 cells, cells were populated with presence data based on the existence of an occurrence within that cell. This range format exhibits similar accuracy to convex hulls and buffered points, while offering higher computational speeds.\n\n\nQ3: Where is the phylogeny from?\nA: Smith & Brown, 2018\n\n\nQ4: How was floral color (dis)similarity calculated?\nA: Floral color for each species was transformed into HSL space. Floral color dissimilarity was calculated as the Euclidean distance between colors in HSL space:\ncolor_dis &lt;- dist(hsl_data, method = \"euclidean\")\nFloral color similarity was calculated for each pair of species \\((a,b)\\) as:\n\\[\nsimilarity_{a,b} = max(color\\_dis) - color\\_dis_{a,b}\n\\]\n\n\nQ5: What about pollinator vision? The UV spectrum?\nA: Floral color data is restricted to camera color vision due to the number of species for which color data was required. Exploring this pattern at such large scales using spectral data would be an exciting avenue for future research.\n[Coming soon: figures on relatedness~overlap, and any other relationships that may be of interest from the current data]\n\n\n\nFun figures\n[Coming soon: GIF of floral color across range through time]\n\n\nContact info\nView my CV here!\n\nEmail: chtalbot@umich.edu\nGitHub: @chris-a-talbot\n\nSocial media:\n\nTwitter: @chris__talbot\nLinkedIn: @chris-talbot\nBlueSky: @chtalbot\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "chris-a-talbot.github.io",
     "section": "",
-    "text": "View my Google Scholar profile: scholar.google.com/citations?user=iC5hGLYAAAAJ"
+    "text": "Hey, I’m Chris. I’m a PhD student in Computational Biology at Cornell University, advised by Philipp Messer. I’m interested in how genetic diversity is distributed through space and time, how that diversity is shaped by evolutionary processes, and how that diversity responds to global change. I aim to use evolutionary ecology to develop methods and tools for conservation and management of biodiversity under global change, guided by rigorous statistical and computational frameworks. I’m fascinated with emerging methods for evaluating complex systems, including community science, machine learning, and simulations."
   },
   {
-    "objectID": "publications.html#published",
-    "href": "publications.html#published",
-    "title": "Publications",
-    "section": "Published",
-    "text": "Published\n\n2025 — Graham, C. D. K., …, Talbot, C. A., Yerks, A. L., & Weber, M. G. Mite domatia and associated mite density in a North American Eastern Deciduous Forest in Michigan. Ecology and Evolution. Public link | PDF"
-  },
-  {
-    "objectID": "publications.html#pre-prints-in-review",
-    "href": "publications.html#pre-prints-in-review",
-    "title": "Publications",
-    "section": "Pre-prints / In Review",
-    "text": "Pre-prints / In Review\n\n2025 — Talbot, C. A., Bradburd, G. S. ARGscape: A modular, interactive tool for manipulation of spatiotemporal ancestral recombination graphs. arXiv:2510.07255 [q-bio.PE]. Submitted to Bioinformatics. Public link | PDF\n2025 — Talbot, C. A., Weber, M. G. Opposing seasonal dynamics in phylogenetic and flower color diversity of co-flowering wildflower assemblages. bioRxiv 2025.10.21.683724. Submitted to Ecology. Public link | PDF"
-  },
-  {
-    "objectID": "publications.html#in-preparation",
-    "href": "publications.html#in-preparation",
-    "title": "Publications",
-    "section": "In Preparation",
-    "text": "In Preparation\n\n2025 — Talbot, C. A., Bradburd, G. S. Optimizing temporal sampling strategies for spatial population genetic inference using ancestral recombination graphs. In preparation for Genetics."
-  },
-  {
-    "objectID": "botany2024poster.html",
-    "href": "botany2024poster.html",
-    "title": "Chris @ Botany 2024 | Poster",
-    "section": "",
-    "text": "PDF version here!\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "CV.html",
-    "href": "CV.html",
-    "title": "Chris Talbot | CV",
-    "section": "",
-    "text": "Status: Ph.D. Student in Computational Biology at Cornell University, Messer Lab  Fields: Population Genetics, Computational Biology, Evolutionary Ecology  Interests: Population genetics, global change, stochastic modeling, conservation  Techs: Python, R, C++, Rust, TypeScript, SLiM"
-  },
-  {
-    "objectID": "CV.html#summary",
-    "href": "CV.html#summary",
-    "title": "Chris Talbot | CV",
-    "section": "Summary",
-    "text": "Summary\n\nFirst-gen academic and biologist with years of experience in lab, field, and computational work.\nInterested in patterns and drivers of ecological organization across spatiotemporal scales under global change.\nExploring emerging methods for complex systems, including community science and machine learning."
-  },
-  {
-    "objectID": "CV.html#education",
-    "href": "CV.html#education",
-    "title": "Chris Talbot | CV",
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "chris-a-talbot.github.io",
     "section": "Education",
-    "text": "Education\nPh.D. – Computational Biology 2025-Present  Cornell University \n\nAdvisor: Philipp Messer\nKey Funding: National Science Foundation Graduate Research Fellowship Program (2025-2030)\n\nB.S. – Ecology, Evolution, and Biodiversity 2024  University of Michigan (UMich) GPA: 3.74 \n\nGraduated with Highest Honors under the supervision of Marjorie Weber\nHonors Thesis: Patterns of floral color in communities of common Northeast American wildflowers \nCoursework: Statistics & probability, programming & data structures, genetics, macroevolution, ethnobotany\n\nA.G.S. – General Studies (Computer Science & Mathematics Concentration) 2020  Grand Rapids Community College (GRCC) GPA: 3.9 \n\nCoursework: C++ programming, database development, web application programming, information security"
+    "text": "Education\nCornell University | Ithaca, NY  Ph.D. Computational Biology | 2025-Present \nUniversity of Michigan | Ann Arbor, MI  B.S. Ecology, Evolution, and Biodiversity | 2024 \nGrand Rapids Community College | Grand Rapids, MI  A.G.S. Computer Science and Mathematics | 2020"
   },
   {
-    "objectID": "CV.html#research",
-    "href": "CV.html#research",
-    "title": "Chris Talbot | CV",
-    "section": "Research",
-    "text": "Research\nDoctoral Researcher – Messer Lab 2025-Present  Cornell University - Computational Biology \nResearch Programmer – Bradburd Lab 2024-2025  UMich-Ecology & Evolutionary Biology (EEB) \n\nProject: Testing, documenting, and visualizing novel geographic evolutionary inference methods\n\nLab Technician – Weber Lab 2022-2025  UMich-EEB \n\nProject: “Patterns of floral color in communities of common Northeast American wildflowers”\n\nUndergraduate Researcher – Márquez Lab 2021-2022  UMich-EEB \n\nProject: “Optimizing CRISPR-Cas9 genetic modification in Phyllobates poison-dart frogs”"
+    "objectID": "index.html#research-experience",
+    "href": "index.html#research-experience",
+    "title": "chris-a-talbot.github.io",
+    "section": "Research Experience",
+    "text": "Research Experience\nMesser Lab, Cornell-CB  Ph.D. Student | 2025-Present\nBradburd Lab, UMich-EEB  Lab Technician | 2024-2025\nWeber Lab, UMich-EEB  Lab Technician | 2022-2025\nMárquez Lab, UMich-EEB  Undergraduate Researcher | 2021-2022"
   },
   {
-    "objectID": "CV.html#publications",
-    "href": "CV.html#publications",
-    "title": "Chris Talbot | CV",
-    "section": "Publications",
-    "text": "Publications\n\nPublished:\n2025 – Graham, C. D. K., …, Talbot, C. A., Yerks, A. L., & Weber, M. G. Mite domatia and associated mite density in a North American Eastern Deciduous Forest in Michigan. Published in Ecology and Evolution.\n\n\nPre-prints/In Review:\n2025 – Talbot, C. A., Bradburd, G. S. ARGscape: A modular, interactive tool for manipulation of spatiotemporal ancestral recombination graphs. arXiv:2510.07255 [q-bio.PE]. Submitted to Bioinformatics.\n2025 – Talbot, C. A., Weber, M. G. Opposing seasonal dynamics in phylogenetic and flower color diversity of co-flowering wildflower assemblages. bioRxiv 2025.10.21.683724. Submitted to Ecology.\n\n\nIn Prep:\n2025 – Talbot, C. A., Bradburd, G. S. Optimizing temporal sampling strategies for spatial population genetic inference using ancestral recombination graphs. In Preparation for Genetics."
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "chris-a-talbot.github.io",
+    "section": "Contact",
+    "text": "Contact\nEmail: cat267{at}cornell.edu"
   },
   {
-    "objectID": "CV.html#software-development",
-    "href": "CV.html#software-development",
-    "title": "Chris Talbot | CV",
-    "section": "Software Development",
-    "text": "Software Development\nOpen-Source Contributor 2025-Present  SLiM simulator, Messer Lab, Cornell University \nPrimary Developer 2025-Present  ARGscape software"
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "CV.html#funding",
-    "href": "CV.html#funding",
-    "title": "Chris Talbot | CV",
-    "section": "Funding",
-    "text": "Funding\nTotal: $174,280\nGraduate Research Fellowship Program 2025-2030  National Science Foundation $159,000 \nGraduate School Dean’s Scholar Fellowship 2025  Cornell University $2,000 \nChancellor’s Fellowship Offered 2025  University of California, Berkeley (Declined) \nEugene Cota-Robles Fellowship Offered 2025  University of California, Davis (Declined) \nEugene Cota-Robles Fellowship Offered 2025  University of California, Santa Cruz (Declined) \nBiological Station Student Fellowship 2023  UMich Biological Station $1,680 \nStudent Research Grant 2022-2023  UMich Undergraduate Research Opportunity Program (UROP) $5,000 \nTravel Grant 2022  SACNAS $2,500 \nBiomedical & Life Sciences Summer Fellowship 2022  UMich UROP $4,000 \nCommunity College Summer Institute Fellowship 2019  UMich-School of Information $100"
+    "objectID": "evolution2024poster.html",
+    "href": "evolution2024poster.html",
+    "title": "Chris @ Evolution 2024 | Poster",
+    "section": "",
+    "text": "PDF version here!\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "CV.html#teaching-mentoring",
-    "href": "CV.html#teaching-mentoring",
-    "title": "Chris Talbot | CV",
-    "section": "Teaching & Mentoring",
-    "text": "Teaching & Mentoring\nDocent (Volunteer Educator) 2023-Present  Matthaei Botanical Gardens & Nichols Arboretum \nTest Writer & Proctor, Forestry & Botany (Volunteer) 2023-2025  UMich Science Olympiad \nDirector of Percussion 2022-2023  Lake Orion Community Schools, Lake Orion, MI \nTransfer Student Peer Mentor 2022-2023  UMich-LSA Transfer Bridges Program \nDirector of Percussion 2019-2022  Spring Lake Public Schools, Spring Lake, MI \nFreelance Percussion Instructor & Composer 2018-2022  8 school districts across Michigan \nProfessional Peer Tutor – Mathematics, Language Arts 2019-2020  GRCC Drop-in Tutoring Labs"
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "Portfolio",
+    "section": "",
+    "text": "Ancestral Recombination Graph Visualization\nExplore ancestry through space, time, and the genome. A web-based tool for visualizing complex genetic ancestry patterns in population genetics.\n\n\n\n\nARGscape Homepage\n\n\n\n\n\n\nThe Anstett Lab - Evolutionary Ecology of Change\nWe study rapid adaptation in plants across space and time to understand when evolution can rescue populations from environmental extremes—and when it can’t.\n\n\n\n\nAnstett Lab Homepage\n\n\n\n\n\n\nPublication Synchronization Platform\nPubSync aggregates publications from ORCID profiles into an embeddable widget for your lab, group, or department website. No manual updates required.\n\n\n\n\nPubSync Homepage\n\n\n\n\n\n\nVS Code Extension for SLiM\nA comprehensive VS Code extension for working with SLiM, providing syntax highlighting, IntelliSense, and integrated development tools for evolutionary simulation scripting.\n\n\n\n\nSLiM VS Code Tools GitHub"
   },
   {
-    "objectID": "CV.html#invited-talks-workshops",
-    "href": "CV.html#invited-talks-workshops",
-    "title": "Chris Talbot | CV",
-    "section": "Invited Talks & Workshops",
-    "text": "Invited Talks & Workshops\n2025 — tskit-dev Seminar Virtual (Invited Talk)\nUpcoming 2025 — ARGEvol Conference Porto, Portugal (Invited Talk)\nUpcoming 2025 — ARGEvol Spatial ARG Workshop Porto, Portugal (Workshop Contributor)"
+    "objectID": "portfolio.html#as-leadmain-developer",
+    "href": "portfolio.html#as-leadmain-developer",
+    "title": "Portfolio",
+    "section": "",
+    "text": "Ancestral Recombination Graph Visualization\nExplore ancestry through space, time, and the genome. A web-based tool for visualizing complex genetic ancestry patterns in population genetics.\n\n\n\n\nARGscape Homepage\n\n\n\n\n\n\nThe Anstett Lab - Evolutionary Ecology of Change\nWe study rapid adaptation in plants across space and time to understand when evolution can rescue populations from environmental extremes—and when it can’t.\n\n\n\n\nAnstett Lab Homepage\n\n\n\n\n\n\nPublication Synchronization Platform\nPubSync aggregates publications from ORCID profiles into an embeddable widget for your lab, group, or department website. No manual updates required.\n\n\n\n\nPubSync Homepage\n\n\n\n\n\n\nVS Code Extension for SLiM\nA comprehensive VS Code extension for working with SLiM, providing syntax highlighting, IntelliSense, and integrated development tools for evolutionary simulation scripting.\n\n\n\n\nSLiM VS Code Tools GitHub"
   },
   {
-    "objectID": "CV.html#contributed-talks",
-    "href": "CV.html#contributed-talks",
-    "title": "Chris Talbot | CV",
-    "section": "Contributed Talks",
-    "text": "Contributed Talks\nThird Joint Congress on Evolutionary Biology Montreal, QC (Talk) 2024  Do flowers of a color bloom together? (Talk V.2)\nBotany 2024 Grand Rapids, MI (Lightning Talk) 2024  Do flowers of a color bloom together? (Lightning Talk)\nUMich Ecology & Evolutionary Biology Ann Arbor, MI (Honors Thesis Defense) 2024"
-  },
-  {
-    "objectID": "CV.html#posters",
-    "href": "CV.html#posters",
-    "title": "Chris Talbot | CV",
-    "section": "Posters",
-    "text": "Posters\nThird Joint Congress on Evolutionary Biology Montreal, QC 2024  Do flowers of a color bloom together? (Poster V.2) \nBotany 2024 Grand Rapids, MI 2024  Do flowers of a color bloom together? (Poster V.1) \nUMich Undergraduate Research Opportunity Program Symposium Ann Arbor, MI 2022  Optimizing CRISPR-Cas9 genetic modification in Phyllobates* poison-dart frogs*"
-  },
-  {
-    "objectID": "CV.html#professional-service",
-    "href": "CV.html#professional-service",
-    "title": "Chris Talbot | CV",
-    "section": "Professional & Service",
-    "text": "Professional & Service\nPercussionist 2024-2025  Straits of Mackinac Concert Band, Mackinaw City, MI \nCo-Founder, President, and Volunteer 2023-2025  Students for Public Power @UM \nShift Leader 2021-2023  Biggby Coffee, Grand Rapids, MI \nSeasonal Retail Lead 2019  John Ball Zoo, Grand Rapids, MI"
-  },
-  {
-    "objectID": "CV.html#languages",
-    "href": "CV.html#languages",
-    "title": "Chris Talbot | CV",
-    "section": "Languages",
-    "text": "Languages\nR: Advanced (C1)  German: Intermediate (B2)  C++: Intermediate (B2)  Python: Intermediate (B2)  TypeScript: Intermediate (B1)  Nishnaabemwin (Eastern Ojibwe): Beginner (A1)"
-  },
-  {
-    "objectID": "CV.html#certifications",
-    "href": "CV.html#certifications",
-    "title": "Chris Talbot | CV",
-    "section": "Certifications",
-    "text": "Certifications\nCertified Michigan Naturalist 2024  Michigan State University Extension"
-  },
-  {
-    "objectID": "CV.html#professional-memberships",
-    "href": "CV.html#professional-memberships",
-    "title": "Chris Talbot | CV",
-    "section": "Professional Memberships",
-    "text": "Professional Memberships\nAmerican Society of Naturalists – Student Member 2024-Present\nSociety for the Study of Evolution – Student Member 2022-Present\nBotanical Society of America – Student Member 2024-2025"
-  },
-  {
-    "objectID": "CV.html#extracurriculars",
-    "href": "CV.html#extracurriculars",
-    "title": "Chris Talbot | CV",
-    "section": "Extracurriculars",
-    "text": "Extracurriculars\nFounding Member 2023-2025  UMich Ecological Restoration Club \nVice President 2019-2020  GRCC Programmers \nEnsemble & Section Leader, Performer 2014-2020  Genesis Percussion Ensemble"
+    "objectID": "portfolio.html#as-open-source-contributor",
+    "href": "portfolio.html#as-open-source-contributor",
+    "title": "Portfolio",
+    "section": "As Open-Source Contributor",
+    "text": "As Open-Source Contributor\n\nSLiM\nGenetically Explicit Forward Simulation Software\nSLiM is a genetically explicit forward simulation software package for population genetics and evolutionary biology. It is highly flexible, with a built-in scripting language, and has a cross-platform graphical modeling environment called SLiMgui.\n\n\n\n\nSLiM GitHub"
   }
 ]
