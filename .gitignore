@@ -6,3 +6,11 @@
 /.quarto/
 
 **/*.quarto_ipynb
+
+# SvelteKit / Node.js
+node_modules/
+.svelte-kit/
+.env
+.env.*
+!.env.example
+package-lock.json
