@@ -4,6 +4,7 @@
 .Ruserdata
 
 /.quarto/
+.claude/
 
 **/*.quarto_ipynb
 
@@ -14,3 +15,4 @@ node_modules/
 .env.*
 !.env.example
 package-lock.json
+CLAUDE.md

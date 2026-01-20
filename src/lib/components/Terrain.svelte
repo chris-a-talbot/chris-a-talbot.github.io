@@ -72,11 +72,11 @@
       vx: 0,
       vy: 0,
       size: 3 + Math.random() * 2.5,
-      alpha: 0.35 + Math.random() * 0.2,
+      alpha: 0.30 + Math.random() * 0.18,
       life: randomLife ? Math.random() * 600 : 0,
       maxLife: 900 + Math.random() * 700,
       hue: Math.random() * 360,
-      saturation: 35 + Math.random() * 20,
+      saturation: 28 + Math.random() * 18,
       targetAngle: Math.random() * Math.PI * 2,
       wanderPhase: Math.random() * Math.PI * 2,
       baseSpeed: 0.12 + Math.random() * 0.2
@@ -228,17 +228,17 @@
 
       if (alpha < 0.02) continue; // Skip nearly invisible particles
 
-      // Main particle
+      // Main particle - earthen tones
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-      ctx.fillStyle = `hsla(${p.hue}, ${p.saturation}%, 45%, ${alpha})`;
+      ctx.fillStyle = `hsla(${p.hue}, ${p.saturation}%, 48%, ${alpha})`;
       ctx.fill();
 
       // Glow
       if (alpha > 0.1) {
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size * 2.2, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(${p.hue}, ${p.saturation}%, 50%, ${alpha * 0.1})`;
+        ctx.fillStyle = `hsla(${p.hue}, ${p.saturation}%, 52%, ${alpha * 0.12})`;
         ctx.fill();
       }
     }
