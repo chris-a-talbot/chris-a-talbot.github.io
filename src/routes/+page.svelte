@@ -25,7 +25,7 @@
   <section id="hero" class="hero">
     <div class="hero-content">
       <h1>Chris Talbot</h1>
-      <p class="tagline">Computational Biologist * Population Geneticist</p>
+      <p class="tagline">Studying human influence on evolution</p>
       <a href="https://www.cornell.edu" class="affiliation" target="_blank" rel="noopener noreferrer">
         <img src="/images/cornell_logo_simple_b31b1b.svg" alt="Cornell University" class="cornell-logo" />
       </a>
@@ -37,7 +37,7 @@
     <About />
   </Section>
 
-  <Section id="research" title="Research">
+  <Section id="publications" title="Publications">
     <PublicationList />
   </Section>
 

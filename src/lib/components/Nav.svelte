@@ -3,7 +3,7 @@
 
   const sections = [
     { id: 'about', label: 'About' },
-    { id: 'research', label: 'Research' },
+    { id: 'publications', label: 'Publications' },
     { id: 'portfolio', label: 'Portfolio' },
     { id: 'cv', label: 'CV' }
   ];

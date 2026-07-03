@@ -1,22 +1,22 @@
 <script lang="ts">
   import CVSection from './CVSection.svelte';
   import {
-    summaryPoints,
     education,
     research,
     publications,
     funding,
     totalFunding,
-    software,
     invitedTalks,
     contributedTalks,
     posters,
-    teaching,
-    awards,
+    software,
+    undergraduateMentoring,
+    undergraduateTeaching,
+    k12Teaching,
     service,
+    memberships,
     languages,
     certifications,
-    memberships,
     extracurriculars,
     cvPdfLink
   } from '$lib/data/cv';
@@ -27,14 +27,6 @@
     <a href={cvPdfLink} class="cv-download" target="_blank" rel="noopener noreferrer">
       Download PDF
     </a>
-  </div>
-
-  <div class="cv-summary">
-    <ul class="summary-list">
-      {#each summaryPoints as point}
-        <li>{point}</li>
-      {/each}
-    </ul>
   </div>
 
   <div class="cv-sections">
@@ -75,9 +67,6 @@
             <div class="cv-item-details">
               <span class="cv-item-org">{item.institution}</span>
             </div>
-            {#if item.description}
-              <p class="cv-item-description">Project: {item.description}</p>
-            {/if}
           </li>
         {/each}
       </ul>
@@ -91,7 +80,9 @@
             <li class="cv-item pub-item">
               <span class="pub-year">{pub.year}</span>
               <span class="pub-content">
-                {pub.authors} {pub.title} <em>{pub.journal}.</em>
+                {pub.authors} {pub.title}
+                {#if pub.preprint}<span class="pub-preprint">{pub.preprint}.</span>{/if}
+                <em>Published in {pub.journal}.</em>
               </span>
             </li>
           {/each}
@@ -105,7 +96,7 @@
               <span class="pub-content">
                 {pub.authors} {pub.title}
                 {#if pub.preprint}<span class="pub-preprint">{pub.preprint}.</span>{/if}
-                <em>In Review at {pub.journal}.</em>
+                <em>{pub.status} at {pub.journal}.</em>
               </span>
             </li>
           {/each}
@@ -125,32 +116,7 @@
       </div>
     </CVSection>
 
-    <CVSection title="Software Development" expanded={true}>
-      <ul class="cv-list">
-        {#each software as item}
-          <li class="cv-item">
-            <div class="cv-item-header">
-              <span class="cv-item-title">
-                {item.role} -
-                {#if item.href}
-                  <a href={item.href} class="cv-item-link" target="_blank" rel="noopener noreferrer">"{item.name}"</a>
-                {:else}
-                  "{item.name}"
-                {/if}
-              </span>
-              <span class="cv-item-year">{item.period}</span>
-            </div>
-            {#if item.description}
-              <div class="cv-item-details">
-                <span class="cv-item-org">{item.description}</span>
-              </div>
-            {/if}
-          </li>
-        {/each}
-      </ul>
-    </CVSection>
-
-    <CVSection title="Funding" expanded={true}>
+    <CVSection title="Funding, Honors, & Awards" expanded={true}>
       <p class="cv-total-funding">Total: {totalFunding}</p>
       <ul class="cv-list">
         {#each funding as item}
@@ -227,28 +193,67 @@
       </ul>
     </CVSection>
 
-    <CVSection title="Honors & Awards" expanded={false}>
+    <CVSection title="Software Development" expanded={true}>
       <ul class="cv-list">
-        {#each awards as award}
+        {#each software as item}
           <li class="cv-item">
             <div class="cv-item-header">
-              <span class="cv-item-title">{award.title}</span>
-              <span class="cv-item-year">{award.year}</span>
+              <span class="cv-item-title">
+                {item.role} -
+                {#if item.href}
+                  <a href={item.href} class="cv-item-link" target="_blank" rel="noopener noreferrer">"{item.name}"</a>
+                {:else}
+                  "{item.name}"
+                {/if}
+              </span>
+              <span class="cv-item-year">{item.period}</span>
+            </div>
+            {#if item.description}
+              <p class="cv-item-description">{item.description}</p>
+            {/if}
+          </li>
+        {/each}
+      </ul>
+    </CVSection>
+
+    <CVSection title="Undergraduate Mentoring" expanded={false}>
+      <ul class="cv-list">
+        {#each undergraduateMentoring as item}
+          <li class="cv-item">
+            <div class="cv-item-header">
+              <span class="cv-item-title">{item.role}</span>
+              <span class="cv-item-year">{item.period}</span>
             </div>
             <div class="cv-item-details">
-              <span class="cv-item-source">{award.source}</span>
-              {#if award.description}
-                <span class="cv-item-note">({award.description})</span>
-              {/if}
+              <span class="cv-item-org">{item.organization}</span>
+            </div>
+            {#if item.description}
+              <p class="cv-item-description">{item.description}</p>
+            {/if}
+          </li>
+        {/each}
+      </ul>
+    </CVSection>
+
+    <CVSection title="Undergraduate Teaching" expanded={false}>
+      <ul class="cv-list">
+        {#each undergraduateTeaching as item}
+          <li class="cv-item">
+            <div class="cv-item-header">
+              <span class="cv-item-title">{item.role}</span>
+              <span class="cv-item-year">{item.period}</span>
+            </div>
+            <div class="cv-item-details">
+              <span class="cv-item-org">{item.organization}</span>
             </div>
           </li>
         {/each}
       </ul>
     </CVSection>
 
-    <CVSection title="Teaching & Mentoring" expanded={false}>
+    <CVSection title="K-12 Teaching" expanded={false}>
       <ul class="cv-list">
-        {#each teaching as item}
+        {#each k12Teaching as item}
           <li class="cv-item">
             <div class="cv-item-header">
               <span class="cv-item-title">{item.role}</span>
@@ -278,6 +283,17 @@
       </ul>
     </CVSection>
 
+    <CVSection title="Professional Memberships" expanded={false}>
+      <ul class="cv-list cv-list-simple">
+        {#each memberships as membership}
+          <li class="cv-item cv-item-simple">
+            <span class="cv-item-org">{membership.organization}</span>
+            <span class="cv-item-period">{membership.period}</span>
+          </li>
+        {/each}
+      </ul>
+    </CVSection>
+
     <CVSection title="Languages" expanded={false}>
       <ul class="cv-list">
         {#each languages as lang}
@@ -302,17 +318,6 @@
             <div class="cv-item-details">
               <span class="cv-item-source">{cert.source}</span>
             </div>
-          </li>
-        {/each}
-      </ul>
-    </CVSection>
-
-    <CVSection title="Professional Memberships" expanded={false}>
-      <ul class="cv-list cv-list-simple">
-        {#each memberships as membership}
-          <li class="cv-item cv-item-simple">
-            <span class="cv-item-org">{membership.organization}</span>
-            <span class="cv-item-period">{membership.period}</span>
           </li>
         {/each}
       </ul>
@@ -358,30 +363,6 @@
     background-color: var(--highlight);
     color: var(--cloud);
     text-decoration: none;
-  }
-  .cv-summary {
-    margin-bottom: var(--space-xl);
-    padding-bottom: var(--space-lg);
-    border-bottom: 1px solid var(--stone);
-  }
-  .summary-list {
-    list-style: none;
-    padding: 0;
-  }
-  .summary-list li {
-    position: relative;
-    padding-left: var(--space-lg);
-    margin-bottom: var(--space-sm);
-    font-size: var(--text-base);
-    line-height: 1.7;
-    color: var(--sage);
-  }
-  .summary-list li::before {
-    content: '·';
-    position: absolute;
-    left: var(--space-sm);
-    color: var(--highlight);
-    font-weight: bold;
   }
   .cv-total-funding {
     font-family: var(--font-mono);
@@ -430,7 +411,7 @@
     color: var(--sage);
     margin-top: var(--space-xs);
   }
-  .cv-item-source, .cv-item-venue, .cv-item-org {
+  .cv-item-source, .cv-item-org {
     color: var(--sage);
   }
   .cv-item-location {
@@ -453,7 +434,7 @@
     color: var(--sage);
     font-style: italic;
   }
-  .cv-item-role, .cv-item-level {
+  .cv-item-level {
     font-family: var(--font-mono);
     font-size: var(--text-sm);
     color: var(--sage);

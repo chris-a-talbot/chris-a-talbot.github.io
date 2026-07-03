@@ -15,8 +15,8 @@
 <style>
   .section {
     min-height: 100vh;
-    padding: var(--space-2xl) var(--space-lg);
-    padding-top: calc(var(--nav-height) + var(--space-2xl));
+    padding: var(--space-xl) var(--space-lg);
+    padding-top: calc(var(--nav-height) + var(--space-xl));
     position: relative;
   }
 
@@ -40,13 +40,13 @@
   }
 
   .section-title {
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-lg);
   }
 
   @media (max-width: 800px) {
     .section {
-      padding: var(--space-xl) var(--space-md);
-      padding-top: calc(var(--nav-height) + var(--space-xl));
+      padding: var(--space-lg) var(--space-md);
+      padding-top: calc(var(--nav-height) + var(--space-lg));
     }
 
     .section-content {

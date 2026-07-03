@@ -4,7 +4,7 @@ export const name = 'Chris Talbot';
 
 export const tagline = 'Computational Biology · Population Genetics · Evolutionary Ecology';
 
-export const bio = `Hey, I'm Chris. I'm a PhD student in Computational Biology at Cornell University, advised by Philipp Messer. I'm interested in how genetic diversity is distributed through space and time, how that diversity is shaped by evolutionary processes, and how that diversity responds to global change. I aim to use evolutionary ecology to develop methods and tools for conservation and management of biodiversity under global change, guided by rigorous statistical and computational frameworks. I'm fascinated with emerging methods for evaluating complex systems, including community science, machine learning, and simulations.`;
+export const bio = `Hey, I'm Chris. I'm a PhD student in Computational Biology at Cornell University, and an NSF Graduate Research Fellow. My interests center around how living things respond to human actions—land-use change, climate change, harvesting, and so on. I aim to use evolutionary ecology to develop methods and tools for conservation and management of biodiversity under global change, guided by rigorous statistical and computational frameworks. My approaches primarily involve probabilistic modeling, simulations, community science, and spatiotemporal data.`;
 
 export const status = {
   position: 'Ph.D. Student in Computational Biology',

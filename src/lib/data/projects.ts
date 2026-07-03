@@ -27,22 +27,21 @@ export const projects: Project[] = [
     slug: 'anstett-lab',
     title: 'Anstett Lab Website',
     tagline: 'The Anstett Lab - Evolutionary Ecology of Change',
-    description: 'We study rapid adaptation in plants across space and time to understand when evolution can rescue populations from environmental extremes—and when it can\'t.',
+    description: 'The lab website for the Anstett Lab at Cornell University.',
     href: 'https://anstettlab.chris-a-talbot.com',
     image: '/images/anstettlab_homepage.png',
     featured: true,
     role: 'lead'
   },
   {
-    slug: 'pubsync',
-    title: 'PubSync Dashboard',
-    tagline: 'Publication Synchronization Platform',
-    description: 'PubSync aggregates publications from ORCID profiles into an embeddable widget for your lab, group, or department website. No manual updates required.',
-    href: 'https://pubsyncdashboard-production.up.railway.app/',
-    image: '/images/pubsync_homepage.png',
+    slug: 'messer-lab',
+    title: 'Messer Lab Website',
+    tagline: 'Coming Soon',
+    description: 'The renovated lab website for the Messer Lab at Cornell University.',
+    href: 'https://messerlab.chris-a-talbot.com',
+    image: '/images/messerlab_homepage.png',
     featured: true,
-    role: 'lead',
-    technologies: ['TypeScript', 'Node.js', 'Railway']
+    role: 'lead'
   },
   {
     slug: 'slim',
