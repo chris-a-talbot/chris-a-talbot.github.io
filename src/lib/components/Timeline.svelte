@@ -27,7 +27,7 @@
           {#if edu.thesis}
             <div class="timeline-note">
               Thesis:
-              <a href={edu.thesis.href} target="_blank" rel="noopener noreferrer">{edu.thesis.title}</a>
+              <a href={edu.thesis.href} class="inline-link" target="_blank" rel="noopener noreferrer">{edu.thesis.title}</a>
             </div>
           {/if}
         {:else}
@@ -36,7 +36,13 @@
             <span class="timeline-role">{exp.role}</span>
             <span class="timeline-year">{exp.period}</span>
           </div>
-          <div class="timeline-lab">{exp.lab}</div>
+          <div class="timeline-lab">
+            {#if exp.href}
+              <a href={exp.href} class="inline-link" target="_blank" rel="noopener noreferrer">{exp.lab}</a>
+            {:else}
+              {exp.lab}
+            {/if}
+          </div>
           <div class="timeline-institution">{exp.institution}</div>
           {#if exp.project}
             <div class="timeline-project">{exp.project}</div>

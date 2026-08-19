@@ -10,8 +10,8 @@
   <div class="portfolio-section">
     <h3>As Lead Developer</h3>
     <div class="project-grid">
-      {#each leadProjects as project, i}
-        <ProjectCard {project} size={i === 0 ? 'large' : 'medium'} />
+      {#each leadProjects as project}
+        <ProjectCard {project} />
       {/each}
     </div>
   </div>
@@ -19,9 +19,9 @@
   {#if contributorProjects.length > 0}
     <div class="portfolio-section">
       <h3>As Contributor</h3>
-      <div class="project-grid contributors">
+      <div class="project-grid">
         {#each contributorProjects as project}
-          <ProjectCard {project} size="medium" />
+          <ProjectCard {project} />
         {/each}
       </div>
     </div>
@@ -42,13 +42,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-lg);
   }
-  .project-grid.contributors {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media (max-width: 1000px) {
-    .project-grid.contributors { grid-template-columns: repeat(2, 1fr); }
-  }
   @media (max-width: 800px) {
-    .project-grid, .project-grid.contributors { grid-template-columns: 1fr; }
+    .project-grid { grid-template-columns: 1fr; }
   }
 </style>

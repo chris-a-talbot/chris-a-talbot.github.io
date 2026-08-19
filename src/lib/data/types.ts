@@ -21,6 +21,8 @@ export interface Experience {
   department: string;
   period: string;
   project?: string;
+  /** The lab's own site, linked from the lab name. */
+  href?: string;
 }
 
 export type PublicationStatus = 'published' | 'in-review' | 'in-prep';
@@ -45,9 +47,13 @@ export interface Project {
   tagline: string;
   description: string;
   href: string;
-  image: string;
+  /** A screenshot, shown full-bleed above the card's text. */
+  image?: string;
+  /** A mark, set beside the text instead. Use one or the other, not both. */
+  logo?: string;
+  /** Spans both columns of the portfolio grid. */
+  full?: boolean;
   role: 'lead' | 'contributor';
-  technologies?: string[];
 }
 
 export interface Funding {

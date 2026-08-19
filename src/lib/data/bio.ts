@@ -54,6 +54,7 @@ export const experience: Experience[] = [
   {
     role: 'Doctoral Researcher',
     lab: 'Messer Lab',
+    href: 'https://messerlab.org',
     institution: 'Cornell University',
     department: 'Computational Biology',
     period: '2025-Present'
@@ -61,6 +62,7 @@ export const experience: Experience[] = [
   {
     role: 'Research Programmer',
     lab: 'Bradburd Lab',
+    href: 'https://www.genescape.org',
     institution: 'University of Michigan',
     department: 'Ecology & Evolutionary Biology',
     period: '2024-2025',
@@ -69,6 +71,7 @@ export const experience: Experience[] = [
   {
     role: 'Lab Technician',
     lab: 'Weber Lab',
+    href: 'https://theweberlab.com',
     institution: 'University of Michigan',
     department: 'Ecology & Evolutionary Biology',
     period: '2022-2025',
@@ -77,6 +80,7 @@ export const experience: Experience[] = [
   {
     role: 'Undergraduate Researcher',
     lab: 'Márquez Lab',
+    href: 'https://www.biol.vt.edu/faculty/Marquez.html',
     institution: 'University of Michigan',
     department: 'Ecology & Evolutionary Biology',
     period: '2021-2022',

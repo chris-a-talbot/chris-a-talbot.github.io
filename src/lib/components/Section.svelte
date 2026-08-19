@@ -4,11 +4,13 @@
 </script>
 
 <section {id} class="section">
-  {#if title}
-    <h2 class="section-title">{title}</h2>
-  {/if}
-  <div class="section-content paper">
-    <slot />
+  <div class="section-inner">
+    {#if title}
+      <h2 class="section-title">{title}</h2>
+    {/if}
+    <div class="section-content paper">
+      <slot />
+    </div>
   </div>
 </section>
 
@@ -20,14 +22,29 @@
     position: relative;
   }
 
-  .section-content {
+  /* Title and panel share a track, so the heading is positioned against the
+     panel's edge rather than against the viewport. */
+  .section-inner {
     max-width: var(--max-width);
     margin: 0 auto;
+  }
+
+  .section-content {
+    border-radius: 2px;
     padding: var(--space-xl);
   }
 
+  /*
+   * Centred on the panel's left border, so the heading reads as a label for the
+   * box rather than drifting off toward the window edge on a wide screen. The
+   * shift is capped at whatever gutter actually exists — half the title where
+   * there is room, less where there isn't, nothing at all once the panel fills
+   * the width — so it can never be pushed off the edge of the screen.
+   */
   .section-title {
+    width: fit-content;
     margin-bottom: var(--space-lg);
+    transform: translateX(calc(-1 * min(50%, max(0px, (100vw - 76rem) / 2))));
   }
 
   @media (max-width: 800px) {

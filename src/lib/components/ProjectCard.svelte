@@ -1,24 +1,29 @@
 <script lang="ts">
   import type { Project } from '$lib/data/types';
   export let project: Project;
-  export let size: 'large' | 'medium' | 'small' = 'medium';
 </script>
 
-<a href={project.href} class="project-card {size}" target="_blank" rel="noopener noreferrer">
-  <div class="project-image">
-    <img src={project.image} alt="{project.title} screenshot" loading="lazy" />
-  </div>
+<a
+  href={project.href}
+  class="project-card"
+  class:full={project.full}
+  class:with-logo={project.logo}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  {#if project.image}
+    <div class="project-image">
+      <img src={project.image} alt="{project.title} screenshot" loading="lazy" />
+    </div>
+  {/if}
+  {#if project.logo}
+    <!-- Decorative: the card's own title already names the project. -->
+    <img class="project-logo" src={project.logo} alt="" loading="lazy" />
+  {/if}
   <div class="project-content">
     <h4 class="project-title">{project.title}</h4>
     <p class="project-tagline">{project.tagline}</p>
     <p class="project-description">{project.description}</p>
-    {#if project.technologies}
-      <div class="project-tech">
-        {#each project.technologies as tech}
-          <span class="tech-tag">{tech}</span>
-        {/each}
-      </div>
-    {/if}
   </div>
 </a>
 
@@ -46,8 +51,12 @@
     display: block;
     transition: transform 0.3s ease;
   }
-  .project-card:hover .project-image img { transform: scale(1.02); }
-  .project-content { padding: var(--space-md); }
+  .project-card:hover .project-image img {
+    transform: scale(1.02);
+  }
+  .project-content {
+    padding: var(--space-md);
+  }
   .project-title {
     font-size: var(--text-lg);
     margin-bottom: var(--space-xs);
@@ -61,24 +70,50 @@
     font-size: var(--text-sm);
     color: var(--sage);
     line-height: 1.5;
-    margin-bottom: var(--space-md);
+    margin-bottom: 0;
   }
-  .project-tech {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-xs);
+
+  /* Spans the grid. Set per project rather than by position, so which card is
+     wide is a property of the project and not of where it happens to sit. */
+  .project-card.full {
+    grid-column: span 2;
   }
-  .tech-tag {
-    font-family: var(--font-mono);
-    font-size: var(--text-xs);
-    color: var(--sage);
+  .project-card.full .project-content {
+    padding: var(--space-lg);
   }
-  .tech-tag:not(:last-child)::after { content: ' ·'; }
-  .project-card.large { grid-column: span 2; }
-  .project-card.large .project-content { padding: var(--space-lg); }
-  .project-card.large .project-title { font-size: var(--text-xl); }
-  .project-card.small .project-description { display: none; }
+  .project-card.full .project-title {
+    font-size: var(--text-xl);
+  }
+
+  /* A mark beside the text, rather than a screenshot above it. Fills out a
+     full-width card for projects that have no interface to show. */
+  .project-card.with-logo {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+  }
+  .project-card.with-logo .project-content {
+    padding: 0;
+  }
+  /* The mark carries its own black rule to the edge, so it needs no border. */
+  .project-logo {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+  }
+
   @media (max-width: 800px) {
-    .project-card.large { grid-column: span 1; }
+    .project-card.full {
+      grid-column: span 1;
+    }
+    .project-card.with-logo {
+      gap: var(--space-md);
+    }
+    .project-logo {
+      width: 5rem;
+      height: 5rem;
+    }
   }
 </style>
