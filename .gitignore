@@ -1,18 +1,11 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-
-/.quarto/
-.claude/
-
-**/*.quarto_ipynb
-
-# SvelteKit / Node.js
 node_modules/
 .svelte-kit/
+package-lock.json
+
 .env
 .env.*
 !.env.example
-package-lock.json
+
+.DS_Store
+.claude/
 CLAUDE.md

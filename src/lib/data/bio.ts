@@ -2,38 +2,18 @@ import type { Education, Experience } from './types';
 
 export const name = 'Chris Talbot';
 
-export const tagline = 'Computational Biology · Population Genetics · Evolutionary Ecology';
+/** Set under the portrait, one line per entry, so it doesn't overhang the photo. */
+export const heroTagline = ['Studying human influence', 'on evolution'];
 
-export const bio = `Hey, I'm Chris. I'm a PhD student in Computational Biology at Cornell University, and an NSF Graduate Research Fellow. My interests center around how living things respond to human actions—land-use change, climate change, harvesting, and so on. I aim to use evolutionary ecology to develop methods and tools for conservation and management of biodiversity under global change, guided by rigorous statistical and computational frameworks. My approaches primarily involve probabilistic modeling, simulations, community science, and spatiotemporal data.`;
-
-export const status = {
-  position: 'Ph.D. Student in Computational Biology',
-  institution: 'Cornell University',
-  lab: 'Messer Lab',
-  location: 'Ithaca, New York'
-};
+export const bio = `Hey, I'm Chris. I'm a PhD student in Computational Biology at Cornell University, and an NSF Graduate Research Fellow. My interests center around how living things respond to human actions—land-use change, climate change, harvesting, and so on. I aim to use evolutionary ecology to develop methods and tools for conservation and management of biodiversity under global change, guided by rigorous statistical and computational frameworks. My approaches primarily involve probabilistic modeling, simulations, community science, and spatiotemporal data. I'm also passionate about making science clear and accessible. I'm currently the graduate coordinator for the McNair Scholars at Cornell, where I mentor undergraduates on the hidden curriculum of academia.`;
 
 export const contact = {
-  email: 'cat267@cornell.edu',
+  /** Written for people, not scrapers. Rendered as text, never as a mailto: link. */
+  email: 'cat267[at]cornell[dot]edu',
   github: 'https://github.com/chris-a-talbot',
   linkedin: 'https://www.linkedin.com/in/chris-talbot',
   website: 'chris-a-talbot.com'
 };
-
-export const fields = [
-  'Population Genetics',
-  'Computational Biology',
-  'Evolutionary Ecology'
-];
-
-export const interests = [
-  'Population genetics',
-  'Global change',
-  'Stochastic modeling',
-  'Conservation'
-];
-
-export const technologies = ['Python', 'R', 'C++', 'Rust', 'TypeScript', 'SLiM'];
 
 export const education: Education[] = [
   {
@@ -43,7 +23,9 @@ export const education: Education[] = [
     location: 'Ithaca, NY',
     year: '2025-Present',
     advisor: 'Philipp Messer',
-    notes: ['Key Funding: National Science Foundation Graduate Research Fellowship Program (2025-2030)']
+    notes: [
+      'Key Funding: National Science Foundation Graduate Research Fellowship Program (2025-2030)'
+    ]
   },
   {
     degree: 'B.S.',
@@ -102,4 +84,4 @@ export const experience: Experience[] = [
   }
 ];
 
-export const profileImage = '/files/profile.jpg';
+export const profileImage = '/images/profile.jpg';

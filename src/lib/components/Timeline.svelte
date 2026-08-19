@@ -24,6 +24,12 @@
           {#if edu.advisor}
             <div class="timeline-note">Advisor: {edu.advisor}</div>
           {/if}
+          {#if edu.thesis}
+            <div class="timeline-note">
+              Thesis:
+              <a href={edu.thesis.href} target="_blank" rel="noopener noreferrer">{edu.thesis.title}</a>
+            </div>
+          {/if}
         {:else}
           {@const exp = item as Experience}
           <div class="timeline-header">

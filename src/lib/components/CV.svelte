@@ -1,9 +1,11 @@
 <script lang="ts">
   import CVSection from './CVSection.svelte';
+  import { publicationsByStatus, venueLine } from '$lib/data/publications';
   import {
+    contactInfo,
+    cvUpdated,
     education,
     research,
-    publications,
     funding,
     totalFunding,
     invitedTalks,
@@ -20,13 +22,34 @@
     extracurriculars,
     cvPdfLink
   } from '$lib/data/cv';
+
+  const pubGroups = [
+    { label: 'Published', items: publicationsByStatus.published },
+    { label: 'Pre-prints / In Review', items: publicationsByStatus.inReview },
+    { label: 'In Preparation', items: publicationsByStatus.inPrep }
+  ];
 </script>
 
 <div class="cv">
   <div class="cv-header">
-    <a href={cvPdfLink} class="cv-download" target="_blank" rel="noopener noreferrer">
-      Download PDF
-    </a>
+    <dl class="cv-facts">
+      <dt>Status</dt>
+      <dd>{contactInfo.status}, {contactInfo.location}</dd>
+      <dt>Fields</dt>
+      <dd>{contactInfo.fields}</dd>
+      <dt>Interests</dt>
+      <dd>{contactInfo.interests}</dd>
+      <dt>Techs</dt>
+      <dd>{contactInfo.techs}</dd>
+      <dt>Email</dt>
+      <dd class="cv-email">{contactInfo.email}</dd>
+    </dl>
+    <div class="cv-download-block">
+      <a href={cvPdfLink} class="action" target="_blank" rel="noopener noreferrer">
+        Download PDF
+      </a>
+      <span class="cv-updated">Updated {cvUpdated}</span>
+    </div>
   </div>
 
   <div class="cv-sections">
@@ -74,45 +97,25 @@
 
     <CVSection title="Publications" expanded={true}>
       <div class="publications">
-        <h4 class="pub-category">Published</h4>
-        <ul class="cv-list pub-list">
-          {#each publications.published as pub}
-            <li class="cv-item pub-item">
-              <span class="pub-year">{pub.year}</span>
-              <span class="pub-content">
-                {pub.authors} {pub.title}
-                {#if pub.preprint}<span class="pub-preprint">{pub.preprint}.</span>{/if}
-                <em>Published in {pub.journal}.</em>
-              </span>
-            </li>
-          {/each}
-        </ul>
-
-        <h4 class="pub-category">Pre-prints / In Review</h4>
-        <ul class="cv-list pub-list">
-          {#each publications.inReview as pub}
-            <li class="cv-item pub-item">
-              <span class="pub-year">{pub.year}</span>
-              <span class="pub-content">
-                {pub.authors} {pub.title}
-                {#if pub.preprint}<span class="pub-preprint">{pub.preprint}.</span>{/if}
-                <em>{pub.status} at {pub.journal}.</em>
-              </span>
-            </li>
-          {/each}
-        </ul>
-
-        <h4 class="pub-category">In Preparation</h4>
-        <ul class="cv-list pub-list">
-          {#each publications.inPrep as pub}
-            <li class="cv-item pub-item">
-              <span class="pub-year">{pub.year}</span>
-              <span class="pub-content">
-                {pub.authors} {pub.title} <em>In Preparation for {pub.journal}.</em>
-              </span>
-            </li>
-          {/each}
-        </ul>
+        {#each pubGroups as group}
+          {#if group.items.length > 0}
+            <div class="pub-group">
+              <h4 class="pub-category">{group.label}</h4>
+              <ul class="cv-list pub-list">
+                {#each group.items as pub}
+                  <li class="cv-item pub-item">
+                    <span class="pub-year">{pub.year}</span>
+                    <span class="pub-content">
+                      {pub.authors} {pub.title}.
+                      {#if pub.preprint}<span class="pub-preprint">{pub.preprint}.</span>{/if}
+                      <em>{venueLine(pub)}</em>
+                    </span>
+                  </li>
+                {/each}
+              </ul>
+            </div>
+          {/if}
+        {/each}
       </div>
     </CVSection>
 
@@ -182,7 +185,13 @@
         {#each posters as poster}
           <li class="cv-item">
             <div class="cv-item-header">
-              <span class="cv-item-title">{poster.venue}</span>
+              <span class="cv-item-title">
+                {#if poster.href}
+                  <a href={poster.href} class="cv-item-link" target="_blank" rel="noopener noreferrer">{poster.venue}</a>
+                {:else}
+                  {poster.venue}
+                {/if}
+              </span>
               <span class="cv-item-year">{poster.year}</span>
             </div>
             <div class="cv-item-details">
@@ -342,27 +351,48 @@
 </div>
 
 <style>
-  .cv {
-    max-width: 48rem;
-  }
   .cv-header {
     display: flex;
-    justify-content: flex-end;
-    margin-bottom: var(--space-lg);
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    margin-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--stone);
   }
-  .cv-download {
-    font-family: var(--font-mono);
+  .cv-facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-xs) var(--space-md);
     font-size: var(--text-sm);
-    padding: var(--space-sm) var(--space-md);
-    border: 1px solid var(--highlight);
-    color: var(--highlight);
-    text-decoration: none;
-    transition: background-color 0.15s ease, color 0.15s ease;
+    max-width: 46rem;
   }
-  .cv-download:hover {
-    background-color: var(--highlight);
-    color: var(--cloud);
-    text-decoration: none;
+  .cv-facts dt {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--stone);
+    padding-top: 0.15em;
+  }
+  .cv-facts dd {
+    color: var(--sage);
+  }
+  .cv-email {
+    font-family: var(--font-mono);
+    user-select: all;
+  }
+  .cv-download-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--space-xs);
+    flex-shrink: 0;
+  }
+  .cv-updated {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--stone);
   }
   .cv-total-funding {
     font-family: var(--font-mono);
@@ -488,6 +518,9 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
+  .pub-group:last-child .pub-list {
+    margin-bottom: 0;
+  }
   .pub-list {
     margin-bottom: var(--space-md);
   }
@@ -515,5 +548,14 @@
     font-family: var(--font-mono);
     font-size: var(--text-xs);
     color: var(--sage);
+  }
+
+  @media (max-width: 700px) {
+    .cv-header {
+      flex-direction: column;
+    }
+    .cv-download-block {
+      align-items: flex-start;
+    }
   }
 </style>

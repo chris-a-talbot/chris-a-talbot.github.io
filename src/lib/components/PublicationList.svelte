@@ -1,72 +1,49 @@
 <script lang="ts">
   import { publicationsByStatus } from '$lib/data/publications';
 
+  const groups = [
+    { label: 'Published', items: publicationsByStatus.published },
+    { label: 'In Review', items: publicationsByStatus.inReview },
+    { label: 'In Preparation', items: publicationsByStatus.inPrep }
+  ];
+
+  /** Built in script rather than markup: Svelte trims the leading space inside
+      an {#if} block, which ran the journal into its status. */
+  function venueText(pub: { venue: string; statusLabel?: string }): string {
+    return pub.statusLabel ? `${pub.venue} (${pub.statusLabel}).` : `${pub.venue}.`;
+  }
+
   function highlightAuthor(authors: string): string {
     return authors.replace(/(Talbot, C\. A\.)/g, '<span class="highlight">$1</span>');
   }
 </script>
 
 <div class="publications">
-  {#if publicationsByStatus.published.length > 0}
-    <div class="pub-group">
-      <h3>Published</h3>
-      <ul class="pub-list">
-        {#each publicationsByStatus.published as pub}
-          <li class="pub-item">
-            <span class="pub-year">{pub.year}</span>
-            <div class="pub-content">
-              <span class="pub-authors">{@html highlightAuthor(pub.authors)}</span>
-              <span class="pub-title">{pub.title}.</span>
-              <span class="pub-venue">{pub.venue}.</span>
-            </div>
-          </li>
-        {/each}
-      </ul>
-    </div>
-  {/if}
-
-  {#if publicationsByStatus.inReview.length > 0}
-    <div class="pub-group">
-      <h3>In Review</h3>
-      <ul class="pub-list">
-        {#each publicationsByStatus.inReview as pub}
-          <li class="pub-item">
-            <span class="pub-year">{pub.year}</span>
-            <div class="pub-content">
-              <span class="pub-authors">{@html highlightAuthor(pub.authors)}</span>
-              <span class="pub-title">{pub.title}.</span>
-              <span class="pub-venue">{pub.venue}.</span>
-              {#if pub.arxiv}
-                <span class="pub-arxiv">{pub.arxiv}</span>
-              {/if}
-            </div>
-          </li>
-        {/each}
-      </ul>
-    </div>
-  {/if}
-
-  {#if publicationsByStatus.inPrep.length > 0}
-    <div class="pub-group">
-      <h3>In Preparation</h3>
-      <ul class="pub-list">
-        {#each publicationsByStatus.inPrep as pub}
-          <li class="pub-item">
-            <span class="pub-year">{pub.year}</span>
-            <div class="pub-content">
-              <span class="pub-authors">{@html highlightAuthor(pub.authors)}</span>
-              <span class="pub-title">{pub.title}.</span>
-              <span class="pub-venue">{pub.venue}.</span>
-            </div>
-          </li>
-        {/each}
-      </ul>
-    </div>
-  {/if}
+  {#each groups as group}
+    {#if group.items.length > 0}
+      <div class="pub-group">
+        <h3>{group.label}</h3>
+        <ul class="pub-list">
+          {#each group.items as pub}
+            <li class="pub-item">
+              <span class="pub-year">{pub.year}</span>
+              <div class="pub-content">
+                <span class="pub-authors">{@html highlightAuthor(pub.authors)}</span>
+                <span class="pub-title">{pub.title}.</span>
+                <span class="pub-venue">{venueText(pub)}</span>
+                {#if pub.preprint}
+                  <span class="pub-preprint">{pub.preprint}</span>
+                {/if}
+              </div>
+            </li>
+          {/each}
+        </ul>
+      </div>
+    {/if}
+  {/each}
 </div>
 
 <style>
-  .publications { max-width: 48rem; }
   .pub-group { margin-bottom: var(--space-xl); }
   .pub-group:last-child { margin-bottom: 0; }
   .pub-group h3 {
@@ -104,7 +81,7 @@
     color: var(--sage);
     font-style: italic;
   }
-  .pub-arxiv {
+  .pub-preprint {
     display: block;
     font-family: var(--font-mono);
     font-size: var(--text-sm);

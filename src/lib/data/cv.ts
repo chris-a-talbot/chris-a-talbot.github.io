@@ -1,12 +1,17 @@
 import type { Funding, Talk } from './types';
 
+/**
+ * Mirrors the PDF at static/files/CV.pdf. When a new CV is issued, overwrite
+ * that file (keep the name) and update `cvUpdated` plus any changed sections.
+ */
 export const cvPdfLink = '/files/CV.pdf';
+export const cvUpdated = 'August 2026';
 
 export const contactInfo = {
+  status: 'Ph.D. Student in Computational Biology at Cornell University',
   location: 'Ithaca, New York',
   website: 'chris-a-talbot.com',
-  email: 'christopher.a.talbot@gmail.com',
-  phone: '(269) 751-9444',
+  email: 'cat267[at]cornell[dot]edu',
   fields: 'Population Genetics, Computational Biology, Evolutionary Ecology',
   interests: 'Global change, rapid evolution, stochastic modeling, conservation',
   techs: 'C, C++, Python, TypeScript, CUDA, Cerebras, SLiM'
@@ -73,59 +78,6 @@ export const research = [
     period: '2021-2022'
   }
 ];
-
-export const publications = {
-  published: [
-    {
-      year: '2026',
-      authors: 'Talbot, C. A., Bradburd, G. S.',
-      title: 'ARGscape: A modular, interactive tool for manipulation of spatiotemporal ancestral recombination graphs.',
-      journal: 'Bioinformatics',
-      status: 'Published',
-      preprint: 'arXiv:2510.07255 [q-bio.PE]'
-    },
-    {
-      year: '2026',
-      authors: 'Glos, R., Soule, A. R., ..., Talbot, C. A., ..., Weber, M. G.',
-      title: 'Micromorphology and Chemistry of Mite Domatia: Mutualistic Trait Convergence and Variation across Eight Sympatric North American Species.',
-      journal: 'Symbiosis',
-      status: 'Published'
-    },
-    {
-      year: '2025',
-      authors: 'Graham, C. D. K., ..., Talbot, C. A., Yerks, A. L., Weber, M. G.',
-      title: 'Mite domatia and associated mite density in a North American Eastern Deciduous Forest in Michigan.',
-      journal: 'Ecology and Evolution',
-      status: 'Published'
-    }
-  ],
-  inReview: [
-    {
-      year: '2026',
-      authors: 'Talbot, C. A., Weber, M. G.',
-      title: 'Opposing seasonal dynamics in phylogenetic and flower color diversity of co-flowering wildflower assemblages.',
-      journal: 'Ecosphere',
-      status: 'In Revision',
-      preprint: 'bioRxiv 2025.10.21.683724'
-    }
-  ],
-  inPrep: [
-    {
-      year: '2026',
-      authors: 'Talbot, C. A., Bradburd, G. S.',
-      title: 'Optimizing temporal sampling strategies for spatial population genetic inference using ancestral recombination graphs.',
-      journal: 'Genetics',
-      status: 'In Preparation'
-    },
-    {
-      year: '2026',
-      authors: 'Talbot, C. A., Kern, A. D.',
-      title: 'slim-vscode-tools: A comprehensive language server and development environment for SLiM forward-time simulations.',
-      journal: 'Bioinformatics',
-      status: 'In Preparation'
-    }
-  ]
-};
 
 export const totalFunding = '$174,180';
 
@@ -195,14 +147,12 @@ export const funding: Funding[] = [
 export const invitedTalks: Talk[] = [
   {
     year: '2025',
-    title: 'ARGEvol Conference',
     venue: 'ARGEvol Conference',
     location: 'Porto, Portugal',
     type: 'invited'
   },
   {
     year: '2025',
-    title: 'ARGEvol Spatial ARG Workshop',
     venue: 'ARGEvol Spatial ARG Workshop',
     location: 'Porto, Portugal',
     type: 'invited',
@@ -210,7 +160,6 @@ export const invitedTalks: Talk[] = [
   },
   {
     year: '2025',
-    title: 'tskit-dev Seminar',
     venue: 'tskit-dev Seminar',
     location: 'Virtual',
     type: 'invited'
@@ -220,14 +169,12 @@ export const invitedTalks: Talk[] = [
 export const contributedTalks: Talk[] = [
   {
     year: '2024',
-    title: 'Third Joint Congress on Evolutionary Biology',
     venue: 'Third Joint Congress on Evolutionary Biology',
     location: 'Montreal, QC',
     type: 'contributed'
   },
   {
     year: '2024',
-    title: 'Botany 2024',
     venue: 'Botany 2024',
     location: 'Grand Rapids, MI',
     type: 'contributed',
@@ -235,7 +182,6 @@ export const contributedTalks: Talk[] = [
   },
   {
     year: '2024',
-    title: 'UMich Ecology & Evolutionary Biology',
     venue: 'UMich Ecology & Evolutionary Biology',
     location: 'Ann Arbor, MI',
     type: 'defense',
@@ -246,17 +192,17 @@ export const contributedTalks: Talk[] = [
 export const posters: Talk[] = [
   {
     year: '2024',
-    title: 'Third Joint Congress on Evolutionary Biology',
     venue: 'Third Joint Congress on Evolutionary Biology',
     location: 'Montreal, QC',
-    type: 'poster'
+    type: 'poster',
+    href: '/files/posters/Evolution_2024_Poster.pdf'
   },
   {
     year: '2024',
-    title: 'Botany 2024',
     venue: 'Botany 2024',
     location: 'Grand Rapids, MI',
-    type: 'poster'
+    type: 'poster',
+    href: '/files/posters/Botany_2024_Poster.pdf'
   }
 ];
 
@@ -265,7 +211,8 @@ export const software = [
     name: 'SLiM',
     role: 'Open-Source Contributor',
     period: '2025-Present',
-    description: 'Contribute to maintenance of software for simulating genetics, evolution, and ecology',
+    description:
+      'Contribute to maintenance of software for simulating genetics, evolution, and ecology',
     href: 'https://github.com/MesserLab/SLiM'
   },
   {
@@ -279,7 +226,8 @@ export const software = [
     name: 'slim-vscode-tools',
     role: 'Open-Source Lead',
     period: '2025-Present',
-    description: 'Design and maintain software for streamlining SLiM programming through a language server and IDE extension',
+    description:
+      'Design and maintain software for streamlining SLiM programming through a language server and IDE extension',
     href: 'https://github.com/slim-community/slim-vscode-tools'
   }
 ];
@@ -301,7 +249,8 @@ export const undergraduateMentoring = [
     role: 'Transfer Student Peer Mentor',
     organization: 'UMich - LSA Transfer Bridges Program',
     period: '2022-2023',
-    description: 'Paid position mentoring prospective transfer students and reviewing application materials'
+    description:
+      'Paid position mentoring prospective transfer students and reviewing application materials'
   }
 ];
 
@@ -325,8 +274,8 @@ export const undergraduateTeaching = [
 
 export const k12Teaching = [
   {
-    role: 'Volunteer Educator',
-    organization: 'Discover Cayuga Lake–Trout in the Classroom',
+    role: 'Volunteer Curriculum Developer',
+    organization: 'Discover Cayuga Lake, Ithaca, NY',
     period: '2025-Present'
   },
   {
@@ -375,6 +324,10 @@ export const service = [
 ];
 
 export const memberships = [
+  {
+    organization: 'American Genetics Association',
+    period: '2026-Present'
+  },
   {
     organization: 'American Society of Naturalists',
     period: '2024-Present'

@@ -11,9 +11,16 @@
   --teal-accent: #7a9a8a;
   --highlight: #cd6a4e;
 
+  /* Hypsometric tints: the ramp a physical map uses from water to ridge line.
+     More chroma than the page palette so a 3px mark still reads. */
+  --elev-water: #4f7a96;
+  --elev-low: #6b8f57;
+  --elev-mid: #c49a4a;
+  --elev-high: #9c5a34;
+
   /* Typography */
   --font-heading: 'Newsreader', Georgia, serif;
-  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Atkinson Hyperlegible Next', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
   /* Fluid Typography */
@@ -102,6 +109,43 @@ code, pre {
 /* ========================================
    Utilities
    ======================================== */
+
+/* An outlined action. Used by the blog link in the intro and the CV download. */
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--highlight);
+  color: var(--highlight);
+  text-decoration: none;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.action:hover {
+  background-color: var(--highlight);
+  color: var(--cloud);
+  text-decoration: none;
+}
+
+/* Paper laid over the map. Used by section panels and the hero intro card.
+   No backdrop-filter: the canvas behind it animates, so the compositor would
+   re-blur every panel on every frame. */
+.paper {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--cloud) 93%, transparent) 0%,
+    color-mix(in srgb, var(--cloud) 86%, transparent) 100%
+  );
+  border-radius: 2px;
+  box-shadow:
+    0 1px 0 color-mix(in srgb, var(--cloud) 60%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--slate-deep) 7%, transparent);
+}
 
 .visually-hidden {
   position: absolute;

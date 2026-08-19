@@ -7,7 +7,7 @@
   {#if title}
     <h2 class="section-title">{title}</h2>
   {/if}
-  <div class="section-content">
+  <div class="section-content paper">
     <slot />
   </div>
 </section>
@@ -23,20 +23,7 @@
   .section-content {
     max-width: var(--max-width);
     margin: 0 auto;
-    /* Subtle backdrop for readability */
-    background: linear-gradient(
-      135deg,
-      rgba(247, 250, 252, 0.75) 0%,
-      rgba(247, 250, 252, 0.6) 100%
-    );
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 2px;
     padding: var(--space-xl);
-    /* Subtle border for definition */
-    box-shadow:
-      0 1px 0 rgba(255, 255, 255, 0.5),
-      0 0 0 1px rgba(45, 55, 72, 0.05);
   }
 
   .section-title {

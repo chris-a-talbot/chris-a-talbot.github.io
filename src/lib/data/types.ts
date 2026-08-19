@@ -23,14 +23,20 @@ export interface Experience {
   project?: string;
 }
 
+export type PublicationStatus = 'published' | 'in-review' | 'in-prep';
+
 export interface Publication {
   year: string;
   authors: string;
   title: string;
+  /** Journal name only — no status text. */
   venue: string;
-  status: 'published' | 'in-review' | 'in-prep';
+  status: PublicationStatus;
+  /** Overrides the default wording for in-review work, e.g. "In Revision". */
+  statusLabel?: string;
+  /** Preprint identifier, e.g. "arXiv:2510.07255 [q-bio.PE]". */
+  preprint?: string;
   href?: string;
-  arxiv?: string;
 }
 
 export interface Project {
@@ -40,7 +46,6 @@ export interface Project {
   description: string;
   href: string;
   image: string;
-  featured: boolean;
   role: 'lead' | 'contributor';
   technologies?: string[];
 }
@@ -55,15 +60,9 @@ export interface Funding {
 
 export interface Talk {
   year: string;
-  title: string;
   venue: string;
   location: string;
   type: 'invited' | 'contributed' | 'poster' | 'defense';
   href?: string;
   note?: string;
-}
-
-export interface CVSection {
-  title: string;
-  items: Array<Record<string, unknown>>;
 }
