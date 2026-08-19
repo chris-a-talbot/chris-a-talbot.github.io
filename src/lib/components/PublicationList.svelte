@@ -29,7 +29,13 @@
               <span class="pub-year">{pub.year}</span>
               <div class="pub-content">
                 <span class="pub-authors">{@html highlightAuthor(pub.authors)}</span>
-                <span class="pub-title">{pub.title}.</span>
+                <span class="pub-title">
+                  {#if pub.href}
+                    <a href={pub.href} class="inline-link" target="_blank" rel="noopener noreferrer">{pub.title}.</a>
+                  {:else}
+                    {pub.title}.
+                  {/if}
+                </span>
                 <span class="pub-venue">{venueText(pub)}</span>
                 {#if pub.preprint}
                   <span class="pub-preprint">{pub.preprint}</span>

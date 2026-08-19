@@ -12,7 +12,8 @@ export const publications: Publication[] = [
       'ARGscape: A modular, interactive tool for manipulation of spatiotemporal ancestral recombination graphs',
     venue: 'Bioinformatics',
     status: 'published',
-    preprint: 'arXiv:2510.07255 [q-bio.PE]'
+    preprint: 'arXiv:2510.07255 [q-bio.PE]',
+    href: 'https://doi.org/10.1093/bioinformatics/btag420'
   },
   {
     year: '2026',
@@ -20,7 +21,8 @@ export const publications: Publication[] = [
     title:
       'Micromorphology and Chemistry of Mite Domatia: Mutualistic Trait Convergence and Variation across Eight Sympatric North American Species',
     venue: 'Symbiosis',
-    status: 'published'
+    status: 'published',
+    href: 'https://doi.org/10.1007/s13199-026-01162-6'
   },
   {
     year: '2025',
@@ -28,7 +30,8 @@ export const publications: Publication[] = [
     title:
       'Mite domatia and associated mite density in a North American Eastern Deciduous Forest in Michigan',
     venue: 'Ecology and Evolution',
-    status: 'published'
+    status: 'published',
+    href: 'https://doi.org/10.1002/ece3.71379'
   },
   {
     year: '2026',
@@ -38,7 +41,8 @@ export const publications: Publication[] = [
     venue: 'Ecosphere',
     status: 'in-review',
     statusLabel: 'In Revision',
-    preprint: 'bioRxiv 2025.10.21.683724'
+    preprint: 'bioRxiv 2025.10.21.683724',
+    href: 'https://doi.org/10.1101/2025.10.21.683724'
   },
   {
     year: '2026',

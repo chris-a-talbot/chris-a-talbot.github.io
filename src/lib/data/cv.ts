@@ -56,24 +56,28 @@ export const research = [
   {
     title: 'Doctoral Researcher',
     lab: 'Messer Lab',
+    href: 'https://messerlab.org',
     institution: 'Cornell University - Computational Biology',
     period: '2025-Present'
   },
   {
     title: 'Research Programmer',
     lab: 'Bradburd Lab',
+    href: 'https://www.genescape.org',
     institution: 'UMich - Ecology & Evolutionary Biology (EEB)',
     period: '2024-2025'
   },
   {
     title: 'Undergraduate Researcher, Lab Technician',
     lab: 'Weber Lab',
+    href: 'https://theweberlab.com',
     institution: 'UMich - EEB',
     period: '2022-2025'
   },
   {
     title: 'Undergraduate Researcher',
     lab: 'Márquez Lab',
+    href: 'https://www.biol.vt.edu/faculty/Marquez.html',
     institution: 'UMich - EEB',
     period: '2021-2022'
   }
@@ -236,6 +240,7 @@ export const undergraduateMentoring = [
   {
     role: 'McNair Scholars Graduate Coordinator',
     organization: 'Cornell University',
+    href: 'https://oadi.cornell.edu/signature-programs/ronald-e-mcnair-post-baccalaureate-achievement-program',
     period: '2026-Present',
     description: 'Paid position involving teaching courses, direct mentorship, and program administration'
   },
@@ -258,16 +263,19 @@ export const undergraduateTeaching = [
   {
     role: 'Co-Instructor',
     organization: 'Cornell McNair Scholars Summer Writing Course',
+    href: 'https://oadi.cornell.edu/signature-programs/ronald-e-mcnair-post-baccalaureate-achievement-program',
     period: '2026'
   },
   {
     role: 'Course Assistant',
     organization: '"Insights From Trees," University of Michigan Biological Station',
+    href: 'https://lsa.umich.edu/umbs/students/courses/insights-from-trees--science--art--and-observation-in-a-noisy-wo.html',
     period: '2024, 2025'
   },
   {
     role: 'Professional Peer Tutor',
     organization: 'GRCC Drop-in Tutoring Labs - Mathematics, Language Arts',
+    href: 'https://www.grcc.edu/students-resources/academic-support-tutoring-services',
     period: '2019-2020'
   }
 ];
@@ -276,31 +284,37 @@ export const k12Teaching = [
   {
     role: 'Volunteer Curriculum Developer',
     organization: 'Discover Cayuga Lake, Ithaca, NY',
+    href: 'https://discovercayugalake.org/',
     period: '2025-Present'
   },
   {
     role: 'Volunteer Educator',
     organization: 'Skype a Scientist',
+    href: 'https://www.skypeascientist.com/',
     period: '2025-Present'
   },
   {
     role: 'Docent (Volunteer Educator)',
     organization: 'Matthaei Botanical Gardens & Nichols Arboretum',
+    href: 'https://mbgna.umich.edu/',
     period: '2023-2025'
   },
   {
     role: 'Test Writer & Proctor, Forestry & Botany (Volunteer)',
     organization: 'UMich Science Olympiad',
+    href: 'https://www.umichscioly.org/',
     period: '2023-2025'
   },
   {
     role: 'Director of Percussion',
     organization: 'Lake Orion Community Schools, Lake Orion, MI',
+    href: 'https://www.lodragonbands.org/',
     period: '2022-2023'
   },
   {
     role: 'Director of Percussion',
     organization: 'Spring Lake Public Schools, Spring Lake, MI',
+    href: 'https://springlakebands.org/',
     period: '2019-2022'
   },
   {

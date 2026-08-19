@@ -110,6 +110,26 @@ code, pre {
    Utilities
    ======================================== */
 
+/* Links inside dense reference lists - the CV and the publication list. Body
+   link colour alone disappears in a list of names and titles, and recolouring a
+   whole publication title is far too loud, so the underline does the announcing
+   and the colour only arrives on hover. */
+.inline-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--highlight) 55%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition:
+    color 0.15s ease,
+    text-decoration-color 0.15s ease;
+}
+
+.inline-link:hover {
+  color: var(--highlight);
+  text-decoration-color: var(--highlight);
+}
+
 /* An outlined action. Used by the blog link in the intro and the CV download. */
 .action {
   display: inline-flex;

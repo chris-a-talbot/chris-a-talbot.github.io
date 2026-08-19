@@ -84,7 +84,14 @@
         {#each research as item}
           <li class="cv-item">
             <div class="cv-item-header">
-              <span class="cv-item-title">{item.title} - {item.lab}</span>
+              <span class="cv-item-title">
+                {item.title} -
+                {#if item.href}
+                  <a href={item.href} class="inline-link" target="_blank" rel="noopener noreferrer">{item.lab}</a>
+                {:else}
+                  {item.lab}
+                {/if}
+              </span>
               <span class="cv-item-year">{item.period}</span>
             </div>
             <div class="cv-item-details">
@@ -106,7 +113,12 @@
                   <li class="cv-item pub-item">
                     <span class="pub-year">{pub.year}</span>
                     <span class="pub-content">
-                      {pub.authors} {pub.title}.
+                      {pub.authors}
+                      {#if pub.href}
+                        <a href={pub.href} class="inline-link" target="_blank" rel="noopener noreferrer">{pub.title}.</a>
+                      {:else}
+                        {pub.title}.
+                      {/if}
                       {#if pub.preprint}<span class="pub-preprint">{pub.preprint}.</span>{/if}
                       <em>{venueLine(pub)}</em>
                     </span>
@@ -187,7 +199,7 @@
             <div class="cv-item-header">
               <span class="cv-item-title">
                 {#if poster.href}
-                  <a href={poster.href} class="cv-item-link" target="_blank" rel="noopener noreferrer">{poster.venue}</a>
+                  <a href={poster.href} class="inline-link" target="_blank" rel="noopener noreferrer">{poster.venue}</a>
                 {:else}
                   {poster.venue}
                 {/if}
@@ -210,7 +222,7 @@
               <span class="cv-item-title">
                 {item.role} -
                 {#if item.href}
-                  <a href={item.href} class="cv-item-link" target="_blank" rel="noopener noreferrer">"{item.name}"</a>
+                  <a href={item.href} class="inline-link" target="_blank" rel="noopener noreferrer">"{item.name}"</a>
                 {:else}
                   "{item.name}"
                 {/if}
@@ -234,7 +246,13 @@
               <span class="cv-item-year">{item.period}</span>
             </div>
             <div class="cv-item-details">
-              <span class="cv-item-org">{item.organization}</span>
+              <span class="cv-item-org">
+                {#if item.href}
+                  <a href={item.href} class="inline-link" target="_blank" rel="noopener noreferrer">{item.organization}</a>
+                {:else}
+                  {item.organization}
+                {/if}
+              </span>
             </div>
             {#if item.description}
               <p class="cv-item-description">{item.description}</p>
@@ -253,7 +271,13 @@
               <span class="cv-item-year">{item.period}</span>
             </div>
             <div class="cv-item-details">
-              <span class="cv-item-org">{item.organization}</span>
+              <span class="cv-item-org">
+                {#if item.href}
+                  <a href={item.href} class="inline-link" target="_blank" rel="noopener noreferrer">{item.organization}</a>
+                {:else}
+                  {item.organization}
+                {/if}
+              </span>
             </div>
           </li>
         {/each}
@@ -269,7 +293,13 @@
               <span class="cv-item-year">{item.period}</span>
             </div>
             <div class="cv-item-details">
-              <span class="cv-item-org">{item.organization}</span>
+              <span class="cv-item-org">
+                {#if item.href}
+                  <a href={item.href} class="inline-link" target="_blank" rel="noopener noreferrer">{item.organization}</a>
+                {:else}
+                  {item.organization}
+                {/if}
+              </span>
             </div>
           </li>
         {/each}
@@ -285,7 +315,13 @@
               <span class="cv-item-year">{item.period}</span>
             </div>
             <div class="cv-item-details">
-              <span class="cv-item-org">{item.organization}</span>
+              <span class="cv-item-org">
+                {#if item.href}
+                  <a href={item.href} class="inline-link" target="_blank" rel="noopener noreferrer">{item.organization}</a>
+                {:else}
+                  {item.organization}
+                {/if}
+              </span>
             </div>
           </li>
         {/each}
@@ -341,7 +377,13 @@
               <span class="cv-item-year">{item.period}</span>
             </div>
             <div class="cv-item-details">
-              <span class="cv-item-org">{item.organization}</span>
+              <span class="cv-item-org">
+                {#if item.href}
+                  <a href={item.href} class="inline-link" target="_blank" rel="noopener noreferrer">{item.organization}</a>
+                {:else}
+                  {item.organization}
+                {/if}
+              </span>
             </div>
           </li>
         {/each}
@@ -416,16 +458,6 @@
   .cv-item-title {
     font-weight: 500;
     color: var(--slate-deep);
-  }
-  .cv-item-link {
-    color: var(--slate-deep);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.15s ease;
-  }
-  .cv-item-link:hover {
-    border-color: var(--highlight);
-    text-decoration: none;
   }
   .cv-item-year, .cv-item-period {
     font-family: var(--font-mono);
