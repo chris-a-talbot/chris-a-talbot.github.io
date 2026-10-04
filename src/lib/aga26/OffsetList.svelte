@@ -1,10 +1,10 @@
 <script lang="ts">
   /**
-   * "We assessed 8 different offsets", as on the poster. Each entry opens its citation and
-   * equation card (MethodDialog).
+   * "We assessed 8 different offsets", as on the poster. With SHOW_METHOD_CARDS on, each entry
+   * opens its citation and equation card (MethodDialog); while it is off they are plain text.
    */
   import { C } from './theme';
-  import { METHODS, METHOD } from './methods';
+  import { METHODS, METHOD, SHOW_METHOD_CARDS, type Method } from './methods';
   import { ui } from './state.svelte';
 
   const env = METHODS.filter((m) => m.group === 'environmental');
@@ -12,11 +12,10 @@
   const bench = METHOD.climate;
 </script>
 
-{#snippet item(m: (typeof METHODS)[number])}
-  <li>
-    <button onclick={() => (ui.method = m.key)} aria-haspopup="dialog">
-      <span class="name">{m.number}) {m.name}</span>
-      <span class="cite">({m.cite})</span>
+{#snippet entry(m: Method, name: string, cls: string)}
+  {#if SHOW_METHOD_CARDS}
+    <button class="entry {cls}" onclick={() => (ui.method = m.key)} aria-haspopup="dialog">
+      <span class="name">{name}</span> <span class="cite">({m.cite})</span>
       <svg class="i" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"
         ><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.3" /><path
           d="M8 7v4.2M8 4.6v.1"
@@ -26,7 +25,15 @@
         /></svg
       >
     </button>
-  </li>
+  {:else}
+    <div class="entry {cls}">
+      <span class="name">{name}</span> <span class="cite">({m.cite})</span>
+    </div>
+  {/if}
+{/snippet}
+
+{#snippet item(m: Method)}
+  <li>{@render entry(m, `${m.number}) ${m.name}`, '')}</li>
 {/snippet}
 
 <div class="offsets">
@@ -40,17 +47,7 @@
       <ul>{#each obs as m}{@render item(m)}{/each}</ul>
     </div>
   </div>
-  <button class="bench" onclick={() => (ui.method = bench.key)} aria-haspopup="dialog">
-    <span class="name">C) Mahalanobis climate distance</span> <span class="cite">({bench.cite})</span>
-    <svg class="i" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"
-      ><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.3" /><path
-        d="M8 7v4.2M8 4.6v.1"
-        stroke="currentColor"
-        stroke-width="1.6"
-        stroke-linecap="round"
-      /></svg
-    >
-  </button>
+  {@render entry(bench, 'C) Mahalanobis climate distance', 'bench')}
   <p class="foot">(and a climate-only benchmark)</p>
 </div>
 
@@ -82,7 +79,7 @@
     margin: 0;
     padding: 0;
   }
-  button {
+  .entry {
     position: relative;
     display: block;
     width: 100%;
@@ -93,6 +90,8 @@
     font: inherit;
     text-align: left;
     color: inherit;
+  }
+  button {
     cursor: pointer;
   }
   button:hover {

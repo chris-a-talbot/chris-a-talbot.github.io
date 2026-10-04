@@ -16,6 +16,7 @@
   import { signed, pval, interval } from './format';
   import { mainLayout, rowLabel, type Row } from './rows';
   import { ui } from './state.svelte';
+  import { SHOW_METHOD_CARDS } from './methods';
 
   interface Arm {
     arm: number;
@@ -344,7 +345,9 @@
       <div class="dhead">
         <span class="dname" style:color={CLASS_COLOUR[o.cls]}>{rowLabel(o)}</span>
         <span class="dact">
-          <button class="link" onclick={() => (ui.method = o.key)}>Citation &amp; equation</button>
+          {#if SHOW_METHOD_CARDS}
+            <button class="link" onclick={() => (ui.method = o.key)}>Citation &amp; equation</button>
+          {/if}
           <button class="x" aria-label="Clear the picked row" onclick={() => (ui.metric = null)}>×</button>
         </span>
       </div>

@@ -11,6 +11,12 @@
  * HTML in which $…$ marks inline TeX.
  */
 
+/**
+ * The cards are hidden for now: nothing opens them. Set true to make the offset list's entries
+ * and the charts' "Citation & equation" links open them again.
+ */
+export const SHOW_METHOD_CARDS = false;
+
 export interface Reference {
   /** Authors, year, title and venue, as HTML. */
   html: string;
