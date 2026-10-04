@@ -28,9 +28,9 @@
     'Does genomic offset predict population resilience to an observed extreme climate event in scarlet monkeyflower?';
 
   /** The section bar: short names for the poster's panels, in reading order. */
-  const SECTIONS = [
-    ['background', 'Background'],
+  const SECTIONS_ALL = [
     ['overview', 'Overview'],
+    ['background', 'Background'],
     ['predict', 'Outcomes'],
     ['offsets', 'Offsets'],
     ['headline', 'Maps'],
@@ -41,10 +41,19 @@
     ['takeaways', 'Takeaways'],
     ['next', 'Next']
   ] as const;
-  let current = $state('background');
+  /** On a laptop Data and Background sits left of Study Overview, as on the poster; on a
+      phone or tablet the overview comes first. */
+  let narrow = $state(true);
+  const SECTIONS = $derived(
+    narrow ? SECTIONS_ALL : [SECTIONS_ALL[1], SECTIONS_ALL[0], ...SECTIONS_ALL.slice(2)]
+  );
+  let current = $state('overview');
   let bar: HTMLElement;
 
   onMount(() => {
+    const mq = window.matchMedia('(max-width: 75.99rem)');
+    narrow = mq.matches;
+    mq.addEventListener('change', (e) => (narrow = e.matches));
     const seen = new Map<string, boolean>();
     const io = new IntersectionObserver(
       (entries) => {
@@ -54,7 +63,7 @@
       },
       { rootMargin: '-25% 0px -55% 0px' }
     );
-    for (const [id] of SECTIONS) {
+    for (const [id] of SECTIONS_ALL) {
       const el = document.getElementById(id);
       if (el) io.observe(el);
     }
@@ -87,11 +96,15 @@
 
 <div class="aga">
   <header class="band">
+    <div class="band-in">
+    <a class="home" href="/">← chris-a-talbot.com</a>
     <h1>
       <span class="hi">Genomic offset</span> predicts population<br class="br-wide" /> vulnerability in an extreme climate event...<br /><span
         class="hi">backwards</span
       >
     </h1>
+    <a class="supp" href="/aga26_supplement/">Supplement <span aria-hidden="true">→</span></a>
+    </div>
   </header>
 
   <div class="meta">
@@ -128,17 +141,6 @@
   </nav>
 
   <main class="grid">
-    <div class="a-background">
-      <Panel id="background" title="Data and Background">
-        <div class="setting-box">
-          <div class="setting">
-            <div class="smap"><SettingMap /></div>
-            <div class="stime"><Timeline /></div>
-          </div>
-        </div>
-      </Panel>
-    </div>
-
     <div class="a-overview">
       <Panel id="overview" title="Study Overview" tone="mintDark">
         <div class="prose">
@@ -154,6 +156,17 @@
             frequencies to measure maladaptation distance in an allele-frequency space. Here, we present a test of these
             methods against long-term field data spanning an extreme climate event, and introduce one new method.
           </p>
+        </div>
+      </Panel>
+    </div>
+
+    <div class="a-background">
+      <Panel id="background" title="Data and Background">
+        <div class="setting-box">
+          <div class="setting">
+            <div class="smap"><SettingMap /></div>
+            <div class="stime"><Timeline /></div>
+          </div>
         </div>
       </Panel>
     </div>
@@ -306,9 +319,49 @@
     background: var(--aga-carnelian);
     padding: clamp(1.4rem, 3vw, 3rem) clamp(1rem, 3vw, 3rem) clamp(1.5rem, 3.2vw, 3.2rem);
   }
-  h1 {
-    margin: 0 auto;
+  .band-in {
     max-width: 96rem;
+    margin: 0 auto;
+    display: grid;
+    gap: 0.7rem;
+    justify-items: start;
+  }
+  .home {
+    font-size: 0.85rem;
+    color: #fff;
+    opacity: 0.88;
+    text-decoration: none;
+  }
+  .home:hover {
+    color: #fff;
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .supp {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.55rem 1.1rem;
+    border-radius: 999px;
+    background: #fff;
+    color: var(--aga-carnelian);
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.18);
+  }
+  .supp:hover {
+    color: var(--aga-carnelian);
+    text-decoration: none;
+    background: #f3f2ef;
+  }
+  .home:focus-visible,
+  .supp:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+  }
+  h1 {
+    margin: 0;
     font-family: var(--aga-font);
     font-size: clamp(1.95rem, 1.1rem + 3.4vw, 4.9rem);
     font-weight: 600;
@@ -458,6 +511,30 @@
     h1 {
       font-size: clamp(2.2rem, 4.4vh + 0.5rem, 4.6rem);
       line-height: 1.1;
+    }
+    .band-in {
+      grid-template-columns: 1fr auto;
+      grid-template-rows: auto 1fr;
+      align-items: start;
+      gap: 0 2rem;
+    }
+    .band-in h1 {
+      grid-column: 1;
+      grid-row: 1 / 3;
+    }
+    .home {
+      grid-column: 2;
+      grid-row: 1;
+      justify-self: end;
+      margin-top: 0.3rem;
+    }
+    .supp {
+      grid-column: 2;
+      grid-row: 2;
+      align-self: end;
+      justify-self: end;
+      font-size: 1.1rem;
+      padding: 0.7rem 1.4rem;
     }
     .meta {
       padding: 0.6rem 2rem 0.55rem;

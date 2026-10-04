@@ -5,15 +5,21 @@
 
 <footer class="foot">
   <div class="row">
-    <a class="rainn" href="https://rainn.org/give-to-rainn/" target="_blank" rel="noopener">
+    <div class="rainn">
       <span class="rt">Support Survivors,<br />Pursue Justice,<br />Build Safer<br />Communities.<br /><b>Support RAINN:</b></span>
-      <img class="qr" src="{FILES}/qr_rainn.svg" alt="QR code for rainn.org/give-to-rainn" />
-    </a>
+      <span class="qrbox">
+        <img class="qr" src="{FILES}/qr_rainn.svg" alt="QR code for rainn.org/give-to-rainn" />
+        <a href="https://rainn.org/give-to-rainn/" target="_blank" rel="noopener">rainn.org/give-to-rainn</a>
+      </span>
+    </div>
     <img class="cals" src="{FILES}/cornell_cals.png" alt="Cornell CALS, College of Agriculture and Life Sciences" />
     <img class="nsf" src="{FILES}/nsf.png" alt="U.S. National Science Foundation" />
     <div class="more">
       <span>For more on the data<br />and methods, scan:</span>
-      <img class="qr" src="{FILES}/qr_poster.svg" alt="QR code for chris-a-talbot.com/aga26" />
+      <span class="qrbox">
+        <img class="qr" src="{FILES}/qr_poster.svg" alt="QR code for chris-a-talbot.com/aga26" />
+        <a href="/AGA26">chris-a-talbot.com/aga26</a>
+      </span>
     </div>
   </div>
   <p class="thanks">
@@ -70,9 +76,25 @@
     color: #fff;
     text-decoration: none;
   }
-  .rainn:hover {
+  .qrbox {
+    display: grid;
+    justify-items: center;
+    gap: 0.3rem;
+  }
+  .qrbox a {
     color: #fff;
-    text-decoration: none;
+    font-size: 0.72rem;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    white-space: nowrap;
+  }
+  .qrbox a:hover {
+    color: #fff;
+    text-decoration-thickness: 2px;
+  }
+  .qrbox a:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
   }
   .rt {
     font-size: 0.72rem;

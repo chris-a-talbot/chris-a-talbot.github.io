@@ -4,11 +4,11 @@
  * Sources, so these can be checked: the calculations are the project's declared forms as
  * written up in cardinalis/poster_offset/OFFSETS_11.md (pipeline/OFFSETS.tsv,
  * scripts/t06_offsets.py, t06_offsets.R); the references are offset/review/references.bib,
- * with the DOIs verified in cardinalis/poster_accuracy_audit.md.
+ * each checked against its Crossref record (authors, year, title, venue, volume, pages, DOI).
  * Citations and mathematics only, by request: no interpretation.
  *
- * Strings are HTML. Maths uses the poster's equation face (Source Sans 3) through the
- * `.m` class; bold = vector or matrix, as on the poster.
+ * Equations and notation symbols are TeX, typeset by KaTeX (tex.ts). Steps and meanings are
+ * HTML in which $…$ marks inline TeX.
  */
 
 export interface Reference {
@@ -29,37 +29,29 @@ export interface Method {
   cite: string;
   group: 'environmental' | 'observed' | 'benchmark';
   refs: Reference[];
-  /** Calculation steps, where an equation alone does not define the statistic. */
+  /** Calculation steps, where an equation alone does not define the statistic (HTML, $…$ TeX). */
   steps?: string[];
+  /** Display equations (TeX). */
   equations: string[];
-  notation: [symbol: string, meaning: string][];
+  /** [symbol (TeX), meaning (HTML, $…$ TeX)] */
+  notation: [string, string][];
 }
 
-// ---------------------------------------------------------------- shared symbols
-const zi = '<b>z</b><sub><i>i</i></sub>';
-const zs = '<b>z</b><sup>*</sup><sub><i>i</i></sub>';
-const dz = 'Δ<b>z</b><sub><i>i</i></sub>';
-const T = '<sup>⊤</sup>';
-const sumL = 'Σ<sub><i>l</i></sub>';
-const invL = '(1/<i>L</i>)';
-/** A circumflex inside the letter's own element, so the mark stays on its glyph. */
-const hat = (s: string) => (/<\/[ib]>$/.test(s) ? s.replace(/(<\/[ib]>)$/, '\u0302$1') : `${s}\u0302`);
-const sq = '<sup>2</sup><sub>2</sub>';
-
+// ---------------------------------------------------------------- shared notation
 const N = {
-  i: ['<i>i</i>', 'population'],
-  l: ['<i>l</i>, <i>L</i>', 'candidate locus; number of candidate loci'],
+  i: ['i', 'population'],
+  l: ['l,\\ L', 'candidate locus; number of candidate loci'],
   z: [
-    `${zi}, ${zs}`,
-    'population <i>i</i>’s baseline climate and its drought-scenario climate, both standardised with the baseline populations’ means and SDs'
+    '\\mathbf{z}_i,\\ \\mathbf{z}^*_i',
+    'population $i$’s baseline climate and its drought-scenario climate, both standardised with the baseline populations’ means and SDs'
   ],
-  dz: [dz, `${zs} − ${zi}`],
-  d: ['<i>d</i>', 'number of climate variables'],
-  Z: ['<b>Z</b>', 'the <i>n</i> × <i>d</i> matrix of the populations’ climates <b>z</b><sub><i>i</i></sub>'],
-  y: ['<i>y</i><sub><i>il</i></sub>', 'population <i>i</i>’s observed allele frequency at locus <i>l</i>']
+  dz: ['\\Delta\\mathbf{z}_i', '$\\mathbf{z}^*_i - \\mathbf{z}_i$'],
+  d: ['d', 'number of climate variables'],
+  Z: ['\\mathbf{Z}', 'the $n \\times d$ matrix of the populations’ climates $\\mathbf{z}_i$'],
+  y: ['y_{il}', 'population $i$’s observed allele frequency at locus $l$']
 } satisfies Record<string, [string, string]>;
 
-// ---------------------------------------------------------------- references
+// ---------------------------------------------------------------- references (Crossref-checked)
 const R = {
   gain2023: {
     html: 'Gain C, Rhoné B, Cubry P, Salazar I, Forbes F, Vigouroux Y, Jay F, François O (2023). A quantitative theory for genomic offset statistics. <i>Molecular Biology and Evolution</i> 40(6): msad140.',
@@ -67,11 +59,13 @@ const R = {
   },
   lea3: {
     role: 'Software',
-    html: 'Gain C, François O (2021). LEA 3: factor models in population genetics and ecological genomics with R. <i>Molecular Ecology Resources</i> 21(8): 2738–2748.'
+    html: 'Gain C, François O (2021). LEA 3: factor models in population genetics and ecological genomics with R. <i>Molecular Ecology Resources</i> 21(8): 2738–2748.',
+    doi: '10.1111/1755-0998.13366'
   },
   lfmm2: {
     role: 'Software',
-    html: 'Caye K, Jumentier B, Lepeule J, François O (2019). LFMM 2: fast and accurate inference of gene–environment associations in genome-wide studies. <i>Molecular Biology and Evolution</i> 36(4): 852–860.'
+    html: 'Caye K, Jumentier B, Lepeule J, François O (2019). LFMM 2: fast and accurate inference of gene–environment associations in genome-wide studies. <i>Molecular Biology and Evolution</i> 36(4): 852–860.',
+    doi: '10.1093/molbev/msz008'
   },
   fitzpatrick2015: {
     html: 'Fitzpatrick MC, Keller SR (2015). Ecological genomics meets community-level modelling of biodiversity: mapping the genomic landscape of current and future environmental adaptation. <i>Ecology Letters</i> 18(1): 1–16.',
@@ -79,7 +73,8 @@ const R = {
   },
   ellis2012: {
     role: 'Gradient forests',
-    html: 'Ellis N, Smith SJ, Pitcher CR (2012). Gradient forests: calculating importance gradients on physical predictors. <i>Ecology</i> 93(1): 156–168.'
+    html: 'Ellis N, Smith SJ, Pitcher CR (2012). Gradient forests: calculating importance gradients on physical predictors. <i>Ecology</i> 93(1): 156–168.',
+    doi: '10.1890/11-0252.1'
   },
   capblancq2021: {
     html: 'Capblancq T, Forester BR (2021). Redundancy analysis: a Swiss Army Knife for landscape genomics. <i>Methods in Ecology and Evolution</i> 12(12): 2298–2309.',
@@ -101,6 +96,11 @@ const R = {
     html: 'Borrell JS, Zohren J, Nichols RA, Buggs RJA (2020). Genomic assessment of local adaptation in dwarf birch to inform assisted gene flow. <i>Evolutionary Applications</i> 13(1): 161–175.',
     doi: '10.1111/eva.12883'
   },
+  endelman2011: {
+    role: 'Software',
+    html: 'Endelman JB (2011). Ridge regression and other kernels for genomic selection with R package rrBLUP. <i>The Plant Genome</i> 4(3): 250–255.',
+    doi: '10.3835/plantgenome2011.08.0024'
+  },
   mahony2017: {
     html: 'Mahony CR, Cannon AJ, Wang T, Aitken SN (2017). A closer look at novel climates: new methods and insights at continental to landscape scales. <i>Global Change Biology</i> 23(9): 3934–3955.',
     doi: '10.1111/gcb.13645'
@@ -116,18 +116,18 @@ export const METHODS: Method[] = [
     cite: 'Gain et al., 2023',
     group: 'environmental',
     refs: [R.gain2023, R.lea3, R.lfmm2],
-    steps: ['Fit LFMM2 to individual genotypes at the candidate loci; compute G² with <code>LEA::genetic.gap</code>.'],
+    steps: ['Fit LFMM2 to individual genotypes at the candidate loci; compute $G^2$ with <code>LEA::genetic.gap</code>.'],
     equations: [
-      `<b>Y</b> = <b>Z B</b>${T} + <b>U V</b>${T} + <b>E</b>`,
-      `G<sup>2</sup><sub><i>i</i></sub> = ${dz}${T} <b>C</b><sub><i>b</i></sub> ${dz} = ${invL} ${sumL} (<b>b</b><sub><i>l</i></sub>${T}${dz})<sup>2</sup>`,
-      `<b>C</b><sub><i>b</i></sub> = <b>B</b>${T}<b>B</b> / <i>L</i>`
+      '\\mathbf{Y} = \\mathbf{Z}\\mathbf{B}^{\\top} + \\mathbf{U}\\mathbf{V}^{\\top} + \\mathbf{E}',
+      'G^2_i = \\Delta\\mathbf{z}_i^{\\top}\\,\\mathbf{C}_b\\,\\Delta\\mathbf{z}_i = \\frac{1}{L}\\sum_{l=1}^{L}\\left(\\mathbf{b}_l^{\\top}\\Delta\\mathbf{z}_i\\right)^{2}',
+      '\\mathbf{C}_b = \\frac{\\mathbf{B}^{\\top}\\mathbf{B}}{L}'
     ],
     notation: [
-      ['<b>Y</b>', 'individuals’ genotypes at the candidate loci'],
-      ['<b>Z</b>', 'the individuals’ climates'],
-      ['<b>B</b>', 'the <i>L</i> × <i>d</i> matrix of climate effect sizes; row <b>b</b><sub><i>l</i></sub> is locus <i>l</i>’s'],
-      ['<b>U</b>, <b>V</b>', '<i>K</i> latent factors and their loadings'],
-      ['<b>E</b>', 'residuals'],
+      ['\\mathbf{Y}', 'individuals’ genotypes at the candidate loci'],
+      ['\\mathbf{Z}', 'the individuals’ climates'],
+      ['\\mathbf{B}', 'the $L \\times d$ matrix of climate effect sizes; row $\\mathbf{b}_l$ is locus $l$’s'],
+      ['\\mathbf{U},\\ \\mathbf{V}', '$K$ latent factors and their loadings'],
+      ['\\mathbf{E}', 'residuals'],
       N.dz,
       N.z,
       N.l,
@@ -143,16 +143,11 @@ export const METHODS: Method[] = [
     refs: [R.fitzpatrick2015, R.ellis2012],
     steps: [
       'Fit <code>gradientForest</code> of candidate-locus allele frequencies on climate.',
-      'Each climate variable <i>v</i> gets a cumulative-importance (turnover) function <i>f</i><sub><i>v</i></sub>.',
+      'Each climate variable $v$ gets a cumulative-importance (turnover) function $f_v$.',
       'Average the offset over several random seeds.'
     ],
-    equations: [`GF<sub><i>i</i></sub> = ‖ <b>f</b>(${zs}) − <b>f</b>(${zi}) ‖<sub>2</sub>`],
-    notation: [
-      ['<b>f</b>', 'the vector of turnover functions (<i>f</i><sub>1</sub>, …, <i>f</i><sub><i>d</i></sub>)'],
-      N.z,
-      N.d,
-      N.i
-    ]
+    equations: ['\\mathrm{GF}_i = \\left\\lVert \\mathbf{f}(\\mathbf{z}^*_i) - \\mathbf{f}(\\mathbf{z}_i) \\right\\rVert_2'],
+    notation: [['\\mathbf{f}', 'the vector of turnover functions $(f_1, \\dots, f_d)$'], N.z, N.d, N.i]
   },
   {
     key: 'rda',
@@ -163,17 +158,17 @@ export const METHODS: Method[] = [
     refs: [R.capblancq2021],
     steps: [
       'Fit a plain RDA of candidate-locus allele frequencies on climate (<code>vegan::rda</code>).',
-      'Project <b>z</b> and <b>z</b><sup>*</sup> onto the constrained axes (the adaptive index).',
-      'Retain axes with <i>w</i><sub><i>k</i></sub> &gt; 0.01: all three constrained axes (<i>w</i> = 0.17536, 0.03133, 0.02030).'
+      'Project $\\mathbf{z}$ and $\\mathbf{z}^*$ onto the constrained axes (the adaptive index).',
+      'Retain axes with $w_k > 0.01$: all three constrained axes ($w = 0.17536,\\ 0.03133,\\ 0.02030$).'
     ],
     equations: [
-      `RDA<sub><i>i</i></sub> = √[ Σ<sub><i>k</i></sub> <i>w</i><sub><i>k</i></sub> (AI<sub><i>k</i></sub>(${zs}) − AI<sub><i>k</i></sub>(${zi}))<sup>2</sup> ]`,
-      '<i>w</i><sub><i>k</i></sub> = λ<sub><i>k</i></sub> / total inertia'
+      '\\mathrm{RDA}_i = \\sqrt{\\sum_{k} w_k \\left(\\mathrm{AI}_k(\\mathbf{z}^*_i) - \\mathrm{AI}_k(\\mathbf{z}_i)\\right)^{2}}',
+      'w_k = \\frac{\\lambda_k}{\\text{total inertia}}'
     ],
     notation: [
-      ['AI<sub><i>k</i></sub>', 'adaptive index: the projection of a climate onto constrained axis <i>k</i>'],
-      ['λ<sub><i>k</i></sub>', 'the eigenvalue of constrained axis <i>k</i>'],
-      ['<i>w</i><sub><i>k</i></sub>', 'axis <i>k</i>’s weight'],
+      ['\\mathrm{AI}_k', 'adaptive index: the projection of a climate onto constrained axis $k$'],
+      ['\\lambda_k', 'the eigenvalue of constrained axis $k$'],
+      ['w_k', 'axis $k$’s weight'],
       N.z,
       N.i
     ]
@@ -188,12 +183,12 @@ export const METHODS: Method[] = [
     steps: [
       'Compute genetic distances (IBS) among individuals, then their principal coordinates.',
       'Fit jackknifed random forests (<code>ordinationJackknife</code>) that predict those coordinates from climate, conditioned on spatial position.',
-      'The offset is the Euclidean distance between a population’s predicted genetic position at <b>z</b><sup>*</sup> and at <b>z</b>, scaled as <code>gen_offset_oj</code> does (by the 90th percentile).',
+      'The offset is the Euclidean distance between a population’s predicted genetic position at $\\mathbf{z}^*$ and at $\\mathbf{z}$, scaled as <code>gen_offset_oj</code> does (by the 90th percentile).',
       'Genome-wide markers (an LD-pruned draw), not the candidate loci.'
     ],
-    equations: [`RDAforest<sub><i>i</i></sub> ∝ ‖ <b>ĝ</b>(${zs}) − <b>ĝ</b>(${zi}) ‖<sub>2</sub>`],
+    equations: ['\\mathrm{RDAforest}_i \\propto \\left\\lVert \\hat{\\mathbf{g}}(\\mathbf{z}^*_i) - \\hat{\\mathbf{g}}(\\mathbf{z}_i) \\right\\rVert_2'],
     notation: [
-      ['<b>ĝ</b>(<b>z</b>)', 'the predicted position in genetic principal-coordinate space under climate <b>z</b>'],
+      ['\\hat{\\mathbf{g}}(\\mathbf{z})', 'the predicted position in genetic principal-coordinate space under climate $\\mathbf{z}$'],
       N.z,
       N.i
     ]
@@ -206,17 +201,13 @@ export const METHODS: Method[] = [
     group: 'observed',
     refs: [R.rellstab2016],
     equations: [
-      `<i>y</i><sub><i>il</i></sub> = ${hat('<i>a</i>')}<sub><i>l</i></sub> + ${hat('<i>s</i>')}<sub><i>l</i></sub> <i>z</i><sub><i>i</i>,<i>k</i>(<i>l</i>)</sub> + ${hat('<i>e</i>')}<sup>(<i>k</i>)</sup><sub><i>il</i></sub>`,
-      `RONA<sub><i>i</i></sub> = ${invL} ${sumL} | ${hat('<i>a</i>')}<sub><i>l</i></sub> + ${hat('<i>s</i>')}<sub><i>l</i></sub> <i>z</i><sup>*</sup><sub><i>i</i>,<i>k</i>(<i>l</i>)</sub> − <i>y</i><sub><i>il</i></sub> |`,
-      `= ${invL} ${sumL} | ${hat('<i>s</i>')}<sub><i>l</i></sub> Δ<i>z</i><sub><i>i</i>,<i>k</i>(<i>l</i>)</sub> − ${hat('<i>e</i>')}<sup>(<i>k</i>)</sup><sub><i>il</i></sub> |`
+      'y_{il} = \\hat{a}_l + \\hat{s}_l\\, z_{i,k(l)} + \\hat{e}^{(k)}_{il}',
+      '\\begin{aligned} \\mathrm{RONA}_i &= \\frac{1}{L}\\sum_{l} \\left| \\hat{a}_l + \\hat{s}_l\\, z^*_{i,k(l)} - y_{il} \\right| \\\\ &= \\frac{1}{L}\\sum_{l} \\left| \\hat{s}_l\\, \\Delta z_{i,k(l)} - \\hat{e}^{(k)}_{il} \\right| \\end{aligned}'
     ],
     notation: [
-      ['<i>k</i>(<i>l</i>)', 'the one climate variable assigned to locus <i>l</i>'],
-      [
-        `${hat('<i>a</i>')}<sub><i>l</i></sub>, ${hat('<i>s</i>')}<sub><i>l</i></sub>`,
-        'intercept and slope of the regression of locus <i>l</i>’s frequency on that variable, across populations'
-      ],
-      [`${hat('<i>e</i>')}<sup>(<i>k</i>)</sup><sub><i>il</i></sub>`, 'its residual'],
+      ['k(l)', 'the one climate variable assigned to locus $l$'],
+      ['\\hat{a}_l,\\ \\hat{s}_l', 'intercept and slope of the regression of locus $l$’s frequency on that variable, across populations'],
+      ['\\hat{e}^{(k)}_{il}', 'its residual'],
       N.y,
       N.z,
       N.l,
@@ -230,16 +221,9 @@ export const METHODS: Method[] = [
     cite: 'Reis et al., 2026',
     group: 'observed',
     refs: [R.reis2026, { ...R.borrell2020, role: 'c-RONA' }],
-    steps: [
-      `Fit the OLS of each candidate locus’s allele frequency on [1, <b>Z</b>], giving residuals ${hat('<i>e</i>')}<sub><i>il</i></sub>.`
-    ],
-    equations: [`C<sub><i>i</i></sub> = ${invL} ${sumL} | ${hat('<i>e</i>')}<sub><i>il</i></sub> |`],
-    notation: [
-      [`${hat('<i>e</i>')}<sub><i>il</i></sub>`, 'population <i>i</i>’s OLS residual at locus <i>l</i>'],
-      N.Z,
-      N.l,
-      N.i
-    ]
+    steps: ['Fit the OLS of each candidate locus’s allele frequency on $[\\mathbf{1}, \\mathbf{Z}]$, giving residuals $\\hat{e}_{il}$.'],
+    equations: ['C_i = \\frac{1}{L}\\sum_{l} \\left| \\hat{e}_{il} \\right|'],
+    notation: [['\\hat{e}_{il}', 'population $i$’s OLS residual at locus $l$'], N.Z, N.l, N.i]
   },
   {
     key: 'frona',
@@ -247,17 +231,15 @@ export const METHODS: Method[] = [
     name: 'f-RONA',
     cite: 'Borrell et al., 2020',
     group: 'observed',
-    refs: [R.borrell2020],
+    refs: [R.borrell2020, R.endelman2011],
     steps: [
-      'For each climate variable <i>k</i>, fit a ridge regression of <i>z</i><sub><i>k</i></sub> on the allele frequencies at its assigned loci (variance ratio by REML, as <code>rrBLUP::mixed.solve</code>; Endelman 2011).',
-      `Fit it leave-one-out, so each population’s predicted value ${hat('<i>z</i>')}<sub><i>ik</i></sub> comes from a model it was not part of.`
+      'For each climate variable $k$, fit a ridge regression of $z_k$ on the allele frequencies at its assigned loci (variance ratio by REML, as <code>rrBLUP::mixed.solve</code>).',
+      'Fit it leave-one-out, so each population’s predicted value $\\hat{z}_{ik}$ comes from a model it was not part of.'
     ],
-    equations: [
-      `f-RONA<sub><i>i</i></sub> = (1/<i>d</i>) Σ<sub><i>k</i></sub> | <i>z</i><sup>*</sup><sub><i>ik</i></sub> − ${hat('<i>z</i>')}<sub><i>ik</i></sub> |&ensp;(in SD units)`
-    ],
+    equations: ['\\text{f-RONA}_i = \\frac{1}{d}\\sum_{k=1}^{d} \\left| z^*_{ik} - \\hat{z}_{ik} \\right| \\quad \\text{(in SD units)}'],
     notation: [
-      [`${hat('<i>z</i>')}<sub><i>ik</i></sub>`, 'population <i>i</i>’s predicted value of climate variable <i>k</i> from its allele frequencies'],
-      ['<i>z</i><sup>*</sup><sub><i>ik</i></sub>', 'its drought-scenario value of variable <i>k</i>'],
+      ['\\hat{z}_{ik}', 'population $i$’s predicted value of climate variable $k$ from its allele frequencies'],
+      ['z^*_{ik}', 'its drought-scenario value of variable $k$'],
       N.d,
       N.i
     ]
@@ -269,26 +251,23 @@ export const METHODS: Method[] = [
     cite: 'new',
     group: 'observed',
     refs: [{ html: 'This study.' }, R.lea3, R.lfmm2],
-    steps: [`Fit LFMM2 (<code>LEA::lfmm2</code>) to the <i>n</i> × <i>L</i> matrix of candidate-locus population allele frequencies, with <i>K</i> latent factors and ridge λ = 10<sup>−5</sup>.`],
+    steps: [
+      'Fit LFMM2 (<code>LEA::lfmm2</code>) to the $n \\times L$ matrix of candidate-locus population allele frequencies, with $K$ latent factors and ridge $\\lambda = 10^{-5}$.'
+    ],
     equations: [
-      `<i>y</i><sub><i>il</i></sub> = μ<sub><i>l</i></sub> + <b>b</b><sub><i>l</i></sub>${T}${zi} + <b>u</b><sub><i>i</i></sub>${T}<b>v</b><sub><i>l</i></sub> + <i>e</i><sub><i>il</i></sub>`,
-      `${hat('<i>e</i>')}<sub><i>il</i></sub> = <i>y</i><sub><i>il</i></sub> − ${hat('μ')}<sub><i>l</i></sub> − ${hat('<b>b</b>')}<sub><i>l</i></sub>${T}${zi} − ${hat('<b>u</b>')}<sub><i>i</i></sub>${T}${hat('<b>v</b>')}<sub><i>l</i></sub>`,
-      `<i>y</i><sup>*</sup><sub><i>il</i></sub> = ${hat('μ')}<sub><i>l</i></sub> + ${hat('<b>b</b>')}<sub><i>l</i></sub>${T}${zs} + ${hat('<b>u</b>')}<sub><i>i</i></sub>${T}${hat('<b>v</b>')}<sub><i>l</i></sub>`,
-      `δ<sub><i>il</i></sub> = <i>y</i><sup>*</sup><sub><i>il</i></sub> − <i>y</i><sub><i>il</i></sub> = ${hat('<b>b</b>')}<sub><i>l</i></sub>${T}${dz} − ${hat('<i>e</i>')}<sub><i>il</i></sub>`,
-      `G<sup>2</sup><sub>obs,<i>i</i></sub> = ${invL} ${sumL} δ<sub><i>il</i></sub><sup>2</sup> = ‖<b>B</b><sub>pop</sub>${dz} − ${hat('<b>e</b>')}<sub><i>i</i></sub>‖${sq}/<i>L</i>`,
-      `= G<sup>2</sup><sub>pop,<i>i</i></sub> − (2/<i>L</i>) ${sumL} (${hat('<b>b</b>')}<sub><i>l</i></sub>${T}${dz}) ${hat('<i>e</i>')}<sub><i>il</i></sub> + ${invL} ${sumL} ${hat('<i>e</i>')}<sub><i>il</i></sub><sup>2</sup>`,
-      `G<sup>2</sup><sub>pop,<i>i</i></sub> = ${dz}${T} ${hat('<b>C</b>')}<sub><i>b</i>,pop</sub> ${dz}`
+      '\\begin{aligned} y_{il} &= \\mu_l + \\mathbf{b}_l^{\\top}\\mathbf{z}_i + \\mathbf{u}_i^{\\top}\\mathbf{v}_l + e_{il} \\\\ \\hat{e}_{il} &= y_{il} - \\hat{\\mu}_l - \\hat{\\mathbf{b}}_l^{\\top}\\mathbf{z}_i - \\hat{\\mathbf{u}}_i^{\\top}\\hat{\\mathbf{v}}_l \\\\ y^*_{il} &= \\hat{\\mu}_l + \\hat{\\mathbf{b}}_l^{\\top}\\mathbf{z}^*_i + \\hat{\\mathbf{u}}_i^{\\top}\\hat{\\mathbf{v}}_l \\\\ \\delta_{il} &= y^*_{il} - y_{il} = \\hat{\\mathbf{b}}_l^{\\top}\\Delta\\mathbf{z}_i - \\hat{e}_{il} \\end{aligned}',
+      '\\begin{aligned} G^2_{\\mathrm{obs},i} &= \\frac{1}{L}\\sum_{l}\\delta_{il}^{2} = \\frac{\\left\\lVert \\mathbf{B}_{\\mathrm{pop}}\\Delta\\mathbf{z}_i - \\hat{\\mathbf{e}}_i \\right\\rVert_2^{2}}{L} \\\\ &= G^2_{\\mathrm{pop},i} - \\frac{2}{L}\\sum_{l}\\left(\\hat{\\mathbf{b}}_l^{\\top}\\Delta\\mathbf{z}_i\\right)\\hat{e}_{il} + \\frac{1}{L}\\sum_{l}\\hat{e}_{il}^{2} \\end{aligned}',
+      'G^2_{\\mathrm{pop},i} = \\Delta\\mathbf{z}_i^{\\top}\\,\\hat{\\mathbf{C}}_{b,\\mathrm{pop}}\\,\\Delta\\mathbf{z}_i, \\qquad \\hat{\\mathbf{C}}_{b,\\mathrm{pop}} = \\frac{\\hat{\\mathbf{B}}_{\\mathrm{pop}}^{\\top}\\hat{\\mathbf{B}}_{\\mathrm{pop}}}{L}'
     ],
     notation: [
       N.y,
-      ['μ<sub><i>l</i></sub>', 'locus <i>l</i>’s mean'],
-      ['<b>b</b><sub><i>l</i></sub>', 'locus <i>l</i>’s climate effect sizes (rows of <b>B</b><sub>pop</sub>)'],
-      ['<b>u</b><sub><i>i</i></sub>, <b>v</b><sub><i>l</i></sub>', 'population <i>i</i>’s fitted latent score and locus <i>l</i>’s loading'],
-      [`<i>e</i><sub><i>il</i></sub>, ${hat('<b>e</b>')}<sub><i>i</i></sub>`, 'residual; the vector of population <i>i</i>’s residuals over loci'],
-      ['<i>x̂</i>', 'the estimate of <i>x</i>'],
-      ['<i>y</i><sup>*</sup><sub><i>il</i></sub>', 'the fitted drought-target frequency, with population <i>i</i>’s fitted latent scores held fixed'],
-      ['δ<sub><i>il</i></sub>', 'the required change'],
-      [`${hat('<b>C</b>')}<sub><i>b</i>,pop</sub>`, `${hat('<b>B</b>')}${T}<sub>pop</sub>${hat('<b>B</b>')}<sub>pop</sub> / <i>L</i>`],
+      ['\\mu_l', 'locus $l$’s mean'],
+      ['\\mathbf{b}_l,\\ \\mathbf{B}_{\\mathrm{pop}}', 'locus $l$’s climate effect sizes; the $L \\times d$ matrix of them from this population-level fit'],
+      ['\\mathbf{u}_i,\\ \\mathbf{v}_l', 'population $i$’s fitted latent score and locus $l$’s loading'],
+      ['e_{il},\\ \\hat{\\mathbf{e}}_i', 'residual; the vector of population $i$’s residuals over loci'],
+      ['\\hat{x}', 'the estimate of $x$'],
+      ['y^*_{il}', 'the fitted drought-target frequency, with population $i$’s fitted latent scores held fixed'],
+      ['\\delta_{il}', 'the required change'],
       N.dz,
       N.z,
       N.l,
@@ -302,24 +281,9 @@ export const METHODS: Method[] = [
     cite: 'Mahony et al., 2017',
     group: 'benchmark',
     refs: [R.mahony2017],
-    equations: [`D<sub><i>i</i></sub> = √( ${dz}${T} <b>R</b><sub><i>z</i></sub><sup>−1</sup> ${dz} )`],
-    notation: [['<b>R</b><sub><i>z</i></sub>', 'the correlation matrix of the baseline climates'], N.dz, N.z, N.i]
+    equations: ['D_i = \\sqrt{\\Delta\\mathbf{z}_i^{\\top}\\,\\mathbf{R}_z^{-1}\\,\\Delta\\mathbf{z}_i}'],
+    notation: [['\\mathbf{R}_z', 'the correlation matrix of the baseline climates'], N.dz, N.z, N.i]
   }
 ];
-
-/**
- * A superscript and a subscript on the same symbol (z*ᵢ, G²_obs,i, b_lᵀ) are set one above the
- * other, as in typeset maths, rather than one after the other.
- */
-function stack(html: string): string {
-  return html
-    .replace(/<sub>((?:(?!<\/?su[bp]>).)*)<\/sub><sup>((?:(?!<\/?su[bp]>).)*)<\/sup>/g, '<span class="ss"><sup>$2</sup><sub>$1</sub></span>')
-    .replace(/<sup>((?:(?!<\/?su[bp]>).)*)<\/sup><sub>((?:(?!<\/?su[bp]>).)*)<\/sub>/g, '<span class="ss"><sup>$1</sup><sub>$2</sub></span>');
-}
-for (const m of METHODS) {
-  m.equations = m.equations.map(stack);
-  m.steps = m.steps?.map(stack);
-  m.notation = m.notation.map(([a, b]) => [stack(a), stack(b)]);
-}
 
 export const METHOD = Object.fromEntries(METHODS.map((m) => [m.key, m])) as Record<string, Method>;

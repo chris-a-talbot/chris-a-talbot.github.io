@@ -1,8 +1,27 @@
 <script lang="ts">
-  /** The citation-and-equation card for the metric in ui.method. Citations and maths only. */
+  /**
+   * The citation-and-equation card for the metric in ui.method. Citations and maths only.
+   * The maths is TeX typeset by KaTeX (tex.ts), fetched while the page is idle so a card opens
+   * already typeset; until it arrives the TeX source is shown.
+   */
+  import { onMount } from 'svelte';
   import { C } from './theme';
   import { METHODS, METHOD } from './methods';
   import { ui } from './state.svelte';
+
+  type Tex = typeof import('./tex');
+  let tex: Tex | null = $state(null);
+  const load = () => import('./tex').then((t) => (tex = t));
+  onMount(() => {
+    const idle = window.requestIdleCallback ?? ((f: () => void) => setTimeout(f, 1200));
+    idle(() => load());
+  });
+  $effect(() => {
+    if (ui.method && !tex) load();
+  });
+  const show = (t: string) => (tex ? tex.display(t) : `<code>${t}</code>`);
+  const sym = (t: string) => (tex ? tex.inline(t) : `<code>${t}</code>`);
+  const prose = (h: string) => (tex ? tex.prose(h) : h);
 
   let dialog: HTMLDialogElement;
   const m = $derived(ui.method ? METHOD[ui.method] : null);
@@ -53,20 +72,20 @@
         <h3>Calculation</h3>
         {#if m.steps}
           <ol class="steps">
-            {#each m.steps as s}<li>{@html s}</li>{/each}
+            {#each m.steps as s}<li>{@html prose(s)}</li>{/each}
           </ol>
         {/if}
         <div class="eqs">
-          {#each m.equations as e}<p class="m">{@html e}</p>{/each}
+          {#each m.equations as e}<div class="eq">{@html show(e)}</div>{/each}
         </div>
       </section>
 
       <section>
         <h3>Notation</h3>
         <dl>
-          {#each m.notation as [sym, meaning]}
-            <dt class="m">{@html sym}</dt>
-            <dd>{@html meaning}</dd>
+          {#each m.notation as [symbol, meaning]}
+            <dt>{@html sym(symbol)}</dt>
+            <dd>{@html prose(meaning)}</dd>
           {/each}
         </dl>
       </section>
@@ -168,62 +187,46 @@
   }
   .eqs {
     margin-top: 0.6rem;
-    padding: 0.6rem 0.75rem;
+    padding: 0.2rem 0.75rem;
     background: var(--aga-panel);
     border-radius: 0.5rem;
     overflow-x: auto;
+    overflow-y: hidden;
   }
-  .m {
-    font-family: var(--aga-math);
-    font-size: 1.08rem;
-    line-height: 1.6;
-    white-space: nowrap;
+  .eq :global(.katex-display) {
+    margin: 0.55rem 0;
+    text-align: left;
   }
-  .eqs p {
-    margin: 0;
+  .eq :global(.katex-display > .katex) {
+    text-align: left;
   }
-  .eqs p + p {
-    margin-top: 0.15rem;
+  .eqs :global(.katex),
+  dl :global(.katex),
+  .steps :global(.katex) {
+    font-size: 1.08em;
+  }
+  @media (max-width: 30rem) {
+    .eqs :global(.katex) {
+      font-size: 0.98em;
+    }
   }
   dl {
     margin: 0;
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 0.3rem 0.9rem;
+    gap: 0.35rem 0.9rem;
     font-size: 0.92rem;
     line-height: 1.4;
   }
   dt {
-    font-size: 1rem;
-    line-height: 1.4;
+    white-space: nowrap;
   }
   dd {
     margin: 0;
   }
-  dialog :global(.ss) {
-    display: inline-flex;
-    flex-direction: column;
-    /* a column's baseline is its first line, the superscript: raise it, the subscript follows */
-    vertical-align: 0.5em;
-    margin-left: 0.04em;
-    font-size: 0.72em;
-    line-height: 1;
-  }
-  dialog :global(.ss sup),
-  dialog :global(.ss sub) {
-    font-size: 1em;
-    line-height: 1.02;
-    vertical-align: baseline;
-  }
-  .m :global(sub),
-  .m :global(sup),
-  dd :global(sub),
-  dd :global(sup) {
-    font-size: 0.72em;
-    line-height: 0;
-  }
-  :global(.m code),
-  .steps :global(code) {
+  .steps :global(code),
+  .eqs :global(code),
+  dt :global(code) {
     font-family: var(--aga-math);
     font-size: 0.95em;
     background: var(--aga-panel);
