@@ -4,6 +4,7 @@
    * outcome's sample, then every population of the demographic analysis, south to north.
    */
   import S from '../data/supplement.json';
+  import Fold from './Fold.svelte';
 
   const R = S.roster;
   const P = S.populations;
@@ -55,6 +56,7 @@
   {/each}
 </ol>
 
+<Fold label="The {R.demography} populations of the demographic analysis, south to north">
 <div class="scroll">
   <table>
     <caption>The {R.demography} populations of the demographic analysis, south to north</caption>
@@ -84,6 +86,7 @@
     </tbody>
   </table>
 </div>
+</Fold>
 
 <style>
   .funnel {
@@ -148,9 +151,15 @@
     }
   }
 
+  /* On a phone the table scrolls sideways; a shadow at either edge shows there is more. */
   .scroll {
     overflow-x: auto;
     margin-top: 1rem;
+    background:
+      linear-gradient(to right, #fff 30%, rgb(255 255 255 / 0)) left / 2rem 100% no-repeat local,
+      linear-gradient(to left, #fff 30%, rgb(255 255 255 / 0)) right / 2rem 100% no-repeat local,
+      radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / 0.16), transparent) left / 0.7rem 100% no-repeat scroll,
+      radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / 0.16), transparent) right / 0.7rem 100% no-repeat scroll;
   }
   table {
     width: 100%;
@@ -207,5 +216,25 @@
   td:nth-child(6),
   td:nth-child(7) {
     text-align: center;
+  }
+  @media (max-width: 40rem) {
+    .scroll {
+      margin-top: 0.2rem;
+    }
+    caption {
+      display: none;
+    }
+    table {
+      font-size: 0.8rem;
+    }
+    th,
+    td {
+      padding: 0.3rem 0.3rem;
+    }
+    tbody th {
+      min-width: 6.5rem;
+      white-space: normal;
+      line-height: 1.2;
+    }
   }
 </style>

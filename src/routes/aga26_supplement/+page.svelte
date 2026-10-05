@@ -13,9 +13,10 @@
   import Windows from '$lib/aga26/supp/Windows.svelte';
   import RowChart from '$lib/aga26/supp/RowChart.svelte';
   import Matrix from '$lib/aga26/supp/Matrix.svelte';
+  import Fold from '$lib/aga26/supp/Fold.svelte';
   import { LATITUDE, CODING, LEAVE_ONE_OUT } from '$lib/aga26/supp/specs';
   import S from '$lib/aga26/data/supplement.json';
-  import type { Reference } from '$lib/aga26/methods';
+  import { METHODS, type Reference } from '$lib/aga26/methods';
 
   const TITLE = 'Genomic offset predicts population vulnerability in an extreme climate event... backwards';
 
@@ -75,7 +76,8 @@
     }
   });
 
-  /** Every work cited on this page, checked against Crossref on 2026-10-04. */
+  /** The data's references, checked against Crossref on 2026-10-04. The offsets' come from the
+      method cards (METHODS), whose references were checked the same way. */
   const REFERENCES: Reference[] = [
     {
       html: 'Anstett DN, Anstett J, Sheth SN, Moxley DR, Branch HA, Jahani M, Huang K, Todesco M, Jordan R, Lazaro-Guevara JM, Rieseberg LH, Angert AL (2026). Rapid evolution predicts demographic recovery after extreme drought. <i>Science</i> 391(6790): 1172–1176.',
@@ -186,6 +188,9 @@
           <li><b>Change out of the drought:</b> recovery <i>r</i> − drought <i>r</i></li>
           <li><b>Persistence:</b> 1 = present through recovery, 0 = extirpated during the drought</li>
         </ul>
+      </div>
+      <Fold label="How the drought climate and the drought index are calculated">
+      <div class="prose">
         <p>
           The offsets’ drought climate is each population’s baseline climate plus its mean {d0}–{d1} ClimateNA anomaly from
           the 1981–2010 normal.
@@ -198,12 +203,13 @@
           {signed(peakIn.v)}, in {peakIn.y}.
         </p>
       </div>
+      </Fold>
     </Panel>
 
     <div class="pair">
       <Panel id="climate" title={Q.climate}>
         <div class="prose">
-          <p>Every offset, and the climate benchmark, uses three ClimateNA variables: the water balance of a Mediterranean climate.</p>
+          <p>Every offset, and the climate benchmark, uses three ClimateNA variables.</p>
         </div>
         <dl class="vars">
           <div>
@@ -219,6 +225,7 @@
             <dd><b>Winter precipitation</b> (December–February, mm): the water supply</dd>
           </div>
         </dl>
+        <Fold label="Why these three variables, and how they are scaled">
         <div class="prose">
           <p>
             The scan’s other six variables are less specific or nearly constant here: annual precipitation (almost all of it
@@ -235,6 +242,7 @@
             0.238).
           </p>
         </div>
+        </Fold>
       </Panel>
 
       <Panel id="loci" title={Q.loci}>
@@ -257,7 +265,9 @@
             Metrics 1–3 and 5–8 use these {S.loci.n_sites} loci; RDAforest (4) uses genome-wide LD-pruned markers, and climate
             distance uses none.
           </p>
-          <h3>Random-locus sets</h3>
+        </div>
+        <Fold label="Random-locus sets" heading>
+        <div class="prose">
           <p>
             A random-locus version of a metric replaces each candidate locus with a marker from the same minor-allele-frequency
             bin (width {S.loci.maf_bin}), drawn without replacement from {thousands(S.loci.pool)} LD-pruned markers (MAF ≥ 0.05,
@@ -269,6 +279,7 @@
             per set). RDAforest has no candidate set, so no random-locus version.
           </p>
         </div>
+        </Fold>
       </Panel>
     </div>
 
@@ -321,6 +332,25 @@
 
     <section class="refs" id="references" aria-labelledby="references-title">
       <h2 id="references-title">References</h2>
+      <Fold label="Methods and software" always>
+      <ol class="by-metric">
+        {#each METHODS as m}
+          <li>
+            <span class="metric">{m.number}) {m.name}</span>
+            <ul>
+              {#each m.refs as r}
+                <li>
+                  {#if r.role}<span class="role">{r.role}:</span>{/if}
+                  {@html r.html}
+                  {#if r.doi}<a href="https://doi.org/{r.doi}" target="_blank" rel="noopener">doi:{r.doi}</a>{/if}
+                </li>
+              {/each}
+            </ul>
+          </li>
+        {/each}
+      </ol>
+      </Fold>
+      <Fold label="Data" always>
       <ol>
         {#each REFERENCES as r}
           <li>
@@ -329,6 +359,7 @@
           </li>
         {/each}
       </ol>
+      </Fold>
     </section>
   </main>
 
@@ -651,12 +682,6 @@
   .prose li + li {
     margin-top: 0.2rem;
   }
-  .prose h3 {
-    margin-bottom: 0;
-    font-family: var(--aga-font);
-    font-size: 1.05rem;
-    font-weight: 700;
-  }
   .prose code {
     font-size: 0.86em;
   }
@@ -737,6 +762,24 @@
   .refs ol {
     margin: 0 0 0.8rem;
     padding-left: 1.3rem;
+  }
+  .by-metric {
+    list-style: none;
+    padding-left: 0 !important;
+  }
+  .by-metric > li + li {
+    margin-top: 0.55rem;
+  }
+  .metric {
+    font-weight: 700;
+  }
+  .by-metric ul {
+    margin: 0.15rem 0 0;
+    padding-left: 1.3rem;
+  }
+  .role {
+    font-weight: 600;
+    color: var(--aga-soft-ink);
   }
   .refs li + li {
     margin-top: 0.35rem;

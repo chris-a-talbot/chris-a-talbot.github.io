@@ -119,12 +119,6 @@
     width: min(100%, 14rem);
     height: auto;
   }
-  @media (min-width: 60rem) {
-    .cals {
-      padding-left: 1.2rem;
-      border-left: 1px solid rgb(255 255 255 / 0.5);
-    }
-  }
   .thanks {
     max-width: 70rem;
     margin: 1.3rem auto 0;

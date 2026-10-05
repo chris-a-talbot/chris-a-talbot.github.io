@@ -23,14 +23,14 @@
 
   let width = $state(328);
   let hover: [number, number] | null = $state(null);
-  const labelW = $derived(width < 520 ? 168 : 196);
-  const cellPx = $derived(Math.max(20, Math.min(54, (width - labelW - 8) / n)));
+  const labelW = $derived(width < 520 ? 160 : 196);
+  const cellPx = $derived(Math.max(18, Math.min(54, (width - labelW - 4) / n)));
   const fs = $derived(cellPx >= 44 ? 13 : cellPx >= 34 ? 11 : 0);
   const top = 30;
   const height = $derived(top + n * cellPx + 4);
   const cx = (j: number) => labelW + j * cellPx;
   const cy = (i: number) => top + i * cellPx;
-  const svgW = $derived(labelW + n * cellPx + 4);
+  const svgW = $derived(labelW + n * cellPx + 2);
 </script>
 
 <div class="matrix" bind:clientWidth={width}>
